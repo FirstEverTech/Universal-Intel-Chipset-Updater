@@ -25,15 +25,21 @@ Automated tool to detect and update Intel chipset drivers to the latest versions
 | 💻 **Mainstream Mobile** | 🗄️ **Server Platforms** | 🕰️ **Legacy Chipsets** |
 | **Core Ultra 200V**: Lunar Lake<br>**14th Gen**: Meteor Lake<br>**11th Gen**: Tiger Lake<br>**10th Gen**: Ice Lake, Comet Lake<br>**8th/9th Gen**: Coffee Lake<br>**7th Gen**: Kaby Lake<br>**6th Gen**: Skylake<br>**5th Gen**: Broadwell<br>**4th Gen**: Haswell, Crystal Well<br>**3rd Gen**: Ivy Bridge<br>**2nd Gen**: Sandy Bridge | **6th Gen Xeon**: Granite Rapids, Clearwater Forest<br>**5th Gen Xeon**: Emerald Rapids<br>**4th Gen Xeon**: Sapphire Rapids<br>**3rd Gen Xeon**: Ice Lake-SP<br>**2nd Gen Xeon**: Cascade Lake<br>**1st Gen Xeon**: Skylake-SP<br>**Older Xeon**: Broadwell-EP, Haswell-EP, Ivy Town, Sandy Bridge-EP | **100 Series**: Sunrise Point<br>**9 Series**: Wildcat Point<br>**8 Series**: Lynx Point<br>**7 Series**: Panther Point<br>**6 Series**: Cougar Point |
 
-## 🛠️ Installation & Usage
+## 🛠️ Usage
 
-### Option 1: Simple Batch File (Recommended)
+### Option 1: SFX EXE (Recommended)
+1. Download the self-extracting executable:  
+   `ChipsetUpdater-10.1-2025.11-Driver64-Win10-Win11.exe` from the repository
+2. Run the EXE as Administrator
+3. Follow the on-screen prompts to scan and update your drivers
+
+### Option 2: Simple Batch File
 1. Download both `Universal-Intel-Chipset-Updater.bat` and `Universal-Intel-Chipset-Updater.ps1`
 2. Place both files in the same directory
 3. Run `Universal-Intel-Chipset-Updater.bat` as Administrator
 4. Follow the on-screen prompts to scan and update your drivers
 
-### Option 2: Direct PowerShell
+### Option 3: Direct PowerShell
 1. Download `Universal-Intel-Chipset-Updater.ps1`
 2. Open PowerShell as Administrator
 3. Run: `powershell -ExecutionPolicy Bypass -File "Universal-Intel-Chipset-Updater.ps1"`
