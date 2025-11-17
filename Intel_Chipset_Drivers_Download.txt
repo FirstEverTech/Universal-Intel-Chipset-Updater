@@ -26,10 +26,4 @@ Name = Intel Chipset Device Software
 DriverVer = 20/12/2021,10.1.18981.6008
 Variant = Consumer
 Link = https://www.station-drivers.com/index.php/en/component/remository/func-download/6894/chk,7a9a7f33596a3a1add2ac45bb104cdf9/no_html,1/lang,en-gb/
-Prefix = \intel_chipset_win_10.1.18981.6008_PV\SetupChipset.exe
-
-Name = Intel Chipset Device Software
-DriverVer = 20/12/2021,10.1.18981.6008
-Variant = Consumer
-Link = https://downloadmirror.intel.com/727318/intel_chipset_win_10.1.18981.6008_PV.zip
-Prefix = \intel_chipset_win_10.1.18981.6008_PV\SetupChipset.exe
+Prefix = \SetupChipset.exe
