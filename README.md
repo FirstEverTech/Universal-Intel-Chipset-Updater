@@ -107,7 +107,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📸 Screenshot
 
-<img width="602" height="1056" alt="Universal Intel Chipset Updater" src="https://github.com/user-attachments/assets/288c2ff2-36e0-4199-8780-3dc881e009fd" />
+<img width="602" height="1056" alt="Universal Intel Chipset Updater" src="https://github.com/user-attachments/assets/c2d0ef4e-205c-4b0c-9dbb-24aa43f18b2b" />
 
 ## ⚠️ Disclaimer
 
