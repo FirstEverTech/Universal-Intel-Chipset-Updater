@@ -1,4 +1,4 @@
-# Universal Intel Chipset Updater 🚀
+# Universal Intel Chipset Driver Updater 🚀
 
 [![GitHub release](https://img.shields.io/github/v/release/FirstEverTech/Universal-Intel-Chipset-Updater)](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/releases)
 [![GitHub license](https://img.shields.io/github/license/FirstEverTech/Universal-Intel-Chipset-Updater)](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/blob/main/LICENSE)
