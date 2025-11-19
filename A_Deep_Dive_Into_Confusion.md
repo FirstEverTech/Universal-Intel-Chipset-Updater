@@ -1,6 +1,6 @@
-# Intel Chipset Software Drivers — A Deep Dive Into Confusion
+# Intel Chipset Device Software (former Intel Chipset Software Installation Utility) or Intel Chipset INF Utility — A Deep Dive Into Confusion
 
-I'm currently working on a tool for updating **Intel Chipset Drivers** — and honestly, the deeper I dig, the more horrified I become.  
+I'm currently working on a tool for updating **Intel Chipset Device Software** — and honestly, the deeper I dig, the more horrified I become.  
 Let me share a bit of this headache with you, using the barely-breathing **X79 / C600 platform** as my case study.  
 Yes, I’m stubborn — I still use this machine for *everything* in 2025. For example, you can see how this platform handles modern GPUs in my YouTube video demonstrating NVIDIA Smooth Motion technology: [https://www.youtube.com/watch?v=TXstp8kN7j4](https://www.youtube.com/watch?v=TXstp8kN7j4)
 
@@ -8,7 +8,7 @@ Yes, I’m stubborn — I still use this machine for *everything* in 2025. For e
 
 ## 🕰️ Back to the Beginning: 14 November 2011
 
-Almost **14 years ago**, Intel launched the **Core i7-3960X**, **i7-3930K**, and **i7-3820** CPUs, along with around a dozen versions of the **Intel Chipset Device Software (INF Utility)** for the **X79 / C600** chipset — version **9.2.3.1020** to be exact.
+Almost **14 years ago**, Intel launched the **Core i7-3960X**, **i7-3930K**, and **i7-3820** CPUs, along with around a dozen versions of the **Intel Chipset Device Software (Intel Chipset INF Utility)** for the **X79 / C600** chipset — version **9.2.3.1020** to be exact.
 
 > **Note:**  
 > *Intel X79 Express* was the **desktop** branding, while *Intel C600* referred to the **server/workstation** variant.
@@ -26,16 +26,16 @@ The next major update, **9.3.0.1019** (January 2012), became the first *fully st
 | 9.4.0.1026 | 2013 | ✅ Full | Fixes for Windows 8 |
 | 9.4.4.1006 | 2014 | ✅ Full | Last release with full INF coverage |
 | 10.0.27 | 2014 | ✅ Full | Marked as “Legacy Platforms” |
-| 10.1.1.45 | 2015 | ⚠️ Limited support | Just PCIe Root Port driver |
+| 10.1.1.45 | 2015 | ⚠️ Limited support | Just PCIe Root Port INF |
 | 10.1.2.x and newer | 2016+ | ❌ Compatibility only | No X79/C600 IDs |
 | 10.1.18981.6008 | 2021 | ✅ Full |  The real latest version found by my tool |
 | 10.1.20266.8668 (current) | 2025 | ❌ Compatibility only | Missing 1Dxx/1Exx entries |
 
 ---
 
-## ⚙️ Installed Drivers on My System
+## ⚙️ Installed INF files on My System
 
-After installing the newest package and manually reassigning drivers to multiple devices, I noticed that most entries revert to:
+After installing the newest package and manually reassigning INF files to multiple devices, I noticed that most entries revert to:
 
 - **10.1.1.38** — Intel(R) C600/X79 Series Chipset  
 - **10.1.2.19** — Intel(R) Xeon(R) E7 v2 / Xeon(R) E5 v2 / Core i7 (variants)
@@ -46,15 +46,15 @@ Of course, there’s also the Intel Management Engine and a few others, but thos
 
 ## 🧩 The “Version Paradox”
 
-Looking at the installed driver versions, I found this:
+Looking at the installed INFs versions, I found this:
 
 - **10.1.2.19 (26/01/2016)** — version currently in use  
-- **10.1.1.36 (30/09/2016)** — version available in Windows Driver database  
+- **10.1.1.36 (30/09/2016)** — version available in Windows INF database  
 
-So… newer driver, *lower* version number?
+So… newer INFs, *lower* version number?
 
 It gets weirder.  
-The **10.1.1.36** driver in the Windows Update CAB repository has *the same version number* but a **different date (10/03/2016)**.
+The **10.1.1.36** INF in the Windows Update CAB repository has *the same version number* but a **different date (10/03/2016)**.
 
 And it doesn’t end there.
 
@@ -90,7 +90,7 @@ It shares a few device IDs with its predecessor (**C600, codename Patsburg**), s
 
 ## 💀 TL;DR — The Headache Summary
 
-- The **Intel Chipset Device Software version (INF Utility)** reflects the **package version**, *not necessarily* the internal driver versions.  
+- The ** Device Software version (INF Utility)** reflects the **package version**, *not necessarily* the internal INF file versions.  
 - Even **Intel** seems unsure which exact INF files were last provided for specific chipsets.  
 - Each package bundles **dozens of INF files**, often reused across generations — making version tracking a nightmare.
 
@@ -117,27 +117,27 @@ Instead, Intel went with the “one gigantic package for everything” approach,
 
 Does this make sense? You decide.
 
-However, the problem resurfaces in the future: Intel provides a special page for certain drivers (e.g., ID 19347). This link points to a specific driver now, but it may change when a new page is generated for a newer driver.
+However, the problem resurfaces in the future: Intel provides a special page for certain Intel Chipset Device Software (e.g., ID 19347). This link points to a specific version now, but it may change when a new page is generated for a newer Intel Chipset Device Software.
 
-To make things easier, this link should list **all future Intel Chipset INF Utility drivers**:  
+To make things easier, this link should list **all future Intel Chipset Device Software**:  
 [https://www.intel.com/content/www/us/en/search.html?ws=idsa-default#q=Chipset%20INF%20Utility&sort=relevancy&f:@tabfilter=[Downloads]&f:@stm_10385_en=[Chipsets]](https://www.intel.com/content/www/us/en/search.html?ws=idsa-default#q=Chipset%20INF%20Utility&sort=relevancy&f:@tabfilter=[Downloads]&f:@stm_10385_en=[Chipsets])
 
-Of course, you can also use the **Intel® Driver & Support Assistant (Intel® DSA)** for automatic detection and updates:  
+Of course, you can also use the *N*Intel® Driver & Support Assistant (Intel® DSA)** for automatic detection and updates:  
 [https://www.intel.com/content/www/us/en/support/detect.html](https://www.intel.com/content/www/us/en/support/detect.html)
 
 I personally enjoy automated updates, but I created this project because I prefer simple, straightforward solutions.  
-Before you even open any update tool, my script will already install the latest drivers, leaving no leftover files or unnecessary entries in the system registry.
+Before you even find the latest version, my script will already install the latest Intel Chipset Device Software.
 
-Direct link to one of the official Chipset INF Utility drivers:  
+Direct link to one of the official Intel Chipset Device Software :  
 [https://www.intel.com/content/www/us/en/download/19347/chipset-inf-utility.html](https://www.intel.com/content/www/us/en/download/19347/chipset-inf-utility.html)
 
 ---
 
 ## 🙃 Making Sense of the Chaos
 
-The Intel Chipset Device Software package has been with us for about a quarter of a century. Early versions were released in the early 2000s — for example, version 3.20.1008 has a release date of June 9, 2001. Over time, Intel kept adding support for new devices and removing older, legacy ones as they reached end-of-life. Because of that constant churn, it's extremely difficult to determine the last driver version for every single device… unless you collect all installer packages and check manually — which is exactly what I did.
+The Intel Chipset Device Software package has been with us for about a quarter of a century. Early versions were released in the early 2000s — for example, version 3.20.1008 has a release date of June 9, 2001. Over time, Intel kept adding support for new devices and removing older, legacy ones as they reached end-of-life. Because of that constant churn, it's extremely difficult to determine the last INF files version for every single device… unless you collect all installer packages and check manually — which is exactly what I did.
 
-I downloaded every Intel installer I could find from various corners of the internet — 88 packages in total, starting from 10.0.13.0 and ending at 10.1.20314.8688. I then extracted all of them, giving me access to 4,832 individual driver files. Each driver package contains multiple Hardware Identifiers (HWIDs) referencing specific devices — in my dataset that resulted in 2,641 unique HWIDs. Based on that, I built a database containing 82,663 relations, and after filtering and deduplication I generated a complete list of all supported devices along with their newest driver version and the package in which it appears.
+I downloaded every Intel installer I could find from various corners of the internet — 90 packages in total, starting from 10.0.13.0 and ending at 10.1.20314.8688. I then extracted all of them, giving me access to 4,832 individual INF files. Each package contains multiple Hardware Identifiers (HWIDs) referencing specific devices — in my dataset that resulted in 2,641 unique HWIDs. Based on that, I built a database containing 86,783 relations, and after filtering and deduplication I generated a complete list of all supported devices along with their newest INF version and the package in which it appears.
 
 Here's the list:
 [https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/blob/main/Intel_Chipset_Drivers_Latest.md](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/blob/main/Intel_Chipset_Drivers_Latest.md)
@@ -150,7 +150,7 @@ After that, I created an updater tool that uses the data from this list — avai
 
 ## 🧠 Final Thoughts
 
-Below is my current working list of the last-known Intel Chipset Driver Software versions per platform.  
+Below is my current working list of the last-known Intel Chipset Device Software versions per platform.  
 If you notice any inconsistencies or errors, please report them — these will help improve the accuracy of this list.
 
 📘 **Full detailed version matrix:**  
