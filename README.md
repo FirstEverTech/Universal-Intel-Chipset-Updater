@@ -47,7 +47,7 @@ Automated tool to detect and update Intel chipset drivers to the latest versions
 2. Open PowerShell as Administrator
 3. Run: `powershell -ExecutionPolicy Bypass -File "Universal-Intel-Chipset-Updater.ps1"`
 
-## 🐛 Known Issues
+## 🐛 Known Issues & Solutions
 
 For a comprehensive list of reported issues, workarounds, and solutions, please see our dedicated documentation:
 
