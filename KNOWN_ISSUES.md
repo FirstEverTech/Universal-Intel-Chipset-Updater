@@ -7,7 +7,7 @@ This document contains all reported issues, bugs, and their corresponding soluti
 
 - [Issue #1: Touchpad Stops Working After Chipset Update](#issue-1-touchpad-stops-working-after-chipset-update)
 - [Issue #2: PowerShell Execution Policy Restriction](#issue-2-powershell-execution-policy-restriction)
-- [Issue #3: Script Fails to Extract INFs](#issue-3-script-fails-to-extract-INFs)
+- [Issue #3: Script Fails to Extract Intel Chipset Device Software](#issue-3-script-fails-to-extract-intel-chipset-device-software)
 
 ---
 
@@ -111,10 +111,10 @@ If the SFX continues to fail:
 
 ---
 
-## Issue #3: Script Fails to Extract INF files
+## Issue #3: Script Fails to Extract Intel Chipset Device Software
 
 **Symptoms**:  
-Script downloads INFs but fails to extract or install them.
+Script downloads Intel Chipset Device Software but fails to install them.
 
 **Cause**:  
 Corrupted download or temporary file conflicts.
