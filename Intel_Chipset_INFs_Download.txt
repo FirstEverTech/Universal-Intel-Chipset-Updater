@@ -1,29 +1,29 @@
 Name = Intel Chipset Device Software
-DriverVer = 14/08/2025,10.1.20314.8688
+INFVer = 14/08/2025,10.1.20314.8688
 Variant = Server
 Link = https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/releases/download/v10.1.20314.8688/intel_chipset_10.1.20314.8688.zip
 Prefix = \SetupChipset.exe
 
 Name = Intel Chipset Device Software
-DriverVer = 27/06/2025,10.1.20266.8668
+INFVer = 27/06/2025,10.1.20266.8668
 Variant = Consumer
 Link = https://downloadmirror.intel.com/861043/SetupChipset.exe
 Prefix = \SetupChipset.exe
 
 Name = Intel Chipset Device Software
-DriverVer = 17/06/2025,10.1.20256.8665
+INFVer = 17/06/2025,10.1.20256.8665
 Variant = Consumer
 Link = https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/releases/download/v10.1.20256.8665/intel_chipset_10.1.20256.8665.zip
 Prefix = \SetupChipset.exe
 
 Name = Intel Chipset Device Software
-DriverVer = 09/07/2024,10.1.19913.8607
+INFVer = 09/07/2024,10.1.19913.8607
 Variant = Consumer
 Link = https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/releases/download/v10.1.19913.8607/intel_chipset_10.1.19913.8607.zip
 Prefix = \SetupChipset.exe
 
 Name = Intel Chipset Device Software
-DriverVer = 20/12/2021,10.1.18981.6008
+INFVer = 20/12/2021,10.1.18981.6008
 Variant = Consumer
 Link = https://downloadmirror.intel.com/727318/intel_chipset_win_10.1.18981.6008_PV.zip
 Prefix = \intel_chipset_win_10.1.18981.6008_PV\SetupChipset.exe
