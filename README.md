@@ -16,7 +16,7 @@ This utility automatically scans your system for Intel chipset components, ident
 - 🔄 **Smart Update Intelligence** - Updates to newer INF versions or allows reinstallation of current versions
 - 💻 **Broad Platform Compatibility** - Supports desktop, mobile, workstation, server, and embedded Intel platforms
 - ⚡ **User-Friendly Execution** - Simple batch file with automatic administrator elevation
-- 📊 **Comprehensive Driver Database** - Based on analysis of 88 official Intel installer packages with 82,663 INF version comparisons
+- 📊 **Comprehensive Driver Database** - Based on analysis of 90 official Intel installer packages with 86,783 INF version comparisons
 
 ## 📋 Supported Platforms
 
