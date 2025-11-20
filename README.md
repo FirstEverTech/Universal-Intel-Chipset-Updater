@@ -13,7 +13,7 @@ The Intel Chipset Device Software installs the Windows INF files. An INF is a te
 ## ✨ Features
 
 - 🔍 **Automatic Hardware Detection** - Identifies your Intel chipset and finds matching INF files using the comprehensive HWID database
-- 📦 **Latest INFs** - Always downloads the most recent official Intel chipset INF files
+- 📦 **Latest INF Files** - Always downloads the most recent official Intel chipset INFs
 - 🛡️ **Safe Installation** - Uses official Intel installers with proper parameters
 - 🔄 **Smart Updates** - Provides updates to the latest INF versions or reinstalls the current one
 - 💻 **Broad Compatibility** - Supports desktop, mobile, workstation, server, and embedded platforms
