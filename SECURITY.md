@@ -3,7 +3,7 @@
 ## Reporting Vulnerabilities
 
 If you discover a security vulnerability in this project, please report it privately:
-- Email: security@firstever.tech
+- Email: contact@firstever.tech
 - Do NOT create public GitHub issues for security vulnerabilities
 
 ## Security Measures
