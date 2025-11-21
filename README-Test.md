@@ -132,7 +132,7 @@ Get-Intel-HWIDs.bat
 
 This project has been thoroughly audited by 6 independent AI security experts, achieving an average score of 9.1/10. Multiple auditors confirmed it's the safest and most stable version ever released, suitable for daily use, corporate deployment, and technician toolkits.
 
-[View Full Audit Report](Docs/SECURITY-AUDITS.md) • [Security Policy](SECURITY.md)
+[View Full Audit Report](SECURITY-AUDITS.md) • [Security Policy](SECURITY.md)
 
 For current limitations and workarounds, please see: [KNOWN_ISSUES.md](KNOWN_ISSUES.md)
 
