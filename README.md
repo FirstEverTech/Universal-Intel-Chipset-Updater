@@ -21,7 +21,7 @@
 
 | Detection Phase | Update Process | Security Verification |
 |:---------------:|:--------------:|:-------------------:|
-| ![Hardware Detection](assets/screenshot-detection.png) | ![Update Process](assets/screenshot-update.png) | ![Security Check](assets/screenshot-security.png) |
+| ![Hardware Detection](Assets/Screenshot-Detection.png) | ![Update Process](Assets/Screenshot-Update.png) | ![Security Check](Assets/Screenshot-Security.png) |
 | *Automatic hardware scanning* | *Update confirmation dialog* | *Hash verification in action* |
 
 ## ✨ Key Features
