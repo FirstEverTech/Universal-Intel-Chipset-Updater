@@ -97,7 +97,7 @@ Obsługuje:
 - Od Sandy Bridge → do najnowszych generacji Intela
 - Wszystkie główne rodziny chipsetów (desktop, mobile, stacje robocze, serwery)
 
-I wykorzystuje wieloetapowy proces weryfikacji:
+Wykorzystuje wieloetapowy proces weryfikacji:
 
 - Wykrywanie identyfikatorów sprzętowych
 - Mapowanie INF ze zbioru danych
