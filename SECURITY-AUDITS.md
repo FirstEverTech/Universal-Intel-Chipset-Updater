@@ -82,9 +82,9 @@ The **Universal Intel Chipset Updater** project automates the detection and inst
 
 The Universal Intel Chipset Updater is an automated tool designed to simplify the process of updating Intel chipset drivers and INF files. It scans hardware, identifies compatible platforms, downloads official Intel drivers, and performs installation with verification mechanisms.
 
-**Latest Audit Score: 8.6/10** - Very Good Security & Reliability
+**Latest Audit Score: 8.5/10** - Very Good Security & Reliability
 
-> "Strong project with excellent transparency and security improvements."
+> "Automated tool with verification mechanisms for Intel driver updates."
 
 [View Full Audit Report](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/blob/main/Docs/Audit-Reports/2025-11-21-DeepSeek_Audit.md) • [Security Policy](SECURITY.md)
 
@@ -98,7 +98,7 @@ The Universal Intel Chipset Updater is an automated tool designed to simplify th
 
 Universal Intel Chipset Updater is a tool that automates the process of updating Intel chipset drivers by downloading, verifying, and installing official INF packages. The project demonstrates solid security architecture with multi-layer verification, but has areas requiring improvement in external dependency management and critical error handling.
 
-**Latest Audit Score: 8.6/10** - Very Good Security & Reliability
+**Latest Audit Score: 8.3/10** - Very Good Security & Reliability
 
 > "Best open-source tool in its category with leadership position"
 
