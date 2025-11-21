@@ -10,23 +10,26 @@ This document is the behind-the-scenes story of how the project was created, why
 
 ## 🌀 1. Where It All Started: The X79 / C600 Disaster Case
 
-My personal machine is based on the nearly prehistoric X79 (C600) chipset — and yes, I still use it daily in 2025, including for GPU benchmarks like my NVIDIA Smooth Motion demo.
+My personal machine is based on the nearly prehistoric X79 (C600) chipset — and yes, I still use it daily in 2025, including for GPU benchmarks like my [NVIDIA Smooth Motion](https://www.youtube.com/watch?v=TXstp8kN7j4) demo.
 
 Updating an Intel chipset driver should be trivial.  
 But with X79, it turned into a multi-day forensic investigation.
 
 Intel’s public packages list versions like:
 
-- 9.2.3.1020
-- 9.3.0.1019
-- 9.4.4.1006
-- 10.0.27
-- 10.1.1.45
-- 10.1.20266.8668
+| Year | Installer | INF Version | Support | Notes |
+| :--- | :--- | :--- | :--- | :--- |
+| 2011 | 9.2.3.1020 | 9.2.3.1013 | ✅ Full | First INF release for X79/C600 | |
+| 2013 | 9.4.4.1006 | 9.2.3.1032 | ✅ Full | Last INF Version 9.4.xxxx |
+| 2015 | 10.0.27 | 10.0.27 | ✅ Full | Last INF Version 10.0.xx |
+| 2015 | 10.1.1.45 | 10.1.1.45 | ✅ Full | Last INF Version 10.1.1.xx |
+| 2017 | 10.1.2.86 | 10.1.2.86 | ✅ Full | Last INF Version 10.1.2.xx |
+| 2021 | 10.1.18981.6008 | 10.1.3.2 | ✅ Full | Last INF Version 10.1.xxxx |
+| 2025 | 10.1.20266.8668 | None | ❌ Compatibility only | Missing 1Dxx/1Exx entries |
 
-…but those numbers tell you nothing about what will actually install.
+…but those installer versions tell you nothing about what will actually install.
 
-Some “newer” packages contain older INF files.  
+Some “newer” packages contain older INF files e.g. 10.1.2.19 (26/01/2016) vs 10.1.1.36 (30/09/2016).  
 Some “stable” packages contain OEM-modified content.  
 Some versions exist in five different variants, all digitally signed by Intel — but with different contents.
 
