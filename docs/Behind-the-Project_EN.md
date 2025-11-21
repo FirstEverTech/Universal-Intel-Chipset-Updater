@@ -29,9 +29,9 @@ Intel’s public packages list versions like:
 
 …but those installer versions tell you nothing about what will actually install.
 
-Some “newer” packages contain older INF files.  
-Some “stable” packages contain OEM-modified content.  
-Some versions exist in five different variants, all digitally signed by Intel — but with different contents.
+- Some “newer” packages contain older INF files.  
+- Some “stable” packages contain OEM-modified content.  
+- Some versions exist in five different variants, all digitally signed by Intel — but with different contents.
 
 This was the moment I realized:  
 Intel Chipset Device Software is not a driver package.  
