@@ -2,6 +2,7 @@
 ## Jak osobista obsesja przerodziła się w najpełniejszą bazę danych Intel INF, jaka kiedykolwiek powstała
 
 Od lat oprogramowanie Intel Chipset Device Software (dawniej: Intel Chipset INF Utility) jest jednym z najbardziej mylących pakietów wydanych przez głównego producenta sprzętu.  
+
 Nie planowałem zostać archeologiem plików INF Intela — ale im więcej grzebałem, tym dziwniejsza stawała się ta historia. Ostatecznie ta ciekawość przerodziła się w projekt na pełną skalę: automatyczny aktualizator zdolny do zlokalizowania i zainstalowania najnowszego, poprawnego pliku INF dla każdego chipsetu Intela, od Sandy Bridge (2011) po czasy współczesne.
 
 Ten dokument to historia zza kulis o tym, jak projekt został stworzony, dlaczego istnieje i jakie techniczne koszmary musiały zostać rozwiązane po drodze.
