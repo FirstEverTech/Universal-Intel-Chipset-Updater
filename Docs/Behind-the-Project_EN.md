@@ -2,6 +2,7 @@
 ## How a Personal Obsession Turned Into the Most Complete Intel INF Database Ever Built
 
 For years, Intel’s Chipset Device Software (formerly: Intel Chipset INF Utility) has been one of the most confusing packages ever released by a major hardware vendor.  
+
 I didn’t plan on becoming an archaeologist of Intel’s INF files — but the more I dug, the stranger the story became. Eventually, this curiosity turned into a full-scale project: an automatic updater capable of locating and installing the newest correct INF file for every Intel chipset, from Sandy Bridge (2011) through today.
 
 This document is the behind-the-scenes story of how the project was created, why it exists, and what technical nightmares had to be solved along the way.
