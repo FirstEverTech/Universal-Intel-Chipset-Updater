@@ -259,7 +259,7 @@ Author: Marcin Grygiel aka FirstEver ([LinkedIn](https://www.linkedin.com/in/mar
 ## 📘 Useful Links
 
 
-- [Latest Version Matrix](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/blob/main/Intel_Chipset_Drivers_Latest.md)
+- [Latest Version Matrix](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/blob/main/Intel_Chipset_INFs_Latest.md)
 - [Updater Tool](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater)
 - [Official Intel Chipset Device Software Link](https://www.intel.com/content/www/us/en/download/19347/chipset-inf-utility.html)
 - [Intel Global Chipset Search](https://www.intel.com/content/www/us/en/search.html?q=Chipset%20INF%20Utility)
