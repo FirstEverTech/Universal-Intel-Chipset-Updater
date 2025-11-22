@@ -59,6 +59,22 @@ The Universal Intel Chipset Updater project is a high-effort, community-develope
 
 ---
 
+![Security Audit](https://img.shields.io/badge/Audit_Score-8.7%2F10-brightgreen?style=for-the-badge)
+![Reliability](https://img.shields.io/badge/Reliability-Very_Good-0a8f08?style=for-the-badge)
+![Verification](https://img.shields.io/badge/Multi--Layer_Passed-green?style=for-the-badge)
+
+## 🔒 DeepSeek – Audit Report – November 21, 2025
+
+The Universal Intel Chipset Updater is an automated tool designed to simplify the process of updating Intel chipset drivers and INF files. It provides comprehensive hardware detection, secure download mechanisms, and robust installation procedures with multiple verification layers.
+
+**Latest Audit Score: 8.7/10** - Very Good Security & Reliability
+
+> "A high-quality, security-conscious implementation that exceeds industry standards."
+
+[View Full Audit Report](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/blob/main/Docs/Audit-Reports/2025-11-21-DeepSeek_Audit.md) • [Security Policy](SECURITY.md)
+
+---
+
 ![Security Audit](https://img.shields.io/badge/Audit_Score-8.6%2F10-brightgreen?style=for-the-badge)
 ![Reliability](https://img.shields.io/badge/Reliability-Very_Good-0a8f08?style=for-the-badge)
 ![Verification](https://img.shields.io/badge/Multi--Layer_Passed-green?style=for-the-badge)
@@ -72,22 +88,6 @@ The **Universal Intel Chipset Updater** project automates the detection and inst
 > "Strong project with excellent transparency and security improvements."
 
 [View Full Audit Report](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/blob/main/Docs/Audit-Reports/2025-11-21-Copilot_Audit.md) • [Security Policy](SECURITY.md)
-
----
-
-![Security Audit](https://img.shields.io/badge/Audit_Score-8.5%2F10-brightgreen?style=for-the-badge)
-![Reliability](https://img.shields.io/badge/Reliability-Very_Good-0a8f08?style=for-the-badge)
-![Verification](https://img.shields.io/badge/Multi--Layer_Passed-green?style=for-the-badge)
-
-## 🔒 DeepSeek – Audit Report – November 21, 2025
-
-The Universal Intel Chipset Updater is an automated tool designed to simplify the process of updating Intel chipset drivers and INF files. It scans hardware, identifies compatible platforms, downloads official Intel drivers, and performs installation with verification mechanisms.
-
-**Latest Audit Score: 8.5/10** - Very Good Security & Reliability
-
-> "Automated tool with verification mechanisms for Intel driver updates."
-
-[View Full Audit Report](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/blob/main/Docs/Audit-Reports/2025-11-21-DeepSeek_Audit.md) • [Security Policy](SECURITY.md)
 
 ---
 
