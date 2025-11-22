@@ -84,7 +84,7 @@ Now you can run the PS1 script normally.
 
 #### Temporary Fix:
 ```powershell
-powershell -ExecutionPolicy Bypass -File "Universal-Intel-Device-Updater.ps1"
+powershell -ExecutionPolicy Bypass -File "universal-intel-device-updater.ps1"
 ```
 
 ---
