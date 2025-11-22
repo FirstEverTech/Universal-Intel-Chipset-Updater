@@ -149,14 +149,14 @@ For current limitations and workarounds, please see: [KNOWN_ISSUES.md](KNOWN_ISS
 `Security/`
 - [SECURITY.md](SECURITY.md) - Security policy
 - [SECURITY-AUDITS.md](SECURITY-AUDITS.md) - Comprehensive security audits summary
-- [docs/audit-reports/](Docs/Audit-Reports/) - Detailed audit reports
+- [Docs/Audit-Reports/](Docs/Audit-Reports/) - Detailed audit reports
 
 `Documentation/`
 - [Intel_Chipset_INFs_Latest.md](Intel_Chipset_INFs_Latest.md) - Latest INF database
 - [Intel_Chipset_INFs_Download.txt](Intel_Chipset_INFs_Download.txt) - Download links
 - [KNOWN_ISSUES.md](KNOWN_ISSUES.md) - Known issues and workarounds
-- [Behind-the-Project_EN.md](docs/Behind-the-Project_EN.md) - Project background (English)
-- [Behind-the-Project_PL.md](docs/Behind-the-Project_PL.md) - Project background (Polish)
+- [Behind-the-Project_EN.md](Docs/Behind-the-Project_EN.md) - Project background (English)
+- [Behind-the-Project_PL.md](Docs/Behind-the-Project_PL.md) - Project background (Polish)
 
 `Assets/`
 - [Screenshots/](Assets/) - Tool screenshots
