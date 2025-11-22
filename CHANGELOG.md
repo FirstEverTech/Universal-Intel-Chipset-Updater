@@ -7,7 +7,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
-## [10.1-2025.11.5] - 2025-11-XX
+## [10.1-2025.11.5] - 2025-11-21
 
 ### Added
 - **System Restore Point Creation**: Automatic Windows System Restore point creation before INF installation for enhanced safety
@@ -37,7 +37,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
-## [10.1-2025.11.0] - 2025-11-XX - Initial Release
+## [10.1-2025.11.0] - 2025-11-16 - Initial Release
 
 ### Added
 - **Automatic Hardware Detection**: System-wide scanning for Intel chipset components using PCI Vendor ID (8086)
