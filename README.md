@@ -170,7 +170,7 @@ For current limitations and workarounds, please see: [KNOWN_ISSUES.md](KNOWN_ISS
 - [bug_report.md](ISSUE_TEMPLATE/bug_report.md)
 - [config.yml](ISSUE_TEMPLATE/config.yml)
 
-**Root Directory Files:**
+`/` - Root directory files
 - [CHANGELOG.md](CHANGELOG.md) - Project changelog
 - [CONTRIBUTING.md](CONTRIBUTING.md) - Contribution guidelines
 - [KNOWN_ISSUES.md](KNOWN_ISSUES.md) - Known issues and workarounds
