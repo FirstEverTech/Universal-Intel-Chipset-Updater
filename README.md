@@ -337,9 +337,9 @@ The FirstEver.tech certificate is self-signed for project authenticity. Public t
 | **Installation** | 1-5 minutes | INF file installation and system update |
 
 ### Resource Usage
-- **Memory**: <100MB during operation
-- **Storage**: ~500MB temporary (automatically cleaned)
-- **Network**: 50-300MB total download (depending on packages needed)
+- **Memory**: <10MB during operation
+- **Storage**: ~5MB temporary (automatically cleaned)
+- **Network**: 3-4MB total download (depending on packages needed)
 - **CPU**: Minimal impact during scanning and installation
 
 ## 🐛 Known Issues
