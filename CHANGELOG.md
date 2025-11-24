@@ -7,6 +7,36 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [10.1-2025.11.6] - 2025-11-25
+
+### Added
+- **Self-Hash Verification**: Script now validates its own integrity against GitHub release hashes before execution
+- **Automatic Update Detection**: Seamless update checking with download to user's Downloads folder
+- **Digital Signature**: SFX EXE signed with FirstEver.tech certificate (included for verification)
+- **Phased Execution Windows**: Clear separation of verification, detection, download, and installation phases
+- **Enhanced Version Comparison**: Smart date-based version comparison to prevent false update prompts
+- **Downloads Folder Detection**: Automatic detection of user's Downloads folder for update storage
+
+### Changed
+- **Streamlined User Interface**: Improved visual flow with distinct operational phases
+- **Enhanced Error Management**: More granular error handling throughout all execution phases
+- **Better Update Prompts**: Clearer update decision flow with proper version comparison
+- **Reduced Wait Times**: Optimized delays between phases for better user experience
+
+### Fixed
+- **Version Comparison Logic**: Fixed bug where outdated version files would offer "updates" to older versions
+- **Hash Verification Flow**: Improved self-hash verification with better error reporting
+- **Update Detection**: Proper handling of version file mismatches and network issues
+- **Temporary File Cleanup**: Enhanced cleanup routines across all execution paths
+
+### Security
+- **Multi-Layer Integrity Verification**: Self-hash validation + digital signature + certificate chain
+- **Automatic System Restore**: Enhanced restore point creation before system modifications
+- **Secure Update Process**: Verified downloads with hash validation for new versions
+- **Improved Certificate Validation**: Enhanced digital signature verification throughout
+
+---
+
 ## [10.1-2025.11.5] - 2025-11-21
 
 ### Added
@@ -77,7 +107,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## Release Notes Format
 
 ### Version Naming Convention
-- **Major.Minor-YYYY.MM.Revision** format (e.g., `10.1-2025.11.5`)
+- **Major.Minor-YYYY.MM.Revision** format (e.g., `10.1-2025.11.6`)
 - Major version tracks Intel chipset INF version lineage (10.1.x)
 - Date component reflects release year and month
 - Revision number increments with each update
