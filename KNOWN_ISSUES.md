@@ -8,6 +8,7 @@ This document contains all reported issues, bugs, and their corresponding soluti
 - [Issue #1: Touchpad Stops Working After Chipset Update](#issue-1-touchpad-stops-working-after-chipset-update)
 - [Issue #2: PowerShell Execution Policy Restriction](#issue-2-powershell-execution-policy-restriction)
 - [Issue #3: Script Fails to Extract Intel Chipset Device Software](#issue-3-script-fails-to-extract-intel-chipset-device-software)
+- [Issue #4: Installer Cannot Continue Due to Missing or Corrupted Previous Intel Chipset Installation](#issue-4-installer-cannot-continue-due-to-missing-or-corrupted-previous-intel-chipset-installation)
 
 ---
 
@@ -122,9 +123,51 @@ Corrupted download or temporary file conflicts.
 **Solution**:
 1. Delete contents of:  
    ```
-   C:\Windows\Temp\IntelChipset   ```
+   C:\Windows\Temp\IntelChipset
+   ```
 2. Run the script again  
 3. Ensure a stable internet connection during download
+
+[↑ Back to top](#top)
+
+---
+
+## Issue #4: Installer Cannot Continue Due to Missing or Corrupted Previous Intel Chipset Installation
+
+**Symptoms**:  
+- The installer reports that it cannot continue  
+- Windows Installer (MSI) cannot find the original Intel Chipset Device Software package  
+- Installation halts before INF processing begins
+
+<img width="503" height="396" alt="Intel_Issue" src="https://github.com/user-attachments/assets/a8e10bf2-8169-48b3-9f4f-7ab9ffcf60f2" />
+
+**Cause**:  
+This issue occurs when a previous installation of *Intel Chipset Device Software* was not cleanly uninstalled or its original MSI package has become corrupted or missing.  
+This problem existed *before* using the Universal Intel Chipset Updater.
+
+**Solution**:
+
+1. **Uninstall via Windows (if possible)**  
+   Try removing **Intel Chipset Device Software** from the standard Windows *Apps & Features* list.
+
+2. **Use a Cleanup Tool (Recommended)**  
+   If the entry is missing or the uninstall fails, use **[Revo Uninstaller (Free Version)](https://www.revouninstaller.com/products/revo-uninstaller-free/)**.  
+   It will remove:
+   - leftover registry entries  
+   - broken MSI references  
+   - residual program files  
+
+   Community reports, including MSI forum discussions, confirm that Revo Uninstaller reliably fixes this issue.
+
+3. **Reinstall the Intel Chipset Package**  
+   After cleanup, run the installer again. It should now proceed normally.
+
+**Important**:  
+A successful installation will always show one of two prompts:
+- **Installation/Upgrade**, or  
+- **Downgrade**
+
+If neither appears, cleanup was incomplete.
 
 [↑ Back to top](#top)
 
@@ -141,4 +184,4 @@ If you encounter a new issue not listed here, please:
 
 ---
 
-Last Updated: 19/11/2025
+Last Updated: 26/11/2025
