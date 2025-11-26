@@ -151,7 +151,7 @@ This problem existed *before* using the Universal Intel Chipset Updater.
    Try removing **Intel Chipset Device Software** from the standard Windows *Apps & Features* list.
 
 2. **Reinstall (you need the same version of SetupChipset.exe file).**  
-   - Copy the version from the end of the link in the "Use source" window
+   - Copy the version from the end of the link in the "Use source" window  
      e.g. C:\ProgramData\Package Cache\{D220324C-2510-4BF2-B789-56832E9223E2}v10.1.18981.6008
    - Search Google for the missing package: Download Intel Chipset Device Software v10.1.18981.6008
    - Download the SetupChipset.exe file (may be zipped) and reinstall it
