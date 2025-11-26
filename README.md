@@ -1,4 +1,4 @@
-# 🚀 Universal Intel Chipset Updater
+# 🚀 Universal Intel Chipset Device Updater
 
 [![Version](https://img.shields.io/badge/Version-10.1--2025.11.7-red?style=for-the-badge)](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/releases)
 [![License](https://img.shields.io/badge/License-MIT-0056b3?style=for-the-badge)](LICENSE)
