@@ -53,10 +53,11 @@ This project has undergone comprehensive analysis by multiple AI security expert
 
 ## 🖼️ Application Overview
 
-| Detection Phase | Security Verification | Update Process |
-|:---------------:|:--------------:|:-------------------:|
-| ![Hardware Detection](assets/screenshot-detection.png) | ![Security Check](assets/screenshot-security.png) | ![Update Process](assets/screenshot-update.png) |
-| *Automatic hardware scanning* | *Hash verification in action* | *Update confirmation dialog* |
+| Phase 1 | Phase 2 | Phase 3 | Phase 4 |
+|:---------------:|:--------------:|:-------------------:|:-------------------:|
+| ![Hardware Detection](assets/1-security.png) | ![Security Check](assets/1-security.png) | ![Update Process](assets/3-backup.png) | ![Update Process](assets/4-install.png) |
+| *Initialization and Security Check* | *Hardware Detection and Version Analysis* | *Creating a System Restore Point* | *Download and Installation* |
+
 
 ## ✨ Key Features
 
