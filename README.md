@@ -14,27 +14,27 @@
 
 **Universal Intel Chipset Device Updater** is an advanced, security-focused tool that automatically detects your Intel hardware and installs the latest official chipset **INF files** with enterprise-grade safety measures.
 
-## 🎉 Latest Release Highlights (v10.1-2025.11.7)
+## 🎉 Latest Release Highlights (v10.1-2025.11.8)
 
-### 🆕 New Security & User Experience Features
-- **Self-Hash Verification** - Tool now validates its own integrity before execution
-- **Automatic Update Detection** - Seamless update checking and download to Downloads folder
-- **Digital Signature** - SFX EXE signed with FirstEver.tech certificate
-- **Phased Execution** - Clear separation of verification, detection, download, and installation
-- **Final Credits Screen** - New thank you screen with project information and support message
-- **Streamlined Exit Flow** - Consistent pause and credits screen across all termination paths
+### 🆕 New Features & Improvements
+- **Enhanced platform detection**: Added automatic detection for Intel platforms that use Windows 11 24H2 inbox drivers (e.g., Meteor Lake)
+- **Improved user communication**: Clear informational messages when Windows inbox drivers are detected
+- **Smart exclusion system**: Platforms with `Package = None` in the database are automatically excluded from updates
+- **Better date handling**: Windows inbox driver dates now use digital signature dates from corresponding .cat files
 
-### 🔒 Enhanced Security
-- Multi-layer integrity verification (Hash + Digital Signature + Certificate Chain)
-- Smart version comparison prevents false update prompts
-- Improved error handling throughout all execution phases
-- Maintained integrity checks and secure temporary file handling
+### 🔧 Technical Updates
+- **Updated parsing logic**: Script now identifies Windows inbox-only platforms during hardware detection
+- **Enhanced error handling**: Improved debug messages and logging for platform detection
+- **Streamlined user experience**: Separate section for Windows inbox platforms in the output
 
-### 🎨 Improved User Experience
-- Removed duplicate pauses for cleaner flow
-- Automatic closure after credits screen
-- Consolidated cleanup with improved messaging
-- Consistent flow: operation summary → pause → credits → auto-close
+### 📝 Notes
+- **No INF database changes**: This update only improves the detection and handling logic
+- **Backward compatible**: Fully compatible with existing INF database format
+- **Future-proof**: Automatically handles new platforms marked with `Package = None`
+
+### 🐛 Bug Fixes
+- Fixed potential false positives for unsupported platforms
+- Improved handling of platforms without separate Intel Chipset Device Software packages
 
 ## 🔍 Independent Security Audits
 
