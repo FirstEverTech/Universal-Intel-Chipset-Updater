@@ -171,8 +171,8 @@ Jednym z najbardziej zaskakujących odkryć był wewnętrzny brak spójności w 
 
 **Przykład:**
 
-- 10.1.2.19 (2016) jest starszy
-- 10.1.1.36 (2016) jest nowszy
+- 10.1.2.86 (2017) jest starszy
+- 10.1.18981.6008 (2021) jest nowszy
 
 Oba współdzielą identyczne numery wersji w różnych pakietach.  
 Wersje OEM różnią się rozmiarem, liczbą plików INF i zawartością.  
@@ -213,7 +213,7 @@ Ten aktualizator to naprawia.
 ### Opcja 1: SFX EXE (Zalecana)
 
 1. Pobierz:  
-   `ChipsetUpdater-10.1-2025.11.5-Win10-Win11.exe`
+   `ChipsetUpdater-10.1-2025.11.8-Win10-Win11.exe`
 2. Uruchom jako Administrator
 3. Postępuj zgodnie z monitami
 
