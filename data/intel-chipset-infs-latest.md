@@ -54,6 +54,15 @@ The Intel Chipset Device Software installs the Windows INF files. An INF is a te
 
 *Note: Panther Lake platforms are future releases and currently not detected by public INF files.*
 
+<!--
+#### Arrow Lake
+**Generation:** 14th Gen (Arrow Lake) – Desktop/Mobile
+
+| INF | Package | Version | Date | HWIDs |
+|--------|---------|---------|------|--------|
+| ArrowLakeSystem.inf | Leak | 10.1.57.6 | 12/09/2025\* | 7700, 7701, 7702, 7703, 7704, 7705, 7706, 7707, 7708, 7709, 770A, 770B, 770C, 770D, 770E, 770F, 7711, 7712, 7713, 7714, 7723, 7771, 7722 |
+-->
+
 #### Arrow Lake
 **Generation:** 14th Gen (Arrow Lake) – Desktop/Mobile
 
@@ -61,13 +70,30 @@ The Intel Chipset Device Software installs the Windows INF files. An INF is a te
 |--------|---------|---------|------|--------|
 | ArrowLakeSystem.inf | 10.1.20266.8668 | 10.1.57.5 | 27/06/2025\* | 7722, 7723, 7771 |
 
+<!--
+#### Meteor Lake
+**Generation:** 14th Gen (Meteor Lake) – Desktop (Leaked INFs)
+
+| INF | Package | Version | Date | HWIDs |
+|--------|---------|---------|------|--------|
+| MeteorLakePCH-SSystem.inf | Leak | 10.1.51.10 | 12/09/2025\* | 7F23, 7F20, 7F2F, 7F24, 7F21, 7F58, 7F59, 7F69, 7F00, 7F01, 7F02, 7F03, 7F04, 7F05, 7F06, 7F07, 7F08, 7F09, 7F0A, 7F0B, 7F0C, 7F0D, 7F0E, 7F0F, 7F10, 7F11, 7F12, 7F13, 7F14, 7F15, 7F16, 7F17, 7F18, 7F19, 7F1A, 7F1B, 7F1C, 7F1D, 7F1E, 7F1F |
+-->
+
 #### Meteor Lake
 **Generation:** 14th Gen (Meteor Lake) – Desktop (Windows 11 24H2 Inbox only)
 
 | INF | Package | Version | Date | HWIDs |
 |--------|---------|---------|------|--------|
+| MeteorLakePCH-SSystem.inf | None | 10.1.51.8 | 21/05/2024\* | 7F23, 7F20, 7F2F, 7F24, 7F21, 7F58, 7F59, 7F69 |
+
+*Note: All desktop Meteor Lake devices are supported only via Windows 11 24H2 inbox drivers; these HWIDs are not included in any Intel Chipset Device Software package and you can find them in `C:\Windows\System32\DriverStore\FileRepository` folder.*
+
+#### Meteor Lake
+**Generation:** 14th Gen (Meteor Lake) – Mobile (Windows 11 24H2 Inbox only)
+
+| INF | Package | Version | Date | HWIDs |
+|--------|---------|---------|------|--------|
 | MeteorLakeSystem.inf | None | 10.1.47.12 | 21/05/2024\* | 7E24, AE24 |
-| MeteorLakePCH-SSystem.inf | None | 10.1.51.8 | 21/05/2024\* | 7F2F, 7F58, 7F59, 7F69 |
 | MeteorLakeSystemNorthPeak.inf | None | 10.1.47.12 | 21/05/2024\* | 7E24, AE24 |
 
 *Note: All desktop Meteor Lake devices are supported only via Windows 11 24H2 inbox drivers; these HWIDs are not included in any Intel Chipset Device Software package and you can find them in `C:\Windows\System32\DriverStore\FileRepository` folder.*
