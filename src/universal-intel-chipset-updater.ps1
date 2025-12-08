@@ -431,8 +431,8 @@ function Check-ForUpdaterUpdates {
                             Start-Process -FilePath $outputPath
                             
                             # Exit immediately without any user interaction
-                            # Use exit code 100 to indicate successful launch of new version
-                            [Environment]::Exit(100)
+                            # Use exit code 0 to indicate successful launch of new version
+                            exit 0
                         } else {
                             Write-Host "`n Update cancelled by user." -ForegroundColor Yellow
                             Cleanup
