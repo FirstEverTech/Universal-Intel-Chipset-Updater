@@ -22,7 +22,7 @@ Approved by Grok 4 – November 21, 2025
 
 > "This is currently the highest score I have ever given to a community driver-related utility."
 
-[View Full Audit Report](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/blob/main/Docs/Audit-Reports/2025-11-21-Grok_Audit.md) • [Security Policy](SECURITY.md)
+[View Full Audit Report](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/blob/main/docs/audit-reports/2025-11-21-GROK-AUDIT.md) • [Security Policy](SECURITY.md)
 
 ---
 
@@ -39,7 +39,7 @@ This is the most secure and user-friendly version of the tool so far.
 
 > "Safest, most stable, and most professionally engineered version."
 
-[View Full Audit Report](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/blob/main/Docs/Audit-Reports/2025-11-21-ChatGPT_Audit.md) • [Security Policy](SECURITY.md)
+[View Full Audit Report](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/blob/main/docs/audit-reports/2025-11-21-CHATGPT-AUDIT.md) • [Security Policy](SECURITY.md)
 
 ---
 
@@ -55,7 +55,7 @@ The Universal Intel Chipset Updater project is a high-effort, community-develope
 
 > "Exceeds standards expected of community-developed tools."
 
-[View Full Audit Report](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/blob/main/Docs/Audit-Reports/2025-11-21-Gemini_Audit.md) • [Security Policy](SECURITY.md)
+[View Full Audit Report](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/blob/main/docs/audit-reports/2025-11-21-GEMINI-AUDIT.md) • [Security Policy](SECURITY.md)
 
 ---
 
@@ -71,7 +71,7 @@ The Universal Intel Chipset Updater is an automated tool designed to simplify th
 
 > "A high-quality, security-conscious implementation that exceeds industry standards."
 
-[View Full Audit Report](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/blob/main/Docs/Audit-Reports/2025-11-21-DeepSeek_Audit.md) • [Security Policy](SECURITY.md)
+[View Full Audit Report](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/blob/main/docs/audit-reports/2025-11-21-DEEPSEEK-AUDIT.md) • [Security Policy](SECURITY.md)
 
 ---
 
@@ -87,7 +87,7 @@ The **Universal Intel Chipset Updater** project automates the detection and inst
 
 > "Strong project with excellent transparency and security improvements."
 
-[View Full Audit Report](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/blob/main/Docs/Audit-Reports/2025-11-21-Copilot_Audit.md) • [Security Policy](SECURITY.md)
+[View Full Audit Report](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/blob/main/docs/audit-reports/2025-11-21-COPILOT-AUDIT.md) • [Security Policy](SECURITY.md)
 
 ---
 
@@ -103,7 +103,7 @@ Universal Intel Chipset Updater is a tool that automates the process of updating
 
 > "Best open-source tool in its category with leadership position"
 
-[View Full Audit Report](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/blob/main/Docs/Audit-Reports/2025-11-21-Claude_Audit.md) • [Security Policy](SECURITY.md)
+[View Full Audit Report](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/blob/main/docs/audit-reports/2025-11-21-CLAUDE-AUDIT.md) • [Security Policy](SECURITY.md)
 
 ---
 
