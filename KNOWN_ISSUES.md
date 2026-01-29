@@ -186,9 +186,9 @@ If neither appears, cleanup was incomplete.
 <a id="issue-5-change-in-intel-chipset-software-installer"></a>
 ## Issue #5: Change in Intel Chipset Software installer starting from version 10.1.20378.8757
 
-Intel has decided to replace the existing small `SetupChipset.exe` installer (approximately 2-3 MB in size) with a "new" one that is 105-106 MB. The difference is that the new large EXE installer contains two MSI files for x86 and x64 systems (each about 10 MB), an over 80 MB .NET Framework 4.7.2 package installer, and a 0.5 MB SetupChipset1.cab file with the license agreement. *This is a very strange move, as the actual INF and CAT files contained in these archives take up only 0.5 MB after compression.*
+Intel has decided to replace the existing small `SetupChipset.exe` installer (approximately 2-3 MB in size) with a "new" one that is 105-106 MB. The difference is that the new large EXE installer contains two MSI files for x86 and x64 systems (each about 10 MB), an over 80 MB .NET Framework 4.7.2 package installer, and a 0.5 MB SetupChipset1.cab file with the license agreement.  
 
-All of this could be safely installed using a simple command in a BAT (batch) file:
+This is a very strange move, as the actual INF and CAT files contained in these archives take up only 0.5 MB after compression. All of this could be safely installed using a simple command in a BAT (batch) file:
 
 ```batch
 @ECHO OFF
@@ -207,9 +207,9 @@ Every new large installer can be "slimmed down" and reduced to approximately 10 
 3. Rename: `SetupChipset.x64.msi` to `SetupChipset.msi`
 4. Open `SetupChipset.msi` in **[Orca 3.1.4000.1830](https://softpedia-secure-download.com/dl/3430724d90fd167de1765d4aea06f51d/697b864f/100079861/software/authoring/Orca.Msi)**
 5. Delete: `SETUPEXEDIR OR (REMOVE="ALL")` in the `LaunchCondition` table → OK
-6. Save the edited MSI
+6. Save the edited MSI file
 
-#### ⚠️ Make sure the new `SetupChipset.msi` and `SetupChipset1.cab` files are in the same directory when running the MSI installer.
+#### ⚠️ Make sure the edited `SetupChipset.msi` and `SetupChipset1.cab` files are in the same directory when running the MSI installer.
 
 In future versions of Universal Intel Chipset Software (starting from 2026), I will add the ability to install the latest reduced-size MSI versions. These versions, like the old installer, will install silently in the background and update all INF files for available Intel devices in the system. Please note that the new installer appears in the list of installed programs as `Chipset Setup`, not as `Intel(R) Chipset Device Software`.
 
