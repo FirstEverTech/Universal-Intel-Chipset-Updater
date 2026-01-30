@@ -561,4 +561,5 @@ The Intel Chipset Device Software installs the Windows INF files. An INF is a te
   - Primary source: Digital signature timestamp from the .cat file
   - Fallback: .cat file's last modification date
 
-**Source:** [Universal Intel Chipset Device Updater](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater) / **Project by:** [Marcin Grygiel](https://www.linkedin.com/in/marcin-grygiel/) / **Last Update:** 2026-01-30
+**Source:** [Universal Intel Chipset Device Updater](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater) / **Project by:** [Marcin Grygiel](https://www.linkedin.com/in/marcin-grygiel/) / **Last Update:** 30-01-2026
+
