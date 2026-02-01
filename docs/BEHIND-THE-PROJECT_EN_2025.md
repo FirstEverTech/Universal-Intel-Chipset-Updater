@@ -83,7 +83,7 @@ To find the “latest Intel chipset driver” you must search through 14 years o
 
 So I automated it.
 
-<img width="977" height="460" alt="image" src="https://github.com/user-attachments/assets/68e19bd4-ab42-4fe4-9734-2566a284caa3" />
+<img width="979" height="512" alt="image" src="https://github.com/user-attachments/assets/c44dd544-881a-439d-80ed-84bee88cda79" />
 
 ---
 
