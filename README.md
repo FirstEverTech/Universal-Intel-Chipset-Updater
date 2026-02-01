@@ -1,19 +1,22 @@
 <a id="top"></a>
 # 🚀 **Universal Intel Chipset Device Updater**
 
-[![Version](https://img.shields.io/badge/Version-10.1--2025.11.8-red?style=for-the-badge)](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/releases)
+[![Version](https://img.shields.io/badge/Version-10.1--2026.02.1-red?style=for-the-badge)](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/releases)
 [![License](https://img.shields.io/badge/License-MIT-0056b3?style=for-the-badge)](LICENSE)
 [![Windows](https://img.shields.io/badge/Windows-10%2F11-blue?style=for-the-badge)](https://www.microsoft.com/windows)
 [![PowerShell](https://img.shields.io/badge/PowerShell-5.0+-blueviolet?style=for-the-badge)](https://learn.microsoft.com/en-us/powershell/scripting/install/install-powershell-on-windows?view=powershell-7.5)
 
-[![Security Audit](https://img.shields.io/badge/Audit_Score-9.1%2F10-0a8f08?style=for-the-badge)](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/blob/main/SECURITY-AUDITS.md)
+[![Security Audit](https://img.shields.io/badge/Audit_Score-9.4%2F10-0a8f08?style=for-the-badge)](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/blob/main/SECURITY-AUDITS.md)
 [![Reliability](https://img.shields.io/badge/Reliability-Excellent-0a8f08?style=for-the-badge)](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/wiki/Reliability)
 [![Issues](https://img.shields.io/github/issues/FirstEverTech/Universal-Intel-Chipset-Updater?style=for-the-badge)](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/issues)
-[![VirusTotal](https://img.shields.io/badge/VirusTotal-0%2F98-008631?style=for-the-badge)](https://www.virustotal.com/gui/url/df2dce8042ae4e9e7289aefc095e55361414c7f9d305db061ec7d52c0e7f9f9d)
+[![VirusTotal](https://img.shields.io/badge/VirusTotal-0%2F98-008631?style=for-the-badge)](https://www.virustotal.com/gui/url/4aff9d07464a6e85bb604ffba6e81a589c8df38eeb9d1a70ffbaac890805069c?nocache=1)
 
 ## 🔧 Automate Your Intel Chipset Updates
 
 **Universal Intel Chipset Device Updater** is an advanced, security-focused tool that automatically detects your Intel hardware and installs the latest official chipset **INF files** with enterprise-grade safety measures.
+
+For a detailed technical breakdown and historical context, see:  
+→ **[The Whole Truth About Intel Chipset Device Software](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/blob/main/docs/THE-WHOLE-TRUTH-ABOUT-INTEL-CHIPSET-DEVICE-SOFTWARE_EN_2026.md)**
 
 ---
 
@@ -95,27 +98,29 @@
 ---
 
 <a id="latest-release-highlights"></a>
-## 🎉 **2. Latest Release Highlights (v10.1-2025.11.8)**
+## 🎉 **2. Latest Release Highlights (v10.1-2026.02.1)**
 <a id="new-features-improvements"></a>
 ### 🆕 2.1 New Features & Improvements
-- **Enhanced platform detection**: Added automatic detection for Intel platforms that use Windows 11 24H2 inbox drivers (e.g., Meteor Lake)
-- **Improved user communication**: Clear informational messages when Windows inbox drivers are detected
-- **Smart exclusion system**: Platforms with `Package = None` in the database are automatically excluded from updates
-- **Better date handling**: Windows inbox driver dates now use digital signature dates from corresponding .cat files
+- **Extended installer support**: Added full support for MSI installers (in addition to existing EXE support)
+- **MSI integrity verification**: Added hash verification mechanism for MSI files from GitHub Archive repository
+- **Moved log file location**: Log file `chipset_update.log` moved to `C:\ProgramData` to avoid deletion during cleanup
+- **Fixed version display**: Added `$DisplayVersion` with correct regex for proper version formatting in UI
 <a id="technical-updates"></a>
 ### 🔧 2.2 Technical Updates
-- **Updated parsing logic**: Script now identifies Windows inbox-only platforms during hardware detection
-- **Enhanced error handling**: Improved debug messages and logging for platform detection
-- **Streamlined user experience**: Separate section for Windows inbox platforms in the output
+- **Dual Installer Support**: Script automatically detects installer type (EXE/MSI) and applies appropriate installation method
+- **MSI Verification**: Hash verification for MSI installers instead of digital signature (MSI files don't have Intel signatures)
+- **Archive Integration**: Added `$githubArchiveUrl` for downloading MSI hash files
 <a id="notes"></a>
 ### 📝 2.3 Notes
-- **No INF database changes**: This update only improves the detection and handling logic
-- **Backward compatible**: Fully compatible with existing INF database format
-- **Future-proof**: Automatically handles new platforms marked with `Package = None`
+- **This update is backward compatible**: Fully compatible with existing INF database format and previous versions
+- **MSI support**: Intel has started using MSI installers for newer Chipset Device Software distributions
+- **No changes to update checking mechanism**: The version check system remains the same
 <a id="bug-fixes"></a>
 ### 🐛 2.4 Bug Fixes
-- Fixed potential false positives for unsupported platforms
-- Improved handling of platforms without separate Intel Chipset Device Software packages
+- **Fixed Version Display**: Fixed bug causing incorrect version display in header
+- **MSI Installation**: Fixed installation for packages distributed as MSI (newer Intel versions)
+- **Log Persistence**: Log file is no longer deleted during temporary directory cleanup
+- **Keyboard Buffer**: Fixed issue with screen "skipping" due to buffered keys
 
 
 [↑ Back to top](#top)

@@ -1,4 +1,4 @@
-# 🛠️ Universal Intel Chipset Driver Updater — Making Of [PL]
+# 🛠️ O powstaniu Universal Intel Chipset Driver Updater
 ## Jak osobista obsesja przerodziła się w najpełniejszą bazę danych Intel INF, jaka kiedykolwiek powstała
 
 Od lat oprogramowanie Intel Chipset Device Software (dawniej: Intel Chipset INF Utility) jest jednym z najbardziej mylących pakietów wydanych przez głównego producenta sprzętu.  
@@ -55,7 +55,7 @@ Po wypakowaniu wszystkich pakietów uzyskałem:
 - 86783 relacji wersji
 
 Z tego zbioru danych wygenerowałem pierwszą w historii kompletną macierz wersji INF chipsetu Intela, dostępną teraz tutaj:  
-👉 [Lista najnowszych plików INF](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/blob/main/Intel_Chipset_INFs_Latest.md)
+👉 [Intel Chipset INFs Files List](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/blob/main/data/intel-chipset-infs-latest.md)
 
 Ta baza danych jest fundamentem narzędzia aktualizującego.
 
@@ -82,7 +82,7 @@ Aby znaleźć "najnowszy sterownik chipsetu Intela", musisz przeszukać 14 lat p
 
 Więc to zautomatyzowałem.
 
-<img width="977" height="460" alt="image" src="https://github.com/user-attachments/assets/68e19bd4-ab42-4fe4-9734-2566a284caa3" />
+<img width="979" height="512" alt="image" src="https://github.com/user-attachments/assets/28ff467e-f979-4233-885f-a2900a8b4d3e" />
 
 ---
 

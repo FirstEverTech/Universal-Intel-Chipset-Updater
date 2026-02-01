@@ -9,9 +9,11 @@ This document contains all reported issues, bugs, and their corresponding soluti
 - [Issue #2: PowerShell Execution Policy Restriction](#issue-2-powershell-execution-policy-restriction)
 - [Issue #3: Script Fails to Extract Intel Chipset Device Software](#issue-3-script-fails-to-extract-intel-chipset-device-software)
 - [Issue #4: Installer Cannot Continue Due to Missing or Corrupted Previous Intel Chipset Installation](#issue-4-installer-cannot-continue-due-to-missing-or-corrupted-previous-intel-chipset-installation)
+- [Issue #5: Change in Intel Chipset Software installer starting from version 10.1.20378.8757](#issue-5-change-in-intel-chipset-software-installer)
 
 ---
 
+<a id="issue-1-touchpad-stops-working-after-chipset-update"></a>
 ## Issue #1: Touchpad Stops Working After Chipset Update
 
 **Affected Systems**: Lenovo ThinkPad T480 and T480s laptops
@@ -36,6 +38,7 @@ Chipset INF update interferes with touchpad driver functionality.
 
 ---
 
+<a id="issue-2-powershell-execution-policy-restriction"></a>
 ## Issue #2: PowerShell Execution Policy Restriction
 
 **Affected Systems**: All Windows systems with default PowerShell settings
@@ -112,6 +115,7 @@ If the SFX continues to fail:
 
 ---
 
+<a id="issue-3-script-fails-to-extract-intel-chipset-device-software"></a>
 ## Issue #3: Script Fails to Extract Intel Chipset Device Software
 
 **Symptoms**:  
@@ -132,6 +136,7 @@ Corrupted download or temporary file conflicts.
 
 ---
 
+<a id="issue-4-installer-cannot-continue-due-to-missing-or-corrupted-previous-intel-chipset-installation"></a>
 ## Issue #4: Installer Cannot Continue Due to Missing or Corrupted Previous Intel Chipset Installation
 
 **Symptoms**:  
@@ -140,10 +145,9 @@ Corrupted download or temporary file conflicts.
 - Installation halts before INF processing begins
 
 <img width="503" height="396" alt="Intel_Issue" src="https://github.com/user-attachments/assets/a8e10bf2-8169-48b3-9f4f-7ab9ffcf60f2" />
-
+  
 **Cause**:  
-This issue occurs when a previous installation of *Intel Chipset Device Software* was not cleanly uninstalled or its original MSI package has become corrupted or missing.  
-This problem existed *before* using the Universal Intel Chipset Updater.
+This issue occurs when a previous installation of *Intel Chipset Device Software* was not cleanly uninstalled or its original MSI package has become corrupted or missing. This problem existed *before* using the Universal Intel Chipset Updater.
 
 **Solution**:
 
@@ -179,6 +183,53 @@ If neither appears, cleanup was incomplete.
 
 ---
 
+<a id="issue-5-change-in-intel-chipset-software-installer"></a>
+## Issue #5: Change in Intel Chipset Software installer starting from version 10.1.20378.8757
+
+Intel has decided to replace the existing small `SetupChipset.exe` installer (approximately 2-3 MB in size) with a "new" one that is 105-106 MB. The difference is that the new large EXE installer contains two MSI files for x86 and x64 systems (each about 10 MB), an over 80 MB .NET Framework 4.7.2 package installer, and a 0.5 MB SetupChipset1.cab file with the license agreement.  
+
+**And this is where logic completely breaks down.**
+
+This chipset software is clearly intended mainly for modern platforms from the last ~5 years, which in practice means **Windows 11** and sometimes **Windows 10**. Both operating systems already ship with **.NET Framework 4.8 / 4.8.1** built into the OS, and **.NET 4.7.2** cannot even be installed there — it is simply ignored because a newer version is already present.
+
+At the same time, these new chipset packages don’t actually install anything on older systems anyway. They may look like they update INF files, but in reality the packages only contain data for relatively recent Intel platforms. On older systems, nothing meaningful gets installed.
+
+So we end up in a bizarre situation:
+
+- old systems → nothing gets installed
+- new systems → .NET 4.7.2 is completely pointless
+- installer size → over 100× larger than the actual content it deploys
+
+And let’s be honest — no one running a modern Intel platform in 2026 is using Windows 7 or 8.1, and even if they were, these packages wouldn’t help them anyway.
+This is a very strange move, as the actual INF and CAT files contained in these archives take up only 0.5 MB after compression. All of this could be safely installed using a simple command in a BAT (batch) file:
+
+```batch
+@ECHO OFF
+start/wait "" pnputil -i -a "%~dp0Drivers\*.inf" /subdirs 
+exit
+```
+
+Alternatively, a small SFX installer (similar to mine) could be created to extract the archive and perform the installation, with its size not exceeding 1 MB. So why are they requiring users to download an installer that is over 100x larger?
+
+
+**Solution**:  
+Every new large installer can be "slimmed down" and reduced to approximately 10 MB by following these steps:
+
+1. Extract EXE: `SetupChipset.exe /extract`
+2. Delete: `SetupChipset.msi` file and the `.NET Framework 4.7.2` folder
+3. Rename: `SetupChipset.x64.msi` to `SetupChipset.msi`
+4. Open `SetupChipset.msi` in **[Orca 3.1.4000.1830](https://softpedia-secure-download.com/dl/3430724d90fd167de1765d4aea06f51d/697b864f/100079861/software/authoring/Orca.Msi)**
+5. Delete: `SETUPEXEDIR OR (REMOVE="ALL")` in the `LaunchCondition` table → OK
+6. Save the edited MSI file
+
+#### ⚠️ Make sure the edited `SetupChipset.msi` and `SetupChipset1.cab` files are in the same directory when running the MSI installer.
+
+In future versions of Universal Intel Chipset Software (starting from 2026), I will add the ability to install the latest reduced-size MSI versions. These versions, like the old installer, will install silently in the background and update all INF files for available Intel devices in the system. Please note that the new installer appears in the list of installed programs as `Chipset Setup`, not as `Intel(R) Chipset Device Software`.
+
+[↑ Back to top](#top)
+
+---
+
 ## 🔍 Reporting New Issues
 
 If you encounter a new issue not listed here, please:
@@ -190,4 +241,4 @@ If you encounter a new issue not listed here, please:
 
 ---
 
-Last Updated: 26/11/2025
+Last Updated: 29/01/2026
