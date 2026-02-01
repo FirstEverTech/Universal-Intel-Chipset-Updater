@@ -95,27 +95,29 @@
 ---
 
 <a id="latest-release-highlights"></a>
-## 🎉 **2. Latest Release Highlights (v10.1-2025.11.8)**
+## 🎉 **2. Latest Release Highlights (v10.1-2026.02.1)**
 <a id="new-features-improvements"></a>
 ### 🆕 2.1 New Features & Improvements
-- **Enhanced platform detection**: Added automatic detection for Intel platforms that use Windows 11 24H2 inbox drivers (e.g., Meteor Lake)
-- **Improved user communication**: Clear informational messages when Windows inbox drivers are detected
-- **Smart exclusion system**: Platforms with `Package = None` in the database are automatically excluded from updates
-- **Better date handling**: Windows inbox driver dates now use digital signature dates from corresponding .cat files
+- **Extended installer support**: Added full support for MSI installers (in addition to existing EXE support)
+- **MSI integrity verification**: Added hash verification mechanism for MSI files from GitHub Archive repository
+- **Moved log file location**: Log file `chipset_update.log` moved to `C:\ProgramData` to avoid deletion during cleanup
+- **Fixed version display**: Added `$DisplayVersion` with correct regex for proper version formatting in UI
 <a id="technical-updates"></a>
 ### 🔧 2.2 Technical Updates
-- **Updated parsing logic**: Script now identifies Windows inbox-only platforms during hardware detection
-- **Enhanced error handling**: Improved debug messages and logging for platform detection
-- **Streamlined user experience**: Separate section for Windows inbox platforms in the output
+- **Dual Installer Support**: Script automatically detects installer type (EXE/MSI) and applies appropriate installation method
+- **MSI Verification**: Hash verification for MSI installers instead of digital signature (MSI files don't have Intel signatures)
+- **Archive Integration**: Added `$githubArchiveUrl` for downloading MSI hash files
 <a id="notes"></a>
 ### 📝 2.3 Notes
-- **No INF database changes**: This update only improves the detection and handling logic
-- **Backward compatible**: Fully compatible with existing INF database format
-- **Future-proof**: Automatically handles new platforms marked with `Package = None`
+- **This update is backward compatible**: Fully compatible with existing INF database format and previous versions
+- **MSI support**: Intel has started using MSI installers for newer Chipset Device Software distributions
+- **No changes to update checking mechanism**: The version check system remains the same
 <a id="bug-fixes"></a>
 ### 🐛 2.4 Bug Fixes
-- Fixed potential false positives for unsupported platforms
-- Improved handling of platforms without separate Intel Chipset Device Software packages
+- **Fixed Version Display**: Fixed bug causing incorrect version display in header
+- **MSI Installation**: Fixed installation for packages distributed as MSI (newer Intel versions)
+- **Log Persistence**: Log file is no longer deleted during temporary directory cleanup
+- **Keyboard Buffer**: Fixed issue with screen "skipping" due to buffered keys
 
 
 [↑ Back to top](#top)
