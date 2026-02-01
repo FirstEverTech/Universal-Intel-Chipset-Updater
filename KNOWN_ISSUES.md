@@ -188,6 +188,19 @@ If neither appears, cleanup was incomplete.
 
 Intel has decided to replace the existing small `SetupChipset.exe` installer (approximately 2-3 MB in size) with a "new" one that is 105-106 MB. The difference is that the new large EXE installer contains two MSI files for x86 and x64 systems (each about 10 MB), an over 80 MB .NET Framework 4.7.2 package installer, and a 0.5 MB SetupChipset1.cab file with the license agreement.  
 
+**And this is where logic completely breaks down.**
+
+This chipset software is clearly intended mainly for modern platforms from the last ~5 years, which in practice means **Windows 11** and sometimes **Windows 10**. Both operating systems already ship with **.NET Framework 4.8 / 4.8.1** built into the OS, and **.NET 4.7.2** cannot even be installed there — it is simply ignored because a newer version is already present.
+
+At the same time, these new chipset packages don’t actually install anything on older systems anyway. They may look like they update INF files, but in reality the packages only contain data for relatively recent Intel platforms. On older systems, nothing meaningful gets installed.
+
+So we end up in a bizarre situation:
+
+- old systems → nothing gets installed
+- new systems → .NET 4.7.2 is completely pointless
+- installer size → over 100× larger than the actual content it deploys
+
+And let’s be honest — no one running a modern Intel platform in 2026 is using Windows 7 or 8.1, and even if they were, these packages wouldn’t help them anyway.
 This is a very strange move, as the actual INF and CAT files contained in these archives take up only 0.5 MB after compression. All of this could be safely installed using a simple command in a BAT (batch) file:
 
 ```batch
