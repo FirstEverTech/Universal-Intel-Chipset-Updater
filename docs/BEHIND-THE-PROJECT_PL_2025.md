@@ -1,4 +1,4 @@
-# 🛠️ Universal Intel Chipset Driver Updater — Making Of [PL]
+# 🛠️ O powstaniu Universal Intel Chipset Driver Updater
 ## Jak osobista obsesja przerodziła się w najpełniejszą bazę danych Intel INF, jaka kiedykolwiek powstała
 
 Od lat oprogramowanie Intel Chipset Device Software (dawniej: Intel Chipset INF Utility) jest jednym z najbardziej mylących pakietów wydanych przez głównego producenta sprzętu.  
