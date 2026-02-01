@@ -130,7 +130,7 @@ It's open source, MIT licensed, digitally signed, and has been independently aud
 
 ## The Bottom Line
 
-Intel Chipset Device Software renames devices. It has done this for 25 years. It will probably continue doing this for another 25 years, because nobody at Intel seems to care enough to fix it or even acknowledge how broken the distribution has become.
+Intel Chipset Device Software renames devices. It has been doing this for 25 years and will likely continue for another 25, because although Intel maintains the tool, it works in a completely pointless way: on new hardware it installs the INF files, but on older hardware it only pretends to install anything, doing absolutely nothing.
 
 In the meantime, I built something better — not because it was technically difficult, but because I actually sat down and thought clearly about what the problem was, what the solution should be, and how to build it properly.
 
