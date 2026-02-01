@@ -83,6 +83,7 @@ Cała instalacja mogłaby zostać wykonana jednym poleceniem:
 
 ```batch
 pnputil /i /a "Drivers\*.inf" /subdirs
+```
 
 Albo, jeśli chcesz być uprzejmy, mały archiwum SFX, które je wyodrębnia i uruchamia to polecenie. Całkowity rozmiar: poniżej 1 MB.
 
