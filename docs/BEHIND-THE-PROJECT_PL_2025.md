@@ -78,7 +78,7 @@ Co gorsza:
 - Pakiety OEM czasami zawierają nowsze wersje niż najnowszy pakiet samego Intela
 
 Innymi słowy:  
-Aby znaleźć "najnowszy sterownik chipsetu Intela", musisz przeszukać 14 lat pakietów i skrzyżować dane z tysięcy plików.
+Aby znaleźć "najnowszy pliki INF dla chipsetu Intela", musisz przeszukać 14 lat pakietów i skrzyżować dane z tysięcy plików.
 
 Więc to zautomatyzowałem.
 
@@ -107,7 +107,7 @@ Wykorzystuje wieloetapowy proces weryfikacji:
 - Bezpieczna instalacja
 - Opcjonalny restart systemu
 
-Ale w nowym wydaniu, bezpieczeństwo poczyniło ogromny skok naprzód.
+W nowej wersji postawiono ogromny nacisk na bezpieczeństwo.
 
 ---
 
