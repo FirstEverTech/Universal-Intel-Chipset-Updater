@@ -27,6 +27,7 @@ Publiczne pakiety Intela pokazują wersje takie jak:
 | 2017 | 10.1.2.86       | 10.1.2.86   | ✅ Pełne | Ostatnia wersja INF 10.1.2.xx    |
 | 2021 | 10.1.18981.6008 | 10.1.3.2    | ✅ Pełne | Ostatnia wersja INF 10.1.xxxx    |
 | 2025 | 10.1.20266.8668 | Brak        | ❌ Brak HWIDs | Brak wpisów dla 1Dxx/1Exx        |
+| 2026 | 10.1.20404.8794 | Brak        | ❌ Brak HWIDs | Brak wpisów dla 1Dxx/1Exx        |
 
 ...ale wersje instalatora nie mówią nic o tym, co faktycznie zostanie zainstalowane.
 
@@ -41,7 +42,7 @@ Oprogramowanie Intel Chipset Device Software nie jest pakietem sterowników. To 
 
 ## 📜 2. Śledzenie 14 lat historii plików INF
 
-Aby zrozumieć, co Intel faktycznie wydał, pobrałem 90 różnych instalatorów chipsetu Intela, od wersji 10.0.13.0 do 10.1.20314.8688, w tym:
+Aby zrozumieć, co Intel faktycznie wydał, pobrałem 93 różnych instalatorów chipsetu Intela, od wersji 10.0.13.0 do 10.1.20404.8794, w tym:
 
 - Publiczne pobrania Intela
 - Pakiety OEM (ASUS/MSI/Gigabyte/Dell/EVGA)
