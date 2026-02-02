@@ -79,7 +79,7 @@ Worse:
 - OEM packages sometimes contain newer versions than Intel’s own latest package
 
 In other words:  
-To find the “latest Intel chipset driver” you must search through 14 years of packages and cross-reference thousands of files.  
+To find the “latest Intel chipset INF file” you must search through 14 years of packages and cross-reference thousands of files.  
 
 So I automated it.
 
