@@ -27,6 +27,7 @@ Intel’s public packages list versions like:
 | 2017 | 10.1.2.86 | 10.1.2.86 | ✅ Full | Last INF Version 10.1.2.xx |
 | 2021 | 10.1.18981.6008 | 10.1.3.2 | ✅ Full | Last INF Version 10.1.xxxx |
 | 2025 | 10.1.20266.8668 | None | ❌ No HWIDs | Missing 1Dxx/1Exx entries |
+| 2026 | 10.1.20404.8794 | None | ❌ No HWIDs | Missing 1Dxx/1Exx entries |
 
 …but those installer versions tell you nothing about what will actually install.
 
@@ -42,7 +43,7 @@ It’s a history museum packed into a ZIP archive.
 
 ## 📜 2. Tracking Down 14 Years of INF Files
 
-To understand what Intel actually shipped, I downloaded 90 different Intel chipset installers, from version 10.0.13.0 up to 10.1.20314.8688, including:
+To understand what Intel actually shipped, I downloaded 93 different Intel chipset installers, from version 10.0.13.0 up to 10.1.20404.8794, including:
 
 - Intel public downloads
 - OEM bundles (ASUS/MSI/Gigabyte/Dell/EVGA)
