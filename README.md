@@ -132,12 +132,12 @@ This project has undergone comprehensive analysis by multiple AI security expert
 
 | Auditor | Score | Key Assessment |
 |---------|-------|----------------|
-| **[Grok](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/blob/main/docs/audit-reports/2025-11-21-GROK-AUDIT.md)** | 9.7/10 | *"Highest score ever given to a community driver utility - Safe for corporate deployment"* |
-| **[ChatGPT](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/blob/main/docs/audit-reports/2025-11-21-CHATGPT-AUDIT.md)** | 9.4/10 | *"Safest, most stable, and most professionally engineered version"* |
-| **[Gemini](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/blob/main/docs/audit-reports/2025-11-21-GEMINI-AUDIT.md)** | 9.0/10 | *"Exceeds standards expected of community-developed tools"* |
-| **[DeepSeek](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/blob/main/docs/audit-reports/2025-11-21-DEEPSEEK-AUDIT.md)** | 8.7/10 | *"A high-quality, security-conscious implementation that exceeds industry standards"* |
-| **[Copilot](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/blob/main/docs/audit-reports/2025-11-21-COPILOT-AUDIT.md)** | 8.6/10 | *"Strong project with excellent transparency and security improvements"* |
-| **[Claude](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/blob/main/docs/audit-reports/2025-11-21-CLAUDE-AUDIT.md)** | 8.3/10 | *"Professionally executed tool for automating Intel chipset updates"* |
+| **[Grok](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/blob/main/docs/audit-reports/2026-02-01-GROK-AUDIT.md)** | 9.8/10 | *"This is currently the highest score I have ever given to a community driver-related utility."* |
+| **[ChatGPT](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/blob/main/docs/audit-reports/2026-02-01-CHATGPT-AUDIT.md)** | 9.6/10 | *"It does not behave like a hobby script, but like a carefully scoped system utility."* |
+| **[Gemini](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/blob/main/docs/audit-reports/2026-02-01-GEMINI-AUDIT.md)** | 9.5/10 | *"This tool is superior to many generic driver update solutions. It is safe, transparent, and highly efficient."* |
+| **[Copilot](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/blob/main/docs/audit-reports/2026-02-01-COPILOT-AUDIT.md)** | 9.4/10 | *"It is one of the most complete and technically impressive PowerShell-based hardware automation tools publicly available."* |
+| **[DeepSeek](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/blob/main/docs/audit-reports/2026-02-01-DEEPSEEK-AUDIT.md)** | 9.2/10 | *"The Universal Intel Chipset Device Updater represents a remarkable achievement in independent software development."* |
+| **[Claude](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/blob/main/docs/audit-reports/2026-02-01-CLAUDE-AUDIT.md)** | 8.7/10 | *"Automating Intel chipset INF updates for enthusiast and IT users — this is the best open-source option available."* |
 
 *For detailed audit reports and methodology, see [SECURITY-AUDITS.md](SECURITY-AUDITS.md).*
 
