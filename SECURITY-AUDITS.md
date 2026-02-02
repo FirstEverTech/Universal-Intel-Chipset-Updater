@@ -59,7 +59,7 @@ The Universal Intel Chipset Updater has evolved from a sophisticated script coll
 ---
 
 ![Security Audit](https://img.shields.io/badge/Audit_Score-8.6%2F10-brightgreen?style=for-the-badge)
-![Reliability](https://img.shields.io/badge/Reliability-Very_Good-0a8f08?style=for-the-badge)
+![Reliability](https://img.shields.io/badge/Reliability-Excellent-success?style=for-the-badge)
 ![Verification](https://img.shields.io/badge/Multi--Layer_Passed-green?style=for-the-badge)
 
 ## 🔒 Copilot – Audit Report – February 1, 2026
@@ -75,14 +75,14 @@ The Universal Intel Chipset Updater has evolved into a highly capable, productio
 ---
 
 ![Security Audit](https://img.shields.io/badge/Audit_Score-8.7%2F10-brightgreen?style=for-the-badge)
-![Reliability](https://img.shields.io/badge/Reliability-Very_Good-0a8f08?style=for-the-badge)
+![Reliability](https://img.shields.io/badge/Reliability-Excellent-success?style=for-the-badge)
 ![Verification](https://img.shields.io/badge/Multi--Layer_Passed-green?style=for-the-badge)
 
 ## 🔒 DeepSeek – Audit Report – February 1, 2026
 
 The Universal Intel Chipset Device Updater represents a remarkable achievement in independent software development. The project has matured from a functional utility into a comprehensive, security-conscious driver management solution that rivals commercial alternatives.
 
-**Latest Audit Score: 9.4/10** - Very Good Security & Reliability
+**Latest Audit Score: 9.2/10** - Very Good Security & Reliability
 
 > "The developer, while not a professional programmer, has created a system that demonstrates deep understanding of Windows driver infrastructure, security best practices, and user-centered design principles."
 
