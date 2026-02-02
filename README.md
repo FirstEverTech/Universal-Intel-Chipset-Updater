@@ -99,28 +99,54 @@ For a detailed technical breakdown and historical context, see:
 
 <a id="latest-release-highlights"></a>
 ## 🎉 **2. Latest Release Highlights (v10.1-2026.02.1)**
+
 <a id="new-features-improvements"></a>
 ### 🆕 2.1 New Features & Improvements
-- **Extended installer support**: Added full support for MSI installers (in addition to existing EXE support)
-- **MSI integrity verification**: Added hash verification mechanism for MSI files from GitHub Archive repository
-- **Moved log file location**: Log file `chipset_update.log` moved to `C:\ProgramData` to avoid deletion during cleanup
-- **Fixed version display**: Added `$DisplayVersion` with correct regex for proper version formatting in UI
+
+#### **Hardware-Accurate Platform Separation** ⭐
+- **Fixed Intel's 25-year naming error**: New `Generate-HardwareAccurateMD.ps1` script corrects Intel's oversimplified platform grouping
+- **Proper component separation**: Meteor Lake now split into:
+  - `MeteorLake SoC` (CPU root)
+  - `MeteorLake PCH-N` (mobile low-power)
+  - `MeteorLake PCH-H` (mobile high-performance)
+  - `MeteorLake PCH-S` (desktop)
+- **X79/X99 platform correction**: Properly separates CPU root from PCH chipset devices
+- **Backward compatible**: Works with existing database format - no updater changes needed
+
+#### **Installer Support**
+- **MSI installer support**: Added full support for Intel's new MSI-based distributions
+- **Dual verification**: EXE (digital signature) + MSI (SHA256 hash) verification
+- **Archive integration**: Added GitHub archive repository for MSI hash files
+
 <a id="technical-updates"></a>
 ### 🔧 2.2 Technical Updates
-- **Dual Installer Support**: Script automatically detects installer type (EXE/MSI) and applies appropriate installation method
-- **MSI Verification**: Hash verification for MSI installers instead of digital signature (MSI files don't have Intel signatures)
-- **Archive Integration**: Added `$githubArchiveUrl` for downloading MSI hash files
+
+#### **Core Improvements**
+- **Log persistence**: Moved `chipset_update.log` to `C:\ProgramData\` (survives cleanup)
+- **Version display fix**: Correct regex for proper UI formatting
+- **Keyboard buffer fix**: Eliminated screen "skipping" during pauses
+- **Enhanced debug mode**: More detailed process tracking
+
+#### **New Components**
+- **`Generate-HardwareAccurateMD.ps1`**: Standalone script for database correction
+- **`intel-chipset-infs-latest-v2.md`**: Hardware-accurate database output
+- **`installer-list.csv`**: Clean installer package listing
+
 <a id="notes"></a>
 ### 📝 2.3 Notes
-- **This update is backward compatible**: Fully compatible with existing INF database format and previous versions
-- **MSI support**: Intel has started using MSI installers for newer Chipset Device Software distributions
-- **No changes to update checking mechanism**: The version check system remains the same
+
+- **Backward compatible**: Works with all previous INF database formats
+- **No updater changes required**: Platform naming fix is database-level only
+- **Intel's naming chaos**: Corrects 25 years of incorrect platform grouping
+- **Maintains existing functionality**: All existing features remain unchanged
+
 <a id="bug-fixes"></a>
 ### 🐛 2.4 Bug Fixes
-- **Fixed Version Display**: Fixed bug causing incorrect version display in header
-- **MSI Installation**: Fixed installation for packages distributed as MSI (newer Intel versions)
-- **Log Persistence**: Log file is no longer deleted during temporary directory cleanup
-- **Keyboard Buffer**: Fixed issue with screen "skipping" due to buffered keys
+
+- **MSI installation**: Fixed installation for Intel's newer MSI-based packages
+- **Log file deletion**: Logs no longer removed during temporary cleanup
+- **Screen skipping**: Eliminated keyboard buffer issues during pauses
+- **Version display**: Fixed incorrect formatting in UI headers
 
 
 [↑ Back to top](#top)
