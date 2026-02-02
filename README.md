@@ -128,7 +128,7 @@ For a detailed technical breakdown and historical context, see:
 <a id="independent-security-audits"></a>
 ## 🔍 **3. Independent Security Audits**
 
-This project has undergone comprehensive analysis by multiple AI security experts to ensure code quality and reliability. The tool achieved an **average security score of 9.1/10** across all independent assessments.
+This project has undergone comprehensive analysis by multiple AI security experts to ensure code quality and reliability. The tool achieved an **average security score of 9.4/10** across all independent assessments.
 
 | Auditor | Score | Key Assessment |
 |---------|-------|----------------|
