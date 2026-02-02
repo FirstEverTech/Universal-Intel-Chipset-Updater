@@ -220,28 +220,28 @@ The Intel Chipset Device Software installs the Windows INF files. An INF is a te
 | LynxPointLPSystem.inf | 10.1.18981.6008 | 10.1.3.2 | 15/06/2021* | 9C10, 9C11, 9C12, 9C13, 9C14, 9C15, 9C16, 9C17, 9C18, 9C19, 9C1A, 9C1B, 9C1C, 9C1D, 9C1E, 9C1F, 9C22, 9C23, 9C24, 9C40, 9C41, 9C42, 9C43, 9C44, 9C45, 9C46, 9C47, 9C48, 9C49, 9C4A, 9C4B, 9C4C, 9C4D, 9C4E, 9C4F, 9C50, 9C51, 9C52, 9C53, 9C54, 9C55, 9C56, 9C57, 9C58, 9C59, 9C5A, 9C5B, 9C5C, 9C5D, 9C5E, 9C5F |
 
 #### MeteorLake PCH-H
-**Generation:** 14th Gen Core (Meteor Lake) â€“ Mobile PCH (High Performance)
+**Generation:** 14th Gen Core (Meteor Lake) - Mobile PCH (High Performance)
 
 | INF | Package | Version | Date | HWIDs |
 |--------|---------|---------|------|--------|
 | MeteorLakePCH-HSystem.inf | 10.1.19913.8607 | 10.1.55.3 | 09/07/2024* | 7E48, 7E49 |
 
 #### MeteorLake PCH-N
-**Generation:** 14th Gen Core (Meteor Lake) â€“ Mobile PCH (Low Power)
+**Generation:** 14th Gen Core (Meteor Lake) - Mobile PCH (Low Power)
 
 | INF | Package | Version | Date | HWIDs |
 |--------|---------|---------|------|--------|
 | MeteorLakeSystem.inf, MeteorLakeSystemNorthpeak.inf | 10.1.20404.8794 | 10.1.47.12 | 07/12/2025* | AE22, AE23, AE24 |
 
 #### MeteorLake PCH-S
-**Generation:** 14th Gen Core (Meteor Lake) â€“ Desktop PCH
+**Generation:** 14th Gen Core (Meteor Lake) - Desktop PCH
 
 | INF | Package | Version | Date | HWIDs |
 |--------|---------|---------|------|--------|
 | MeteorLakePCH-SSystem.inf | 10.1.20404.8794 | 10.1.51.10 | 07/12/2025* | 7F00, 7F01, 7F02, 7F03, 7F04, 7F05, 7F06, 7F07, 7F08, 7F09, 7F0A, 7F0B, 7F0C, 7F0D, 7F0E, 7F0F, 7F10, 7F11, 7F12, 7F13, 7F14, 7F15, 7F16, 7F17, 7F18, 7F19, 7F1A, 7F1B, 7F1C, 7F1D, 7F1E, 7F1F, 7F20, 7F21, 7F23, 7F24, 7F2F, 7F58, 7F59, 7F69 |
 
 #### MeteorLake SoC
-**Generation:** 14th Gen Core (Meteor Lake) â€“ Mobile SoC
+**Generation:** 14th Gen Core (Meteor Lake) - Mobile SoC
 
 | INF | Package | Version | Date | HWIDs |
 |--------|---------|---------|------|--------|
@@ -360,7 +360,7 @@ The Intel Chipset Device Software installs the Windows INF files. An INF is a te
 ### Workstation/Enthusiast
 
 #### HaswellE/BroadwellE CPU Root
-**Generation:** X99 (Haswell-E/Broadwell-E) â€“ HEDT Platform CPU
+**Generation:** X99 (Haswell-E/Broadwell-E) - HEDT Platform CPU
 
 | INF | Package | Version | Date | HWIDs |
 |--------|---------|---------|------|--------|
@@ -381,7 +381,7 @@ The Intel Chipset Device Software installs the Windows INF files. An INF is a te
 | IvyTownSystem.inf | 10.1.18981.6008 | 10.1.3.2 | 15/06/2021* | 0E00, 0E01, 0E02, 0E03, 0E04, 0E05, 0E06, 0E07, 0E08, 0E09, 0E0A, 0E0B, 0E10, 0E13, 0E17, 0E18, 0E1C, 0E1D, 0E1E, 0E1F, 0E20, 0E21, 0E22, 0E23, 0E24, 0E25, 0E26, 0E27, 0E28, 0E29, 0E2A, 0E2C, 0E2E, 0E2F, 0E30, 0E32, 0E33, 0E34, 0E36, 0E37, 0E38, 0E3A, 0E3E, 0E3F, 0E40, 0E41, 0E43, 0E44, 0E45, 0E47, 0E60, 0E68, 0E6A, 0E6B, 0E6C, 0E6D, 0E71, 0E74, 0E75, 0E77, 0E79, 0E7D, 0E7F, 0E80, 0E81, 0E83, 0E84, 0E85, 0E87, 0E90, 0E93, 0E94, 0E95, 0EA0, 0EA8, 0EAA, 0EAB, 0EAC, 0EAD, 0EAE, 0EAF, 0EB0, 0EB1, 0EB2, 0EB3, 0EB4, 0EB5, 0EB6, 0EB7, 0EBC, 0EBE, 0EBF, 0EC0, 0EC1, 0EC2, 0EC3, 0EC4, 0EC8, 0EC9, 0ECA, 0ED8, 0ED9, 0EDC, 0EDD, 0EDE, 0EDF, 0EE0, 0EE1, 0EE2, 0EE3, 0EE4, 0EE5, 0EE6, 0EE7, 0EE8, 0EE9, 0EEA, 0EEB, 0EEC, 0EED, 0EEE, 0EF0, 0EF1, 0EF2, 0EF3, 0EF4, 0EF5, 0EF6, 0EF7, 0EF8, 0EF9, 0EFA, 0EFB, 0EFC, 0EFD |
 
 #### IvyTown CPU Root
-**Generation:** X79 (Ivy Bridge-E) â€“ Enthusiast Platform CPU
+**Generation:** X79 (Ivy Bridge-E) - Enthusiast Platform CPU
 
 | INF | Package | Version | Date | HWIDs |
 |--------|---------|---------|------|--------|
@@ -395,14 +395,14 @@ The Intel Chipset Device Software installs the Windows INF files. An INF is a te
 | JaketownSystem.inf | 10.1.18981.6008 | 10.1.3.2 | 15/06/2021* | 3C00, 3C01, 3C02, 3C03, 3C04, 3C05, 3C06, 3C07, 3C08, 3C09, 3C0A, 3C0B, 3C0D, 3C0E, 3C0F, 3C20, 3C21, 3C22, 3C23, 3C24, 3C25, 3C26, 3C27, 3C28, 3C2A, 3C2C, 3C2E, 3C2F, 3C40, 3C41, 3C42, 3C43, 3C44, 3C45, 3C46, 3C71, 3C80, 3C83, 3C84, 3C86, 3C90, 3C93, 3C94, 3C96, 3CA0, 3CA8, 3CAA, 3CAB, 3CAC, 3CAD, 3CAE, 3CB0, 3CB1, 3CB2, 3CB3, 3CB4, 3CB5, 3CB6, 3CB7, 3CB8, 3CC0, 3CC1, 3CC2, 3CD0, 3CE0, 3CE3, 3CE4, 3CE6, 3CE8, 3CE9, 3CEA, 3CEB, 3CEC, 3CED, 3CEE, 3CEF, 3CF4, 3CF5, 3CF6 |
 
 #### Patsburg PCH
-**Generation:** C600/X79 (Patsburg) â€“ Server/Workstation Chipset
+**Generation:** C600/X79 (Patsburg) - Server/Workstation Chipset
 
 | INF | Package | Version | Date | HWIDs |
 |--------|---------|---------|------|--------|
 | PatsburgSystem.inf, PatsburgUSB.inf | 10.1.18981.6008 | 10.1.3.2 | 15/06/2021* | 1D10, 1D11, 1D12, 1D13, 1D14, 1D15, 1D16, 1D17, 1D18, 1D19, 1D1A, 1D1B, 1D1C, 1D1D, 1D1E, 1D1F, 1D22, 1D24, 1D25, 1D26, 1D2D, 1D70, 1D71, 1D72, 1D73, 1D74, 1D76, 1D77 |
 
 #### Wellsburg PCH
-**Generation:** C610/X99 (Wellsburg) â€“ Workstation Chipset
+**Generation:** C610/X99 (Wellsburg) - Workstation Chipset
 
 | INF | Package | Version | Date | HWIDs |
 |--------|---------|---------|------|--------|
@@ -572,4 +572,5 @@ The Intel Chipset Device Software installs the Windows INF files. An INF is a te
   - Fallback: .cat file's last modification date
 
 **Source:** [Universal Intel Chipset Device Updater](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater) / **Project by:** [Marcin Grygiel](https://www.linkedin.com/in/marcin-grygiel/) / **Last Update:** 01-02-2026
+
 
