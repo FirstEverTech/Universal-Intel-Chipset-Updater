@@ -15,6 +15,8 @@
 
 **Universal Intel Chipset Device Updater** is an advanced, security-focused tool that automatically detects your Intel hardware and installs the latest official chipset **INF files** with enterprise-grade safety measures.
 
+This project was built through a pragmatic collaboration between human expertise and AI-assisted tooling.
+
 For a detailed technical breakdown and historical context, see:  
 → **[The Whole Truth About Intel Chipset Device Software](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/blob/main/docs/THE-WHOLE-TRUTH-ABOUT_EN_2026.md)**
 
@@ -653,7 +655,7 @@ This project is maintained in my free time. Your support helps cover development
 
 **⭐ If this project helped you, please give it a star! ⭐**
 
-*Keeping the community updated, one chipset at a time!*
+<img width="480"  alt="Marcin Grygiel   AI" src="https://github.com/user-attachments/assets/452c8553-5059-47c6-9ff9-d73443bb6c06" />
 
 </div>
 
