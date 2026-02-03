@@ -368,7 +368,7 @@ Get-Intel-HWIDs.bat
 <a id="independent-audit-results"></a>
 ## 📊 **13. Independent Audit Results**
 
-This project has been thoroughly audited by 6 independent AI security experts, achieving an average score of 9.1/10. Multiple auditors confirmed it's the safest and most stable version ever released, suitable for daily use, corporate deployment, and technician toolkits.
+This project has been thoroughly audited by 6 independent AI security experts, achieving an average score of 9.4/10. Multiple auditors confirmed it's the safest and most stable version ever released, suitable for daily use, corporate deployment, and technician toolkits.
 
 [View Full Audit Report](SECURITY-AUDITS.md) • [Security Policy](SECURITY.md)
 
@@ -398,6 +398,12 @@ For current limitations and workarounds, please see: [KNOWN_ISSUES.md](KNOWN_ISS
   
 - `audit-reports/` - Security audit reports
 
+  - [2026-02-01-CHATGPT-AUDIT.md](docs/audit-reports/2026-02-01-CHATGPT-AUDIT.md)
+  - [2026-02-01-CLAUDE-AUDIT.md](docs/audit-reports/2026-02-01-CLAUDE-AUDIT.md)
+  - [2026-02-01-COPILOT-AUDIT.md](docs/audit-reports/2026-02-01-COPILOT-AUDIT.md)
+  - [2026-02-01-DEEPSEEK-AUDIT.md](docs/audit-reports/2026-02-01-DEEPSEEK-AUDIT.md)
+  - [2026-02-01-GEMINI-AUDIT.md](docs/audit-reports/2026-02-01-GEMINI-AUDIT.md)
+  - [2026-02-01-GROK-AUDIT.md](docs/audit-reports/2026-02-01-GROK-AUDIT.md)
   - [2025-11-21-CHATGPT-AUDIT.md](docs/audit-reports/2025-11-21-CHATGPT-AUDIT.md)
   - [2025-11-21-CLAUDE-AUDIT.md](docs/audit-reports/2025-11-21-CLAUDE-AUDIT.md)
   - [2025-11-21-COPILOT-AUDIT.md](docs/audit-reports/2025-11-21-COPILOT-AUDIT.md)
