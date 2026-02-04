@@ -80,6 +80,8 @@ For a detailed technical breakdown and historical context, see:
 17. [**Compatibility Matrix**](#compatibility-matrix)  
    17.1 [Intel Platform Support](#intel-platform-support)  
    17.2 [Windows Version Support](#windows-version-support)  
+   17.3 [System Requirements](#system-requirements)  
+   17.4 [Legacy System Notes](#system-legacy-notes)  
 18. [**Performance Metrics**](#performance-metrics)  
    18.1 [Typical Execution Times](#typical-execution-times)  
    18.2 [Resource Usage](#resource-usage)  
@@ -515,6 +517,7 @@ The FirstEver.tech certificate is self-signed for project authenticity. Public t
 | 6th-7th Gen | Skylake/Kaby Lake | ✅ Full | Mature support |
 | 4th-5th Gen | Haswell/Broadwell | ✅ Full | Legacy support |
 | 2nd-3rd Gen | Sandy/Ivy Bridge | ✅ Full | Extended support |
+
 <a id="windows-version-support"></a>
 ### 17.2 Windows Version Support
 | Version | Build | Status | Notes |
@@ -522,7 +525,38 @@ The FirstEver.tech certificate is self-signed for project authenticity. Public t
 | Windows 11 | All builds | ✅ Full | Optimized support |
 | Windows 10 | 22H2+ | ✅ Full | Recommended |
 | Windows 10 | 21H2 | ✅ Full | Stable |
-| Windows 10 | 2004-21H1 | ✅ Full | Legacy |
+| Windows 10 | 21H1 (19043) | ✅ Full | Legacy |
+| Windows 10 | 20H2 (19042) | ✅ Full | Legacy |
+| Windows 10 | 2004 (19041) | ✅ Full | Legacy |
+| Windows 10 | 1909 (18363) | ✅ Full | Legacy |
+| Windows 10 | 1903 (18362) | ✅ Full | Legacy |
+| Windows 10 | 1809 (17763) | ✅ Limited | Requires .NET 4.7.2+ for TLS 1.2 support |
+| Windows 10 | LTSB 2016 (1607) | ⚠️ Limited | Manual updates required for TLS 1.2 |
+| Windows 10 | LTSB 2015 (1507) | ⚠️ Limited | Manual updates required for TLS 1.2 |
+
+<a id="system-requirements"></a>
+### 17.3 System Requirements
+| Component | Minimum | Recommended | Notes |
+|-----------|---------|-------------|-------|
+| Windows Version | 10 1809 (17763) | 11 22H2+ | 1809 requires .NET 4.7.2+ |
+| .NET Framework | 4.6.1 | 4.8+ | 4.7.2+ for TLS 1.2 on older Windows |
+| PowerShell | 5.1 | 7.3+ | Windows PowerShell 5.1 included |
+| Administrator | Required | Required | For driver installation |
+| Internet | Optional | Recommended | For hash verification |
+| RAM | 2 GB | 4 GB+ | For INF extraction/installation |
+| Disk Space | 500 MB | 1 GB+ | Temporary files during installation |
+
+<a id="system-legacy-notes"></a>
+### 17.4 Legacy System Notes
+- **Windows 10 1809 (17763) and newer**: Full TLS 1.2 support out-of-the-box
+- **Windows 10 LTSB 2015/2016**: May require manual installation of:
+  - [.NET Framework 4.8](https://go.microsoft.com/fwlink/?linkid=2088631)
+  - [KB4474419](https://catalog.update.microsoft.com/Search.aspx?q=KB4474419) (SHA-2 update)
+- **The tool automatically**: 
+  - Detects Windows version limitations
+  - Warns about potential connectivity issues
+  - Provides fallback options for offline operation
+- **Basic INF detection and installation** works even without internet connectivity
 
 
 [↑ Back to top](#top)
