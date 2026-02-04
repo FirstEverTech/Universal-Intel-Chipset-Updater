@@ -669,7 +669,7 @@ This project is maintained in my free time. Your support helps cover development
 - Review security audit reports for confidence
 <a id="need-help"></a>
 ### 25.3 Need Help?
-- 📚 [Full Documentation](docs/BEHIND-THE-PROJECT_EN.md)
+- 📚 [Full Documentation](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/tree/main/docs)
 - 🐛 [Report Issues](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/issues)
 - 💬 [Community Discussions](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/discussions)
 - 🔧 [Troubleshooting Guide](KNOWN_ISSUES.md)
