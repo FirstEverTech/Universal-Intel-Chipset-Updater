@@ -120,6 +120,7 @@ For a detailed technical breakdown and historical context, see:
 - **MSI installer support**: Added full support for Intel's new MSI-based distributions
 - **Dual verification**: EXE (digital signature) + MSI (SHA256 hash) verification
 - **Archive integration**: Added GitHub archive repository for MSI hash files
+- **Fallback support**: The tool can fall back to Intel’s official full installer if required
 
 <a id="technical-updates"></a>
 ### 🔧 2.2 Technical Updates
