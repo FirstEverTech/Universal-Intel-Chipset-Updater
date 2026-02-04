@@ -39,35 +39,38 @@ For a detailed technical breakdown and historical context, see:
    5.2 [Multi-Layer Security](#multi-layer-security)  
    5.3 [Seamless Operation](#seamless-operation)  
    5.4 [Comprehensive Coverage](#comprehensive-coverage)  
-6. [**System Requirements**](#system-requirements)  
-7. [**Quick Comparison**](#quick-comparison)  
-8. [**Quick Start**](#quick-start)  
+6. [**System Requirements**](#system-requirements)
+   6.1 [System Requirements](#system-requirements-table)   
+   6.2 [Windows Version Support](#windows-version-support)   
+   6.3 [Legacy System Notes](#system-legacy-notes)  
+8. [**Quick Comparison**](#quick-comparison)  
+9. [**Quick Start**](#quick-start)  
    8.1 [Method 1: One-Click Execution](#method-1-one-click-execution)  
    8.2 [Method 2: PowerShell Direct](#method-2-powershell-direct)  
    8.3 [Method 3: Hardware ID Scanner Only](#method-3-hardware-id-scanner-only)  
-9. [**How It Works**](#how-it-works)  
+10. [**How It Works**](#how-it-works)  
    9.1 [Self-Verification & Update Check](#self-verification-update-check)  
    9.2 [Hardware Detection](#hardware-detection)  
    9.3 [Database Query & Matching](#database-query-matching)  
    9.4 [Security Verification](#security-verification)  
    9.5 [Installation & Cleanup](#installation-cleanup)  
-10. [**Security First Approach**](#security-first-approach)  
+11. [**Security First Approach**](#security-first-approach)  
    10.1 [Verified Security Layers](#verified-security-layers)  
-11. [**Usage Scenarios**](#usage-scenarios)  
+12. [**Usage Scenarios**](#usage-scenarios)  
    11.1 [Home Users](#home-users)  
    11.2 [IT Professionals & Technicians](#it-professionals-technicians)  
    11.3 [System Builders](#system-builders)  
-12. [**Download Options**](#download-options)  
+13. [**Download Options**](#download-options)  
    12.1 [Option 1: SFX Executable (Recommended)](#option-1-sfx-executable-recommended)  
    12.2 [Option 2: Script Bundle](#option-2-script-bundle)  
    12.3 [Option 3: Source Code](#option-3-source-code)  
-13. [**Independent Audit Results**](#independent-audit-results)  
-14. [**Project Structure**](#project-structure)  
-15. [**Release Structure**](#release-structure)  
+14. [**Independent Audit Results**](#independent-audit-results)  
+15. [**Project Structure**](#project-structure)  
+16. [**Release Structure**](#release-structure)  
    15.1 [Primary Files](#primary-files)  
    15.2 [Verification Files](#verification-files)  
    15.3 [Documentation](#documentation)  
-16. [**Frequently Asked Questions (FAQ)**](#frequently-asked-questions-faq)  
+17. [**Frequently Asked Questions (FAQ)**](#frequently-asked-questions-faq)  
    16.1 [Is this tool safe to use?](#is-this-tool-safe-to-use)  
    16.2 [Will this update all my Intel drivers?](#will-this-update-all-my-intel-drivers)  
    16.3 [What are the risks?](#what-are-the-risks)  
@@ -77,22 +80,18 @@ For a detailed technical breakdown and historical context, see:
    16.7 [What does self-hash verification do?](#what-does-self-hash-verification-do)  
    16.8 [How are updates notified?](#how-are-updates-notified)  
    16.9 [Why is the certificate "not trusted"?](#why-is-the-certificate-not-trusted)  
-17. [**Compatibility Matrix**](#compatibility-matrix)  
-   17.1 [Intel Platform Support](#intel-platform-support)  
-   17.2 [Windows Version Support](#windows-version-support)  
-   17.3 [System Requirements](#system-requirements)  
-   17.4 [Legacy System Notes](#system-legacy-notes)  
-18. [**Performance Metrics**](#performance-metrics)  
+18. [**Intel Platform Support**](#intel-platform-support)  
+19. [**Performance Metrics**](#performance-metrics)  
    18.1 [Typical Execution Times](#typical-execution-times)  
    18.2 [Resource Usage](#resource-usage)  
-19. [**Known Issues**](#known-issues)  
-20. [**Contributing**](#contributing)  
-21. [**License**](#license)  
-22. [**Acknowledgments**](#acknowledgments)  
-23. [**Important Links**](#important-links)  
-24. [**Author & Support**](#author-support)  
+20. [**Known Issues**](#known-issues)  
+21. [**Contributing**](#contributing)  
+22. [**License**](#license)  
+23. [**Acknowledgments**](#acknowledgments)  
+24. [**Important Links**](#important-links)  
+25. [**Author & Support**](#author-support)  
    24.1 [Support This Project](#support-this-project)  
-25. [**Ready to Update?**](#ready-to-update)  
+26. [**Ready to Update?**](#ready-to-update)  
    25.1 [Quick Start Guide](#quick-start-guide)  
    25.2 [Verification Steps (Optional)](#verification-steps-optional)  
    25.3 [Need Help?](#need-help)
@@ -223,14 +222,46 @@ This project has undergone comprehensive analysis by multiple AI security expert
 <a id="system-requirements"></a>
 ## 📋 **6. System Requirements**
 
-| Requirement | Specification | Notes |
-|-------------|---------------|--------|
-| **OS** | Windows 10/11 (x64) | All versions supported |
-| **PowerShell** | Version 5.0+ | Built into Windows 10/11 |
-| **Privileges** | Administrator rights | Required for system changes |
-| **Storage** | ~5MB temporary space | Automatic cleanup |
-| **Internet** | Required | For database and update checks |
-| **System Restore** | Enabled (recommended) | Automatic restore point creation |
+<a id="system-requirements-table"></a>
+### 6.1 System Requirements
+| Component | Minimum | Recommended | Notes |
+|-----------|---------|-------------|-------|
+| Windows Version | 10 1809 (17763) | 11 22H2+ | 1809 requires .NET 4.7.2+ |
+| .NET Framework | 4.6.1 | 4.8+ | 4.7.2+ for TLS 1.2 on older Windows |
+| PowerShell | 5.1 | 7.3+ | Windows PowerShell 5.1 included |
+| Administrator | Required | Required | For driver installation |
+| Internet | Required | Required | For hash verification and updates |
+| RAM | 2 GB | 4 GB+ | For INF extraction/installation |
+| Disk Space | 500 MB | 1 GB+ | Temporary files during installation |
+| System Restore | Optional | Enabled | Automatic restore point creation |
+
+<a id="windows-version-support"></a>
+### 6.2 Windows Version Support
+| Version | Build | Status | Notes |
+|---------|-------|--------|-------|
+| Windows 11 | All builds | ✅ Full | Optimized support |
+| Windows 10 | 22H2+ | ✅ Full | Recommended |
+| Windows 10 | 21H2 | ✅ Full | Stable |
+| Windows 10 | 21H1 (19043) | ✅ Full | Legacy |
+| Windows 10 | 20H2 (19042) | ✅ Full | Legacy |
+| Windows 10 | 2004 (19041) | ✅ Full | Legacy |
+| Windows 10 | 1909 (18363) | ✅ Full | Legacy |
+| Windows 10 | 1903 (18362) | ✅ Full | Legacy |
+| Windows 10 | 1809 (17763) | ✅ Limited | Requires .NET 4.7.2+ for TLS 1.2 support |
+| Windows 10 | LTSB 2016 (1607) | ⚠️ Limited | Manual updates required for TLS 1.2 |
+| Windows 10 | LTSB 2015 (1507) | ⚠️ Limited | Manual updates required for TLS 1.2 |
+
+<a id="legacy-system-notes"></a>
+### 6.3 Legacy System Notes
+- **Windows 10 1809 (17763) and newer**: Full TLS 1.2 support out-of-the-box
+- **Windows 10 LTSB 2015/2016**: May require manual installation of:
+  - [.NET Framework 4.8](https://go.microsoft.com/fwlink/?linkid=2088631)
+  - [KB4474419](https://catalog.update.microsoft.com/Search.aspx?q=KB4474419) (SHA-2 update)
+- **The tool automatically**: 
+  - Detects Windows version limitations
+  - Warns about potential connectivity issues
+  - Provides fallback options for offline operation
+- **Basic INF detection and installation** works even without internet connectivity
 
 
 [↑ Back to top](#top)
@@ -505,10 +536,9 @@ The FirstEver.tech certificate is self-signed for project authenticity. Public t
 
 [↑ Back to top](#top)
 
-<a id="compatibility-matrix"></a>
-## 💻 **17. Compatibility Matrix**
 <a id="intel-platform-support"></a>
-### 17.1 Intel Platform Support
+## 💻 **17. Intel Platform Support**
+
 | Generation | Code Name | Status | Notes |
 |------------|-----------|--------|-------|
 | 12th-14th Gen | Alder/Raptor Lake | ✅ Full | Latest support |
@@ -517,46 +547,6 @@ The FirstEver.tech certificate is self-signed for project authenticity. Public t
 | 6th-7th Gen | Skylake/Kaby Lake | ✅ Full | Mature support |
 | 4th-5th Gen | Haswell/Broadwell | ✅ Full | Legacy support |
 | 2nd-3rd Gen | Sandy/Ivy Bridge | ✅ Full | Extended support |
-
-<a id="windows-version-support"></a>
-### 17.2 Windows Version Support
-| Version | Build | Status | Notes |
-|---------|-------|--------|-------|
-| Windows 11 | All builds | ✅ Full | Optimized support |
-| Windows 10 | 22H2+ | ✅ Full | Recommended |
-| Windows 10 | 21H2 | ✅ Full | Stable |
-| Windows 10 | 21H1 (19043) | ✅ Full | Legacy |
-| Windows 10 | 20H2 (19042) | ✅ Full | Legacy |
-| Windows 10 | 2004 (19041) | ✅ Full | Legacy |
-| Windows 10 | 1909 (18363) | ✅ Full | Legacy |
-| Windows 10 | 1903 (18362) | ✅ Full | Legacy |
-| Windows 10 | 1809 (17763) | ✅ Limited | Requires .NET 4.7.2+ for TLS 1.2 support |
-| Windows 10 | LTSB 2016 (1607) | ⚠️ Limited | Manual updates required for TLS 1.2 |
-| Windows 10 | LTSB 2015 (1507) | ⚠️ Limited | Manual updates required for TLS 1.2 |
-
-<a id="system-requirements"></a>
-### 17.3 System Requirements
-| Component | Minimum | Recommended | Notes |
-|-----------|---------|-------------|-------|
-| Windows Version | 10 1809 (17763) | 11 22H2+ | 1809 requires .NET 4.7.2+ |
-| .NET Framework | 4.6.1 | 4.8+ | 4.7.2+ for TLS 1.2 on older Windows |
-| PowerShell | 5.1 | 7.3+ | Windows PowerShell 5.1 included |
-| Administrator | Required | Required | For driver installation |
-| Internet | Optional | Recommended | For hash verification |
-| RAM | 2 GB | 4 GB+ | For INF extraction/installation |
-| Disk Space | 500 MB | 1 GB+ | Temporary files during installation |
-
-<a id="system-legacy-notes"></a>
-### 17.4 Legacy System Notes
-- **Windows 10 1809 (17763) and newer**: Full TLS 1.2 support out-of-the-box
-- **Windows 10 LTSB 2015/2016**: May require manual installation of:
-  - [.NET Framework 4.8](https://go.microsoft.com/fwlink/?linkid=2088631)
-  - [KB4474419](https://catalog.update.microsoft.com/Search.aspx?q=KB4474419) (SHA-2 update)
-- **The tool automatically**: 
-  - Detects Windows version limitations
-  - Warns about potential connectivity issues
-  - Provides fallback options for offline operation
-- **Basic INF detection and installation** works even without internet connectivity
 
 
 [↑ Back to top](#top)
@@ -574,9 +564,9 @@ The FirstEver.tech certificate is self-signed for project authenticity. Public t
 | **Installation** | 1-5 minutes | INF file installation and system update |
 <a id="resource-usage"></a>
 ### 18.2 Resource Usage
-- **Memory**: <10MB during operation
-- **Storage**: ~5MB temporary (automatically cleaned)
-- **Network**: 3-4MB total download (depending on packages needed)
+- **Memory**: <25MB during operation
+- **Storage**: ~25MB temporary (automatically cleaned)
+- **Network**: ~10MB total download (depending on packages needed)
 - **CPU**: Minimal impact during scanning and installation
 
 
