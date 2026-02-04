@@ -40,7 +40,7 @@ For a detailed technical breakdown and historical context, see:
    5.3 [Seamless Operation](#seamless-operation)  
    5.4 [Comprehensive Coverage](#comprehensive-coverage)  
 6. [**System Requirements**](#system-requirements)  
-   6.1 [System Requirements](#system-requirements-table)  
+   6.1 [System Requirements Table](#system-requirements-table)  
    6.2 [Windows Version Support](#windows-version-support)  
    6.3 [Legacy System Notes](#system-legacy-notes)  
 8. [**Quick Comparison**](#quick-comparison)  
@@ -223,7 +223,7 @@ This project has undergone comprehensive analysis by multiple AI security expert
 ## 📋 **6. System Requirements**
 
 <a id="system-requirements-table"></a>
-### 6.1 System Requirements
+### 6.1 System Requirements Table
 | Component | Minimum | Recommended | Notes |
 |-----------|---------|-------------|-------|
 | Windows Version | 10 1809 (17763) | 11 22H2+ | 1809 requires .NET 4.7.2+ |
