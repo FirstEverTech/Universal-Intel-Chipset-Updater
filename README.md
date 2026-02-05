@@ -109,38 +109,86 @@ For a detailed technical breakdown and historical context, see:
 
 **Universal Intel Chipset Device Updater v10.1-2026.02.2** → [Release Notes](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/releases/tag/v10.1-2026.02.2)
 
-🆕 **Highlights**
-- Enhanced Pre-Launch Checks:
+## 📦 Latest Release: v10.1-2026.02.2
+
+### 🆕 **Highlights**
+- **Enhanced Pre-Launch Checks**:
   - Windows build validation (**Win10 LTSC 2019 / build 17763+**)  
   - .NET 4.7.2+ detection  
   - GitHub connectivity & TLS 1.2 check  
   - User can continue despite warnings
-- Critical Fixes:
+- **Intelligent Installation Order** ⭐ **CRITICAL FIX**:
+  - Packages now sorted by version (oldest → newest) before installation
+  - **Prevents driver downgrades** when HWIDs exist across multiple package versions
+  - Especially important for X79, X99, Z77, and other legacy platforms where Intel removed specific HWIDs from newer releases
+- **Critical Fixes**:
   - Hash verification on older Windows fixed  
-  - Automatic TLS 1.2 enforcement in BAT  
+  - Automatic TLS 1.2 enforcement in BAT launcher  
   - Improved BAT reliability (working directory, elevation, clean exit)
+  - Driver downgrade bug eliminated
 
-🔧 **Technical Updates**
-- BAT launcher: pre-checks & TLS enforcement  
-- PowerShell script: unchanged, now works reliably on LTSC 2019+
+### 🔧 **Technical Updates**
+- **BAT launcher**: Pre-checks, TLS enforcement, and deterministic environment setup  
+- **PowerShell script**: 
+  - Version-based package sorting to prevent downgrades
+  - Unchanged network logic; now works reliably on LTSC 2019+
 
-🐛 **Bug Fixes**
-- Hash verification failures on older Windows  
-- Pre-check warnings clarified  
-- Working directory and exit handling in BAT fixed
+### 🐛 **Bug Fixes**
+- Fixed hash verification failures on older Windows 10 LTSB/LTSC builds
+- Fixed pre-check warnings not clearly informing users about TLS/.NET requirements  
+- Fixed working directory and exit handling issues in BAT launcher
+- Fixed driver downgrade when same platform has HWIDs across multiple package versions
 
-📋 **Included Files**
-- `universal-intel-chipset-updater.ps1` – Main updater  
-- `universal-intel-chipset-updater.bat` – Launcher with pre-checks  
-- `ChipsetUpdater-10.1-2026.02.2-Win10-Win11.exe` – SFX package
+### 📋 **Included Files**
+- `universal-intel-chipset-updater.ps1` – Main updater script (with installation order fix)
+- `universal-intel-chipset-updater.bat` – Launcher with comprehensive pre-checks  
+- `ChipsetUpdater-10.1-2026.02.2-Win10-Win11.exe` – Self-extracting package
 
-⚡ **Notes**
-- Requires Windows 10 LTSC 2019+ and .NET 4.7.2+  
-- Older builds may run but GitHub verification may fail  
-- Intel INF updates still manual; community feedback welcome
+### ⚡ **Requirements & Notes**
+- **Minimum Requirements**:
+  - Windows 10 LTSC 2019 (build 17763) or newer  
+  - .NET Framework 4.7.2+  
+- Older LTSB/LTSC builds may run but GitHub hash verification could fail
+- Intel INF package updates remain manual; community reports highly encouraged
+- **New**: Installation order optimized to prevent driver version conflicts
+
+### 📥 **Download**
+👉 [**Download v10.1-2026.02.2**](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/releases/tag/v10.1-2026.02.2)
+
+---
 
 **Summary**:  
-v10.1-2026.02.2 improves **Windows compatibility**, prevents **hash errors**, and strengthens **user guidance** for older systems, keeping full INF installation capabilities.
+v10.1-2026.02.2 improves **Windows compatibility**, prevents **hash verification errors**, **eliminates driver downgrades** for multi-version platforms, and strengthens **user guidance** for older systems, while maintaining all hardware-accurate platform detection and INF installation features from previous releases.
+
+---
+
+### 🔍 **Technical Deep Dive: Installation Order Fix**
+
+**Problem**: When Intel removes specific HWIDs from newer installer packages, but your hardware still needs those drivers:
+- Example: Package v1.0 has HWID1, HWID2, HWID3
+- Package v1.1 only has HWID2, HWID3 (Intel deprecated HWID1)
+- Installing v1.1 first, then v1.0 would **downgrade** HWID2 and HWID3
+
+**Solution**: Sort packages by version (oldest → newest) before installation:
+1. v1.0 installs first → HWID1, HWID2, HWID3 all installed
+2. v1.1 installs second → HWID2 and HWID3 **upgraded**, HWID1 unchanged
+3. Result: All drivers at their **maximum available version**, no downgrades
+
+**Code Change** (line ~1714 in PowerShell script):
+```powershell
+# Sort packages by version (oldest first) to prevent downgrade when installing missing HWIDs
+$sortedPackages = $uniquePackages.GetEnumerator() | Sort-Object {
+    $versionString = $_.Key -replace '-.*$', ''
+    try { [version]$versionString } catch { $versionString }
+}
+
+foreach ($entry in $sortedPackages) {
+    # Installation logic...
+}
+```
+
+This ensures legacy platforms receive optimal driver coverage without sacrificing newer updates for actively supported HWIDs.
+
 
 
 [↑ Back to top](#top)
