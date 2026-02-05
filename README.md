@@ -113,49 +113,48 @@ For a detailed technical breakdown and historical context, see:
 
 ### 🆕 **Highlights**
 - **Enhanced Pre-Launch Checks**:
-  - Windows build validation (**Win10 LTSC 2019 / build 17763+**)  
-  - .NET 4.7.2+ detection  
-  - GitHub connectivity & TLS 1.2 check  
+  - Windows build validation (**Win10 LTSC 2019 / build 17763+**) now in PowerShell script
+  - .NET 4.7.2+ detection moved to PowerShell
+  - GitHub connectivity & TLS 1.2 check in PowerShell
   - User can continue despite warnings
-- **Intelligent Installation Order** ⭐ **CRITICAL FIX**:
-  - Packages now sorted by version (oldest → newest) before installation
-  - **Prevents driver downgrades** when HWIDs exist across multiple package versions
-  - Especially important for X79, X99, Z77, and other legacy platforms where Intel removed specific HWIDs from newer releases
+- **Simplified BAT Launcher**:
+  - BAT file now only handles elevation and launching PowerShell
+  - Pre-checks moved to PowerShell for better reliability
+  - Cleaner exit handling
 - **Critical Fixes**:
-  - Hash verification on older Windows fixed  
-  - Automatic TLS 1.2 enforcement in BAT launcher  
+  - Hash verification on older Windows fixed
   - Improved BAT reliability (working directory, elevation, clean exit)
-  - Driver downgrade bug eliminated
+  - Fixed exit code 100 handling for new version launches
 
 ### 🔧 **Technical Updates**
-- **BAT launcher**: Pre-checks, TLS enforcement, and deterministic environment setup  
+- **BAT launcher**: Simplified to only handle elevation and launch PowerShell script
 - **PowerShell script**: 
-  - Version-based package sorting to prevent downgrades
-  - Unchanged network logic; now works reliably on LTSC 2019+
+  - Added comprehensive pre-checks (Windows build, .NET, GitHub connectivity)
+  - Improved user guidance for older systems
+  - Enhanced error handling and logging
 
 ### 🐛 **Bug Fixes**
 - Fixed hash verification failures on older Windows 10 LTSB/LTSC builds
-- Fixed pre-check warnings not clearly informing users about TLS/.NET requirements  
-- Fixed working directory and exit handling issues in BAT launcher
-- Fixed driver downgrade when same platform has HWIDs across multiple package versions
+- Fixed pre-check warnings not clearly informing users about TLS/.NET requirements
+- Fixed working directory issues in BAT launcher
+- Fixed exit handling when auto-update triggers launch of new version
 
 ### 📋 **Included Files**
-- `universal-intel-chipset-updater.ps1` – Main updater script (with installation order fix)
-- `universal-intel-chipset-updater.bat` – Launcher with comprehensive pre-checks  
+- `universal-intel-chipset-updater.ps1` – Main updater script (with enhanced pre-checks)
+- `universal-intel-chipset-updater.bat` – Simplified launcher
 - `ChipsetUpdater-10.1-2026.02.2-Win10-Win11.exe` – Self-extracting package
 
 ### ⚡ **Requirements & Notes**
 - **Minimum Requirements**:
-  - Windows 10 LTSC 2019 (build 17763) or newer  
-  - .NET Framework 4.7.2+  
+  - Windows 10 LTSC 2019 (build 17763) or newer
+  - .NET Framework 4.7.2+
 - Older LTSB/LTSC builds may run but GitHub hash verification could fail
 - Intel INF package updates remain manual; community reports highly encouraged
-- **New**: Installation order optimized to prevent driver version conflicts
 
 ---
 
-**Summary**:  
-v10.1-2026.02.2 improves **Windows compatibility**, prevents **hash verification errors**, **eliminates driver downgrades** for multi-version platforms, and strengthens **user guidance** for older systems, while maintaining all hardware-accurate platform detection and INF installation features from previous releases.
+**Summary**:
+v10.1-2026.02.2 moves **pre-launch checks to PowerShell** for better reliability, simplifies the **BAT launcher**, improves **Windows compatibility** for older builds, and strengthens **user guidance** for systems with limited connectivity, while maintaining all hardware-accurate platform detection and INF installation features from previous releases.
 
 ---
 
