@@ -554,14 +554,15 @@ The FirstEver.tech certificate is self-signed for project authenticity. Public t
 <a id="performance-metrics"></a>
 ## 📊 **18. Performance Metrics**
 <a id="typical-execution-times"></a>
-### 18.1 Typical Execution Times
-| Phase | Time | Description |
-|-------|------|-------------|
-| **Verification & Update Check** | 2-5 seconds | Hash verification and version check |
-| **Hardware Detection** | 3-8 seconds | System scanning and identification |
-| **Database Download** | 5-15 seconds | Latest INF information fetch |
-| **Package Download** | 30s-3min | Driver package download (size dependent) |
-| **Installation** | 1-5 minutes | INF file installation and system update |
+### ⏱️ Typical Execution Time Breakdown (Updated)
+| **Phase** | **Time** | **Description** |
+|----------|----------|-----------------|
+| Compatibility Pre-Check | 5–10 seconds | OS build, .NET Framework, TLS 1.2 availability, administrator privileges and GitHub connectivity verification |
+| Verification & Update Check | 5–10 seconds | Self-integrity hash verification and updater version check |
+| Hardware Detection | 10–25 seconds | Full system scan and Intel chipset device identification (HWID enumeration) |
+| System Restore Point Creation | 15–30 seconds | Automatic creation of a Windows System Restore Point before applying any changes |
+| Package Download & Verification | 5–10 seconds | Download and integrity verification of required Intel INF metadata packages |
+| Installation | 60–120 seconds | INF file installation, registry updates and device reconfiguration |
 <a id="resource-usage"></a>
 ### 18.2 Resource Usage
 - **Memory**: <25MB during operation
