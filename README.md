@@ -554,7 +554,7 @@ The FirstEver.tech certificate is self-signed for project authenticity. Public t
 <a id="performance-metrics"></a>
 ## 📊 **18. Performance Metrics**
 <a id="typical-execution-times"></a>
-### ⏱️ Typical Execution Time Breakdown (Updated)
+### 18.1 Typical Execution Time Breakdown (Updated)
 | **Phase** | **Time** | **Description** |
 |----------|----------|-----------------|
 | Compatibility Pre-Check | 5–10 seconds | OS build, .NET Framework, TLS 1.2 availability, administrator privileges and GitHub connectivity verification |
