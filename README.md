@@ -94,7 +94,7 @@ For a detailed technical breakdown and historical context, see:
 23. [**Acknowledgments**](#acknowledgments)  
 24. [**Important Links**](#important-links)  
 25. [**Author & Support**](#author-and-contact)  
-26. [Support This Project](#support-this-project)  
+26. [**Support This Project**](#support-this-project)  
 
 
 [↑ Back to top](#top)
