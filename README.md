@@ -93,7 +93,7 @@ For a detailed technical breakdown and historical context, see:
 22. [**License**](#license)  
 23. [**Acknowledgments**](#acknowledgments)  
 24. [**Important Links**](#important-links)  
-25. [**Author & Support**](#author-and-contact)  
+25. [**Author & Contact**](#author-and-contact)  
 26. [**Support This Project**](#support-this-project)  
 
 
