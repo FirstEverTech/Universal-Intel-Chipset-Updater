@@ -676,7 +676,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 - [Releases](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/releases) - Download latest version
 - [Security Audits](SECURITY-AUDITS.md) - Full audit history  
-- [Behind the Project](docs/BEHIND-THE-PROJECT_EN.md) - Project background
 - [Issue Tracker](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/issues) - Report problems
 
 
