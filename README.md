@@ -27,11 +27,9 @@ For a detailed technical breakdown and historical context, see:
 ## 📑 **1. Table of Contents**
 
 1. [**Table of Contents**](#table_of_contents)  
-2. [**Latest Release Highlights**](#latest-release-highlights)  
-   2.1 [New Features & Improvements](#new-features-improvements)  
-   2.2 [Technical Updates](#technical-updates)  
-   2.3 [Notes](#notes)  
-   2.4 [Bug Fixes](#bug-fixes)  
+2. [**Release Highlights**](#release-highlights)  
+   2.1 [Latest Version](#latest-version)  
+   2.2 [Previous Releases](#previous-releases)  
 3. [**Independent Security Audits**](#independent-security-audits)  
 4. [**Application Overview**](#application-overview)  
 5. [**Key Features**](#key-features)  
@@ -103,57 +101,59 @@ For a detailed technical breakdown and historical context, see:
 
 ---
 
-<a id="latest-release-highlights"></a>
-## 🎉 **2. Latest Release Highlights (v10.1-2026.02.1)**
+<a id="release-highlights"></a>
+## 🎉 **2. Release Highlights**
 
-<a id="new-features-improvements"></a>
-### 🆕 2.1 New Features & Improvements
+<a id="latest-version"></a>
+### 2.1 Latest Version
 
-#### **Hardware-Accurate Platform Separation** ⭐
-- **Fixed Intel's 25-year naming error**: New `Generate-HardwareAccurateMD.ps1` script corrects Intel's oversimplified platform grouping
-- **Proper component separation**: Meteor Lake now split into:
-  - `MeteorLake SoC` (CPU root)
-  - `MeteorLake PCH-N` (mobile low-power)
-  - `MeteorLake PCH-H` (mobile high-performance)
-  - `MeteorLake PCH-S` (desktop)
-- **X79/X99 platform correction**: Properly separates CPU root from PCH chipset devices
-- **Backward compatible**: Works with existing database format - no updater changes needed
+**Universal Intel Chipset Device Updater v10.1-2026.02.2** → [Release Notes](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/releases/tag/v10.1-2026.02.2)
 
-#### **Installer Support**
-- **MSI installer support**: Added full support for Intel's new MSI-based distributions
-- **Dual verification**: EXE (digital signature) + MSI (SHA256 hash) verification
-- **Archive integration**: Added GitHub archive repository for MSI hash files
-- **Fallback support**: If required, the tool can fall back to Intel’s official full installer
+🆕 **Highlights**
+- Enhanced Pre-Launch Checks:
+  - Windows build validation (**Win10 LTSC 2019 / build 17763+**)  
+  - .NET 4.7.2+ detection  
+  - GitHub connectivity & TLS 1.2 check  
+  - User can continue despite warnings
+- Critical Fixes:
+  - Hash verification on older Windows fixed  
+  - Automatic TLS 1.2 enforcement in BAT  
+  - Improved BAT reliability (working directory, elevation, clean exit)
 
-<a id="technical-updates"></a>
-### 🔧 2.2 Technical Updates
+🔧 **Technical Updates**
+- BAT launcher: pre-checks & TLS enforcement  
+- PowerShell script: unchanged, now works reliably on LTSC 2019+
 
-#### **Core Improvements**
-- **Log persistence**: Moved `chipset_update.log` to `C:\ProgramData\` (survives cleanup)
-- **Version display fix**: Correct regex for proper UI formatting
-- **Keyboard buffer fix**: Eliminated screen "skipping" during pauses
-- **Enhanced debug mode**: More detailed process tracking
+🐛 **Bug Fixes**
+- Hash verification failures on older Windows  
+- Pre-check warnings clarified  
+- Working directory and exit handling in BAT fixed
 
-#### **New Components**
-- **`Generate-HardwareAccurateMD.ps1`**: Standalone script for database correction
-- **`intel-chipset-infs-latest-v2.md`**: Hardware-accurate database output
-- **`installer-list.csv`**: Clean installer package listing
+📋 **Included Files**
+- `universal-intel-chipset-updater.ps1` – Main updater  
+- `universal-intel-chipset-updater.bat` – Launcher with pre-checks  
+- `ChipsetUpdater-10.1-2026.02.2-Win10-Win11.exe` – SFX package
 
-<a id="notes"></a>
-### 📝 2.3 Notes
+⚡ **Notes**
+- Requires Windows 10 LTSC 2019+ and .NET 4.7.2+  
+- Older builds may run but GitHub verification may fail  
+- Intel INF updates still manual; community feedback welcome
 
-- **Backward compatible**: Works with all previous INF database formats
-- **No updater changes required**: Platform naming fix is database-level only
-- **Intel's naming chaos**: Corrects 25 years of incorrect platform grouping
-- **Maintains existing functionality**: All existing features remain unchanged
+**Summary**:  
+v10.1-2026.02.2 improves **Windows compatibility**, prevents **hash errors**, and strengthens **user guidance** for older systems, keeping full INF installation capabilities.
 
-<a id="bug-fixes"></a>
-### 🐛 2.4 Bug Fixes
 
-- **MSI installation**: Fixed installation for Intel's newer MSI-based packages
-- **Log file deletion**: Logs no longer removed during temporary cleanup
-- **Screen skipping**: Eliminated keyboard buffer issues during pauses
-- **Version display**: Fixed incorrect formatting in UI headers
+[↑ Back to top](#top)
+
+<a id="previous-releases"></a>
+### 2.2 Previous Releases
+
+- v10.1-2026.02.1  → [Release Notes](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/releases/tag/v10.1-2026.02.1)
+- v10.1-2025.11.8  → [Release Notes](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/releases/tag/v10.1-2025.11.8)
+- v10.1-2025.11.7  → [Release Notes](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/releases/tag/v10.1-2025.11.7)
+- v10.1-2025.11.6  → [Release Notes](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/releases/tag/v10.1-2025.11.6)
+- v10.1-2025.11.5  → [Release Notes](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/releases/tag/v10.1-2025.11.5)
+- v10.1-2025.11.0  → [Release Notes](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/releases/tag/v10.1-2025.11.0)
 
 
 [↑ Back to top](#top)
