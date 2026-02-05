@@ -560,15 +560,45 @@ The FirstEver.tech certificate is self-signed for project authenticity. Public t
 | Compatibility Pre-Check | 5–10 seconds | OS build, .NET Framework, TLS 1.2 availability, administrator privileges and GitHub connectivity verification |
 | Verification & Update Check | 5–10 seconds | Self-integrity hash verification and updater version check |
 | Hardware Detection | 10–25 seconds | Full system scan and Intel chipset device identification (HWID enumeration) |
-| System Restore Point Creation | 15–30 seconds | Automatic creation of a Windows System Restore Point before applying any changes |
+| System Restore Point Creation | 30–60 seconds | Automatic creation of a Windows System Restore Point before applying any changes |
 | Package Download & Verification | 5–10 seconds | Download and integrity verification of required Intel INF metadata packages |
 | Installation | 60–120 seconds | INF file installation, registry updates and device reconfiguration |
-<a id="resource-usage"></a>
-### 18.2 Resource Usage
-- **Memory**: <25MB during operation
-- **Storage**: ~25MB temporary (automatically cleaned)
-- **Network**: ~10MB total download (depending on packages needed)
-- **CPU**: Minimal impact during scanning and installation
+<a id="disk-space-usage"></a>
+### 18.2 Disk Space Usage
+| **Stage** | **Estimated Usage** | **Notes** |
+|----------|---------------------|-----------|
+| SFX archive (download) | ~0.7 MB | Self-extracting EXE |
+| Extracted scripts (BAT + PS1) | ~90 KB | Temporary working files |
+| System Restore Point | 100–300 MB | Managed by Windows (shadow copy storage) |
+| Downloaded Intel package | 2–10 MB | EXE or MSI, platform-dependent |
+| Extracted package contents | 10–30 MB | Temporary extraction of INF files |
+| **Peak temporary disk usage** | **~150–350 MB** | During restore point creation and extraction |
+| **Persistent disk usage after completion** | **< 5 MB** | Scripts and logs only |
+
+**Important notes:**
+- System Restore Point size is the dominant factor and depends on Windows configuration.
+- All extracted installer files are automatically removed after completion.
+- No drivers or binaries remain installed — only INF metadata.
+<a id="memory-ram-usage"></a>
+### 18.3 Memory (RAM) Usage
+| **Component** | **Estimated Usage** | **Notes** |
+|--------------|---------------------|-----------|
+| BAT launcher | < 5 MB | cmd.exe overhead |
+| PowerShell runtime | 40–80 MB | Script execution, parsing and hashing |
+| INF parsing & HWID scan | 20–40 MB | Temporary in-memory data structures |
+| Installer extraction (EXE/MSI) | 30–100 MB | Short peak during unpacking |
+| **Peak RAM usage** | **~100–200 MB** | Worst-case during package extraction |
+
+**Memory characteristics:**
+- RAM usage is short-lived and released immediately after each phase.
+- No background services or resident processes.
+- Safe even for systems with 2 GB RAM.
+<a id="resource-usage-summary"></a>
+### 18.4 Resource Usage Summary
+- **Required free disk space:** ~350 MB (safe upper bound)
+- **Typical disk usage:** ~150–250 MB
+- **Peak RAM usage:** ~100–200 MB
+- **Persistent footprint after exit:** negligible
 
 
 [↑ Back to top](#top)
