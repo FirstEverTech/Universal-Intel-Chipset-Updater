@@ -87,16 +87,16 @@ For a detailed technical breakdown and historical context, see:
    18.3 [Memory (RAM) Usage](#memory-ram-usage)  
    18.4 [Resource Usage Summary](#resource-usage-summary)  
 19. [**Known Issues**](#known-issues)  
-20. [**Contributing**](#contributing)  
-21. [**License**](#license)  
-22. [**Acknowledgments**](#acknowledgments)  
-23. [**Important Links**](#important-links)  
-24. [**Author & Support**](#author-support)  
-   24.1 [Support This Project](#support-this-project)  
-25. [**Ready to Update?**](#ready-to-update)  
-   25.1 [Quick Start Guide](#quick-start-guide)  
-   25.2 [Verification Steps (Optional)](#verification-steps-optional)  
-   25.3 [Need Help?](#need-help)
+20. [**Ready to Update?**](#ready-to-update)  
+   20.1 [Quick Start Guide](#quick-start-guide)  
+   20.2 [Verification Steps (Optional)](#verification-steps-optional)  
+   20.3 [Need Help?](#need-help)
+21. [**Contributing**](#contributing)  
+22. [**License**](#license)  
+23. [**Acknowledgments**](#acknowledgments)  
+24. [**Important Links**](#important-links)  
+25. [**Author & Support**](#author-and-contact)  
+26. [Support This Project](#support-this-project)  
 
 
 [↑ Back to top](#top)
@@ -613,8 +613,33 @@ For current limitations and workarounds, please see: [KNOWN_ISSUES.md](KNOWN_ISS
 
 [↑ Back to top](#top)
 
+<a id="ready-to-update"></a>
+## 🚀 **20. Ready to Update?**
+<a id="quick-start-guide"></a>
+### 20.1 Quick Start Guide
+1. **Download** latest release from [Releases page](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/releases)
+2. **Verify** digital signature and hashes (optional but recommended)
+3. **Run as Administrator** for full system access  
+4. **Follow prompts** - tool handles everything automatically
+5. **Restart if prompted** to complete installation
+<a id="verification-steps-optional"></a>
+### 20.2 Verification Steps (Optional)
+- Check file hashes match published SHA256 files
+- Verify digital signature with included certificate
+- Review security audit reports for confidence
+<a id="need-help"></a>
+### 20.3 Need Help?
+- 📚 [Full Documentation](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/tree/main/docs)
+- 🐛 [Report Issues](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/issues)
+- 💬 [Community Discussions](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/discussions)
+- 🔧 [Troubleshooting Guide](KNOWN_ISSUES.md)
+- 🔒 [Security Information](SECURITY-AUDITS.md)[↑ Back to top](#top)
+
+
+[↑ Back to top](#top)
+
 <a id="contributing"></a>
-## 🤝 **20. Contributing**
+## 🤝 **21. Contributing**
 
 We welcome contributions! Please feel free to submit pull requests, report bugs, or suggest new features.
 
@@ -628,7 +653,7 @@ We welcome contributions! Please feel free to submit pull requests, report bugs,
 [↑ Back to top](#top)
 
 <a id="license"></a>
-## 📄 **21. License**
+## 📄 **22. License**
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
@@ -636,7 +661,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 [↑ Back to top](#top)
 
 <a id="acknowledgments"></a>
-## 🙏 **22. Acknowledgments**
+## 🙏 **23. Acknowledgments**
 
 - Intel Corporation for providing official driver packages
 - Security researchers for independent audits
@@ -647,7 +672,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 [↑ Back to top](#top)
 
 <a id="important-links"></a>
-## 🔗 **23. Important Links**
+## 🔗 **24. Important Links**
 
 - [Releases](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/releases) - Download latest version
 - [Security Audits](SECURITY-AUDITS.md) - Full audit history  
@@ -657,16 +682,21 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 [↑ Back to top](#top)
 
-<a id="author-support"></a>
-## 🧑‍💻 **24. Author & Support**
+<a id="author-and-contact"></a>
+## 🧑‍💻 **25. Author & Concatc**
 
 **Marcin Grygiel** aka FirstEver
 - 🌐 **Website**: [www.firstever.tech](https://www.firstever.tech)
 - 💼 **LinkedIn**: [Marcin Grygiel](https://www.linkedin.com/in/marcin-grygiel/)
 - 🔧 **GitHub**: [FirstEverTech](https://github.com/FirstEverTech)
 - 📧 **Contact**: [Contact Form](https://www.firstever.tech/contact)
+
+
+[↑ Back to top](#top)
+
 <a id="support-this-project"></a>
-### 💖 24.1 Support This Project
+
+## 💖 26. Support This Project
 This project is maintained in my free time. Your support helps cover development costs and server expenses.
 
 [![PayPal](https://img.shields.io/badge/PayPal-Support_Development-00457C?style=for-the-badge&logo=paypal)](https://www.paypal.com/donate/?hosted_button_id=48VGDSCNJAPTJ)
@@ -674,44 +704,14 @@ This project is maintained in my free time. Your support helps cover development
 [![GitHub Sponsors](https://img.shields.io/badge/GitHub-Sponsor-EA4AAA?style=for-the-badge&logo=githubsponsors)](https://github.com/sponsors/FirstEverTech)
 
 **Your support means everything!** If this project helped you, please consider:
-- Giving it a ⭐ star on GitHub
+- If this project helped you, please give it a ⭐ star on GitHub
 - Sharing with friends and colleagues
 - Reporting issues or suggesting features
 - Supporting development financially
 
-
-[↑ Back to top](#top)
-
-<a id="ready-to-update"></a>
-## 🚀 **25. Ready to Update?**
-<a id="quick-start-guide"></a>
-### 25.1 Quick Start Guide
-1. **Download** latest release from [Releases page](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/releases)
-2. **Verify** digital signature and hashes (optional but recommended)
-3. **Run as Administrator** for full system access  
-4. **Follow prompts** - tool handles everything automatically
-5. **Restart if prompted** to complete installation
-<a id="verification-steps-optional"></a>
-### 25.2 Verification Steps (Optional)
-- Check file hashes match published SHA256 files
-- Verify digital signature with included certificate
-- Review security audit reports for confidence
-<a id="need-help"></a>
-### 25.3 Need Help?
-- 📚 [Full Documentation](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/tree/main/docs)
-- 🐛 [Report Issues](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/issues)
-- 💬 [Community Discussions](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/discussions)
-- 🔧 [Troubleshooting Guide](KNOWN_ISSUES.md)
-- 🔒 [Security Information](SECURITY-AUDITS.md)
-
 ---
-
 <div align="center">
-
-**⭐ If this project helped you, please give it a star! ⭐**
-
 <img width="480"  alt="Marcin Grygiel   AI" src="https://github.com/user-attachments/assets/452c8553-5059-47c6-9ff9-d73443bb6c06" />
-
 </div>
 
 ---
