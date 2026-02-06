@@ -88,7 +88,7 @@ Więc Intel jest zasadniczo zobowiązany do dostarczania tych plików INF jako c
 
 Powód, dla którego *wygląda to* jak pakiet sterowników — z instalatorami, numerami wersji i informacjami o wydaniu — jest taki, że Intel zdecydował się dystrybuować te pliki INF poprzez ten sam rodzaj dopracowanej, profesjonalnie wyglądającej konfiguracji, jakiej oczekiwałbyś od rzeczywistego oprogramowania sterowników. Ale pod całym tym opakowaniem faktyczna zawartość jest trywialnie mała.
 
-Żeby to zobrazować: pliki INF i CAT dla całej generacji platformy Intel, po kompresji, zajmują około **0,5 MB**. Najnowszy instalator Intel — ten, który pobierasz ze strony Intela — ma **105 MB**. To 210-krotna różnica w rozmiarze, a dodatkowe 104,5 MB to instalator .NET Framework 4.7.2, który absolutnie nic nie robi na żadnym nowoczesnym systemie Windows, ponieważ Windows 10 i 11 już posiadają wbudowany .NET 4.8 lub nowszy.
+Żeby to zobrazować: pliki INF i CAT dla całej generacji platformy Intel, po kompresji, zajmują około **0,5 MB**. Najnowszy instalator Intel — ten, który pobierasz ze strony Intela — ma **106 MB**. Oznacza to 228-krotną różnicę w rozmiarze, a dodatkowe 80 MB stanowi instalator .NET Framework 4.7.2, który jest wbudowany w Windows 10 (1903+), podczas gdy Windows 11 posiada wersję .NET 4.8 lub nowszą. Wczesne wersje Windows 10 są obecnie rzadko używane, a dla użytkowników tych systemów Intel powinien udostępnić webową wersję instalatora .NET Framework 4.7.2, którego rozmiar to tylko 1,3 MB.
 
 ---
 
