@@ -1,6 +1,6 @@
 # The Whole Truth About Intel Chipset Device Software
 
-**TL;DR: Intel Chipset Device Software does exactly one thing — it renames devices in Device Manager. It installs no drivers. It affects zero performance. It changes nothing about how your hardware works. And yet Intel has been shipping it for 25 years.**
+**TL;DR: Intel Chipset Device Software primarily identifies and names devices in Device Manager, and configures system settings for chipset features. It installs no new driver binaries — Windows 10/11 already has all the necessary drivers built-in. It affects zero performance in most cases. And yet Intel has been shipping it for 25 years.**
 
 ---
 
@@ -20,7 +20,7 @@ This needs to be said clearly, because the entire ecosystem around this software
 
 All the drivers for Intel chipset devices — PCH, LPC controllers, PCI Express root ports, USB controllers, SATA controllers — have been included in Windows as inbox drivers since Windows 10. They are already there. They were already there before you ran any Intel installer. They will still be there after you uninstall it.
 
-What Intel Chipset Device Software actually does is install **INF files**. An INF file is a tiny text file that tells Windows what *name* to display for a piece of hardware in Device Manager. That's it. Nothing else.
+What Intel Chipset Device Software actually does is install **INF files**. An INF file maps hardware IDs to Windows inbox drivers, assigns proper device names for Device Manager, and in some cases configures system settings like DMA Security for BitLocker, ACPI mappings, or power management policies. No new driver binaries (.sys, .dll files) are installed — Windows already has them.
 
 Before the INF is installed, you might see something generic like:
 > PCI Device
@@ -29,6 +29,28 @@ After the INF is installed, you see:
 > Intel® 700 Series Chipset Family LPC/eSPI Controller - 7E3D
 
 Same hardware. Same driver. Same performance. Same everything. Just a different name tag.
+
+---
+
+### What INF Files Actually Do
+
+To be precise — and credit to the community for keeping me honest here — INF files do more than just rename devices:
+
+1. **Device Identification** (Primary function, ~80% of content)
+   - Maps Hardware IDs to human-readable names in Device Manager
+   
+2. **Driver Mapping** (~15% of content)
+   - Directs Windows to use specific inbox drivers (e.g., `pci.sys`, `smbus`, `acpi.sys`)
+   - Ensures optimal driver selection instead of generic fallbacks
+
+3. **System Configuration** (~5% of content)
+   - **DMA Security**: Configures PCIe controllers for BitLocker (pre-Windows 11 24H2)
+   - **ACPI Mappings**: Power management and device state handling
+   - **Registry Settings**: Platform-specific tweaks for chipset features
+
+**The key point remains**: No new driver *binaries* are installed. Windows 10/11 already contains every `.sys` and `.dll` file needed for Intel chipsets. The INF files just tell Windows how to use what's already there — and what to call it.
+
+So when I say "it just renames devices," I'm simplifying for effect. But the underlying truth holds: you're not getting new functionality, new performance, or new capabilities. You're getting correct identification and proper system configuration for features you likely already had working.
 
 ---
 
