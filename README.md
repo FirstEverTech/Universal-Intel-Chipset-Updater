@@ -16,14 +16,14 @@
 
 This project was built through a pragmatic collaboration between human expertise and AI-assisted tooling.  
 
-Official discussion threads are available on the **[Win-Raid Forum](...)**, **[Station-Drivers Forum](...)** and [WinClub Forum](...).
+Official discussion threads are available on the **[Win-Raid Forum](https://winraid.level1techs.com/t/tool-universal-intel-chipset-device-updater)**, **[Station-Drivers Forum](https://www.station-drivers.com/index.php/en/forum/intel-chipsets-drivers/887-universal-intel-chipset-drivers-updater)** and [WinClub Forum](https://winclub.pl/topic/49717-universal-intel-chipset-device-updater).
 
 ### Why This Tool Exists
 Intel's official Chipset Device Software has evolved over 25 years into a complex, bloated package. This tool simplifies the process by automatically detecting and installing only the INF files your system actually needs — nothing more, nothing less.
 
 For a detailed technical breakdown and historical context, see:  
-→ **[The Whole Truth About Intel Chipset Device Software](link)**
-→ **[Behind the Project: Making Of](link)**
+→ **[The Whole Truth About Intel Chipset Device Software](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/blob/main/docs/THE-WHOLE-TRUTH-ABOUT_EN_2026.md)**
+→ **[Behind the Project: Making Of](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/blob/main/docs/BEHIND-THE-PROJECT_EN_2025.md)**
 
 
 ---
