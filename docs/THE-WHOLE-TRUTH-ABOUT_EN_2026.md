@@ -135,3 +135,9 @@ Intel Chipset Device Software renames devices. It has done this for 25 years. It
 In the meantime, I built something better — not because it was technically difficult, but because I actually sat down and thought clearly about what the problem was, what the solution should be, and how to build it properly.
 
 That says everything you need to know about the state of Intel Chipset Device Software.
+
+## Disclaimer
+This analysis is based on publicly available Intel software and documentation.
+Intel® and related trademarks are property of Intel Corporation.
+The author respects Intel's intellectual property and engineering work.
+This critique focuses on software distribution practices, not Intel's hardware engineering.
