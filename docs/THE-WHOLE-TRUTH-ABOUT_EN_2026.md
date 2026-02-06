@@ -54,6 +54,31 @@ So when I say "it just renames devices," I'm simplifying for effect. But the und
 
 ---
 
+### Does this affect performance or security?
+
+**In short: for 99% of users — no.**
+
+For the remaining 1%:
+
+**Security:**
+- **BitLocker (Windows 10 / Windows 11 < 24H2)**: The INF configures DMA Security, which is required for automated BitLocker deployment in enterprise environments.
+- **Thunderbolt DMA Protection**: Mitigates DMA attacks via Thunderbolt ports (the so-called “evil maid” scenario).
+
+**Power management:**
+- **OEM laptops**: In rare cases, correct ACPI mappings can result in a slight improvement in battery life (~1–2%).
+- **Modern Standby**: More reliable sleep/wake transitions on certain platforms.
+
+**Stability:**
+- **Workstations with multiple PCIe devices**: Improved interrupt distribution may reduce the likelihood of IRQ conflicts.
+- **Server platforms**: Certain Intel RAS features may depend on properly defined INF files.
+
+**For a typical home user or gamer**: Windows 10/11 manages all of these mechanisms correctly even without INF files. You get identical performance, identical power management, and identical stability.
+
+The difference is primarily in what you **see** (device names), not in how the system **behaves**.
+
+
+---
+
 ## Why Does This Exist At All?
 
 This is the part that actually makes sense once you understand it.
