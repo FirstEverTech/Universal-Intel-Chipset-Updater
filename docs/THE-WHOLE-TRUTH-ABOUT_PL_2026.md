@@ -54,6 +54,30 @@ Więc kiedy mówię "to tylko zmienia nazwy urządzeń", upraszczam dla efektu. 
 
 ---
 
+### Czy to wpływa na wydajność lub bezpieczeństwo?
+
+**Krótko: Dla 99% użytkowników - nie.**
+
+Dla pozostałego 1%:
+
+**Bezpieczeństwo:**
+- **BitLocker (Windows 10 / Win11 <24H2)**: INF konfiguruje DMA Security, co jest wymagane do automatycznego wdrażania BitLocker w środowiskach korporacyjnych
+- **Thunderbolt DMA Protection**: Blokuje ataki DMA przez porty Thunderbolt (scenariusz "evil maid")
+
+**Zarządzanie energią:**
+- **Laptopy OEM**: W rzadkich przypadkach poprawne mapowania ACPI mogą nieznacznie poprawić żywotność baterii (~1-2%)
+- **Modern Standby**: Lepsze przejścia sleep/wake na niektórych platformach
+
+**Stabilność:**
+- **Workstations z wieloma kartami PCIe**: Lepsze rozłożenie przerwań może zmniejszyć szanse na konflikty IRQ
+- **Server platforms**: Intel RAS features mogą wymagać poprawnych INF
+
+**Dla typowego użytkownika domowego czy gracza**: Windows 10/11 poprawnie zarządza wszystkimi tymi funkcjami bez INF. Otrzymujesz identyczną wydajność, identyczne zarządzanie energią i identyczną stabilność.
+
+Różnica jest głównie w tym, co **widzisz** (nazwy urządzeń), nie w tym, jak system **działa**.
+
+---
+
 ## Dlaczego to w ogóle istnieje?
 
 To jest ta część, która faktycznie ma sens, kiedy to zrozumiesz.
