@@ -12,14 +12,19 @@
 [![VirusTotal](https://img.shields.io/badge/VirusTotal-0%2F98-008631?style=for-the-badge)](https://www.virustotal.com/gui/url/4aff9d07464a6e85bb604ffba6e81a589c8df38eeb9d1a70ffbaac890805069c?nocache=1)
 
 ## 🔧 Automate Your Intel Chipset Updates
-
 **Universal Intel Chipset Device Updater** is an advanced, security-focused tool that automatically detects your Intel hardware and installs the latest official chipset **INF files** with enterprise-grade safety measures.
 
 This project was built through a pragmatic collaboration between human expertise and AI-assisted tooling.  
-Official discussion threads are available on the **[Win-Raid Forum](https://winraid.level1techs.com/t/tool-universal-intel-chipset-device-updater)**, **[Station-Drivers Forum](https://www.station-drivers.com/index.php/en/forum/intel-chipsets-drivers/887-universal-intel-chipset-drivers-updater)** and [WinClub Forum](https://winclub.pl/topic/49717-universal-intel-chipset-device-updater).
+
+Official discussion threads are available on the **[Win-Raid Forum](...)**, **[Station-Drivers Forum](...)** and [WinClub Forum](...).
+
+### Why This Tool Exists
+Intel's official Chipset Device Software has evolved over 25 years into a complex, bloated package. This tool simplifies the process by automatically detecting and installing only the INF files your system actually needs — nothing more, nothing less.
 
 For a detailed technical breakdown and historical context, see:  
-→ **[The Whole Truth About Intel Chipset Device Software](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/blob/main/docs/THE-WHOLE-TRUTH-ABOUT_EN_2026.md)**
+→ **[The Whole Truth About Intel Chipset Device Software](link)**
+→ **[Behind the Project: Making Of](link)**
+
 
 ---
 
