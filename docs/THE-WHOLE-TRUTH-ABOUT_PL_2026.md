@@ -135,3 +135,9 @@ Intel Chipset Device Software zmienia nazwy urządzeń. Robi to od 25 lat. Prawd
 Tymczasem ja stworzyłem coś lepszego — nie dlatego, że było to technicznie trudne, ale dlatego, że faktycznie usiadłem i przemyślałem problem, rozwiązanie i sposób jego właściwej implementacji.
 
 To mówi wszystko, co trzeba wiedzieć o stanie Intel Chipset Device Software.
+
+## Zastrzeżenie prawne
+Niniejsza analiza opiera się na publicznie dostępnym oprogramowaniu i dokumentacji firmy Intel.
+Intel® oraz powiązane znaki towarowe są własnością Intel Corporation.
+Autor szanuje własność intelektualną oraz osiągnięcia inżynieryjne firmy Intel.
+Niniejsza krytyka koncentruje się wyłącznie na praktykach dystrybucji oprogramowania, a nie na inżynierii sprzętowej firmy Intel.
