@@ -89,7 +89,7 @@ So Intel is essentially required to ship these INF files as part of their platfo
 
 The reason it *looks* like a driver package — with installers, version numbers, and release notes — is because Intel chose to distribute these INF files through the same kind of polished, professional-looking setup that you'd expect for actual driver software. But underneath all that packaging, the actual content is trivially small.
 
-To put it in perspective: the INF and CAT files for an entire Intel platform generation, after compression, take up roughly **0.5 MB**. The latest Intel installer — the one you download from Intel's website — is **105 MB**. That's a 210x size difference, and the extra 104.5 MB is a .NET Framework 4.7.2 installer that does absolutely nothing on any modern Windows system, because Windows 10 and 11 already ship with .NET 4.8 or newer built in.
+To put it in perspective: the INF and CAT files for an entire Intel platform generation, after compression, take up roughly **0.5 MB**. The latest Intel installer — the one you download from Intel's website — is **106 MB**. This represents a 228-fold difference in size, with an additional 80 MB accounted for by the .NET Framework 4.7.2 installer, which is included in Windows 10 (1903+), whereas Windows 11 comes with .NET 4.8 or later. Early versions of Windows 10 are now rarely used, and for users of these systems, Intel should provide the web-based version of the .NET Framework 4.7.2 installer, which is only 1.3 MB in size.
 
 ---
 
