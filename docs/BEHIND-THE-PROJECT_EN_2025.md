@@ -52,9 +52,10 @@ To understand what Intel actually shipped, I downloaded 93 different Intel chips
 
 After extracting all packages, I obtained:
 
-- 4,832 INF files
+- 5,296 INF files
 - 2,641 unique hardware IDs
-- 86,783 version relations
+- 87 Intel platforms
+- 99,653 version relations
 
 From this dataset, I generated the first-ever complete Intel chipset INF version matrix, now available here:  
 👉 [Intel Chipset INFs Files List](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/blob/main/data/intel-chipset-infs-latest.md)
