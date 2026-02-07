@@ -51,9 +51,10 @@ Aby zrozumieć, co Intel faktycznie wydał, pobrałem 93 różnych instalatorów
 
 Po wypakowaniu wszystkich pakietów uzyskałem:
 
-- 4832 pliki INF
-- 2641 unikalnych identyfikatorów sprzętowych (Hardware IDs)
-- 86783 relacji wersji
+- 5,296 plików INF
+- 2,641 unikalnych identyfikatorów sprzętowych (Hardware IDs)
+- 87 platform Intela
+- 99,653 relacji wersji
 
 Z tego zbioru danych wygenerowałem pierwszą w historii kompletną macierz wersji INF chipsetu Intela, dostępną teraz tutaj:  
 👉 [Intel Chipset INFs Files List](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/blob/main/data/intel-chipset-infs-latest.md)
