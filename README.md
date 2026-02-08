@@ -785,7 +785,7 @@ This project is maintained in my free time. Your support helps cover development
 
 ---
 <div align="center">
-<img width="480"  alt="Marcin Grygiel aka FirstEver and AI" src="https://github.com/user-attachments/assets/452c8553-5059-47c6-9ff9-d73443bb6c06" />
+<img width="480" alt="Author Photo" title="Marcin Grygiel aka FirstEver and AI" src="https://github.com/user-attachments/assets/452c8553-5059-47c6-9ff9-d73443bb6c06" />
 </div>
 
 ---
