@@ -757,7 +757,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 [↑ Back to top](#top)
 
 <a id="author-and-contact"></a>
-## 🧑‍💻 **25. Author & Concatc**
+## 🧑‍💻 **25. Author & Contact**
 
 **Marcin Grygiel** aka FirstEver
 - 🌐 **Website**: [www.firstever.tech](https://www.firstever.tech)
@@ -785,7 +785,7 @@ This project is maintained in my free time. Your support helps cover development
 
 ---
 <div align="center">
-<img width="480"  alt="Marcin Grygiel   AI" src="https://github.com/user-attachments/assets/452c8553-5059-47c6-9ff9-d73443bb6c06" />
+<img width="480"  alt="Marcin Grygiel aka FirstEver and AI" src="https://github.com/user-attachments/assets/452c8553-5059-47c6-9ff9-d73443bb6c06" />
 </div>
 
 ---
