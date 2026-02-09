@@ -105,7 +105,7 @@ Intel has been shipping Chipset Device Software since at least 2001. Over that t
 - Then consumer and server versions started sharing content, but kept different numbers
 - Version numbers changed to `10.1.1xxxx`
 - Then in 2025, Intel released two packages with the *exact same version number* (`10.1.20266.8668`) — one for consumers, one for servers. Two completely different packages. Same number.
-- And then, in late 2025, they replaced the small, clean 2-3 MB installer with the 105 MB bloated one described above
+- And then, in late 2025, they replaced the small, clean 2-3 MB installer with the 106 MB bloated one described above
 
 No other Intel software product has this kind of version history chaos. This is what happens when a product that nobody inside the company considers important gets passed between teams for a quarter century.
 
@@ -119,7 +119,7 @@ Starting from version `10.1.20378.8757`, Intel's installer deserves special atte
 
 When you download and extract it, you find:
 - `SetupChipset.exe` — the outer wrapper
-- `SetupChipset.msi` — x86 MSI (useless on any modern 64-bit system)
+- `SetupChipset.msi` — x86 MSI (useless on any modern 64-bit system) (~10 MB)
 - `SetupChipset.x64.msi` — the actual x64 installer (~10 MB)
 - A .NET Framework 4.7.2 installer package (~80 MB)
 - `SetupChipset1.cab` — the actual INF/CAT files (0.5 MB)
