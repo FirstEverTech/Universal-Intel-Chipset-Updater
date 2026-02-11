@@ -382,9 +382,9 @@ The Intel Chipset Device Software installs the Windows INF files. An INF is a te
 
 | INF | Package | Version | Date | HWIDs |
 |--------|---------|---------|------|--------|
-| SunrisePoint-LPSDHost.inf, SunrisePoint-LPSystem.inf, SunrisePoint-LPSystemLPSS.inf | 10.1.20404.8794 | 10.1.5.3 | 07/12/2025* | 9D10, 9D11, 9D12, 9D13, 9D14, 9D15, 9D16, 9D17, 9D18, 9D19, 9D1A, 9D1B, 9D21, 9D23, 9D24, 9D27, 9D28, 9D29, 9D2A, 9D2B, 9D2D, 9D41, 9D43, 9D46, 9D48, 9D4B, 9D4E, 9D50, 9D51, 9D53, 9D56, 9D58, 9D60, 9D61, 9D62, 9D63, 9D64, 9D65, 9D66 |
+| SunrisePoint-LPSDHost.inf, SunrisePoint-LPSystem.inf, SunrisePoint-LPSystemLPSS.inf, SunrisePoint-LPSystemNorthpeak.inf, SunrisePoint-LPSystemThermal.inf | 10.1.20404.8794 | 10.1.5.3 | 07/12/2025* | 9D10, 9D11, 9D12, 9D13, 9D14, 9D15, 9D16, 9D17, 9D18, 9D19, 9D1A, 9D1B, 9D21, 9D23, 9D24, 9D27, 9D28, 9D29, 9D2A, 9D2B, 9D2D, 9D26, 9D31, 9D41, 9D43, 9D46, 9D48, 9D4B, 9D4E, 9D50, 9D51, 9D53, 9D56, 9D58, 9D60, 9D61, 9D62, 9D63, 9D64, 9D65, 9D66 |
 | SunrisePoint-LPSystem.inf | 10.1.1.37 | 10.1.1.36 | 30/09/2016* | 9D30 |
-| sunrisepoint-lpSystem.inf | 10.1.1.13 | 10.1.1.13 | 28/10/2015* | 9D26, 9D31, 9D35 |
+| sunrisepoint-lpSystem.inf | 10.1.1.13 | 10.1.1.13 | 28/10/2015* | 9D35 |
 | sunrisepoint-lpSystem.inf | 10.1.1.12 | 10.1.1.12 | 21/09/2015* | 9D40, 9D42, 9D44, 9D45, 9D47, 9D49, 9D4A, 9D4C, 9D4D, 9D4F, 9D52, 9D54, 9D55, 9D57, 9D59, 9D5A, 9D5B, 9D5C, 9D5D, 9D5E, 9D5F |
 
 #### TigerLake
@@ -561,3 +561,4 @@ The Intel Chipset Device Software installs the Windows INF files. An INF is a te
 - Dates marked with * indicate that the original INF date was invalid (e.g., 07/18/1968) or missing, so the date was taken from the corresponding .cat file's digital signature timestamp
 
 **Source:** [Universal Intel Chipset Device Updater](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater) / **Project by:** [Marcin Grygiel](https://www.linkedin.com/in/marcin-grygiel/) / **Last Update:** 07-02-2026
+
