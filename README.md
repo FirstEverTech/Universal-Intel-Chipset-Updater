@@ -112,79 +112,43 @@ For a detailed technical breakdown and historical context, see:
 <a id="latest-version"></a>
 ### 2.1 Latest Version
 
-**Universal Intel Chipset Device Updater v10.1-2026.02.2** → [Release Notes](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/releases/tag/v10.1-2026.02.2)
+**Universal Intel Chipset Device Updater v2026.02.0008** → [Release Notes](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/releases/tag/v2026.02.0008)
 
-## 📦 Latest Release: v10.1-2026.02.2
+## 📦 Latest Release: v2026.02.0008
 
 ### 🆕 **Highlights**
-- **Enhanced Pre-Launch Checks**:
-  - Windows build validation (**Win10 LTSC 2019 / build 17763+**) now in PowerShell script
-  - .NET 4.7.2+ detection moved to PowerShell
-  - GitHub connectivity & TLS 1.2 check in PowerShell
-  - User can continue despite warnings
-- **Simplified BAT Launcher**:
-  - BAT file now only handles elevation and launching PowerShell
-  - Pre-checks moved to PowerShell for better reliability
-  - Cleaner exit handling
-- **Critical Fixes**:
-  - Hash verification on older Windows fixed
-  - Improved BAT reliability (working directory, elevation, clean exit)
-  - Fixed exit code 100 handling for new version launches
+- **Enhanced Windows Inbox INF Detection**:
+  - Added detection when Windows Update provides newer INF versions than Intel packages
+  - Shows clear warning when system has newer INF version via Windows Update
+  - Prevents accidental downgrade to older INF versions from Intel packages
+  - Proper version comparison using Version objects for accurate detection
 
 ### 🔧 **Technical Updates**
-- **BAT launcher**: Simplified to only handle elevation and launch PowerShell script
-- **PowerShell script**: 
-  - Added comprehensive pre-checks (Windows build, .NET, GitHub connectivity)
-  - Improved user guidance for older systems
-  - Enhanced error handling and logging
+- **Version Comparison**: Enhanced version parsing and comparison logic
+- **Status Messages**: Improved status display for various update scenarios
+- **Version Format**: Updated tool version format to YYYY.MM.REVISION (2026.02.0008)
 
 ### 🐛 **Bug Fixes**
-- Fixed hash verification failures on older Windows 10 LTSB/LTSC builds
-- Fixed pre-check warnings not clearly informing users about TLS/.NET requirements
-- Fixed working directory issues in BAT launcher
-- Fixed exit handling when auto-update triggers launch of new version
+- Fixed status display when current INF version > latest available version
+- Improved message formatting for better readability
+- Enhanced version comparison to handle all version formats
 
 ### 📋 **Included Files**
-- `universal-intel-chipset-updater.ps1` – Main updater script (with enhanced pre-checks)
+- `universal-intel-chipset-updater.ps1` – Main updater script (with enhanced Windows Inbox detection)
 - `universal-intel-chipset-updater.bat` – Simplified launcher
-- `ChipsetUpdater-10.1-2026.02.2-Win10-Win11.exe` – Self-extracting package
+- `ChipsetUpdater-2026.02.0008-Win10-Win11.exe` – Self-extracting package
 
 ### ⚡ **Requirements & Notes**
 - **Minimum Requirements**:
   - Windows 10 LTSC 2019 (build 17763) or newer
   - .NET Framework 4.7.2+
-- Older LTSB/LTSC builds may run but GitHub hash verification could fail
-- Intel INF package updates remain manual; community reports highly encouraged
+- New Windows Inbox INF detection prevents accidental downgrades
+- Enhanced user guidance when Windows Update provides newer drivers
 
 ---
 
 **Summary**:
-v10.1-2026.02.2 moves **pre-launch checks to PowerShell** for better reliability, simplifies the **BAT launcher**, improves **Windows compatibility** for older builds, and strengthens **user guidance** for systems with limited connectivity, while maintaining all hardware-accurate platform detection and INF installation features from previous releases.
-
----
-
-### 🔍 **Technical Deep Dive: Installation Order Fix**
-
-**Problem**: When Intel removes specific HWIDs from newer installer packages, but your hardware still needs those drivers:
-- Example: Package v1.0 has HWID1, HWID2, HWID3
-- Package v1.1 only has HWID2, HWID3 (Intel deprecated HWID1)
-- Installing v1.1 first, then v1.0 would **downgrade** HWID2 and HWID3
-
-**Solution**: Sort packages by version (oldest → newest) before installation:
-1. v1.0 installs first → HWID1, HWID2, HWID3 all installed
-2. v1.1 installs second → HWID2 and HWID3 **upgraded**, HWID1 unchanged
-3. Result: All drivers at their **maximum available version**, no downgrades
-
-**Code Change** (line 1716 in PowerShell script):
-```powershell
-# OLD CODE:
-$sortedPackages = $packageGroups.Keys | Sort-Object { [version]($_ -replace '\s*\(S\)\s*', '') } -Descending
-
-# NEW CODE (removed -Descending to sort oldest → newest):
-$sortedPackages = $packageGroups.Keys | Sort-Object { [version]($_ -replace '\s*\(S\)\s*', '') }
-```
-
-This ensures legacy platforms receive optimal driver coverage without sacrificing newer updates for actively supported HWIDs.
+v2026.02.0008 enhances **Windows Inbox INF detection** to prevent accidental downgrades when Windows Update provides newer driver versions than Intel packages. The update improves version comparison logic, adds clearer status messages, and maintains all hardware-accurate platform detection features from previous releases.
 
 
 ---
@@ -223,6 +187,7 @@ This ensures legacy platforms receive optimal driver coverage without sacrificin
 <a id="previous-releases"></a>
 ### 2.2 Previous Releases
 
+- v10.1-2026.02.2  → [Release Notes](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/releases/tag/v10.1-2026.02.2)
 - v10.1-2026.02.1  → [Release Notes](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/releases/tag/v10.1-2026.02.1)
 - v10.1-2025.11.8  → [Release Notes](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/releases/tag/v10.1-2025.11.8)
 - v10.1-2025.11.7  → [Release Notes](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/releases/tag/v10.1-2025.11.7)
