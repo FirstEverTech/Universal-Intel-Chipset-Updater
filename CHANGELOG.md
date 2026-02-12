@@ -29,7 +29,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
-## [10.1-2026.02.2] - 2026-02-02
+## [2026.02.007 (old 10.1-2026.02.2)] - 2026-02-02
 
 ### Added
 - **Enhanced Pre-Launch System Checks**: Moved to PowerShell for reliability, including Windows build validation (min. Windows 10 LTSC 2019), .NET Framework verification (4.7.2+ required), GitHub connectivity test, and user prompts on warnings
@@ -51,7 +51,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
-## [10.1-2026.02.1] - 2026-02-01
+## [2026.02.006 (old 10.1-2026.02.1)] - 2026-02-01
 
 ### Added
 - **Hardware-Accurate Platform Separation**: New Generate-HardwareAccurateMD.ps1 script to correct Intel's platform grouping errors, with proper separation for Meteor Lake (SoC, PCH-N, PCH-H, PCH-S), X79 (IvyTown CPU Root from Patsburg PCH), and X99 (HaswellE/BroadwellE CPU Root from Wellsburg PCH)
@@ -79,7 +79,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
-## [10.1-2025.11.8] - 2025-11-27
+## [2025.11.007 (old 10.1-2025.11.8)] - 2025-11-27
 
 ### New Features
 - **Enhanced platform detection**: Added automatic detection for Intel platforms that use Windows 11 24H2 inbox drivers (e.g., Meteor Lake)
@@ -98,7 +98,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
-## [10.1-2025.11.7] - 2025-11-25
+## [2025.11.004 (old 10.1-2025.11.7)] - 2025-11-25
 
 ### Added
 - **Final Credits Screen**: New thank you screen with project information and support message, displayed for 5 seconds before automatic closure
@@ -121,7 +121,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
-## [10.1-2025.11.6] - 2025-11-25
+## [2025.11.003 (old 10.1-2025.11.6)] - 2025-11-25
 
 ### Added
 - **Self-Hash Verification**: Script now validates its own integrity against GitHub release hashes before execution
@@ -151,7 +151,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
-## [10.1-2025.11.5] - 2025-11-21
+## [2025.11.002 (old 10.1-2025.11.5)] - 2025-11-21
 
 ### Added
 - **System Restore Point Creation**: Automatic Windows System Restore point creation before INF installation for enhanced safety
@@ -181,7 +181,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
-## [10.1-2025.11.0] - 2025-11-16 - Initial Release
+## [2025.11.001 (old 10.1-2025.11.0)] - 2025-11-16 - Initial Release
 
 ### Added
 - **Automatic Hardware Detection**: System-wide scanning for Intel chipset components using PCI Vendor ID (8086)
