@@ -255,4 +255,3 @@ If you encounter any issues or have questions about a specific release:
 ---
 
 **Note**: This project is independent and not affiliated with Intel Corporation. All INF packages are official Intel releases downloaded from Intel's servers.
-```
