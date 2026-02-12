@@ -16,8 +16,6 @@
 
 This project was built through a pragmatic collaboration between human expertise and AI-assisted tooling.  
 
-Official discussion threads are available on the following technology forums: **[TechPowerUp](https://www.techpowerup.com/forums/threads/tool-universal-intel-chipset-device-updater.346086/)**, **[Win-Raid](https://winraid.level1techs.com/t/tool-universal-intel-chipset-device-updater)**, **[Station-Drivers](https://www.station-drivers.com/index.php/en/forum/intel-chipsets-drivers/887-universal-intel-chipset-drivers-updater)**, and **[WinClub](https://winclub.pl/topic/49717-universal-intel-chipset-device-updater)**.
-
 ### Why This Tool Exists
 Intel's official Chipset Device Software has evolved over 25 years into a complex, bloated package. This tool simplifies the process by automatically detecting and installing only the INF files your system actually needs — nothing more, nothing less.
 
@@ -25,6 +23,12 @@ For a detailed technical breakdown and historical context, see:
 → **[The Whole Truth About Intel Chipset Device Software](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/blob/main/docs/THE-WHOLE-TRUTH-ABOUT_EN_2026.md)**
 → **[Behind the Project: Making Of](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/blob/main/docs/BEHIND-THE-PROJECT_EN_2025.md)**
 
+⭐ If you find this project useful, consider giving it a star.
+
+---
+
+- Official discussion threads are available on the following technology forums: **[TechPowerUp](https://www.techpowerup.com/forums/threads/tool-universal-intel-chipset-device-updater.346086/)**, **[Win-Raid](https://winraid.level1techs.com/t/tool-universal-intel-chipset-device-updater)**, **[Station-Drivers](https://www.station-drivers.com/index.php/en/forum/intel-chipsets-drivers/887-universal-intel-chipset-drivers-updater)** and **[WinClub](https://winclub.pl/topic/49717-universal-intel-chipset-device-updater)**.
+- For transparency and additional verification, the project has recently been listed on: **[MajorGeeks](https://www.majorgeeks.com/files/details/universal_intel_chipset_device_updater.html)** and **[Softpedia](https://www.softpedia.com/get/System/Universal-Intel-Chipset-Device-Updater.shtml)**.
 
 ---
 
