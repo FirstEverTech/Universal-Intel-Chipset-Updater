@@ -23,7 +23,7 @@ For a detailed technical breakdown and historical context, see:
 → **[The Whole Truth About Intel Chipset Device Software](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/blob/main/docs/THE-WHOLE-TRUTH-ABOUT_EN_2026.md)**
 → **[Behind the Project: Making Of](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/blob/main/docs/BEHIND-THE-PROJECT_EN_2025.md)**
 
-⭐ If you find this project useful, consider giving it a star.
+⭐ If this project helped you, please click the "Star" button at the top of this page on GitHub.
 
 ---
 
