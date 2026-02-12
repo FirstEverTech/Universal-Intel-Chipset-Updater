@@ -5,12 +5,13 @@
 [![License](https://img.shields.io/badge/License-MIT-0056b3?style=for-the-badge)](LICENSE)
 [![Windows](https://img.shields.io/badge/Windows-10%2F11-blue?style=for-the-badge)](https://www.microsoft.com/windows)
 [![PowerShell](https://img.shields.io/badge/PowerShell-5.0+-blueviolet?style=for-the-badge)](https://learn.microsoft.com/en-us/powershell/scripting/install/install-powershell-on-windows?view=powershell-7.5)
-![Repo Views](https://komarev.com/ghpvc/?username=FirstEverTech&repo=Universal-Intel-Chipset-Updater&label=Repo%20Views&color=0056b3&style=flat-square)
+![Downloads](https://img.shields.io/github/downloads/FirstEverTech/Universal-Intel-Chipset-Updater/total?style=for-the-badge)
 
 [![Security Audit](https://img.shields.io/badge/Audit_Score-9.4%2F10-0a8f08?style=for-the-badge)](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/blob/main/SECURITY-AUDITS.md)
 [![Reliability](https://img.shields.io/badge/Reliability-Excellent-0a8f08?style=for-the-badge)](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/blob/main/SECURITY-AUDITS.md)
 [![Issues](https://img.shields.io/github/issues/FirstEverTech/Universal-Intel-Chipset-Updater?style=for-the-badge)](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/issues)
 [![VirusTotal](https://img.shields.io/badge/VirusTotal-0%2F98-008631?style=for-the-badge)](https://www.virustotal.com/gui/url/de3c6f93c5d22847d10f0794a95c4cc6c930de29be841824f442760419322f03?nocache=1)
+![GitHub stars](https://img.shields.io/github/stars/FirstEverTech/Universal-Intel-Chipset-Updater?style=for-the-badge)
 
 ## 🔧 Automate Your Intel Chipset Updates
 **Universal Intel Chipset Device Updater** is an advanced, security-focused tool that automatically detects your Intel hardware and installs the latest official chipset **INF files** with enterprise-grade safety measures.
