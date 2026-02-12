@@ -1,4 +1,4 @@
-﻿# Intel Chipset INF Files List â€“ Strict Architecture Mode
+﻿# Intel Chipset INF Files List - Strict Architecture Mode
 
 The Intel Chipset Device Software installs the Windows INF files. An INF is a text file that provides the operating system with information about a piece of hardware on the system. In the case of the current Intel Chipset Device Software, that information is primarily the product name for the piece of hardware. This allows the operating system to show the correct name for that piece of hardware in Device Manager.
 
@@ -11,22 +11,22 @@ This dataset organizes the historical naming of platforms, with a focus on techn
 ## Naming Legend - Microarchitecture / Segment
 
 ### CLIENT - Core
-- Panther Lake â€“ High Performance Mobile / Efficient Mobile
-- Arrow Lake â€“ Desktop / High Performance Mobile
-- Meteor Lake â€“ Tile-based Mobile SoC
-- Raptor Lake â€“ Desktop / Performance Mobile / Efficient Mobile
-- Alder Lake â€“ Desktop / Performance Mobile / Efficient Mobile
-- Rocket Lake â€“ Desktop
-- Tiger Lake â€“ Mobile SoC / High Performance Mobile
-- Ice Lake â€“ Mobile SoC
-- Comet Lake â€“ Desktop / Mobile
-- Coffee Lake â€“ Desktop / Mobile
-- Kaby Lake â€“ Desktop / Mobile
-- Skylake â€“ Desktop / Mobile
-- Broadwell â€“ Desktop/Mobile
-- Haswell â€“ Desktop/Mobile
-- Ivy Bridge â€“ Desktop/Mobile
-- Sandy Bridge â€“ Desktop/Mobile
+- Panther Lake - High Performance Mobile / Efficient Mobile
+- Arrow Lake - Desktop / High Performance Mobile
+- Meteor Lake - Tile-based Mobile SoC
+- Raptor Lake - Desktop / Performance Mobile / Efficient Mobile
+- Alder Lake - Desktop / Performance Mobile / Efficient Mobile
+- Rocket Lake - Desktop
+- Tiger Lake - Mobile SoC / High Performance Mobile
+- Ice Lake - Mobile SoC
+- Comet Lake - Desktop / Mobile
+- Coffee Lake - Desktop / Mobile
+- Kaby Lake - Desktop / Mobile
+- Skylake - Desktop / Mobile
+- Broadwell - Desktop/Mobile
+- Haswell - Desktop/Mobile
+- Ivy Bridge - Desktop/Mobile
+- Sandy Bridge - Desktop/Mobile
 
 ### WORKSTATION / HEDT
 - Ice Lake-X (Xeon W-3300)
@@ -64,17 +64,17 @@ This dataset organizes the historical naming of platforms, with a focus on techn
 - Valleyview 2 / Cedar Fork (Embedded/IoT)
 
 ### PCH Family
-- 700 Series â€“ Raptor Lake PCH-S (Desktop)
-- 600 Series â€“ Alder Lake PCH (Desktop / Mobile)
-- 500 Series â€“ Tiger Lake PCH (Mobile)
-- 400 Series â€“ Comet Lake PCH (Mobile / Workstation)
-- 200 Series â€“ Kaby Lake PCH-H (Mobile)
-- 100 Series â€“ Sunrise Point (Desktop/Mobile PCH)
-- 9 Series â€“ Wildcat Point-LP (Mobile PCH)
-- 8 Series â€“ Lynx Point (Desktop/Mobile PCH)
-- 7 Series â€“ Panther Point (Desktop/Mobile PCH)
-- 6 Series â€“ Cougar Point (Desktop/Mobile PCH)
-- C620 / C621A â€“ Lewisburg / Emmitsburg (Server Chipset)
+- 700 Series - Raptor Lake PCH-S (Desktop)
+- 600 Series - Alder Lake PCH (Desktop / Mobile)
+- 500 Series - Tiger Lake PCH (Mobile)
+- 400 Series - Comet Lake PCH (Mobile / Workstation)
+- 200 Series - Kaby Lake PCH-H (Mobile)
+- 100 Series - Sunrise Point (Desktop/Mobile PCH)
+- 9 Series - Wildcat Point-LP (Mobile PCH)
+- 8 Series - Lynx Point (Desktop/Mobile PCH)
+- 7 Series - Panther Point (Desktop/Mobile PCH)
+- 6 Series - Cougar Point (Desktop/Mobile PCH)
+- C620 / C621A - Lewisburg / Emmitsburg (Server Chipset)
 
 ### OTHER / LEGACY
 - 10.0.x Package
@@ -515,3 +515,4 @@ This dataset organizes the historical naming of platforms, with a focus on techn
 - Dates marked with * indicate that the original INF date was invalid (e.g., 07/18/1968) or missing, so the date was taken from the corresponding .cat file's digital signature timestamp
 
 **Source:** [Universal Intel Chipset Device Updater](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater) / **Project by:** [Marcin Grygiel](https://www.linkedin.com/in/marcin-grygiel/) / **Last Update:** 12-02-2026
+
