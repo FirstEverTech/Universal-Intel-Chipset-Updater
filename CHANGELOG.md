@@ -1,9 +1,82 @@
+```markdown
 # Changelog
 
 All notable changes to the Universal Intel Chipset Updater project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+
+---
+
+## [2026.02.0008] - 2026-02-08
+
+### Added
+- **Enhanced Windows Inbox INF Detection**: Detects newer INF versions from Windows Update to prevent downgrades
+- **Improved Version Comparison**: Uses Version objects for accurate parsing and comparison
+- **Clear User Guidance**: Status messages for scenarios like "Newer INF version detected (Windows Inbox)", "Already on latest version", or "Update available"
+
+### Changed
+- **Improved Status Messages**: Better formatting for multi-line messages and warnings about Windows Inbox drivers
+- **Version Format**: Tool version now follows YYYY.MM.REVISION format
+
+### Technical Improvements
+- **Version Comparison Logic**: Updated parsing to handle all formats with enhanced error handling
+- **Status Display Functions**: Improved platform information display in Show-Screen2
+
+### Bug Fixes
+- Fixed incorrect status display when current version exceeds latest version
+- Improved message formatting and alignment
+- Enhanced error handling in version comparison logic
+
+---
+
+## [10.1-2026.02.2] - 2026-02-02
+
+### Added
+- **Enhanced Pre-Launch System Checks**: Moved to PowerShell for reliability, including Windows build validation (min. Windows 10 LTSC 2019), .NET Framework verification (4.7.2+ required), GitHub connectivity test, and user prompts on warnings
+
+### Changed
+- **Simplified Batch Launcher**: Reduced complexity to focus on elevation and launching PowerShell, with better working directory and exit handling
+- **Architecture Change**: Moved all pre-checks to PowerShell for consistent warnings, better maintenance, and improved compatibility with older Windows builds
+
+### Fixed
+- Hash verification failures on older Windows 10 LTSB/LTSC builds
+- Pre-check warnings not clearly informing about TLS/.NET requirements
+- Working directory issues in BAT during elevation
+- Exit handling when auto-update launches new version
+- User experience for systems with limited connectivity
+
+### Technical Improvements
+- **Batch Launcher Updates**: Removed duplicate pre-checks, simplified code
+- **PowerShell Script Enhancements**: Comprehensive system validation in Show-Screen1, improved error handling and logging
+
+---
+
+## [10.1-2026.02.1] - 2026-02-01
+
+### Added
+- **Hardware-Accurate Platform Separation**: New Generate-HardwareAccurateMD.ps1 script to correct Intel's platform grouping errors, with proper separation for Meteor Lake (SoC, PCH-N, PCH-H, PCH-S), X79 (IvyTown CPU Root from Patsburg PCH), and X99 (HaswellE/BroadwellE CPU Root from Wellsburg PCH)
+- **Extended Installer Support**: Full support for MSI installers alongside EXE, with MSI integrity verification via hash from GitHub Archive
+- **Installer Enhancements**: Dual support for EXE/MSI detection, MSI verification, improved error handling, and fallback to Intel’s official installer
+- **New Scripts**: Generate-HardwareAccurateMD.ps1 for hardware-correct database (generates intel-chipset-infs-latest-v2.md and installer-list.csv)
+- **Database Improvements**: Accurate separation of hardware components for better detection and understanding
+
+### Changed
+- **Log File Location**: Moved chipset_update.log to C:\ProgramData\ to persist after cleanup
+- **Pause Management**: Added keyboard buffer flush to prevent screen "skipping"
+- **Version Display**: Added $DisplayVersion with regex for proper UI formatting
+- **Source Code Variables**: Added $DisplayVersion and $githubArchiveUrl for archival MSI hash files
+- **Updated Functions**: Rewritten Install-ChipsetINF for EXE/MSI support, fixed regex in Show-Header and Show-FinalCredits, changed log location in Write-Log
+
+### Fixed
+- MSI installation for newer Intel packages
+- Log persistence during temporary directory cleanup
+- Screen "skipping" due to buffered keys
+- Incorrect version display in header
+
+### Technical Improvements
+- **Improved Parsing and Debugging**: Fixed regex, added debug messages for tracking
+- **Backward Compatibility**: No changes needed for updater; works with existing database formats
 
 ---
 
@@ -183,3 +256,4 @@ If you encounter any issues or have questions about a specific release:
 ---
 
 **Note**: This project is independent and not affiliated with Intel Corporation. All INF packages are official Intel releases downloaded from Intel's servers.
+```
