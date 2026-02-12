@@ -2,7 +2,7 @@
 
 The Intel Chipset Device Software installs the Windows INF files. An INF is a text file that provides the operating system with information about a piece of hardware on the system. In the case of the current Intel Chipset Device Software, that information is primarily the product name for the piece of hardware. This allows the operating system to show the correct name for that piece of hardware in Device Manager.
 
-## Naming Legend - ÂµArchitecture / Segment
+## Naming Legend - Microarchitecture / Segment
 
 ### CLIENT - Core
 - Panther Lake - High Performance Mobile / Efficient Mobile
@@ -446,3 +446,4 @@ The Intel Chipset Device Software installs the Windows INF files. An INF is a te
 - Dates marked with * indicate that the original INF date was invalid (e.g., 07/18/1968) or missing, so the date was taken from the corresponding .cat file's digital signature timestamp
 
 **Source:** [Universal Intel Chipset Device Updater](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater) / **Project by:** [Marcin Grygiel](https://www.linkedin.com/in/marcin-grygiel/) / **Last Update:** 11-02-2026
+
