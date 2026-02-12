@@ -79,7 +79,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
-## [2025.11.007 (old 10.1-2025.11.8)] - 2025-11-27
+## [2025.11.005 (old 10.1-2025.11.8)] - 2025-11-27
 
 ### New Features
 - **Enhanced platform detection**: Added automatic detection for Intel platforms that use Windows 11 24H2 inbox drivers (e.g., Meteor Lake)
