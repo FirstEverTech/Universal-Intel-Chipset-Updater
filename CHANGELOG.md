@@ -1,4 +1,3 @@
-```markdown
 # Changelog
 
 All notable changes to the Universal Intel Chipset Updater project will be documented in this file.
