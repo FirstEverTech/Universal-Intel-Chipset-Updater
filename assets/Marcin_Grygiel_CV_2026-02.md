@@ -1,6 +1,3 @@
-[//]: # (Marcin Grygiel CV 2025 - Architect Approach)
-[//]: # (Format: Markdown, optimized for ATS and human readers)
-
 **32 Harvard Way, Oakgrove, Milton Keynes, MK10 9TF, UK** | **+44 7922 232 199**  
 **grygiel.martin@gmail.com** | **linkedin.com/in/marcin-grygiel**  
 **GitHub:** [github.com/FirstEverTech](https://github.com/FirstEverTech)
