@@ -1,15 +1,12 @@
+# Marcin Grygiel
 **32 Harvard Way, Oakgrove, Milton Keynes, MK10 9TF, UK** | **+44 7922 232 199**  
-**grygiel.martin@gmail.com** | **linkedin.com/in/marcin-grygiel**  
-**GitHub:** [github.com/FirstEverTech](https://github.com/FirstEverTech)
+**grygiel.martin@gmail.com** | **linkedin.com/in/marcin-grygiel** | **GitHub:** [github.com/FirstEverTech](https://github.com/FirstEverTech)
 
 ---
 
 ## EDUCATION & LANGUAGES
 
-**BSc in Computer Engineering**  
-The Witelon State University, Legnica, Poland (June 2006)
-
-- **English** – Fluent (full professional proficiency)
+**BSc in Computer Engineering** | The Witelon State University, Legnica, Poland (June 2006) | **English** – Fluent (full professional proficiency)
 
 ---
 
@@ -58,32 +55,27 @@ Took on the challenge of solving a decades-old problem: the lack of transparency
 - Independently conceived, developed, and launched the **Universal Intel Chipset Device Updater** as a personal initiative to solve a complex technical challenge and prove my ability to deliver a world-class product single-handedly. The project is now in maintenance mode, requiring periodic updates to its core database as Intel releases new installers.
 - Manage the project's GitHub repository, handle community feedback, and maintain the underlying data generation pipeline.
 
-**JPK Solutions Ltd** | IT Business Relationship Manager  
-*June 2023 – July 2024*
+**JPK Solutions Ltd** | IT Business Relationship Manager | *June 2023 – July 2024*
 
 - Partnered with business executives to align IT strategy with corporate goals, bridging the gap between technical execution and business value.
 - Oversaw the implementation of IT solutions, ensuring they met stakeholder expectations and delivered measurable results. Applied **ITIL v4 framework principles** in service management and process optimization.
 - This role provided critical insight into how large organizations often fail to address systemic user problems, directly inspiring the creation of a user-focused tool like the Universal Intel Chipset Updater.
 
-**JPK Solutions Ltd** | IT Business Analyst  
-*November 2022 – June 2023*
+**JPK Solutions Ltd** | IT Business Analyst | *November 2022 – June 2023*
 
 - Delivered tailored IT solutions based on in-depth business analysis and stakeholder input.
 - Evaluated enterprise IT architecture and advised on future technology roadmaps, deepening my understanding of complex system interactions. Gained practical expertise in **Microsoft 365 and Azure** environments.
 
-**Sitel Group / SYKES** | IT Analyst  
-*July 2021 – September 2022*
+**Sitel Group / SYKES** | IT Analyst | *July 2021 – September 2022*
 
 - Provided technical support to over 500 users across multiple European sites.
 - Administered **Azure AD, Microsoft 365, Active Directory**, and remote support tools, gaining hands-on experience with the very systems that my own tool now enhances.
 
-**Symphony Ventures / SYKES Digital Services** | IT Analyst  
-*July 2020 – July 2021*
+**Symphony Ventures / SYKES Digital Services** | IT Analyst | *July 2020 – July 2021*
 
 - Operated a global IT helpdesk and managed endpoint maintenance for international teams, reinforcing the need for better, more transparent update processes.
 
-**IT First Ever Ltd** | Founder & IT Support Engineer  
-*January 2008 – December 2019*
+**IT First Ever Ltd** | Founder & IT Support Engineer | *January 2008 – December 2019*
 
 - Founded and operated an independent IT service business, supporting SMEs with everything from hardware repair to custom system deployments and e-commerce platform management. This entrepreneurial experience laid the foundation for managing all aspects of the Universal Intel Chipset Updater project.
 
@@ -114,7 +106,7 @@ Took on the challenge of solving a decades-old problem: the lack of transparency
 
 ## INTERESTS & PERSONAL PROJECTS
 
+- **Crowdfunding & Hardware Engineering:** Developing crowdfunding campaigns for PC hardware projects, involving circuit design, firmware creation, and software development, leveraging AI agents.
 - **Custom PC Engineering:** Building high-end systems with cutting-edge hardware, including low-level firmware modification.
 - **Performance Tuning:** Active member of the overclocking community; recently achieved a disk read speed record of 214 GB/s.
 - **Everyday Optimization:** Built a voice-controlled home assistant for a custom rooftop pool, handling both filtration and heating.
-- **AI Experimentation:** Exploring AI-based photo and video restoration.
