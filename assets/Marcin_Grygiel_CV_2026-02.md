@@ -12,9 +12,7 @@
 **BSc in Computer Engineering**  
 The Witelon State University, Legnica, Poland (June 2006)
 
-**Languages:**  
-- Polish – Native  
-- English – Fluent
+- **English** – Fluent (full professional proficiency)
 
 ---
 
