@@ -67,20 +67,20 @@ Took on the challenge of solving a decades-old problem: the lack of transparency
 *June 2023 – July 2024*
 
 - Partnered with business executives to align IT strategy with corporate goals, bridging the gap between technical execution and business value.
-- Oversaw the implementation of IT solutions, ensuring they met stakeholder expectations and delivered measurable results.
+- Oversaw the implementation of IT solutions, ensuring they met stakeholder expectations and delivered measurable results. Applied **ITIL v4 framework principles** in service management and process optimization.
 - This role provided critical insight into how large organizations often fail to address systemic user problems, directly inspiring the creation of a user-focused tool like the Universal Intel Chipset Updater.
 
 **JPK Solutions Ltd** | IT Business Analyst  
 *November 2022 – June 2023*
 
 - Delivered tailored IT solutions based on in-depth business analysis and stakeholder input.
-- Evaluated enterprise IT architecture and advised on future technology roadmaps, deepening my understanding of complex system interactions.
+- Evaluated enterprise IT architecture and advised on future technology roadmaps, deepening my understanding of complex system interactions. Gained practical expertise in **Microsoft 365 and Azure** environments.
 
 **Sitel Group / SYKES** | IT Analyst  
 *July 2021 – September 2022*
 
 - Provided technical support to over 500 users across multiple European sites.
-- Administered Azure AD, Microsoft 365, Active Directory, and remote support tools, gaining hands-on experience with the very systems that my own tool now enhances.
+- Administered **Azure AD, Microsoft 365, Active Directory**, and remote support tools, gaining hands-on experience with the very systems that my own tool now enhances.
 
 **Symphony Ventures / SYKES Digital Services** | IT Analyst  
 *July 2020 – July 2021*
@@ -107,8 +107,8 @@ Took on the challenge of solving a decades-old problem: the lack of transparency
 ## TECHNICAL PROFICIENCY
 
 **Core Competencies:**
-- **IT Strategy & Management:** ITIL v4, Service Management, Business Relationship Management, Project & Change Management
-- **Cloud & Identity:** Microsoft 365, Azure AD, VMware, Active Directory
+- **IT Strategy & Management:** ITIL v4 framework, Service Management, Business Relationship Management, Project & Change Management
+- **Cloud & Identity:** Microsoft 365, Azure AD, VMware, Active Directory (practical expertise)
 - **Scripting & Automation:** PowerShell (Advanced), C++, Bash
 - **Operating Systems:** Windows (Client/Server), macOS, Linux
 - **Networking:** TCP/IP, DNS, DHCP, VPN, Cisco Meraki
