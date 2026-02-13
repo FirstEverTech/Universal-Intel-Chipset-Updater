@@ -1,4 +1,4 @@
-﻿# Intel Chipset INF Files List - Strict Architecture Mode
+# Intel Chipset INF Files List - Strict Architecture Mode
 
 The Intel Chipset Device Software installs the Windows INF files. An INF is a text file that provides the operating system with information about a piece of hardware on the system. In the case of the current Intel Chipset Device Software, that information is primarily the product name for the piece of hardware. This allows the operating system to show the correct name for that piece of hardware in Device Manager.
 
@@ -224,6 +224,13 @@ This dataset organizes the historical naming of platforms, with a focus on techn
 |--------|---------|---------|------|--------|
 | Broadwell-DESystem.inf | 10.1.18981.6008 | 10.1.3.2 | 15/06/2021* | 0C50, 0C51, 0C52, 0C53, 6F00, 6F01, 6F02, 6F03, 6F04, 6F05, 6F06, 6F07, 6F08, 6F09, 6F0A, 6F0B, 6F0D, 6F0E, 6F10, 6F11, 6F12, 6F13, 6F14, 6F15, 6F16, 6F17, 6F18, 6F19, 6F1A, 6F1B, 6F1C, 6F1D, 6F1E, 6F1F, 6F20, 6F21, 6F22, 6F23, 6F24, 6F25, 6F26, 6F27, 6F28, 6F29, 6F2A, 6F2C, 6F30, 6F32, 6F33, 6F34, 6F36, 6F37, 6F38, 6F39, 6F3A, 6F3E, 6F3F, 6F40, 6F41, 6F43, 6F45, 6F46, 6F47, 6F50, 6F51, 6F52, 6F53, 6F60, 6F68, 6F6A, 6F6B, 6F6C, 6F6D, 6F6E, 6F6F, 6F70, 6F71, 6F76, 6F78, 6F79, 6F7D, 6F7E, 6F80, 6F81, 6F83, 6F85, 6F86, 6F87, 6F88, 6F8A, 6F90, 6F93, 6F95, 6F96, 6F98, 6F99, 6F9A, 6F9C, 6FA0, 6FA8, 6FAA, 6FAB, 6FAC, 6FAD, 6FAE, 6FAF, 6FB0, 6FB1, 6FB2, 6FB3, 6FB4, 6FB5, 6FB6, 6FB7, 6FB8, 6FB9, 6FBA, 6FBB, 6FBC, 6FBD, 6FBE, 6FBF, 6FC0, 6FC1, 6FC2, 6FC3, 6FC4, 6FC5, 6FC6, 6FC7, 6FC8, 6FC9, 6FCA, 6FCB, 6FCC, 6FCD, 6FCE, 6FCF, 6FD0, 6FD1, 6FD2, 6FD3, 6FD4, 6FD5, 6FD6, 6FD7, 6FE0, 6FE1, 6FE2, 6FE3, 6FE4, 6FE5, 6FE6, 6FE7, 6FE8, 6FE9, 6FEA, 6FEB, 6FEC, 6FED, 6FEE, 6FEF, 6FF0, 6FF1, 6FF2, 6FF3, 6FF4, 6FF5, 6FF6, 6FF7, 6FF8, 6FF9, 6FFA, 6FFB, 6FFC, 6FFD, 6FFE |
 
+#### IvyTown
+**Generation:** Xeon E7 v2 - IvyTown - Server
+
+| INF | Package | Version | Date | HWIDs |
+|--------|---------|---------|------|--------|
+| IvyTownSystem.inf | 10.1.18981.6008 | 10.1.3.2 | 15/06/2021* | 0E00, 0E01, 0E02, 0E03, 0E04, 0E05, 0E06, 0E07, 0E08, 0E09, 0E0A, 0E0B, 0E10, 0E13, 0E17, 0E18, 0E1C, 0E1D, 0E1E, 0E1F, 0E20, 0E21, 0E22, 0E23, 0E24, 0E25, 0E26, 0E27, 0E28, 0E29, 0E2A, 0E2C, 0E2E, 0E2F, 0E30, 0E32, 0E33, 0E34, 0E36, 0E37, 0E38, 0E3A, 0E3E, 0E3F, 0E40, 0E41, 0E43, 0E44, 0E45, 0E47, 0E60, 0E68, 0E6A, 0E6B, 0E6C, 0E6D, 0E71, 0E74, 0E75, 0E77, 0E79, 0E7D, 0E7F, 0E80, 0E81, 0E83, 0E84, 0E85, 0E87, 0E90, 0E93, 0E94, 0E95, 0EA0, 0EA8, 0EAA, 0EAB, 0EAC, 0EAD, 0EAE, 0EAF, 0EB0, 0EB1, 0EB2, 0EB3, 0EB4, 0EB5, 0EB6, 0EB7, 0EBC, 0EBE, 0EBF, 0EC0, 0EC1, 0EC2, 0EC3, 0EC4, 0EC8, 0EC9, 0ECA, 0ED8, 0ED9, 0EDC, 0EDD, 0EDE, 0EDF, 0EE0, 0EE1, 0EE2, 0EE3, 0EE4, 0EE5, 0EE6, 0EE7, 0EE8, 0EE9, 0EEA, 0EEB, 0EEC, 0EED, 0EEE, 0EF0, 0EF1, 0EF2, 0EF3, 0EF4, 0EF5, 0EF6, 0EF7, 0EF8, 0EF9, 0EFA, 0EFB, 0EFC, 0EFD |
+
 #### Jaketown
 **Generation:** Xeon E5 - Jaketown - Server
 
@@ -244,13 +251,6 @@ This dataset organizes the historical naming of platforms, with a focus on techn
 | INF | Package | Version | Date | HWIDs |
 |--------|---------|---------|------|--------|
 | ColetoCreekSystem.inf | 10.1.18981.6008 | 10.1.3.2 | 15/06/2021* | 23B1, 23E0 |
-
-#### IvyTown
-**Generation:** Xeon E7 v2 - Ivytown - Server - Unknown
-
-| INF | Package | Version | Date | HWIDs |
-|--------|---------|---------|------|--------|
-| IvyTownSystem.inf | 10.1.18981.6008 | 10.1.3.2 | 15/06/2021* | 0E00, 0E01, 0E02, 0E03, 0E04, 0E05, 0E06, 0E07, 0E08, 0E09, 0E0A, 0E0B, 0E10, 0E13, 0E17, 0E18, 0E1C, 0E1D, 0E1E, 0E1F, 0E20, 0E21, 0E22, 0E23, 0E24, 0E25, 0E26, 0E27, 0E28, 0E29, 0E2A, 0E2C, 0E2E, 0E2F, 0E30, 0E32, 0E33, 0E34, 0E36, 0E37, 0E38, 0E3A, 0E3E, 0E3F, 0E40, 0E41, 0E43, 0E44, 0E45, 0E47, 0E60, 0E68, 0E6A, 0E6B, 0E6C, 0E6D, 0E71, 0E74, 0E75, 0E77, 0E79, 0E7D, 0E7F, 0E80, 0E81, 0E83, 0E84, 0E85, 0E87, 0E90, 0E93, 0E94, 0E95, 0EA0, 0EA8, 0EAA, 0EAB, 0EAC, 0EAD, 0EAE, 0EAF, 0EB0, 0EB1, 0EB2, 0EB3, 0EB4, 0EB5, 0EB6, 0EB7, 0EBC, 0EBE, 0EBF, 0EC0, 0EC1, 0EC2, 0EC3, 0EC4, 0EC8, 0EC9, 0ECA, 0ED8, 0ED9, 0EDC, 0EDD, 0EDE, 0EDF, 0EE0, 0EE1, 0EE2, 0EE3, 0EE4, 0EE5, 0EE6, 0EE7, 0EE8, 0EE9, 0EEA, 0EEB, 0EEC, 0EED, 0EEE, 0EF0, 0EF1, 0EF2, 0EF3, 0EF4, 0EF5, 0EF6, 0EF7, 0EF8, 0EF9, 0EFA, 0EFB, 0EFC, 0EFD |
 
 
 ### ATOM / LOW POWER / EMBEDDED
@@ -514,6 +514,4 @@ This dataset organizes the historical naming of platforms, with a focus on techn
 - Dates without asterisk are taken directly from the INF file's DriverVer field
 - Dates marked with * indicate that the original INF date was invalid (e.g., 07/18/1968) or missing, so the date was taken from the corresponding .cat file's digital signature timestamp
 
-**Source:** [Universal Intel Chipset Device Updater](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater) / **Project by:** [Marcin Grygiel](https://www.linkedin.com/in/marcin-grygiel/) / **Last Update:** 12-02-2026
-
-
+**Source:** [Universal Intel Chipset Device Updater](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater) / **Project by:** [Marcin Grygiel](https://www.linkedin.com/in/marcin-grygiel/) / **Last Update:** 13-02-2026
