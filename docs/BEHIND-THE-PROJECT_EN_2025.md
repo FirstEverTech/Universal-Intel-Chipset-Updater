@@ -11,9 +11,9 @@ This document is the behind-the-scenes story of how the project was created, why
 
 ## 🌀 1. Where It All Started: The X79 / C600 Disaster Case
 
-My personal machine is based on the nearly prehistoric X79 (C600) chipset — and yes, I still use it daily in 2025, including for GPU benchmarks like my [NVIDIA Smooth Motion](https://www.youtube.com/watch?v=TXstp8kN7j4) demo.
+My personal machine is based on the nearly prehistoric X79 (C600) chipset — and yes, I still use it daily in 2026, including for GPU benchmarks like my [NVIDIA Smooth Motion](https://www.youtube.com/watch?v=TXstp8kN7j4) demo.
 
-Updating an Intel chipset driver should be trivial.  
+Updating an Intel chipset INF files should be trivial.  
 But with X79, it turned into a multi-day forensic investigation.
 
 Intel’s public packages list versions like:
