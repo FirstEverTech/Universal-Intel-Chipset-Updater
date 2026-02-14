@@ -34,6 +34,15 @@ For a detailed technical breakdown and historical context, see:
 
 ---
 
+## 👋 About the Author
+
+> [!TIP]
+> **I'm currently seeking new challenges where I can apply my expertise in solving complex IT infrastructure problems. If your organization struggles with system compatibility, automation, or tooling gaps – let's discuss how I can help.**
+>
+> 🔗 **Connect with me:** [linkedin.com/in/marcin-grygiel](https://linkedin.com/in/marcin-grygiel)
+
+---
+
 <a id="table_of_contents"></a>
 ## 📑 **1. Table of Contents**
 
