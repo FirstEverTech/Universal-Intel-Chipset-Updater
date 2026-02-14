@@ -18,7 +18,7 @@ But with X79, it turned into a multi-day forensic investigation.
 
 Intel’s public packages list versions like:
 
-| Year | Installer | INF Version | x79 Support | Notes |
+| Year | Installer | INF Version | Support (x79) | Notes |
 | :--- | :--- | :--- | :--- | :--- |
 | 2011 | 9.2.3.1020 | 9.2.3.1013 | ✅ Full | First INF Release for X79/C600 | |
 | 2013 | 9.4.4.1006 | 9.2.3.1032 | ✅ Full | Last INF Version 9.4.xxxx |
