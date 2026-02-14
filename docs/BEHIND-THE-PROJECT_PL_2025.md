@@ -11,9 +11,9 @@ Ten dokument to historia zza kulis o tym, jak projekt został stworzony, dlaczeg
 
 ## 🌀 1. Punkt wyjścia: Przypadek katastrofy X79 / C600
 
-Mój osobisty komputer oparty jest na niemal prehistorycznym chipsecie X79 (C600) — i tak, nadal używam go na co dzień w 2025 roku, także do testów GPU, jak moja demostracja technologii [NVIDIA Smooth Motion](https://www.youtube.com/watch?v=TXstp8kN7j4).
+Mój osobisty komputer oparty jest na niemal prehistorycznym chipsecie X79 (C600) — i tak, nadal używam go na co dzień w 2026 roku, także do testów GPU, jak moja demostracja technologii [NVIDIA Smooth Motion](https://www.youtube.com/watch?v=TXstp8kN7j4).
 
-Aktualizacja sterownika chipsetu Intela powinna być trywialna.  
+Aktualizacja plików INF dla chipsetu Intela powinna być trywialna.  
 Ale w przypadku X79 przerodziła się w wielodniowe śledztwo kryminalistyczne.
 
 Publiczne pakiety Intela pokazują wersje takie jak:
