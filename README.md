@@ -127,73 +127,45 @@ For a detailed technical breakdown and historical context, see:
 <a id="latest-version"></a>
 ### 2.1 Latest Version
 
-**Universal Intel Chipset Device Updater v2026.02.0008** → [Release Notes](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/releases/tag/v2026.02.0008)
+**Universal Intel Chipset Device Updater v2026.02.0009** → [Release Notes](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/releases/tag/v2026.02.0009)
 
-## 📦 Latest Release: v2026.02.0008
+## 📦 Latest Release: v2026.02.0009
 
 ### 🆕 **Highlights**
-- **Enhanced Windows Inbox INF Detection**:
-  - Added detection when Windows Update provides newer INF versions than Intel packages
-  - Shows clear warning when system has newer INF version via Windows Update
-  - Prevents accidental downgrade to older INF versions from Intel packages
-  - Proper version comparison using Version objects for accurate detection
+- **Database Scanner Fix: 300 Series – Cannon Lake PCH**:
+  - Fixed missing 300 Series chipsets (Cannon Lake-H/LP) in generated INF database
+  - All 141 HWIDs (73+68) now appear correctly in `intel-chipset-infs-latest.md`
+  - Updated PCH Family legend now includes `- 300 Series - Cannon Lake PCH (Mobile)`
+- **Cosmetic Message Formatting**:
+  - Improved console output alignment and readability
+  - Refined status messages in platform display
 
 ### 🔧 **Technical Updates**
-- **Version Comparison**: Enhanced version parsing and comparison logic
-- **Status Messages**: Improved status display for various update scenarios
-- **Version Format**: Updated tool version format to YYYY.MM.REVISION (2026.02.0008)
+- **Intel Platform Scanner**: Added missing platforms to `$pchFamilyList` and corrected key casing in `$archNameOverride`
+- **Markdown Generation**: Embedded legend now includes 300 Series entry
+- **Message Functions**: Enhanced `Write-Log` and `Show-Screen2` formatting
 
 ### 🐛 **Bug Fixes**
-- Fixed status display when current INF version > latest available version
-- Improved message formatting for better readability
-- Enhanced version comparison to handle all version formats
+- Resolved complete absence of 300 Series (Cannon Lake PCH) from Markdown output
+- Fixed case-sensitivity issue preventing correct platform categorization
+- Added missing line in PCH Family legend
 
 ### 📋 **Included Files**
-- `universal-intel-chipset-updater.ps1` – Main updater script (with enhanced Windows Inbox detection)
+- `universal-intel-chipset-updater.ps1` – Main updater script (unchanged functionality)
 - `universal-intel-chipset-updater.bat` – Simplified launcher
-- `ChipsetUpdater-2026.02.0008-Win10-Win11.exe` – Self-extracting package
+- `ChipsetUpdater-2026.02.0009-Win10-Win11.exe` – Self-extracting package (includes updated scanner)
+- `Intel-Platform-Scanner.ps1` – Fixed scanner script (v6.8)
+- `Generate-HardwareAccurateMD.ps1` – Database generator with corrected mapping
 
 ### ⚡ **Requirements & Notes**
-- **Minimum Requirements**:
-  - Windows 10 LTSC 2019 (build 17763) or newer
-  - .NET Framework 4.7.2+
-- New Windows Inbox INF detection prevents accidental downgrades
-- Enhanced user guidance when Windows Update provides newer drivers
+- **Minimum Requirements**: Windows 10 LTSC 2019 (build 17763) or newer, .NET Framework 4.7.2+
+- **Database rebuild**: Run the scanner after updating to regenerate `intel-chipset-infs-latest.md`
+- Core updater logic (Windows Inbox detection, version comparison) unchanged from v2026.02.0008
 
 ---
 
 **Summary**:
-v2026.02.0008 enhances **Windows Inbox INF detection** to prevent accidental downgrades when Windows Update provides newer driver versions than Intel packages. The update improves version comparison logic, adds clearer status messages, and maintains all hardware-accurate platform detection features from previous releases.
-
-
----
-
-### 🔍 **Technical Deep Dive: Installation Order Fix**
-
-**Problem**: When Intel removes specific HWIDs from newer installer packages, but your hardware still needs those drivers:
-- Example: Package v1.0 has HWID1, HWID2, HWID3
-- Package v1.1 only has HWID2, HWID3 (Intel deprecated HWID1)
-- Installing v1.1 first, then v1.0 would **downgrade** HWID2 and HWID3
-
-**Solution**: Sort packages by version (oldest → newest) before installation:
-1. v1.0 installs first → HWID1, HWID2, HWID3 all installed
-2. v1.1 installs second → HWID2 and HWID3 **upgraded**, HWID1 unchanged
-3. Result: All drivers at their **maximum available version**, no downgrades
-
-**Code Change** (line ~1714 in PowerShell script):
-```powershell
-# Sort packages by version (oldest first) to prevent downgrade when installing missing HWIDs
-$sortedPackages = $uniquePackages.GetEnumerator() | Sort-Object {
-    $versionString = $_.Key -replace '-.*$', ''
-    try { [version]$versionString } catch { $versionString }
-}
-
-foreach ($entry in $sortedPackages) {
-    # Installation logic...
-}
-```
-
-This ensures legacy platforms receive optimal driver coverage without sacrificing newer updates for actively supported HWIDs.
+v2026.02.0009 fixes a critical database issue where **300 Series (Cannon Lake PCH)** was missing from the generated INF list. All HWIDs are now correctly displayed, and console output formatting has been polished. The updater retains all previous enhancements, including Windows Inbox INF detection.
 
 
 
@@ -202,6 +174,7 @@ This ensures legacy platforms receive optimal driver coverage without sacrificin
 <a id="previous-releases"></a>
 ### 2.2 Previous Releases
 
+- v2026.02.0008  → [Release Notes](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/releases/tag/v2026.02.0008)
 - v2026.02.0007 (old v10.1-2026.02.2)  → [Release Notes](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/releases/tag/v10.1-2026.02.2)
 - v2026.02.0006 (old v10.1-2026.02.1)  → [Release Notes](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/releases/tag/v10.1-2026.02.1)
 - v2025.11.0005 (old v10.1-2025.11.8)  → [Release Notes](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/releases/tag/v10.1-2025.11.8)
