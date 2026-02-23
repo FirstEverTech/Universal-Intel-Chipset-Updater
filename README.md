@@ -150,12 +150,12 @@ For a detailed technical breakdown and historical context, see:
 - Fixed case-sensitivity issue preventing correct platform categorization
 - Added missing line in PCH Family legend
 
-### 📋 **Included Files**
+### 📋 **Project Files**
 - `universal-intel-chipset-updater.ps1` – Main updater script (unchanged functionality)
 - `universal-intel-chipset-updater.bat` – Simplified launcher
 - `ChipsetUpdater-2026.02.0009-Win10-Win11.exe` – Self-extracting package (includes updated scanner)
-- `Intel-Platform-Scanner.ps1` – Fixed scanner script (v6.8)
-- `Generate-HardwareAccurateMD.ps1` – Database generator with corrected mapping
+- `Intel-Package-Extractor.ps1` – INF extraction script v1.0 (not included)
+- `Intel-Platform-Scanner.ps1` – INF scanner script v6.8 (not included)
 
 ### ⚡ **Requirements & Notes**
 - **Minimum Requirements**: Windows 10 LTSC 2019 (build 17763) or newer, .NET Framework 4.7.2+
