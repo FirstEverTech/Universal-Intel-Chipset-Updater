@@ -49,7 +49,7 @@ Od razu zobaczysz:
 - ✅ Który (najnowszy) **pakiet Intel Chipset Device Software** go zawiera,
 - ✅ **Podana data pochodzi ze znacznika czasu podpisu cyfrowego** powiązanego pliku `.cat` (pliku katalogowego podpisującego pliki INF).  
   
-  Daje to dokładną informację o dacie wydania pakietu, **nawet jeśli sam plik INF zawiera fikcyjną datę, np. 1968/1970** – tak się dzieje, ponieważ Intel przestał umieszczać daty w nowszych plikach INF.
+Daje to dokładną informację o dacie wydania pakietu, **nawet jeśli sam plik INF zawiera fikcyjną datę, np. 1968/1970** – tak się dzieje, ponieważ Intel przestał umieszczać daty w nowszych plikach INF.
 
 <img width="891" height="194" alt="image" src="https://github.com/user-attachments/assets/3f73a395-96f3-4aca-8c0d-2eb235e1b368" />
 
