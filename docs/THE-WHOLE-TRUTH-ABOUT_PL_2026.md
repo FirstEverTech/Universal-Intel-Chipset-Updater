@@ -187,3 +187,7 @@ Ta analiza opiera się na publicznie dostępnym oprogramowaniu i dokumentacji In
 Intel® i powiązane znaki towarowe są własnością Intel Corporation.
 Autor szanuje własność intelektualną i pracę inżynierską Intela.
 Ta krytyka koncentruje się na praktykach dystrybucji oprogramowania, a nie na inżynierii sprzętowej Intela.
+
+---
+
+Autor: Marcin Grygiel aka FirstEver ([LinkedIn](https://www.linkedin.com/in/marcin-grygiel))
