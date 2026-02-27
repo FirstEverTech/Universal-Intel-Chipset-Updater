@@ -466,9 +466,9 @@ For current limitations and workarounds, please see: [KNOWN_ISSUES.md](KNOWN_ISS
 - [HOW-TO-VERIFY-INF_EN_2026.md](docs/HOW-TO-VERIFY-INF_EN_2026.md) - Manual INF version verification guide (English)
 - [HOW-TO-VERIFY-INF_PL_2026.md](docs/HOW-TO-VERIFY-INF_PL_2026.md) - Manual INF version verification guide (Polish)
 - [THE-WHOLE-TRUTH-ABOUT_EN_2026.md](docs/THE-WHOLE-TRUTH-ABOUT_EN_2026.md) - In-depth Intel chipset software explanation (English)
-- [THE-WHOLE-TRUTH-ABOUT_PL_2026.md](docs/THE-WHOLE-TRUTH-ABOUT_PL_2026.md) - In-depth Intel chipset software explanation (Polish)
-  
-- `audit-reports/` - Security audit reports
+- [THE-WHOLE-TRUTH-ABOUT_PL_2026.md](docs/THE-WHOLE-TRUTH-ABOUT_PL_2026.md) - In-depth Intel chipset software explanation (Polish)t
+
+`docs/audit-reports/` - Security audit reports
 
   - [2026-02-01-CHATGPT-AUDIT.md](docs/audit-reports/2026-02-01-CHATGPT-AUDIT.md)
   - [2026-02-01-CLAUDE-AUDIT.md](docs/audit-reports/2026-02-01-CLAUDE-AUDIT.md)
