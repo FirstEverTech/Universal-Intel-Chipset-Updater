@@ -54,7 +54,7 @@ You will immediately see:
 ---
 
 #### 5. Compare with what your driver tool says
-If another program tells you to **downgrade to an older version**, you now know it’s wrong.
+If another program does not see the latest version or suggests a downgrade to an older version, that is not correct.
 
 ---
 
