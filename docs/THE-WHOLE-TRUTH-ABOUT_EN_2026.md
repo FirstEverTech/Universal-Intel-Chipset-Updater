@@ -188,3 +188,7 @@ This analysis is based on publicly available Intel software and documentation.
 Intel® and related trademarks are property of Intel Corporation.
 The author respects Intel's intellectual property and engineering work.
 This critique focuses on software distribution practices, not Intel's hardware engineering.
+
+---
+
+Author: Marcin Grygiel aka FirstEver ([LinkedIn](https://www.linkedin.com/in/marcin-grygiel))
