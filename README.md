@@ -22,9 +22,9 @@ This project was built through a pragmatic collaboration between human expertise
 Intel's official Chipset Device Software has evolved over 25 years into a complex, bloated package. This tool simplifies the process by automatically detecting and installing only the INF files your system actually needs — nothing more, nothing less.
 
 For a detailed technical breakdown and historical context, see:  
-→ **[The Whole Truth About Intel Chipset Device Software](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/blob/main/docs/THE-WHOLE-TRUTH-ABOUT_EN_2026.md)**
-→ **[Behind the Project: Making Of](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/blob/main/docs/BEHIND-THE-PROJECT_EN_2025.md)**
-→ **[How to verify the latest INF files yourself](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/blob/main/docs/HOW-TO-VERIFY-INF_EN_2026.md)**
+→ **[The Whole Truth About Intel Chipset Device Software](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/blob/main/docs/THE-WHOLE-TRUTH-ABOUT_EN_2026.md)**  
+→ **[Behind the Project: Making Of](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/blob/main/docs/BEHIND-THE-PROJECT_EN_2025.md)**  
+→ **[How to verify the latest INF files yourself](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/blob/main/docs/HOW-TO-VERIFY-INF_EN_2026.md)**  
 
 ⭐ If this project helped you, please click the "Star" button at the top of this page on GitHub.
 
