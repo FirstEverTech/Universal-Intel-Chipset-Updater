@@ -19,8 +19,7 @@ Wybierz jedną z poniższych metod:
 #### 2. Znajdź urządzenie chipsetu Intela
 - Rozwiń sekcję **"Urządzenia systemowe"**.
 - Poszukaj wpisu zawierającego w nazwie **"Intel"**, **"Chipset"**, **"LPC"** itp.
-- **Często nazwa sama zawiera identyfikator sprzętu** – na przykład:  
-  `Intel(R) C600/X79 series chipset LPC Controller – 1D41`  
+- **Często nazwa sama zawiera identyfikator sprzętu** – na przykład: `Intel(R) C600/X79 series chipset LPC Controller – 1D41`  
   Tutaj HWID to **`1D41`**.
 
 <img width="817" height="341" alt="image" src="https://github.com/user-attachments/assets/58c94b5e-d6e8-4a01-a161-21f3c3b78e7c" />
@@ -30,8 +29,7 @@ Wybierz jedną z poniższych metod:
 #### 3. Jeśli HWID nie ma w nazwie, sprawdź właściwość Hardware Ids
 - Kliknij prawym przyciskiem myszy na urządzenie → **Właściwości** → zakładka **Szczegóły**.
 - W rozwijanej liście **"Właściwość"** wybierz **"Identyfikatory sprzętu"**.
-- Zobaczysz coś w stylu:  
-  `PCI\VEN_8086&DEV_1D41&CC_0601`  
+- Zobaczysz coś w stylu: `PCI\VEN_8086&DEV_1D41&CC_0601`  
   Część po **`DEV_`** (tutaj **`1D41`**) to identyfikator urządzenia.
 
 <img width="441" height="290" alt="image" src="https://github.com/user-attachments/assets/bb9d2ac3-27c0-4af8-b469-0d40f853386d" />
@@ -44,21 +42,19 @@ Otwórz w przeglądarce moją najnowszą bazę danych INF:
 
 Naciśnij **Ctrl+F** i wyszukaj ten HWID (np. **`1D41`**).
 
-Od razu zobaczysz:
-- ✅ **Najnowszą wersję INF** dla tego urządzenia,
-- ✅ Który (najnowszy) **pakiet Intel Chipset Device Software** go zawiera,
-- ✅ **Podana data pochodzi ze znacznika czasu podpisu cyfrowego** powiązanego pliku `.cat` (pliku katalogowego podpisującego pliki INF).  
-  
-Daje to dokładną informację o dacie wydania pakietu, **nawet jeśli sam plik INF zawiera fikcyjną datę, np. 1968/1970** – tak się dzieje, ponieważ Intel przestał umieszczać daty w nowszych plikach INF.
-
 <img width="891" height="194" alt="image" src="https://github.com/user-attachments/assets/3f73a395-96f3-4aca-8c0d-2eb235e1b368" />
 
 > **Uwaga:** Jeśli Twoje urządzenie **nie jest traktowane jako element chipsetu** lub jest urządzeniem chipsetowym, którego Intel **nigdy nie dołączył do żadnego ze swoich pakietów Chipset Device Software** (tzn. plik INF pochodzi z Windows Inbox Drivers), to HWID **może nie pojawić się** w tej bazie.
-
+  
+Od razu zobaczysz:
+- ✅ **Najnowszą wersję INF** dla tego urządzenia,
+- ✅ Który (najnowszy) **pakiet Intel Chipset Device Software** go zawiera,
+- ✅ **Podana data pochodzi ze znacznika czasu podpisu cyfrowego** powiązanego pliku `.cat` (pliku katalogowego podpisującego pliki INF). Daje to dokładną informację o dacie wydania pakietu, **nawet jeśli sam plik INF zawiera fikcyjną datę, np. 1968/1970** – tak się dzieje, ponieważ Intel przestał umieszczać daty w nowszych plikach INF.
+  
 ---
 
 #### 5. Porównaj z tym, co mówi inny program
-Jeśli inny program sugeruje **downgrade do starszej wersji**, teraz już wiesz, że to błąd.
+Jeśli inny program nie widzi najnowszej wersji lub sugeruje **downgrade do starszej wersji**, to nie jest to poprawne.
 
 ---
 
