@@ -49,7 +49,7 @@ You will immediately see:
 - ✅ Which (latest) **Intel Chipset Device Software package** contains it,
 - ✅ The **date shown is taken from the digital signature timestamp** of the associated `.cat` file (the catalog file that signs the INF files).  
   
-  This accurately reflects when the package was released, **even if the INF itself contains a dummy date like 1968/1970** – this happens because Intel no longer embeds dates in newer INF files.
+This accurately reflects when the package was released, **even if the INF itself contains a dummy date like 1968/1970** – this happens because Intel no longer embeds dates in newer INF files.
 
 <img width="891" height="194" alt="image" src="https://github.com/user-attachments/assets/3f73a395-96f3-4aca-8c0d-2eb235e1b368" />
 
