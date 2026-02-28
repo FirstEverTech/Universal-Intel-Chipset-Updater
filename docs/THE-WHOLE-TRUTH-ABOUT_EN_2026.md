@@ -247,7 +247,7 @@ As a side note — there is an open-source alternative worth mentioning:
 
 Unlike Intel's official package, it:
 - Detects which Intel chipset devices are present on your system
-- Downloads only the INF files that apply to those specific devices
+- Downloads the official Intel installer containing the latest INF files that apply to these specific devices
 - Verifies every file with SHA-256 hashes and Intel's digital signatures
 - Installs silently, without bloat, with a system restore point created beforehand
 - Supports platforms from Sandy Bridge (2011) through current generation
