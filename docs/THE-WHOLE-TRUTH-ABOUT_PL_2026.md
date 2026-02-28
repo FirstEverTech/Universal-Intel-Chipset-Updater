@@ -245,7 +245,7 @@ W przeciwieństwie do oficjalnego pakietu Intela, on:
 Zdecydowałem się to faktycznie *naprawić* prawidłowo. Nie obejść problemu, nie stworzyć kolejnego wątku na forum — zbudować zamiennik, który robi to, co oprogramowanie Intela powinno było robić od zawsze, ale nigdy nie robiło:
 
 - Wykrywa, które urządzenia chipsetu Intel są obecne w twoim systemie
-- Pobiera tylko pliki INF, które dotyczą tych konkretnych urządzeń
+- Pobiera oficjalny instalator Intela zawierający najnowsze pliki INF, które dotyczą tych konkretnych urządzeń
 - Weryfikuje każdy plik za pomocą skrótów SHA-256 i podpisów cyfrowych Intela
 - Instaluje się cicho, bez nadmiarowego balastu, z wcześniej utworzonym punktem przywracania systemu
 - Obsługuje platformy od Sandy Bridge (2011) do obecnej generacji
