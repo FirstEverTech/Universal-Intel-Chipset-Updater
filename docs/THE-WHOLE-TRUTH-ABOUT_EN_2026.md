@@ -32,6 +32,29 @@ Same hardware. Same driver. Same performance. Same everything. Just a different 
 
 ---
 
+## How Hardware Manufacturers Name It
+
+The naming confusion doesn't stop with Intel. Major hardware manufacturers independently arrived at their own — often incorrect — descriptions for the same package:
+
+| Manufacturer | Name Used | Assessment |
+|---|---|---|
+| Gigabyte | Intel INF Update Utility | ✅ Correct — accurately describes what it does |
+| Dell | Intel Chipset Device Software | ✅ Follows Intel's official name |
+| HP | Intel Chipset Installation Utility and Driver | ⚠️ Misleading — adds "Driver" unnecessarily |
+| ASUS | Intel Chipset INF Driver | ⚠️ Partial — acknowledges INF but still calls it a driver |
+| ASRock | INF Driver | ⚠️ Partial — same issue as ASUS |
+| Intel | Chipset Device Software | ⚠️ Misleading — but avoids the word "driver" |
+| Lenovo | Intel Chipset Driver | ❌ Incorrect — no mention of INF |
+| MSI | Intel Chipset Driver | ❌ Incorrect — no mention of INF |
+
+Only one out of eight manufacturers — Gigabyte — uses a name that accurately reflects what this package actually contains: INF files, not drivers.
+
+This is not a coincidence or an isolated mistake. It is an industry-wide misunderstanding that has persisted for 25 years — repeated by motherboard vendors, laptop OEMs, and system builders alike, all the way down to end-user forums and PC building guides.
+
+The myth that Intel Chipset Device Software installs drivers was never corrected at the source. So it spread everywhere.
+
+---
+
 ### What INF Files Actually Do
 
 To be precise — and credit to the community for keeping me honest here — INF files do more than just rename devices:
