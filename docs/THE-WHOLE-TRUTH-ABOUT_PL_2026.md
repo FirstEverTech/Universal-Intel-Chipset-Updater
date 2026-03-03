@@ -32,6 +32,29 @@ Ten sam sprzęt. Ten sam sterownik. Ta sama wydajność. To samo wszystko. Tylko
 
 ---
 
+## Jak producenci sprzętu nazywają ten pakiet
+
+Zamieszanie z nazewnictwem nie kończy się na Intelu. Główni producenci sprzętu niezależnie od siebie wypracowali własne — często błędne — określenia dla tego samego pakietu:
+
+| Producent | Używana nazwa | Ocena |
+|---|---|---|
+| Gigabyte | Intel INF Update Utility | ✅ Poprawne — dokładnie opisuje co robi |
+| Dell | Intel Chipset Device Software | ✅ Używa oficjalnej nazwy Intela |
+| HP | Intel Chipset Installation Utility and Driver | ⚠️ Myląca — niepotrzebnie dodaje słowo "Driver" |
+| ASUS | Intel Chipset INF Driver | ⚠️ Połowiczne — wspomina INF, ale nadal nazywa to sterownikiem |
+| ASRock | INF Driver | ⚠️ Połowiczne — ten sam problem co ASUS |
+| Intel | Chipset Device Software | ⚠️ Myląca — ale unika słowa "sterownik" |
+| Lenovo | Intel Chipset Driver | ❌ Błędne — brak jakiejkolwiek wzmianki o INF |
+| MSI | Intel Chipset Driver | ❌ Błędne — brak jakiejkolwiek wzmianki o INF |
+
+Tylko jeden z ośmiu producentów — Gigabyte — używa nazwy która dokładnie oddaje zawartość tego pakietu: pliki INF, a nie sterowniki.
+
+To nie jest przypadek ani odosobniony błąd. To branżowe nieporozumienie które trwa 25 lat — powtarzane przez producentów płyt głównych, dostawców OEM laptopów i integratorów systemów, aż po fora internetowe i poradniki do składania PC.
+
+Mit że Intel Chipset Device Software instaluje sterowniki nigdy nie został sprostowany u źródła. Dlatego rozprzestrzenił się wszędzie.
+
+---
+
 ### Co właściwie robią pliki INF?
 
 Mówiąc precyzyjnie — i oddając społeczności należne uznanie za pilnowanie poprawności — pliki INF robią coś więcej niż tylko zmianę nazw urządzeń:
