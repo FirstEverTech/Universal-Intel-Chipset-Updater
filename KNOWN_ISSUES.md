@@ -277,12 +277,12 @@ The tool will:
 - Create a System Restore Point before making changes
 - Log all actions to `%TEMP%\Intel_Chipset_Uninstall.log`
 
-<img width="602" height="752" alt="image" src="https://github.com/user-attachments/assets/fb70dca0-a543-477a-b85d-f74486a4ee9a" />
-
 ---
 
 #### Step 2: Note the Detected Version(s)
 After running the tool, take note of which Intel Chipset versions were found and removed. This information will help with the next step.
+
+<img width="602" height="752" alt="image" src="https://github.com/user-attachments/assets/fb70dca0-a543-477a-b85d-f74486a4ee9a" />
 
 ---
 
