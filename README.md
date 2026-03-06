@@ -259,7 +259,7 @@ This project has undergone comprehensive analysis by multiple AI security expert
 |-----------|---------|-------------|-------|
 | Windows Version | 10 1809 (17763) | 11 22H2+ | 1809 requires .NET 4.7.2+ |
 | .NET Framework | 4.6.1 | 4.8+ | 4.7.2+ for TLS 1.2 on older Windows |
-| PowerShell | 5.1 | 5.1 | Windows PowerShell 5.1 included |
+| PowerShell | 5.1 | 5.1+ | Windows PowerShell 5.1 included |
 | Administrator | Required | Required | For driver installation |
 | Internet | Required | Required | For hash verification and updates |
 | RAM | 2 GB | 4 GB+ | For INF extraction/installation |
