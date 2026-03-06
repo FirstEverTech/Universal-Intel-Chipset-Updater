@@ -10,6 +10,7 @@ This document contains all reported issues, bugs, and their corresponding soluti
 - [Issue #3: Script Fails to Extract Intel Chipset Device Software](#issue-3-script-fails-to-extract-intel-chipset-device-software)
 - [Issue #4: Installer Cannot Continue Due to Missing or Corrupted Previous Intel Chipset Installation](#issue-4-installer-cannot-continue-due-to-missing-or-corrupted-previous-intel-chipset-installation)
 - [Issue #5: Change in Intel Chipset Software installer starting from version 10.1.20378.8757](#issue-5-change-in-intel-chipset-software-installer)
+- [Issue #6: Error 1603 During MSI Installation Due to Corrupted Previous Installation](#issue-6-error-1603-during-msi-installation-due-to-corrupted-previous-installation)
 
 ---
 
@@ -225,6 +226,109 @@ Every new large installer can be "slimmed down" and reduced to approximately 10 
 #### ⚠️ Make sure the edited `SetupChipset.msi` and `SetupChipset1.cab` files are in the same directory when running the MSI installer.
 
 In future versions of Universal Intel Chipset Software (starting from 2026), I will add the ability to install the latest reduced-size MSI versions. These versions, like the old installer, will install silently in the background and update all INF files for available Intel devices in the system. Please note that the new installer appears in the list of installed programs as `Chipset Setup`, not as `Intel(R) Chipset Device Software`.
+
+[↑ Back to top](#top)
+
+---
+
+<a id="issue-6-error-1603-during-msi-installation-due-to-corrupted-previous-installation"></a>
+## Issue #6: Error 1603 During MSI Installation Due to Corrupted Previous Installation
+
+**Affected Systems**: All Windows systems with a damaged or incomplete previous installation of Intel Chipset Device Software
+
+**Symptoms**:
+- MSI installer fails with **Error 1603**
+- Installation halts before any INF files are processed
+- Error persists even after downloading fresh copies of the installer
+- Logs show that Windows Installer cannot properly remove or upgrade the existing product
+
+**Cause**:
+This issue occurs when a previous installation of *Intel Chipset Device Software* was not cleanly uninstalled, leaving behind:
+- Corrupted or incompatible uninstall data in the Windows registry
+- Orphaned entries in the Windows Installer database
+- Broken or missing uninstaller executables for older versions
+
+When a new installer attempts to upgrade or overwrite the existing product, it fails because the old product cannot be properly removed — resulting in the generic **Error 1603**.
+
+**Important**: This problem exists *before* using the Universal Intel Chipset Updater and is not caused by it. The same error can affect **any MSI package**, not just Intel INF installers.
+
+---
+
+### 🔧 Solution: Clean the Corrupted Installation
+
+#### Step 1: Download the Dedicated Uninstaller Tool
+I have created a dedicated tool that completely cleans your system of any Intel Chipset software installations.
+
+The tool consists of two files:
+- [`uninstall-intel-chipset.bat`](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/blob/main/src/uninstall-intel-chipset.bat) – easy‑to‑run batch wrapper
+- [`uninstall-intel-chipset.ps1`](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/blob/main/src/uninstall-intel-chipset.ps1) – the PowerShell script that does the work
+
+**How to use:**
+1. Download **both files** and place them in the same folder
+2. Right‑click the `.bat` file and select **Run as administrator**
+3. Follow the on‑screen prompts
+
+The tool will:
+- Detect all installed versions (both old EXE‑based and new MSI‑based)
+- Display version information for each found product
+- Attempt silent uninstall using the correct commands
+- Remove orphaned registry entries
+- Leave INF files untouched (your hardware continues to work normally)
+- Create a System Restore Point before making changes
+- Log all actions to `%TEMP%\Intel_Chipset_Uninstall.log`
+
+<img width="602" height="752" alt="image" src="https://github.com/user-attachments/assets/fb70dca0-a543-477a-b85d-f74486a4ee9a" />
+
+---
+
+#### Step 2: Note the Detected Version(s)
+After running the tool, take note of which Intel Chipset versions were found and removed. This information will help with the next step.
+
+---
+
+#### Step 3: Run the Exact Same Version Installer
+1. Locate the installer for the **exact version** that was previously installed (the one you noted in Step 2)
+2. Run the installer as Administrator
+3. If available, choose **Repair** from the installer's interface
+4. If Repair is not available, try **Uninstall** directly from the installer
+
+If repair or uninstall succeeds, the corrupted installation is now cleaned.
+
+---
+
+#### Step 4: Reboot Your System
+Restart your computer to ensure all changes take effect and any locked files are released.
+
+---
+
+#### Step 5: Remove Any Remaining Traces (if needed)
+If you used the Repair option in Step 3, the old version may still be present. In that case:
+
+- Run the uninstaller tool **again** — it should now succeed without Error 1603
+- Alternatively, uninstall the version normally via **Apps & Features**
+
+---
+
+#### Step 6: Run the Universal Intel Chipset Updater
+After successfully cleaning the old installation, run the Universal Intel Chipset Updater again. It should now install the latest version without any errors.
+
+---
+
+### 📥 Direct Links & Resources
+
+- **Uninstaller Tool (both files)**:  
+  [`uninstall-intel-chipset.bat`](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/blob/main/src/uninstall-intel-chipset.bat)  
+  [`uninstall-intel-chipset.ps1`](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/blob/main/src/uninstall-intel-chipset.ps1)
+
+- **Full Case Discussion & Solution Details**:  
+  [github.com/FirstEverTech/Universal-Intel-Chipset-Updater/issues/14#issuecomment-4010882232](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/issues/14#issuecomment-4010882232)
+
+---
+
+### ⚠️ Notes
+- This solution has been tested and confirmed to work on systems where standard uninstall methods failed
+- The uninstaller tool is provided as‑is, without warranty. Always test in a non‑production environment first
+- Not affiliated with Intel Corporation
 
 [↑ Back to top](#top)
 
