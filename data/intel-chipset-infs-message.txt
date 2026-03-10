@@ -7,9 +7,9 @@
 
  Support options:
 
-[Green] - PayPal Donation:[Yellow] tinyurl.com/fet-paypal[Gray] - press[Black,Gray] [P][Gray,Black] key
-[Green] - Buy Me a Coffee:[Yellow] tinyurl.com/fet-coffee[Gray] - press[Black,Gray] [C][Gray,Black] key
-[Green] - GitHub Sponsors:[Yellow] tinyurl.com/fet-github [Black,Yellow][Press G]
+[Green] - PayPal Donation:[Yellow] tinyurl.com/fet-paypal[Gray] - press [Black,Gray][P][Gray,Black] key
+[Green] - Buy Me a Coffee:[Yellow] tinyurl.com/fet-coffee[Gray] - press [Black,Gray][C][Gray,Black] key
+[Green] - GitHub Sponsors:[Yellow] tinyurl.com/fet-github[Gray] - press [Black,Gray][G][Gray,Black] key
 
  If this project helped you, please consider:
 
@@ -27,4 +27,4 @@
  struggles with system compatibility, automation, or tooling gaps,
  let's discuss how I can help.
 
-[Green] - Connect with me:[Yellow] linkedin.com/in/marcin-grygiel[Gray] - press[Black,Gray] [L][Gray,Black] key
+[Green] - Connect with me:[Yellow] linkedin.com/in/marcin-grygiel[Gray] - press [Black,Gray][L][Gray,Black] key
