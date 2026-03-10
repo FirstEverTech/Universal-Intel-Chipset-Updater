@@ -2,16 +2,16 @@
 [Magenta] SUPPORT THIS PROJECT
 [Magenta] ====================
 
-This project is maintained in my free time.
-Your support ensures regular updates and compatibility.
+ This project is maintained in my free time.
+ Your support ensures regular updates and compatibility.
 
-Support options:
+ Support options:
 
 [Green] - PayPal Donation: tinyurl.com/fet-paypal
 [Green] - Buy Me a Coffee: tinyurl.com/fet-coffee
 [Green] - GitHub Sponsors: tinyurl.com/fet-github
 
-If this project helped you, please consider:
+ If this project helped you, please consider:
 
 [Green] - Giving it a STAR on GitHub
 [Green] - Sharing with friends and colleagues
