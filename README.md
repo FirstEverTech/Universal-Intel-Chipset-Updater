@@ -67,6 +67,7 @@ For a detailed technical breakdown and historical context, see:
    8.1 [Method 1: One-Click Execution](#method-1-one-click-execution)  
    8.2 [Method 2: PowerShell Direct](#method-2-powershell-direct)  
    8.3 [Method 3: Hardware ID Scanner Only](#method-3-hardware-id-scanner-only)  
+   8.4 [Command-Line Options](#command-line-options)  
 9. [**How It Works**](#how-it-works)  
    9.1 [Self-Verification & Update Check](#self-verification-update-check)  
    9.2 [Hardware Detection](#hardware-detection)  
@@ -338,6 +339,30 @@ Universal-Intel-Chipset-Updater.bat
 Get-Intel-HWIDs.bat
 ```
 
+<a id="command-line-options"></a>
+## 🎛️ **8.4 Command-Line Options** (New in v2026.03.0010)
+
+Starting with version **2026.03.0010**, the PowerShell script (`universal-intel-chipset-updater.ps1`) supports the following command-line parameters for advanced automation and control:
+
+| Option | Description |
+|--------|-------------|
+| `-help`, `-?` | Display this help message and exit. |
+| `-version`, `-v` | Display the tool version and exit. |
+| `-auto`, `-a` | Automatically answer all prompts with Yes – no user interaction required. |
+| `-quiet`, `-q` | Run in completely silent mode (no console window). Implies `-auto` and hides the PowerShell window. |
+| `-debug`, `-d` | Enable debug output (sets `$DebugMode = 1`). |
+| `-skipverify`, `-s` | Skip the script self‑hash verification (sets `$SkipSelfHashVerification = 1`). **Use only for testing!** |
+
+**Notes:**
+- These options **only work when the script is executed directly via PowerShell** (Method 2). They are ignored when using the batch launcher or SFX executable for backward compatibility.
+- For fully unattended deployments (e.g., Intune, SCCM), combine `-quiet` with administrator privileges.
+
+**Examples:**
+```powershell
+.\universal-intel-chipset-updater.ps1 -auto
+.\universal-intel-chipset-updater.ps1 -quiet
+.\universal-intel-chipset-updater.ps1 -debug -skipverify
+```
 
 [↑ Back to top](#top)
 
