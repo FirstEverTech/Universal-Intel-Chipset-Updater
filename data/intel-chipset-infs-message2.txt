@@ -8,7 +8,7 @@
  Support options:
 
 [Green] - PayPal Donation:[Yellow] tinyurl.com/fet-paypal[Grey] - press[Black,Yellow][P][Grey,Black] key to open
-[Green] - Buy Me a Coffee:[Yellow] tinyurl.com/fet-coffee [Black,Yellow][Press C]
+[Green] - Buy Me a Coffee:[Yellow] tinyurl.com/fet-coffee[Grey] - press[Black,Grey][C][Grey,Black] key to open
 [Green] - GitHub Sponsors:[Yellow] tinyurl.com/fet-github [Black,Yellow][Press G]
 
  If this project helped you, please consider:
