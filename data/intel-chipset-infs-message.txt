@@ -27,4 +27,4 @@
 [Yellow] struggles with system compatibility, automation, or tooling gaps,
 [Yellow] let's discuss how I can help.
 
-[White,DarkBlue] Connect with me: https://linkedin.com/in/marcin-grygiel [Black,Yellow][Press L]
+[Blue] Connect with me: linkedin.com/in/marcin-grygiel [Black,Yellow][Press L]
