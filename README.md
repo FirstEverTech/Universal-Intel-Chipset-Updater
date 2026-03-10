@@ -10,7 +10,7 @@
 [![Security Audit](https://img.shields.io/badge/Audit_Score-9.4%2F10-0a8f08?style=for-the-badge)](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/blob/main/SECURITY-AUDITS.md)
 [![Reliability](https://img.shields.io/badge/Reliability-Excellent-0a8f08?style=for-the-badge)](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/blob/main/SECURITY-AUDITS.md)
 [![Issues](https://img.shields.io/github/issues/FirstEverTech/Universal-Intel-Chipset-Updater?style=for-the-badge)](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/issues)
-[![VirusTotal](https://img.shields.io/badge/VirusTotal-0%2F94-008631?style=for-the-badge)](https://www.virustotal.com/gui/url/2e86a8073a7bfe1431ecd2783d861cc12a0da129a13b5561bf2d5ac901d2ccc9?nocache=1)
+[![VirusTotal](https://img.shields.io/badge/VirusTotal-0%2F95-008631?style=for-the-badge)](https://www.virustotal.com/gui/url/872abe6182fc94ba86f750f37e6e8d88b3ec1b6c350f3338510b236361007eb8?nocache=1)
 ![GitHub stars](https://img.shields.io/github/stars/FirstEverTech/Universal-Intel-Chipset-Updater?style=for-the-badge)
 
 ## 🔧 Automate Your Intel Chipset Updates
