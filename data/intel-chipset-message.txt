@@ -1,3 +1,0 @@
-[Red]TEST 1
-[Magenta] THIS IS TEST
-[]
