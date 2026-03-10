@@ -128,45 +128,44 @@ For a detailed technical breakdown and historical context, see:
 <a id="latest-version"></a>
 ### 2.1 Latest Version
 
-**Universal Intel Chipset Device Updater v2026.02.0009** → [Release Notes](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/releases/tag/v2026.02.0009)
+**Universal Intel Chipset Device Updater v2026.03.0010** → [Release Notes](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/releases/tag/v2026.03.0010)
 
-## 📦 Latest Release: v2026.02.0009
+## 📦 Latest Release: v2026.03.0010
 
 ### 🆕 **Highlights**
-- **Database Scanner Fix: 300 Series – Cannon Lake PCH**:
-  - Fixed missing 300 Series chipsets (Cannon Lake-H/LP) in generated INF database
-  - All 141 HWIDs (73+68) now appear correctly in `intel-chipset-infs-latest.md`
-  - Updated PCH Family legend now includes `- 300 Series - Cannon Lake PCH (Mobile)`
-- **Cosmetic Message Formatting**:
-  - Improved console output alignment and readability
-  - Refined status messages in platform display
+- **Command-Line Options for PowerShell Script**:
+  - Added full parameter support: `-help`, `-version`, `-auto`, `-quiet`, `-debug`, `-skipverify`
+  - Perfect for administrators and automated deployments (Intune, SCCM, Workspace ONE, PDQ Deploy)
+  - `-quiet` mode runs completely silent with no console window
+- **Console Window Consistency**:
+  - PowerShell script now automatically sets the same window size (`75x58`) as the batch launcher
+- **INF Date Clarification**:
+  - Added explanatory note about the symbolic date **07/18/1968** (Intel's founding date) appearing on new INF files
 
 ### 🔧 **Technical Updates**
-- **Intel Platform Scanner**: Added missing platforms to `$pchFamilyList` and corrected key casing in `$archNameOverride`
-- **Markdown Generation**: Embedded legend now includes 300 Series entry
-- **Message Functions**: Enhanced `Write-Log` and `Show-Screen2` formatting
+- **Argument Parser**: Implemented manual parsing to disable partial matching – only exact switches are accepted
+- **Screen Functions**: Updated `Show-Header` and all screens to use consistent console dimensions
+- **INF Note Logic**: Added conditional display of the symbolic date explanation only when relevant
 
 ### 🐛 **Bug Fixes**
-- Resolved complete absence of 300 Series (Cannon Lake PCH) from Markdown output
-- Fixed case-sensitivity issue preventing correct platform categorization
-- Added missing line in PCH Family legend
+- None – this release focuses on new functionality and cosmetic improvements while maintaining full backward compatibility
 
 ### 📋 **Project Files**
-- `universal-intel-chipset-updater.ps1` – Main updater script (unchanged functionality)
-- `universal-intel-chipset-updater.bat` – Simplified launcher
-- `ChipsetUpdater-2026.02.0009-Win10-Win11.exe` – Self-extracting package (includes updated scanner)
-- `Intel-Package-Extractor.ps1` – INF extraction script v1.0 (not included)
-- `Intel-Platform-Scanner.ps1` – INF scanner script v6.8 (not included)
+- `universal-intel-chipset-updater.ps1` – Main updater script with new command-line options
+- `universal-intel-chipset-updater.bat` – Simplified launcher (unchanged, for compatibility)
+- `ChipsetUpdater-2026.03.0010-Win10-Win11.exe` – Self-extracting package (includes updated script)
+- `Intel-Platform-Scanner.ps1` – Scanner script v6.9 (minor internal updates)
+- `Generate-HardwareAccurateMD.ps1` – Database generator (unchanged)
 
 ### ⚡ **Requirements & Notes**
 - **Minimum Requirements**: Windows 10 LTSC 2019 (build 17763) or newer, .NET Framework 4.7.2+
-- **Database rebuild**: Run the scanner after updating to regenerate `intel-chipset-infs-latest.md`
-- Core updater logic (Windows Inbox detection, version comparison) unchanged from v2026.02.0008
+- **New options work only with direct PowerShell execution** – they are ignored when using SFX or batch file for backward compatibility
+- **Coming soon**: Publication to PowerShell Gallery for even easier installation and updates
 
 ---
 
 **Summary**:
-v2026.02.0009 fixes a critical database issue where **300 Series (Cannon Lake PCH)** was missing from the generated INF list. All HWIDs are now correctly displayed, and console output formatting has been polished. The updater retains all previous enhancements, including Windows Inbox INF detection.
+v2026.03.0010 transforms the PowerShell script into a fully command‑line driven tool, adding `-help`, `-version`, `-auto`, `-quiet`, `-debug`, and `-skipverify` options. This makes it ideal for administrators and automated deployments. Cosmetic improvements ensure consistent console appearance and clarify the symbolic INF date. The core update functionality remains rock‑solid and fully compatible with previous releases.
 
 
 
@@ -175,6 +174,7 @@ v2026.02.0009 fixes a critical database issue where **300 Series (Cannon Lake PC
 <a id="previous-releases"></a>
 ### 2.2 Previous Releases
 
+- v2026.02.0009  → [Release Notes](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/releases/tag/v2026.02.0009)
 - v2026.02.0008  → [Release Notes](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/releases/tag/v2026.02.0008)
 - v2026.02.0007 (old v10.1-2026.02.2)  → [Release Notes](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/releases/tag/v10.1-2026.02.2)
 - v2026.02.0006 (old v10.1-2026.02.1)  → [Release Notes](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/releases/tag/v10.1-2026.02.1)
