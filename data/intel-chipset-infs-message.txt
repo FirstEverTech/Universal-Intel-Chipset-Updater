@@ -7,9 +7,9 @@
 
  Support options:
 
-[Green] - PayPal Donation: tinyurl.com/fet-paypal [] [Press 1]
-[Green] - Buy Me a Coffee: tinyurl.com/fet-coffee [] [Press 2]
-[Green] - GitHub Sponsors: tinyurl.com/fet-github [] [Press 3]
+[Green] - PayPal Donation: tinyurl.com/fet-paypal [Yellow] [Press 1]
+[Green] - Buy Me a Coffee: tinyurl.com/fet-coffee [Yellow] [Press 2]
+[Green] - GitHub Sponsors: tinyurl.com/fet-github [Yellow] [Press 3]
 
  If this project helped you, please consider:
 
@@ -27,4 +27,4 @@
 [Yellow] struggles with system compatibility, automation, or tooling gaps,
 [Yellow] let's discuss how I can help.
 
-[White][DarkBlue] Connect with me: https://linkedin.com/in/marcin-grygiel [] [Press L]
+[White][DarkBlue] Connect with me: https://linkedin.com/in/marcin-grygiel [Yellow][Black] [Press L]
