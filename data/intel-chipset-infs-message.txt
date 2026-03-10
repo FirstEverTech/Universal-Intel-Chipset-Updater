@@ -22,9 +22,9 @@
 [Magenta] CAREER OPPORTUNITY
 [Magenta] ==================
 
-[Yellow] I'm currently seeking new challenges where I can apply my expertise
-[Yellow] in solving complex IT infrastructure problems. If your organization
-[Yellow] struggles with system compatibility, automation, or tooling gaps,
-[Yellow] let's discuss how I can help.
+ I'm currently seeking new challenges where I can apply my expertise
+ in solving complex IT infrastructure problems. If your organization
+ struggles with system compatibility, automation, or tooling gaps,
+ let's discuss how I can help.
 
-[Green] Connect with me:[Yellow] linkedin.com/in/marcin-grygiel [Black,Yellow][Press L]
+[Green] - Connect with me:[Yellow] linkedin.com/in/marcin-grygiel [Black,Yellow][Press L]
