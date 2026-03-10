@@ -340,7 +340,7 @@ Get-Intel-HWIDs.bat
 ```
 
 <a id="command-line-options"></a>
-## 🎛️ **8.4 Command-Line Options** (New in v2026.03.0010)
+### 8.4 Command-Line Options (New in v2026.03.0010)
 
 Starting with version **2026.03.0010**, the PowerShell script (`universal-intel-chipset-updater.ps1`) supports the following command-line parameters for advanced automation and control:
 
