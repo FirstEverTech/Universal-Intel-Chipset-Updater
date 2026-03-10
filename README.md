@@ -320,7 +320,7 @@ This project has undergone comprehensive analysis by multiple AI security expert
 ### 8.1 Method 1: One-Click Execution
 ```batch
 # Download and run executable file as Administrator:
-ChipsetUpdater-10.1-202x.xx.x-Win10-Win11.exe (or later version)
+ChipsetUpdater-2026.03.0010-Win10-Win11.exe (or later version)
 
 # Optionaly, download .ps1 and .bat files, then run BATCH file as Administrator:
 Universal-Intel-Chipset-Updater.bat
@@ -441,7 +441,7 @@ Starting with version **2026.03.0010**, the PowerShell script (`universal-intel-
 ## 📥 **12. Download Options**
 <a id="option-1-sfx-executable-recommended"></a>
 ### 12.1 Option 1: SFX Executable (Recommended)
-- **File**: `ChipsetUpdater-10.1-202x.xx.x-Win10-Win11.exe`
+- **File**: `ChipsetUpdater-202x.xx.xxxx-Win10-Win11.exe`
 - **Features**: Digital signature, one-click execution, automatic extraction
 - **For**: Most users, easiest method
 <a id="option-2-script-bundle"></a>
@@ -535,16 +535,16 @@ For current limitations and workarounds, please see: [KNOWN_ISSUES.md](KNOWN_ISS
 <a id="release-structure"></a>
 ## 📦 **15. Release Structure**
 
-Each version (v10.1-202x.xx.x) includes:
+Each version (v202x.xx.xxxx) includes:
 <a id="primary-files"></a>
 ### 15.1 Primary Files
-- `ChipsetUpdater-10.1-202x.xx.x-Win10-Win11.exe` - Main executable (digitally signed)
+- `ChipsetUpdater-202x.xx.xxxx-Win10-Win11.exe` - Main executable (digitally signed)
 - `universal-intel-chipset-updater.bat` - Batch wrapper
 - `universal-intel-chipset-updater.ps1` - PowerShell script
 <a id="verification-files"></a>
 ### 15.2 Verification Files  
-- `ChipsetUpdater-10.1-2025.11.6-Win10-Win11.sha256` - EXE hash
-- `universal-intel-chipset-updater-10.1-202x.xx.x-ps1.sha256` - PS1 script hash
+- `ChipsetUpdater-2026.03.0010-Win10-Win11.sha256` - EXE hash
+- `universal-intel-chipset-updater-202x.xx.xxxx-ps1.sha256` - PS1 script hash
 - `FirstEver.tech.cer` - Digital certificate
 <a id="documentation"></a>
 ### 15.3 Documentation
@@ -567,7 +567,6 @@ Security measures include:
 - Official Intel drivers only from trusted sources
 - Comprehensive pre-installation checks
 
-**Version 10.1-2025.11.6** is strongly recommended by security auditors for optimal safety and performance.
 <a id="will-this-update-all-my-intel-drivers"></a>
 ### 🔄 16.2 Will this update all my Intel drivers?
 This tool specifically updates chipset INF files. It does not update GPU, network, or other device drivers.
