@@ -517,20 +517,32 @@ Starting with version **2026.03.0010**, the PowerShell script (`universal-intel-
 - [THE-WHOLE-TRUTH-ABOUT_EN_2026.md](docs/THE-WHOLE-TRUTH-ABOUT_EN_2026.md) - In-depth Intel chipset software explanation (English)
 - [THE-WHOLE-TRUTH-ABOUT_PL_2026.md](docs/THE-WHOLE-TRUTH-ABOUT_PL_2026.md) - In-depth Intel chipset software explanation (Polish)
 
+`docs/audit-reports-2025-11-21/` - Security audit reports
+
+  - [2025-11-21-CHATGPT-AUDIT.md](docs/audit-reports-2025-11-21/2025-11-21-CHATGPT-AUDIT.md)
+  - [2025-11-21-CLAUDE-AUDIT.md](docs/audit-reports-2025-11-21/2025-11-21-CLAUDE-AUDIT.md)
+  - [2025-11-21-COPILOT-AUDIT.md](docs/audit-reports-2025-11-21/2025-11-21-COPILOT-AUDIT.md)
+  - [2025-11-21-DEEPSEEK-AUDIT.md](docs/audit-reports-2025-11-21/2025-11-21-DEEPSEEK-AUDIT.md)
+  - [2025-11-21-GEMINI-AUDIT.md](docs/audit-reports-2025-11-21/2025-11-21-GEMINI-AUDIT.md)
+  - [2025-11-21-GROK-AUDIT.md](docs/audit-reports-2025-11-21/2025-11-21-GROK-AUDIT.md)
+
+`docs/audit-reports-2026-02-01/` - Security audit reports
+
+  - [2026-02-01-CHATGPT-AUDIT.md](docs/audit-reports-2026-02-01/2026-02-01-CHATGPT-AUDIT.md)
+  - [2026-02-01-CLAUDE-AUDIT.md](docs/audit-reports-2026-02-01/2026-02-01-CLAUDE-AUDIT.md)
+  - [2026-02-01-COPILOT-AUDIT.md](docs/audit-reports-2026-02-01/2026-02-01-COPILOT-AUDIT.md)
+  - [2026-02-01-DEEPSEEK-AUDIT.md](docs/audit-reports-2026-02-01/2026-02-01-DEEPSEEK-AUDIT.md)
+  - [2026-02-01-GEMINI-AUDIT.md](docs/audit-reports-2026-02-01/2026-02-01-GEMINI-AUDIT.md)
+  - [2026-02-01-GROK-AUDIT.md](docs/audit-reports-2026-02-01/2026-02-01-GROK-AUDIT.md)
+
 `docs/audit-reports/` - Security audit reports
 
-  - [2026-02-01-CHATGPT-AUDIT.md](docs/audit-reports/2026-02-01-CHATGPT-AUDIT.md)
-  - [2026-02-01-CLAUDE-AUDIT.md](docs/audit-reports/2026-02-01-CLAUDE-AUDIT.md)
-  - [2026-02-01-COPILOT-AUDIT.md](docs/audit-reports/2026-02-01-COPILOT-AUDIT.md)
-  - [2026-02-01-DEEPSEEK-AUDIT.md](docs/audit-reports/2026-02-01-DEEPSEEK-AUDIT.md)
-  - [2026-02-01-GEMINI-AUDIT.md](docs/audit-reports/2026-02-01-GEMINI-AUDIT.md)
-  - [2026-02-01-GROK-AUDIT.md](docs/audit-reports/2026-02-01-GROK-AUDIT.md)
-  - [2025-11-21-CHATGPT-AUDIT.md](docs/audit-reports/2025-11-21-CHATGPT-AUDIT.md)
-  - [2025-11-21-CLAUDE-AUDIT.md](docs/audit-reports/2025-11-21-CLAUDE-AUDIT.md)
-  - [2025-11-21-COPILOT-AUDIT.md](docs/audit-reports/2025-11-21-COPILOT-AUDIT.md)
-  - [2025-11-21-DEEPSEEK-AUDIT.md](docs/audit-reports/2025-11-21-DEEPSEEK-AUDIT.md)
-  - [2025-11-21-GEMINI-AUDIT.md](docs/audit-reports/2025-11-21-GEMINI-AUDIT.md)
-  - [2025-11-21-GROK-AUDIT.md](docs/audit-reports/2025-11-21-GROK-AUDIT.md)
+  - [2026-03-11-CHATGPT-AUDIT.md](docs/audit-reports-2026-03-11/2026-03-11-CHATGPT-AUDIT.md)
+  - [2026-03-11-CLAUDE-AUDIT.md](docs/audit-reports-2026-03-11/2026-03-11-CLAUDE-AUDIT.md)
+  - [2026-03-11-COPILOT-AUDIT.md](docs/audit-reports-2026-03-11/2026-03-11-COPILOT-AUDIT.md)
+  - [2026-03-11-DEEPSEEK-AUDIT.md](docs/audit-reports-2026-03-11/2026-03-11-DEEPSEEK-AUDIT.md)
+  - [2026-03-11-GEMINI-AUDIT.md](docs/audit-reports-2026-03-11/2026-03-11-GEMINI-AUDIT.md)
+  - [2026-03-11-GROK-AUDIT.md](docs/audit-reports-2026-03-11/2026-03-11-GROK-AUDIT.md)
 
 `assets/` - Screenshots
 
