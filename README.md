@@ -21,9 +21,10 @@ This project was built through a pragmatic collaboration between human expertise
 ### Why This Tool Exists
 Intel's official Chipset Device Software has evolved over 25 years into a complex, bloated package. This tool simplifies the process by automatically detecting and installing only the INF files your system actually needs — nothing more, nothing less.
 
-For a detailed technical breakdown and historical context, see:  
+For detailed documentation and guides, see:
 → **[The Whole Truth About Intel Chipset Device Software](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/blob/main/docs/THE-WHOLE-TRUTH-ABOUT_EN_2026.md)**  
 → **[Behind the Project: Making Of](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/blob/main/docs/BEHIND-THE-PROJECT_EN_2025.md)**  
+→ **[Deploying Universal Intel Chipset Device Updater via MDM](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/blob/main/docs/MDM-DEPLOYMENT-GUIDE_EN_2026.md)**  
 → **[How to verify the latest INF files yourself](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/blob/main/docs/HOW-TO-VERIFY-INF_EN_2026.md)**  
 
 ⭐ If this project helped you, please click the "Star" button at the top of this page on GitHub.
@@ -511,8 +512,10 @@ Starting with version **2026.03.0010**, the PowerShell script (`universal-intel-
 - [BEHIND-THE-PROJECT_PL.md](docs/BEHIND-THE-PROJECT_PL_2025.md) - Project background (Polish)
 - [HOW-TO-VERIFY-INF_EN_2026.md](docs/HOW-TO-VERIFY-INF_EN_2026.md) - Manual INF version verification guide (English)
 - [HOW-TO-VERIFY-INF_PL_2026.md](docs/HOW-TO-VERIFY-INF_PL_2026.md) - Manual INF version verification guide (Polish)
+- [MDM-DEPLOYMENT-GUIDE_EN_2026.md](docs/MDM-DEPLOYMENT-GUIDE_EN_2026.md) - Deploying the Tool via MDM (English)
+- [MDM-DEPLOYMENT-GUIDE_PL_2026.md](docs/MDM-DEPLOYMENT-GUIDE_PL_2026.md) - Deploying the Tool via MDM (Polish)
 - [THE-WHOLE-TRUTH-ABOUT_EN_2026.md](docs/THE-WHOLE-TRUTH-ABOUT_EN_2026.md) - In-depth Intel chipset software explanation (English)
-- [THE-WHOLE-TRUTH-ABOUT_PL_2026.md](docs/THE-WHOLE-TRUTH-ABOUT_PL_2026.md) - In-depth Intel chipset software explanation (Polish)t
+- [THE-WHOLE-TRUTH-ABOUT_PL_2026.md](docs/THE-WHOLE-TRUTH-ABOUT_PL_2026.md) - In-depth Intel chipset software explanation (Polish)
 
 `docs/audit-reports/` - Security audit reports
 
