@@ -144,8 +144,6 @@ For detailed documentation and guides, see:
 - **Batch Launcher Retired**:
   - `universal-intel-chipset-updater.bat` has been removed from the release
   - The tool is now distributed exclusively as a direct PS1 (for administrators) or SFX EXE (for end users)
-- **Post-Installation Summary Pause**:
-  - Fixed missing pause before the credits screen — users can now read the final summary before proceeding
 
 ### 🔧 **Technical Updates**
 - **Path Handling**: Replaced hardcoded `C:\Windows\Temp` and `C:\ProgramData` with `$env:SystemRoot` and `$env:ProgramData` for compatibility with non-standard Windows installations
