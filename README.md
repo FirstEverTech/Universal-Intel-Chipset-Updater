@@ -363,8 +363,12 @@ ChipsetUpdater-2026.03.0011-Win10-Win11.exe (or later version)
 <a id="method-3-hardware-id-scanner-only"></a>
 ### 8.3 Method 3: Hardware ID Scanner Only
 ```batch
-# For diagnostic purposes
-Get-Intel-HWIDs.bat
+# For diagnostic purposes – both files must be in the same directory:
+Get-Intel-HWIDs.bat        # launches the scanner (requires Get-Intel-HWIDs.ps1)
+```
+Or run directly via PowerShell as Administrator:
+```powershell
+.\Get-Intel-HWIDs.ps1
 ```
 
 <a id="command-line-options"></a>
