@@ -119,3 +119,7 @@ GUID zostaje ten sam na zawsze. Publikuj tą samą komendą co w kroku 6.
 - Numer wersji musi być zawsze wyższy niż poprzedni
 - API Key wygasa po roku — regeneruj przed publikacją
 - `.NAME` w PSScriptInfo musi być identyczne z nazwą w polu **Packages** w API Key
+
+---
+
+Autor: Marcin Grygiel aka FirstEver ([LinkedIn](https://www.linkedin.com/in/marcin-grygiel))
