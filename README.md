@@ -217,20 +217,20 @@ v2026.03.0011 is a focused quality release. Hardcoded paths have been replaced w
 <a id="independent-security-audits"></a>
 ## 🔍 **3. Independent Security Audits**
 
-This project has undergone comprehensive analysis by multiple AI security experts to ensure code quality and reliability. The tool achieved an **average security score of 9.6/10** across all independent assessments.
+This project has undergone comprehensive analysis by multiple independent AI security experts across three audit cycles. The tool achieved an **average security score of 9.5/10** across all completed assessments in March 2026.
 
-| Auditor | Score | Key Assessment |
-|---------|-------|----------------|
-| **[Grok](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/blob/main/docs/audit-reports-2026-03-11/2026-03-11-GROK-AUDIT.md)** | 9.9/10 | *"Safety is **comparable to** (or better than) running the official Intel Chipset installer – but with broader hardware coverage, automatic updates, self-updating capability, and far greater transparency."* |
-| **[ChatGPT](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/blob/main/docs/audit-reports-2026-02-01/2026-02-01-CHATGPT-AUDIT.md)** | 9.6/10 | *"It does not behave like a hobby script, but like a carefully scoped system utility."* (audit from February 2026)  |
-| **[Gemini](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/blob/main/docs/audit-reports-2026-03-11/2026-03-11-GEMINI-AUDIT.md)** | 10/10 | *"Universal Intel Chipset Updater** is no longer just a utility; it is a benchmark for how system automation scripts should be built, maintained, and secured."* |
-| **[Copilot](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/blob/main/docs/audit-reports-2026-03-11/2026-03-11-COPILOT-AUDIT.md)** | 9.5/10 | *"It remains one of the most complete and technically impressive PowerShell‑based hardware automation tools available publicly."* |
-| **[DeepSeek](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/blob/main/docs/audit-reports-2026-03-11/2026-03-11-DEEPSEEK-AUDIT.md)** | 9.4/10 | *"This project is a shining example of what focused, user‑centered development can achieve. It solves a genuine problem with elegance and safety, and it deserves recognition and support."* |
-| **[Claude](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/blob/main/docs/audit-reports-2026-03-11/2026-03-11-CLAUDE-AUDIT.md)** | 9.1/10 | *"For its intended use case — automating Intel chipset INF updates across single systems and managed fleets alike — this is the best open-source option available."* |
+| Auditor | Latest Score | Key Assessment |
+|---------|-------------|----------------|
+| **[Grok](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/blob/main/docs/audit-reports-2026-03-11/2026-03-11-GROK-AUDIT.md)** | 9.9/10 | *"Currently the safest, most reliable and best-maintained open-source Intel chipset INF updater available in 2026."* |
+| **[Gemini](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/blob/main/docs/audit-reports-2026-03-11/2026-03-11-GEMINI-AUDIT.md)** | 10/10 | *"No longer just a utility — a benchmark for how system automation scripts should be built, maintained, and secured."* |
+| **[Copilot](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/blob/main/docs/audit-reports-2026-03-11/2026-03-11-COPILOT-AUDIT.md)** | 9.5/10 | *"One of the most complete and technically impressive PowerShell-based hardware automation tools available publicly."* |
+| **[DeepSeek](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/blob/main/docs/audit-reports-2026-03-11/2026-03-11-DEEPSEEK-AUDIT.md)** | 9.4/10 | *"A shining example of what focused, user-centered development can achieve."* |
+| **[Claude](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/blob/main/docs/audit-reports-2026-03-11/2026-03-11-CLAUDE-AUDIT.md)** | 9.1/10 | *"For its intended use case — automating Intel chipset INF updates across single systems and managed fleets alike — this is the reference implementation."* |
+| **[ChatGPT](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/blob/main/docs/audit-reports-2026-02-01/2026-02-01-CHATGPT-AUDIT.md)** | 9.6/10 | *"It does not behave like a hobby script, but like a carefully scoped system utility."* *(Feb 2026 — March update pending)* |
 
-*For detailed audit reports and methodology, see [SECURITY-AUDITS.md](SECURITY-AUDITS.md).*
+*For full score history across all audit cycles, methodology, and detailed reports, see [SECURITY-AUDITS.md](SECURITY-AUDITS.md).*
 
-> **Note:** Audits conducted March 2026 (v2026.03.x). Core security architecture unchanged since audit. New audits planned for upcoming release.
+> **Note:** Latest audits conducted March 2026 (v2026.03.0011/0012). Core security architecture unchanged since audit. ChatGPT March 2026 update planned (paid tier required for full codebase analysis).
 
 
 [↑ Back to top](#top)
