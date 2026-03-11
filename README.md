@@ -1,7 +1,7 @@
 <a id="top"></a>
 # 🚀 **Universal Intel Chipset Device Updater**
 
-[![Version](https://img.shields.io/badge/Version-2026.03.0010-red?style=for-the-badge)](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/releases)
+[![Version](https://img.shields.io/badge/Version-2026.03.0011-red?style=for-the-badge)](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/releases)
 [![License](https://img.shields.io/badge/License-MIT-0056b3?style=for-the-badge)](LICENSE)
 [![Windows](https://img.shields.io/badge/Windows-10%2F11-blue?style=for-the-badge)](https://www.microsoft.com/windows)
 [![PowerShell](https://img.shields.io/badge/PowerShell-5.0+-blueviolet?style=for-the-badge)](https://learn.microsoft.com/en-us/powershell/scripting/install/install-powershell-on-windows?view=powershell-7.5)
@@ -35,7 +35,7 @@ For a detailed technical breakdown and historical context, see:
 
 ---
 
-## 👋 About the Author
+## 💼 Career Opportunity
 
 > [!TIP]
 > **I'm currently seeking new challenges where I can apply my expertise in solving complex IT infrastructure problems. If your organization struggles with system compatibility, automation, or tooling gaps – let's discuss how I can help.**
@@ -50,7 +50,8 @@ For a detailed technical breakdown and historical context, see:
 1. [**Table of Contents**](#table_of_contents)  
 2. [**Release Highlights**](#release-highlights)  
    2.1 [Latest Version](#latest-version)  
-   2.2 [Previous Releases](#previous-releases)  
+   2.2 [Previous Release](#previous-releases)  
+   2.3 [Older Releases](#older-releases)  
 3. [**Independent Security Audits**](#independent-security-audits)  
 4. [**Application Overview**](#application-overview)  
 5. [**Key Features**](#key-features)  
@@ -84,39 +85,38 @@ For a detailed technical breakdown and historical context, see:
    12.1 [Option 1: SFX Executable (Recommended)](#option-1-sfx-executable-recommended)  
    12.2 [Option 2: Script Bundle](#option-2-script-bundle)  
    12.3 [Option 3: Source Code](#option-3-source-code)  
-13. [**Independent Audit Results**](#independent-audit-results)  
-14. [**Project Structure**](#project-structure)  
-15. [**Release Structure**](#release-structure)  
-   15.1 [Primary Files](#primary-files)  
-   15.2 [Verification Files](#verification-files)  
-   15.3 [Documentation](#documentation)  
-16. [**Frequently Asked Questions (FAQ)**](#frequently-asked-questions-faq)  
-   16.1 [Is this tool safe to use?](#is-this-tool-safe-to-use)  
-   16.2 [Will this update all my Intel drivers?](#will-this-update-all-my-intel-drivers)  
-   16.3 [What are the risks?](#what-are-the-risks)  
-   16.4 [Where are files downloaded?](#where-are-files-downloaded)  
-   16.5 [What if something goes wrong?](#what-if-something-goes-wrong)  
-   16.6 [How does the automatic update check work?](#how-does-the-automatic-update-check-work)  
-   16.7 [What does self-hash verification do?](#what-does-self-hash-verification-do)  
-   16.8 [How are updates notified?](#how-are-updates-notified)  
-   16.9 [Why is the certificate "not trusted"?](#why-is-the-certificate-not-trusted)  
-17. [**Intel Platform Support**](#intel-platform-support)  
-18. [**Performance Metrics**](#performance-metrics)  
-   18.1 [Typical Execution Time Breakdown (Updated)](#typical-execution-times)  
-   18.2 [Disk Space Usage](#disk-space-usage)  
-   18.3 [Memory (RAM) Usage](#memory-ram-usage)  
-   18.4 [Resource Usage Summary](#resource-usage-summary)  
-19. [**Known Issues**](#known-issues)  
-20. [**Ready to Update?**](#ready-to-update)  
-   20.1 [Quick Start Guide](#quick-start-guide)  
-   20.2 [Verification Steps (Optional)](#verification-steps-optional)  
-   20.3 [Need Help?](#need-help)
-21. [**Contributing**](#contributing)  
-22. [**License**](#license)  
-23. [**Acknowledgments**](#acknowledgments)  
-24. [**Important Links**](#important-links)  
-25. [**Author & Contact**](#author-and-contact)  
-26. [**Support This Project**](#support-this-project)  
+13. [**Project Structure**](#project-structure)  
+14. [**Release Structure**](#release-structure)  
+   14.1 [Primary Files](#primary-files)  
+   14.2 [Verification Files](#verification-files)  
+   14.3 [Documentation](#documentation)  
+15. [**Frequently Asked Questions (FAQ)**](#frequently-asked-questions-faq)  
+   15.1 [Is this tool safe to use?](#is-this-tool-safe-to-use)  
+   15.2 [Will this update all my Intel drivers?](#will-this-update-all-my-intel-drivers)  
+   15.3 [What are the risks?](#what-are-the-risks)  
+   15.4 [Where are files downloaded?](#where-are-files-downloaded)  
+   15.5 [What if something goes wrong?](#what-if-something-goes-wrong)  
+   15.6 [How does the automatic update check work?](#how-does-the-automatic-update-check-work)  
+   15.7 [What does self-hash verification do?](#what-does-self-hash-verification-do)  
+   15.8 [How are updates notified?](#how-are-updates-notified)  
+   15.9 [Why is the certificate "not trusted"?](#why-is-the-certificate-not-trusted)  
+16. [**Intel Platform Support**](#intel-platform-support)  
+17. [**Performance Metrics**](#performance-metrics)  
+   17.1 [Typical Execution Time Breakdown](#typical-execution-times)  
+   17.2 [Disk Space Usage](#disk-space-usage)  
+   17.3 [Memory (RAM) Usage](#memory-ram-usage)  
+   17.4 [Resource Usage Summary](#resource-usage-summary)  
+18. [**Known Issues**](#known-issues)  
+19. [**Ready to Update?**](#ready-to-update)  
+   19.1 [Quick Start Guide](#quick-start-guide)  
+   19.2 [Verification Steps (Optional)](#verification-steps-optional)  
+   19.3 [Need Help?](#need-help)  
+20. [**Contributing**](#contributing)  
+21. [**License**](#license)  
+22. [**Acknowledgments**](#acknowledgments)  
+23. [**Important Links**](#important-links)  
+24. [**Author & Contact**](#author-and-contact)  
+25. [**Support This Project**](#support-this-project)  
 
 
 [↑ Back to top](#top)
@@ -129,9 +129,56 @@ For a detailed technical breakdown and historical context, see:
 <a id="latest-version"></a>
 ### 2.1 Latest Version
 
-**Universal Intel Chipset Device Updater v2026.03.0010** → [Release Notes](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/releases/tag/v2026.03.0010)
+**Universal Intel Chipset Device Updater v2026.03.0011** → [Release Notes](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/releases/tag/v2026.03.0011)
 
-## 📦 Latest Release: v2026.03.0010
+## 📦 Latest Release: v2026.03.0011
+
+### 🆕 **Highlights**
+
+- **Dynamic Support Message**:
+  - The credits screen now loads its support message dynamically from GitHub (`data/intel-chipset-infs-message.txt`)
+  - Message can be updated independently — no new script release required
+  - Supports inline color formatting via simple tags (e.g. `[Magenta]`, `[White,DarkBlue]`)
+  - Falls back to a built-in static version if GitHub is unreachable
+- **Batch Launcher Retired**:
+  - `universal-intel-chipset-updater.bat` has been removed from the release
+  - The tool is now distributed exclusively as a direct PS1 (for administrators) or SFX EXE (for end users)
+- **Post-Installation Summary Pause**:
+  - Fixed missing pause before the credits screen — users can now read the final summary before proceeding
+
+### 🔧 **Technical Updates**
+- **Path Handling**: Replaced hardcoded `C:\Windows\Temp` and `C:\ProgramData` with `$env:SystemRoot` and `$env:ProgramData` for compatibility with non-standard Windows installations
+- **Boolean Flags**: Refactored `$DebugMode` and `$SkipSelfHashVerification` from integer `0`/`1` flags to native PowerShell `[bool]` types
+- **Code Cleanup**: Removed redundant `Get-FileHash256` wrapper — logic inlined directly into `Verify-FileHash`
+- **Consistency**: Replaced all `cls` alias occurrences with `Clear-Host`
+
+### 🐛 **Bug Fixes**
+- Fixed credits screen appearing immediately after installation without allowing the user to read the summary
+
+### 📋 **Project Files**
+- `universal-intel-chipset-updater.ps1` – Main updater script (optimized)
+- `ChipsetUpdater-2026.03.0011-Win10-Win11.exe` – Self-extracting package (includes updated script)
+- `Intel-Platform-Scanner.ps1` – Scanner script (unchanged)
+- `Generate-HardwareAccurateMD.ps1` – Database generator (unchanged)
+
+### ⚡ **Requirements & Notes**
+- **Minimum Requirements**: Windows 10 LTSC 2019 (build 17763) or newer, .NET Framework 4.7.2+
+- **Execution**: Direct PS1 for administrators, SFX EXE for end users — batch launcher no longer included
+- **Coming soon**: Publication to PowerShell Gallery for even easier installation and updates
+
+---
+
+**Summary**:
+v2026.03.0011 is a focused quality release. Hardcoded paths have been replaced with environment variables, boolean flags converted to native PS types, and a redundant helper function removed. The credits screen now loads its support message dynamically from GitHub, allowing it to be updated without a new script release. The legacy `.bat` launcher has been retired in favor of direct PS1 execution or the SFX package.
+
+
+
+[↑ Back to top](#top)
+
+<a id="previous-releases"></a>
+### 2.2 Previous Release
+
+**v2026.03.0010** → [Release Notes](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/releases/tag/v2026.03.0010)
 
 ### 🆕 **Highlights**
 - **Command-Line Options for PowerShell Script**:
@@ -151,29 +198,12 @@ For a detailed technical breakdown and historical context, see:
 ### 🐛 **Bug Fixes**
 - None – this release focuses on new functionality and cosmetic improvements while maintaining full backward compatibility
 
-### 📋 **Project Files**
-- `universal-intel-chipset-updater.ps1` – Main updater script with new command-line options
-- `universal-intel-chipset-updater.bat` – Simplified launcher (unchanged, for compatibility)
-- `ChipsetUpdater-2026.03.0010-Win10-Win11.exe` – Self-extracting package (includes updated script)
-- `Intel-Platform-Scanner.ps1` – Scanner script v6.9 (minor internal updates)
-- `Generate-HardwareAccurateMD.ps1` – Database generator (unchanged)
-
-### ⚡ **Requirements & Notes**
-- **Minimum Requirements**: Windows 10 LTSC 2019 (build 17763) or newer, .NET Framework 4.7.2+
-- **New options work only with direct PowerShell execution** – they are ignored when using SFX or batch file for backward compatibility
-- **Coming soon**: Publication to PowerShell Gallery for even easier installation and updates
-
 ---
-
-**Summary**:
-v2026.03.0010 transforms the PowerShell script into a fully command‑line driven tool, adding `-help`, `-version`, `-auto`, `-quiet`, `-debug`, and `-skipverify` options. This makes it ideal for administrators and automated deployments. Cosmetic improvements ensure consistent console appearance and clarify the symbolic INF date. The core update functionality remains rock‑solid and fully compatible with previous releases.
-
-
 
 [↑ Back to top](#top)
 
-<a id="previous-releases"></a>
-### 2.2 Previous Releases
+<a id="older-releases"></a>
+### 2.3 Older Releases
 
 - v2026.02.0009  → [Release Notes](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/releases/tag/v2026.02.0009)
 - v2026.02.0008  → [Release Notes](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/releases/tag/v2026.02.0008)
@@ -203,6 +233,8 @@ This project has undergone comprehensive analysis by multiple AI security expert
 | **[Claude](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/blob/main/docs/audit-reports/2026-02-01-CLAUDE-AUDIT.md)** | 8.7/10 | *"Automating Intel chipset INF updates for enthusiast and IT users — this is the best open-source option available."* |
 
 *For detailed audit reports and methodology, see [SECURITY-AUDITS.md](SECURITY-AUDITS.md).*
+
+> **Note:** Audits conducted February 2026 (v2026.02.x). Core security architecture unchanged since audit. New audits planned for upcoming release.
 
 
 [↑ Back to top](#top)
@@ -259,7 +291,7 @@ This project has undergone comprehensive analysis by multiple AI security expert
 | Component | Minimum | Recommended | Notes |
 |-----------|---------|-------------|-------|
 | Windows Version | 10 1809 (17763) | 11 22H2+ | 1809 requires .NET 4.7.2+ |
-| .NET Framework | 4.6.1 | 4.8+ | 4.7.2+ for TLS 1.2 on older Windows |
+| .NET Framework | 4.7.2 | 4.8+ | Required for TLS 1.2 support |
 | PowerShell | 5.1 | 5.1+ | Windows PowerShell 5.1 included |
 | Administrator | Required | Required | For driver installation |
 | Internet | Required | Required | For hash verification and updates |
@@ -320,11 +352,7 @@ This project has undergone comprehensive analysis by multiple AI security expert
 ### 8.1 Method 1: One-Click Execution
 ```batch
 # Download and run executable file as Administrator:
-ChipsetUpdater-2026.03.0010-Win10-Win11.exe (or later version)
-
-# Optionaly, download .ps1 and .bat files, then run BATCH file as Administrator:
-Universal-Intel-Chipset-Updater.bat
-
+ChipsetUpdater-2026.03.0011-Win10-Win11.exe (or later version)
 ```
 <a id="method-2-powershell-direct"></a>
 ### 8.2 Method 2: PowerShell Direct
@@ -350,11 +378,11 @@ Starting with version **2026.03.0010**, the PowerShell script (`universal-intel-
 | `-version`, `-v` | Display the tool version and exit. |
 | `-auto`, `-a` | Automatically answer all prompts with Yes – no user interaction required. |
 | `-quiet`, `-q` | Run in completely silent mode (no console window). Implies `-auto` and hides the PowerShell window. |
-| `-debug`, `-d` | Enable debug output (sets `$DebugMode = 1`). |
-| `-skipverify`, `-s` | Skip the script self‑hash verification (sets `$SkipSelfHashVerification = 1`). **Use only for testing!** |
+| `-debug`, `-d` | Enable debug output (sets `$DebugMode = $true`). |
+| `-skipverify`, `-s` | Skip the script self‑hash verification (sets `$SkipSelfHashVerification = $true`). **Use only for testing!** |
 
 **Notes:**
-- These options **only work when the script is executed directly via PowerShell** (Method 2). They are ignored when using the batch launcher or SFX executable for backward compatibility.
+- These options work when the script is executed directly via PowerShell (Method 2) or via the SFX package.
 - For fully unattended deployments (e.g., Intune, SCCM), combine `-quiet` with administrator privileges.
 
 **Examples:**
@@ -406,7 +434,7 @@ Starting with version **2026.03.0010**, the PowerShell script (`universal-intel-
 1. Self-Integrity → Script Hash Verification
 2. File Integrity → SHA-256 Hash Verification  
 3. Authenticity → Intel Digital Signatures
-4. Project Origin → FirstEver.tech Digital Signature
+4. Project Origin → SFX signed with self-signed certificate (commercial Code Signing cert planned — community funding welcome)
 5. System Safety → Automated Restore Points
 6. Source Reliability → Dual Download Sources
 7. Privilege Control → Admin Rights Enforcement
@@ -446,9 +474,9 @@ Starting with version **2026.03.0010**, the PowerShell script (`universal-intel-
 - **For**: Most users, easiest method
 <a id="option-2-script-bundle"></a>
 ### 12.2 Option 2: Script Bundle
-- **Files**: `universal-intel-chipset-updater.bat` + `universal-intel-chipset-updater.ps1`
+- **File**: `universal-intel-chipset-updater.ps1`
 - **Features**: Full control, modifiable code, transparency
-- **For**: Advanced users, customization
+- **For**: Advanced users, administrators, customization
 <a id="option-3-source-code"></a>
 ### 12.3 Option 3: Source Code
 - **Method**: `git clone` the repository
@@ -458,32 +486,21 @@ Starting with version **2026.03.0010**, the PowerShell script (`universal-intel-
 
 [↑ Back to top](#top)
 
-<a id="independent-audit-results"></a>
-## 📊 **13. Independent Audit Results**
-
-This project has been thoroughly audited by 6 independent AI security experts, achieving an average score of 9.4/10. Multiple auditors confirmed it's the safest and most stable version ever released, suitable for daily use, corporate deployment, and technician toolkits.
-
-[View Full Audit Report](SECURITY-AUDITS.md) • [Security Policy](SECURITY.md)
-
-For current limitations and workarounds, please see: [KNOWN_ISSUES.md](KNOWN_ISSUES.md)
-
-
-[↑ Back to top](#top)
-
 <a id="project-structure"></a>
-## 📁 **14. Project Structure**
+## 📁 **13. Project Structure**
 
 **Key Files and Directories:**
 
 `src/` - Main scripts directory
-- [universal-intel-chipset-updater.bat](src/universal-intel-chipset-updater.bat) - Main batch script
-- [universal-intel-chipset-updater.ps1](src/universal-intel-chipset-updater.ps1) - Main PowerShell script  
+- [universal-intel-chipset-updater.ps1](src/universal-intel-chipset-updater.ps1) - Main PowerShell script
+- [universal-intel-chipset-updater.bat](src/universal-intel-chipset-updater.bat) - Batch launcher *(deprecated since v2026.03.0011 — kept for reference only)*
 - [get-intel-hwids.bat](src/get-intel-hwids.bat) - Hardware ID scanner batch script
 - [get-intel-hwids.ps1](src/get-intel-hwids.ps1) - Hardware ID scanner PowerShell script
 
 `data/` - Data files
 - [intel-chipset-infs-latest.md](data/intel-chipset-infs-latest.md) - Latest INF database
 - [intel-chipset-infs-download.txt](data/intel-chipset-infs-download.txt) - Download links
+- [intel-chipset-infs-message.txt](data/intel-chipset-infs-message.txt) - Dynamic support message displayed at the end of the script (loaded from GitHub at runtime)
 
 `docs/` - Documentation
 - [BEHIND-THE-PROJECT_EN.md](docs/BEHIND-THE-PROJECT_EN_2025.md) - Project background (English)
@@ -533,21 +550,20 @@ For current limitations and workarounds, please see: [KNOWN_ISSUES.md](KNOWN_ISS
 [↑ Back to top](#top)
 
 <a id="release-structure"></a>
-## 📦 **15. Release Structure**
+## 📦 **14. Release Structure**
 
 Each version (v202x.xx.xxxx) includes:
 <a id="primary-files"></a>
-### 15.1 Primary Files
+### 14.1 Primary Files
 - `ChipsetUpdater-202x.xx.xxxx-Win10-Win11.exe` - Main executable (digitally signed)
-- `universal-intel-chipset-updater.bat` - Batch wrapper
 - `universal-intel-chipset-updater.ps1` - PowerShell script
 <a id="verification-files"></a>
-### 15.2 Verification Files  
-- `ChipsetUpdater-2026.03.0010-Win10-Win11.sha256` - EXE hash
+### 14.2 Verification Files  
+- `ChipsetUpdater-2026.03.0011-Win10-Win11.sha256` - EXE hash
 - `universal-intel-chipset-updater-202x.xx.xxxx-ps1.sha256` - PS1 script hash
 - `FirstEver.tech.cer` - Digital certificate
 <a id="documentation"></a>
-### 15.3 Documentation
+### 14.3 Documentation
 - `CHANGELOG.md` - Version history
 - `SECURITY-AUDITS.md` - Security reports
 
@@ -555,9 +571,9 @@ Each version (v202x.xx.xxxx) includes:
 [↑ Back to top](#top)
 
 <a id="frequently-asked-questions-faq"></a>
-## ❓ **16. Frequently Asked Questions (FAQ)**
+## ❓ **15. Frequently Asked Questions (FAQ)**
 <a id="is-this-tool-safe-to-use"></a>
-### 🤔 16.1 Is this tool safe to use?
+### 🤔 15.1 Is this tool safe to use?
 Yes! This tool has undergone comprehensive independent security audits by 6 different AI experts with an average score of 9.1/10. Multiple auditors confirmed it's the safest and most stable version ever released, suitable for daily use, corporate deployment, and technician toolkits.
 
 Security measures include:
@@ -568,35 +584,35 @@ Security measures include:
 - Comprehensive pre-installation checks
 
 <a id="will-this-update-all-my-intel-drivers"></a>
-### 🔄 16.2 Will this update all my Intel drivers?
+### 🔄 15.2 Will this update all my Intel drivers?
 This tool specifically updates chipset INF files. It does not update GPU, network, or other device drivers.
 <a id="what-are-the-risks"></a>
-### ⚠️ 16.3 What are the risks?
+### ⚠️ 15.3 What are the risks?
 As with any system modification, there's a small risk of temporary system instability. The automated restore point minimizes this risk significantly.
 <a id="where-are-files-downloaded"></a>
-### 💾 16.4 Where are files downloaded?
-Files are temporarily stored in `C:\Windows\Temp\IntelChipset\` and automatically cleaned up after installation.
+### 💾 15.4 Where are files downloaded?
+Files are temporarily stored in `%SystemRoot%\Temp\IntelChipset\` and automatically cleaned up after installation.
 <a id="what-if-something-goes-wrong"></a>
-### 🔧 16.5 What if something goes wrong?
+### 🔧 15.5 What if something goes wrong?
 The tool creates a system restore point before making changes. You can also check detailed logs in the temp directory.
 <a id="how-does-the-automatic-update-check-work"></a>
-### 🔄 16.6 How does the automatic update check work?
+### 🔄 15.6 How does the automatic update check work?
 The tool compares your current version with the latest version on GitHub. If a newer version is available, it offers to download it directly to your Downloads folder with full verification.
 <a id="what-does-self-hash-verification-do"></a>
-### 🔒 16.7 What does self-hash verification do?
+### 🔒 15.7 What does self-hash verification do?
 Before execution, the tool calculates its own SHA-256 hash and compares it with the official hash from GitHub. This ensures the file hasn't been modified, corrupted, or tampered with.
 <a id="how-are-updates-notified"></a>
-### 📧 16.8 How are updates notified?
+### 📧 15.8 How are updates notified?
 The tool automatically checks for updates on each run and clearly notifies you if a newer version is available, with options to continue or update.
 <a id="why-is-the-certificate-not-trusted"></a>
-### 🏷️ 16.9 Why is the certificate "not trusted"?
-The FirstEver.tech certificate is self-signed for project authenticity. Public trust requires expensive commercial certificates, but the included certificate allows verification of file origin.
+### 🏷️ 15.9 Why is the certificate "not trusted"?
+The FirstEver.tech certificate is self-signed. A commercial Code Signing certificate would eliminate the SmartScreen warning, but it isn't necessary here — the PowerShell script (`universal-intel-chipset-updater.ps1`) is the authoritative source of the tool. Its SHA-256 hash is published on GitHub and verified automatically on every run, providing the same level of integrity assurance as a paid certificate. The SFX executable is a convenience wrapper for end users; its contents are the same verified PS1 script.
 
 
 [↑ Back to top](#top)
 
 <a id="intel-platform-support"></a>
-## 💻 **17. Intel Platform Support**
+## 💻 **16. Intel Platform Support**
 
 | Generation | Code Name | Status | Notes |
 |------------|-----------|--------|-------|
@@ -611,9 +627,9 @@ The FirstEver.tech certificate is self-signed for project authenticity. Public t
 [↑ Back to top](#top)
 
 <a id="performance-metrics"></a>
-## 📊 **18. Performance Metrics**
+## 📊 **17. Performance Metrics**
 <a id="typical-execution-times"></a>
-### 18.1 Typical Execution Time Breakdown (Updated)
+### 17.1 Typical Execution Time Breakdown
 | **Phase** | **Time** | **Description** |
 |----------|----------|-----------------|
 | Compatibility Pre-Check | 5–10 seconds | OS build, .NET Framework, TLS 1.2 availability, administrator privileges and GitHub connectivity verification |
@@ -622,12 +638,14 @@ The FirstEver.tech certificate is self-signed for project authenticity. Public t
 | System Restore Point Creation | 30–60 seconds | Automatic creation of a Windows System Restore Point before applying any changes |
 | Package Download & Verification | 5–10 seconds | Download and integrity verification of required Intel INF metadata packages |
 | Installation | 60–120 seconds | INF file installation, registry updates and device reconfiguration |
+
+> **Note:** Times above are measured on typical SSD-equipped systems with a standard broadband connection. On slower HDD systems or limited internet connections, individual phases (especially System Restore Point creation and package download) may take significantly longer.
 <a id="disk-space-usage"></a>
-### 18.2 Disk Space Usage
+### 17.2 Disk Space Usage
 | **Stage** | **Estimated Usage** | **Notes** |
 |----------|---------------------|-----------|
 | SFX archive (download) | ~0.7 MB | Self-extracting EXE |
-| Extracted scripts (BAT + PS1) | ~90 KB | Temporary working files |
+| Extracted script (PS1) | ~90 KB | Temporary working file |
 | System Restore Point | 100–300 MB | Managed by Windows (shadow copy storage) |
 | Downloaded Intel package | 2–10 MB | EXE or MSI, platform-dependent |
 | Extracted package contents | 10–30 MB | Temporary extraction of INF files |
@@ -639,7 +657,7 @@ The FirstEver.tech certificate is self-signed for project authenticity. Public t
 - All extracted installer files are automatically removed after completion.
 - No drivers or binaries remain installed — only INF metadata.
 <a id="memory-ram-usage"></a>
-### 18.3 Memory (RAM) Usage
+### 17.3 Memory (RAM) Usage
 | **Component** | **Estimated Usage** | **Notes** |
 |--------------|---------------------|-----------|
 | BAT launcher | < 5 MB | cmd.exe overhead |
@@ -653,7 +671,7 @@ The FirstEver.tech certificate is self-signed for project authenticity. Public t
 - No background services or resident processes.
 - Safe even for systems with 2 GB RAM.
 <a id="resource-usage-summary"></a>
-### 18.4 Resource Usage Summary
+### 17.4 Resource Usage Summary
 - **Required free disk space:** ~350 MB (safe upper bound)
 - **Typical disk usage:** ~150–250 MB
 - **Peak RAM usage:** ~100–200 MB
@@ -663,7 +681,7 @@ The FirstEver.tech certificate is self-signed for project authenticity. Public t
 [↑ Back to top](#top)
 
 <a id="known-issues"></a>
-## 🐛 **19. Known Issues**
+## 🐛 **18. Known Issues**
 
 For current limitations and workarounds, please see: [KNOWN_ISSUES.md](KNOWN_ISSUES.md)
 
@@ -671,21 +689,21 @@ For current limitations and workarounds, please see: [KNOWN_ISSUES.md](KNOWN_ISS
 [↑ Back to top](#top)
 
 <a id="ready-to-update"></a>
-## 🚀 **20. Ready to Update?**
+## 🚀 **19. Ready to Update?**
 <a id="quick-start-guide"></a>
-### 20.1 Quick Start Guide
+### 19.1 Quick Start Guide
 1. **Download** latest release from [Releases page](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/releases)
 2. **Verify** digital signature and hashes (optional but recommended)
 3. **Run as Administrator** for full system access  
 4. **Follow prompts** - tool handles everything automatically
 5. **Restart if prompted** to complete installation
 <a id="verification-steps-optional"></a>
-### 20.2 Verification Steps (Optional)
+### 19.2 Verification Steps (Optional)
 - Check file hashes match published SHA256 files
 - Verify digital signature with included certificate
 - Review security audit reports for confidence
 <a id="need-help"></a>
-### 20.3 Need Help?
+### 19.3 Need Help?
 - 📚 [Full Documentation](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/tree/main/docs)
 - 🐛 [Report Issues](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/issues)
 - 💬 [Community Discussions](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/discussions)
@@ -696,7 +714,7 @@ For current limitations and workarounds, please see: [KNOWN_ISSUES.md](KNOWN_ISS
 [↑ Back to top](#top)
 
 <a id="contributing"></a>
-## 🤝 **21. Contributing**
+## 🤝 **20. Contributing**
 
 We welcome contributions! Please feel free to submit pull requests, report bugs, or suggest new features.
 
@@ -710,7 +728,7 @@ We welcome contributions! Please feel free to submit pull requests, report bugs,
 [↑ Back to top](#top)
 
 <a id="license"></a>
-## 📄 **22. License**
+## 📄 **21. License**
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
@@ -718,7 +736,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 [↑ Back to top](#top)
 
 <a id="acknowledgments"></a>
-## 🙏 **23. Acknowledgments**
+## 🙏 **22. Acknowledgments**
 
 - Intel Corporation for providing official driver packages
 - Security researchers for independent audits
@@ -729,7 +747,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 [↑ Back to top](#top)
 
 <a id="important-links"></a>
-## 🔗 **24. Important Links**
+## 🔗 **23. Important Links**
 
 - [Releases](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/releases) - Download latest version
 - [Security Audits](SECURITY-AUDITS.md) - Full audit history  
@@ -739,7 +757,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 [↑ Back to top](#top)
 
 <a id="author-and-contact"></a>
-## 🧑‍💻 **25. Author & Contact**
+## 🧑‍💻 **24. Author & Contact**
 
 **Marcin Grygiel** aka FirstEver
 - 🌐 **Website**: [www.firstever.tech](https://www.firstever.tech)
@@ -752,7 +770,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 <a id="support-this-project"></a>
 
-## 💖 26. Support This Project
+## 💖 25. Support This Project
 This project is maintained in my free time. Your support helps cover development costs and server expenses.
 
 [![PayPal](https://img.shields.io/badge/PayPal-Support_Development-00457C?style=for-the-badge&logo=paypal)](https://www.paypal.com/donate/?hosted_button_id=48VGDSCNJAPTJ)
