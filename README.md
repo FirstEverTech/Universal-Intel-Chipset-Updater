@@ -217,7 +217,7 @@ v2026.03.0011 is a focused quality release. Hardcoded paths have been replaced w
 <a id="independent-security-audits"></a>
 ## 🔍 **3. Independent Security Audits**
 
-This project has undergone comprehensive analysis by multiple independent AI security experts across three audit cycles. The tool achieved an **average security score of 9.5/10** across all completed assessments in March 2026.
+This project has undergone comprehensive analysis by multiple independent AI security experts across three audit cycles. The tool achieved an **average security score of 9.6/10** across all completed assessments in March 2026.
 
 | Auditor | Latest Score | Key Assessment |
 |---------|-------------|----------------|
