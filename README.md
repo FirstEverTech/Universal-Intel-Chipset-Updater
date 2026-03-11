@@ -151,9 +151,6 @@ For detailed documentation and guides, see:
 - **Code Cleanup**: Removed redundant `Get-FileHash256` wrapper — logic inlined directly into `Verify-FileHash`
 - **Consistency**: Replaced all `cls` alias occurrences with `Clear-Host`
 
-### 🐛 **Bug Fixes**
-- Fixed credits screen appearing immediately after installation without allowing the user to read the summary
-
 ### 📋 **Project Files**
 - `universal-intel-chipset-updater.ps1` – Main updater script (optimized)
 - `ChipsetUpdater-2026.03.0011-Win10-Win11.exe` – Self-extracting package (includes updated script)
