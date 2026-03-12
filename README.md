@@ -189,7 +189,7 @@ For detailed documentation and guides, see:
 <a id="ai-audit-reports"></a>
 ## 🔍 **3. AI Audit Reports**
 
-This project has undergone comprehensive analysis by multiple AI agents across three audit cycles. The tool achieved an **average audit score of 9.6/10** across all completed assessments in March 2026.
+This project has been reviewed by multiple AI systems across three independent cycles using structured security frameworks (OWASP, CWE, CVSS v3.1). These are code and architecture reviews, not formal penetration tests. Average score: 9.6/10 — with Claude (most critical reviewer) scoring 9.1/10 after four cycles starting from 8.3/10.
 
 ## Score History at a Glance
 
