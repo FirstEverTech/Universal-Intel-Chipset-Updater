@@ -77,9 +77,8 @@ For detailed documentation and guides, see:
    11.3 [System Builders](#system-builders)  
 12. [**Download Options**](#download-options)  
    12.1 [Option 1: SFX Executable (Recommended)](#option-1-sfx-executable-recommended)  
-   12.2 [Option 2: PowerShell Script](#option-2-powershell-script)  
-   12.3 [Option 3: PowerShell Gallery](#option-3-powershell-gallery)  
-   12.4 [Option 4: Source Code](#option-4-source-code)  
+   12.2 [Option 2: Script Bundle](#option-2-script-bundle)  
+   12.3 [Option 3: Source Code](#option-3-source-code)  
 13. [**Project Structure**](#project-structure)  
 14. [**Release Structure**](#release-structure)  
    14.1 [Primary Files](#primary-files)  
@@ -94,7 +93,8 @@ For detailed documentation and guides, see:
    15.6 [How does the automatic update check work?](#how-does-the-automatic-update-check-work)  
    15.7 [What does self-hash verification do?](#what-does-self-hash-verification-do)  
    15.8 [How are updates notified?](#how-are-updates-notified)  
-   15.9 [Why is the certificate "not trusted"?](#why-is-the-certificate-not-trusted)  
+   15.9 [Why is the certificate "not trusted"?](#why-is-the-certificate-not-trusted)
+   15.10 [Why does VirusTotal show detections for the SFX executable?](#why-does-virustotal-show-detections)  
 16. [**Intel Platform Support**](#intel-platform-support)  
 17. [**Performance Metrics**](#performance-metrics)  
    17.1 [Typical Execution Time Breakdown](#typical-execution-times)  
@@ -445,63 +445,18 @@ universal-intel-chipset-device-updater.ps1
 <a id="option-1-sfx-executable-recommended"></a>
 ### 12.1 Option 1: SFX Executable (Recommended)
 - **File**: `ChipsetUpdater-202x.xx.xxxx-Win10-Win11.exe`
-- **Features**: Digitally signed, one-click execution, automatic extraction and launch
+- **Features**: Digital signature, one-click execution, automatic extraction
 - **For**: Most users, easiest method
-- **Run**: Double-click and follow the prompts — no PowerShell knowledge required
-
-<a id="option-2-powershell-script"></a>
-### 12.2 Option 2: PowerShell Script (Direct)
-- **File**: `universal-intel-chipset-device-updater.ps1`
-- **Features**: Full control, readable source code, no extraction needed
+<a id="option-2-script-bundle"></a>
+### 12.2 Option 2: Script Bundle
+- **File**: `universal-intel-chipset-updater.ps1`
+- **Features**: Full control, modifiable code, transparency
 - **For**: Advanced users, administrators, customization
-
-**How to run** (PowerShell as Administrator):
-```powershell
-.\universal-intel-chipset-device-updater.ps1
-```
-
-<a id="option-3-powershell-gallery"></a>
-### 12.3 Option 3: PowerShell Gallery
-- **Package**: `universal-intel-chipset-device-updater`
-- **Features**: System-wide installation, runs like a native command, automatic updates
-- **For**: Administrators, IT professionals, repeated use across sessions
-
-**Install** (PowerShell as Administrator):
-```powershell
-Install-Script universal-intel-chipset-device-updater
-```
-
-**Run** — multiple options after installation:
-```powershell
-# PowerShell prompt
-universal-intel-chipset-device-updater
-
-# Run dialog (Win+R)
-powershell universal-intel-chipset-device-updater
-
-# PowerShell prompt — explicit path
-& "$env:ProgramFiles\WindowsPowerShell\Scripts\universal-intel-chipset-device-updater.ps1"
-```
-
-**Update** (PowerShell as Administrator):
-```powershell
-Update-Script universal-intel-chipset-device-updater
-```
-> **Note:** The script checks for updates automatically on every run. If a newer version is available, it will update itself via `Update-Script` — no manual action required.
-
-**Uninstall** (PowerShell as Administrator):
-```powershell
-Uninstall-Script universal-intel-chipset-device-updater
-```
-
-<a id="option-4-source-code"></a>
-### 12.4 Option 4: Source Code
+<a id="option-3-source-code"></a>
+### 12.3 Option 3: Source Code
 - **Method**: `git clone` the repository
 - **Features**: Latest development version, full customization
 - **For**: Developers, contributors
-```powershell
-git clone https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater.git
-```
 
 
 [↑ Back to top](#top)
@@ -651,6 +606,21 @@ The tool automatically checks for updates on each run and clearly notifies you i
 <a id="why-is-the-certificate-not-trusted"></a>
 ### 🏷️ 15.9 Why is the certificate "not trusted"?
 The FirstEver.tech certificate is self-signed. A commercial Code Signing certificate would eliminate the SmartScreen warning, but it isn't necessary here — the PowerShell script (`universal-intel-chipset-device-updater.ps1`) is the authoritative source of the tool. Its SHA-256 hash is published on GitHub and verified automatically on every run, providing the same level of integrity assurance as a paid certificate. The SFX executable is a convenience wrapper for end users; its contents are the same verified PS1 script.
+
+<a id="why-does-virustotal-show-detections"></a>
+### 🛡️ 15.10 Why does VirusTotal show detections for the SFX executable?
+The SFX package (`ChipsetUpdater-*.exe`) may show a small number of detections on VirusTotal — currently 3 out of 71 engines. These are **known false positives** caused by the combination of a self-extracting archive and PowerShell execution, which some generic heuristic engines flag without analyzing the actual content.
+
+The three flagging engines are:
+- **Bkav Pro** — flags virtually all SFX packages that launch PowerShell; known for high false positive rate
+- **CrowdStrike Falcon** — reports `malicious_confidence_60%`, which is below their own threshold for a confirmed detection
+- **Rising** — uses a generic `Trojan.PSRunner/SFX` signature that triggers on any SFX+PS1 combination regardless of content
+
+All major security vendors including **Microsoft, Kaspersky, ESET, Bitdefender, Sophos, Malwarebytes, Avast, Symantec** and 60+ others report **clean**.
+
+The PowerShell script itself scores **0/56** on VirusTotal. You can verify both independently:
+- [VirusTotal — GitHub release link (0/95)](https://www.virustotal.com/gui/url/421a453a27bd55d45e450fd1bbb81f34715bc9209cd3d4e4e65ba89df9bb7b99?nocache=1)
+- [VirusTotal — PS1 script (0/56)](https://www.virustotal.com/gui/file/481e33b455f8539b9d720f1c4b859cb170474b570f8525b0190852d647990127?nocache=1)
 
 
 [↑ Back to top](#top)
