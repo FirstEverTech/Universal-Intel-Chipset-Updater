@@ -114,9 +114,9 @@ But with the new release, security took a massive leap forward.
 
 ---
 
-## 🛡️ 5. v10.1-2025.11.5 — The Security Breakthrough Release
+## 🛡️ 5. The Security Breakthrough Release
 
-The newest update is the biggest evolution of the tool so far.  
+The newest update (v10.1-2025.11.5) is the biggest evolution of the tool so far.  
 Here’s what changed.
 
 ### 🔒 Major Security Enhancements
