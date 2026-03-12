@@ -493,7 +493,7 @@ universal-intel-chipset-device-updater.ps1
 - [NEW-RELEASE-GUIDE_EN_2026.md](docs/NEW-RELEASE-GUIDE_EN_2026.md) - New Release Guide (English)
 - [NEW-RELEASE-GUIDE_PL_2026.md](docs/NEW-RELEASE-GUIDE_PL_2026.md) - New Release Guide (Polish)
 - [POWERSHELL-GALLERY-PUBLISHING_EN_2026.md](docs/POWERSHELL-GALLERY-PUBLISHING_EN_2026.md) - PowerShell Gallery Publishing Guide (English)
-- [POWERSHELL-GALLERY-PUBLISHING_EN_2026.md](docs/POWERSHELL-GALLERY-PUBLISHING_EN_2026.md) - PowerShell Gallery Publishing Guide (Polish)
+- [POWERSHELL-GALLERY-PUBLISHING_PL_2026.md](docs/POWERSHELL-GALLERY-PUBLISHING_PL_2026.md) - PowerShell Gallery Publishing Guide (Polish)
 - [THE-WHOLE-TRUTH-ABOUT_EN_2026.md](docs/THE-WHOLE-TRUTH-ABOUT_EN_2026.md) - In-depth Intel chipset software explanation (English)
 - [THE-WHOLE-TRUTH-ABOUT_PL_2026.md](docs/THE-WHOLE-TRUTH-ABOUT_PL_2026.md) - In-depth Intel chipset software explanation (Polish)
 
@@ -536,7 +536,7 @@ universal-intel-chipset-device-updater.ps1
 - [config.yml](ISSUE_TEMPLATE/config.yml) - Issue templates configuration file
 
 `/` - Root directory files
-- [AI_AUDITS.md](AI_AUDITS.md) - Comprehensive AI security audits summary
+- [AI_AUDITS.md](AI_AUDITS.md) - Comprehensive AI audit reports summary
 - [CHANGELOG.md](CHANGELOG.md) - Project changelog
 - [CONTRIBUTING.md](CONTRIBUTING.md) - Contribution guidelines
 - [KNOWN_ISSUES.md](KNOWN_ISSUES.md) - Known issues and workarounds
@@ -563,7 +563,7 @@ Each version (v202x.xx.xxxx) includes:
 <a id="documentation"></a>
 ### 14.3 Documentation
 - `CHANGELOG.md` - Version history
-- `AI_AUDITS.md` - AI Security audit reports
+- `AI_AUDITS.md` - AI audit reports
 
 
 [↑ Back to top](#top)
