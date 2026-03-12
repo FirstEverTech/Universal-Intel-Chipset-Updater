@@ -77,8 +77,9 @@ For detailed documentation and guides, see:
    11.3 [System Builders](#system-builders)  
 12. [**Download Options**](#download-options)  
    12.1 [Option 1: SFX Executable (Recommended)](#option-1-sfx-executable-recommended)  
-   12.2 [Option 2: Script Bundle](#option-2-script-bundle)  
-   12.3 [Option 3: Source Code](#option-3-source-code)  
+   12.2 [Option 2: PowerShell Script](#option-2-powershell-script)  
+   12.3 [Option 3: PowerShell Gallery](#option-3-powershell-gallery)  
+   12.4 [Option 4: Source Code](#option-4-source-code)  
 13. [**Project Structure**](#project-structure)  
 14. [**Release Structure**](#release-structure)  
    14.1 [Primary Files](#primary-files)  
@@ -444,18 +445,63 @@ universal-intel-chipset-device-updater.ps1
 <a id="option-1-sfx-executable-recommended"></a>
 ### 12.1 Option 1: SFX Executable (Recommended)
 - **File**: `ChipsetUpdater-202x.xx.xxxx-Win10-Win11.exe`
-- **Features**: Digital signature, one-click execution, automatic extraction
+- **Features**: Digitally signed, one-click execution, automatic extraction and launch
 - **For**: Most users, easiest method
-<a id="option-2-script-bundle"></a>
-### 12.2 Option 2: Script Bundle
-- **File**: `universal-intel-chipset-updater.ps1`
-- **Features**: Full control, modifiable code, transparency
+- **Run**: Double-click and follow the prompts — no PowerShell knowledge required
+
+<a id="option-2-powershell-script"></a>
+### 12.2 Option 2: PowerShell Script (Direct)
+- **File**: `universal-intel-chipset-device-updater.ps1`
+- **Features**: Full control, readable source code, no extraction needed
 - **For**: Advanced users, administrators, customization
-<a id="option-3-source-code"></a>
-### 12.3 Option 3: Source Code
+
+**How to run** (PowerShell as Administrator):
+```powershell
+.\universal-intel-chipset-device-updater.ps1
+```
+
+<a id="option-3-powershell-gallery"></a>
+### 12.3 Option 3: PowerShell Gallery
+- **Package**: `universal-intel-chipset-device-updater`
+- **Features**: System-wide installation, runs like a native command, automatic updates
+- **For**: Administrators, IT professionals, repeated use across sessions
+
+**Install** (PowerShell as Administrator):
+```powershell
+Install-Script universal-intel-chipset-device-updater
+```
+
+**Run** — multiple options after installation:
+```powershell
+# PowerShell prompt
+universal-intel-chipset-device-updater
+
+# Run dialog (Win+R)
+powershell universal-intel-chipset-device-updater
+
+# PowerShell prompt — explicit path
+& "$env:ProgramFiles\WindowsPowerShell\Scripts\universal-intel-chipset-device-updater.ps1"
+```
+
+**Update** (PowerShell as Administrator):
+```powershell
+Update-Script universal-intel-chipset-device-updater
+```
+> **Note:** The script checks for updates automatically on every run. If a newer version is available, it will update itself via `Update-Script` — no manual action required.
+
+**Uninstall** (PowerShell as Administrator):
+```powershell
+Uninstall-Script universal-intel-chipset-device-updater
+```
+
+<a id="option-4-source-code"></a>
+### 12.4 Option 4: Source Code
 - **Method**: `git clone` the repository
 - **Features**: Latest development version, full customization
 - **For**: Developers, contributors
+```powershell
+git clone https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater.git
+```
 
 
 [↑ Back to top](#top)
@@ -604,7 +650,7 @@ Before execution, the tool calculates its own SHA-256 hash and compares it with 
 The tool automatically checks for updates on each run and clearly notifies you if a newer version is available, with options to continue or update.
 <a id="why-is-the-certificate-not-trusted"></a>
 ### 🏷️ 15.9 Why is the certificate "not trusted"?
-The FirstEver.tech certificate is self-signed. A commercial Code Signing certificate would eliminate the SmartScreen warning, but it isn't necessary here — the PowerShell script (`universal-intel-chipset-updater.ps1`) is the authoritative source of the tool. Its SHA-256 hash is published on GitHub and verified automatically on every run, providing the same level of integrity assurance as a paid certificate. The SFX executable is a convenience wrapper for end users; its contents are the same verified PS1 script.
+The FirstEver.tech certificate is self-signed. A commercial Code Signing certificate would eliminate the SmartScreen warning, but it isn't necessary here — the PowerShell script (`universal-intel-chipset-device-updater.ps1`) is the authoritative source of the tool. Its SHA-256 hash is published on GitHub and verified automatically on every run, providing the same level of integrity assurance as a paid certificate. The SFX executable is a convenience wrapper for end users; its contents are the same verified PS1 script.
 
 
 [↑ Back to top](#top)
