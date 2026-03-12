@@ -365,6 +365,7 @@ universal-intel-chipset-device-updater.ps1
 | `-version`, `-v` | Display the tool version and exit. |
 | `-auto`, `-a` | Automatically answer all prompts with Yes — no user interaction required. |
 | `-quiet`, `-q` | Run in completely silent mode (no console window). Implies `-auto` and hides the PowerShell window. |
+| `-beta` | Use beta database for new hardware testing (available from version 2026.03.0013). |
 | `-debug`, `-d` | Enable debug output. |
 | `-skipverify`, `-s` | Skip the script self-hash verification. **Use only for testing!** |
 
