@@ -1,10 +1,11 @@
 <a id="top"></a>
 # 🚀 **Universal Intel Chipset Device Updater**
 
-[![Version](https://img.shields.io/badge/Version-2026.03.0011-red?style=for-the-badge)](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/releases)
+[![Version](https://img.shields.io/badge/Version-2026.03.0012-red?style=for-the-badge)](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/releases)
 [![License](https://img.shields.io/badge/License-MIT-0056b3?style=for-the-badge)](LICENSE)
 [![Windows](https://img.shields.io/badge/Windows-10%2F11-blue?style=for-the-badge)](https://www.microsoft.com/windows)
 [![PowerShell](https://img.shields.io/badge/PowerShell-5.0+-blueviolet?style=for-the-badge)](https://learn.microsoft.com/en-us/powershell/scripting/install/install-powershell-on-windows?view=powershell-7.5)
+[![PSGallery](https://img.shields.io/badge/PowerShell_Gallery-Available-0078d4?style=for-the-badge&logo=powershell)](https://www.powershellgallery.com/packages/universal-intel-chipset-device-updater)
 ![Downloads](https://img.shields.io/github/downloads/FirstEverTech/Universal-Intel-Chipset-Updater/total?style=for-the-badge)
 
 [![Security Audit](https://img.shields.io/badge/Audit_Score-9.6%2F10-0a8f08?style=for-the-badge)](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/blob/main/SECURITY-AUDITS.md)
@@ -69,7 +70,8 @@ For detailed documentation and guides, see:
    8.1 [Method 1: One-Click Execution](#method-1-one-click-execution)  
    8.2 [Method 2: PowerShell Direct](#method-2-powershell-direct)  
    8.3 [Method 3: Hardware ID Scanner Only](#method-3-hardware-id-scanner-only)  
-   8.4 [Command-Line Options](#command-line-options)  
+   8.4 [Method 4: PowerShell Gallery](#method-4-powershell-gallery)  
+   8.5 [Command-Line Options](#command-line-options)  
 9. [**How It Works**](#how-it-works)  
    9.1 [Self-Verification & Update Check](#self-verification-update-check)  
    9.2 [Hardware Detection](#hardware-detection)  
@@ -130,9 +132,37 @@ For detailed documentation and guides, see:
 <a id="latest-version"></a>
 ### 2.1 Latest Version
 
-**Universal Intel Chipset Device Updater v2026.03.0011** → [Release Notes](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/releases/tag/v2026.03.0011)
+**Universal Intel Chipset Device Updater v2026.03.0012** → [Release Notes](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/releases/tag/v2026.03.0012)
 
-## 📦 Latest Release: v2026.03.0011
+## 📦 Latest Release: v2026.03.0012
+
+### 🆕 **Highlights**
+
+- **Published to PowerShell Gallery** ⭐ NEW:
+  - Install via `Install-Script universal-intel-chipset-device-updater`
+  - Script renamed to `universal-intel-chipset-device-updater.ps1` to match PSGallery package name
+- **Help system unified** — `-help` and `-?` now show identical output via native `Get-Help`
+
+### 🔧 **Technical Updates** (v2026.03.0011 + v2026.03.0012)
+- **Path Handling**: Replaced hardcoded `C:\Windows\Temp` and `C:\ProgramData` with `$env:SystemRoot` and `$env:ProgramData` for compatibility with non-standard Windows installations
+- **Boolean Flags**: Refactored `$DebugMode` and `$SkipSelfHashVerification` from integer `0`/`1` flags to native PowerShell `[bool]` types
+- **Code Cleanup**: Removed redundant `Get-FileHash256` wrapper — logic inlined directly into `Verify-FileHash`
+- **Consistency**: Replaced all `cls` alias occurrences with `Clear-Host`
+
+### 📋 **Project Files**
+- `universal-intel-chipset-device-updater.ps1` — Main updater script
+- `ChipsetUpdater-2026.03.0012-Win10-Win11.exe` — Self-extracting package (includes updated script)
+- `Intel-Platform-Scanner.ps1` — Scanner script (unchanged)
+- `Generate-HardwareAccurateMD.ps1` — Database generator (unchanged)
+
+---
+
+[↑ Back to top](#top)
+
+<a id="previous-releases"></a>
+### 2.2 Previous Releases
+
+**v2026.03.0011** → [Release Notes](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/releases/tag/v2026.03.0011)
 
 ### 🆕 **Highlights**
 
@@ -145,55 +175,6 @@ For detailed documentation and guides, see:
   - `universal-intel-chipset-updater.bat` has been removed from the release
   - The tool is now distributed exclusively as a direct PS1 (for administrators) or SFX EXE (for end users)
 
-### 🔧 **Technical Updates**
-- **Path Handling**: Replaced hardcoded `C:\Windows\Temp` and `C:\ProgramData` with `$env:SystemRoot` and `$env:ProgramData` for compatibility with non-standard Windows installations
-- **Boolean Flags**: Refactored `$DebugMode` and `$SkipSelfHashVerification` from integer `0`/`1` flags to native PowerShell `[bool]` types
-- **Code Cleanup**: Removed redundant `Get-FileHash256` wrapper — logic inlined directly into `Verify-FileHash`
-- **Consistency**: Replaced all `cls` alias occurrences with `Clear-Host`
-
-### 📋 **Project Files**
-- `universal-intel-chipset-updater.ps1` – Main updater script (optimized)
-- `ChipsetUpdater-2026.03.0011-Win10-Win11.exe` – Self-extracting package (includes updated script)
-- `Intel-Platform-Scanner.ps1` – Scanner script (unchanged)
-- `Generate-HardwareAccurateMD.ps1` – Database generator (unchanged)
-
-### ⚡ **Requirements & Notes**
-- **Minimum Requirements**: Windows 10 LTSC 2019 (build 17763) or newer, .NET Framework 4.7.2+
-- **Execution**: Direct PS1 for administrators, SFX EXE for end users — batch launcher no longer included
-- **Coming soon**: Publication to PowerShell Gallery for even easier installation and updates
-
----
-
-**Summary**:
-v2026.03.0011 is a focused quality release. Hardcoded paths have been replaced with environment variables, boolean flags converted to native PS types, and a redundant helper function removed. The credits screen now loads its support message dynamically from GitHub, allowing it to be updated without a new script release. The legacy `.bat` launcher has been retired in favor of direct PS1 execution or the SFX package.
-
-
-
-[↑ Back to top](#top)
-
-<a id="previous-releases"></a>
-### 2.2 Previous Release
-
-**v2026.03.0010** → [Release Notes](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/releases/tag/v2026.03.0010)
-
-### 🆕 **Highlights**
-- **Command-Line Options for PowerShell Script**:
-  - Added full parameter support: `-help`, `-version`, `-auto`, `-quiet`, `-debug`, `-skipverify`
-  - Perfect for administrators and automated deployments (Intune, SCCM, Workspace ONE, PDQ Deploy)
-  - `-quiet` mode runs completely silent with no console window
-- **Console Window Consistency**:
-  - PowerShell script now automatically sets the same window size (`75x58`) as the batch launcher
-- **INF Date Clarification**:
-  - Added explanatory note about the symbolic date **07/18/1968** (Intel's founding date) appearing on new INF files
-
-### 🔧 **Technical Updates**
-- **Argument Parser**: Implemented manual parsing to disable partial matching – only exact switches are accepted
-- **Screen Functions**: Updated `Show-Header` and all screens to use consistent console dimensions
-- **INF Note Logic**: Added conditional display of the symbolic date explanation only when relevant
-
-### 🐛 **Bug Fixes**
-- None – this release focuses on new functionality and cosmetic improvements while maintaining full backward compatibility
-
 ---
 
 [↑ Back to top](#top)
@@ -201,6 +182,7 @@ v2026.03.0011 is a focused quality release. Hardcoded paths have been replaced w
 <a id="older-releases"></a>
 ### 2.3 Older Releases
 
+- v2026.03.0010  → [Release Notes](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/releases/tag/v2026.03.0010)
 - v2026.02.0009  → [Release Notes](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/releases/tag/v2026.02.0009)
 - v2026.02.0008  → [Release Notes](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/releases/tag/v2026.02.0008)
 - v2026.02.0007 (old v10.1-2026.02.2)  → [Release Notes](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/releases/tag/v10.1-2026.02.2)
@@ -221,12 +203,12 @@ This project has undergone comprehensive analysis by multiple independent AI sec
 
 | Auditor | Latest Score | Key Assessment |
 |---------|-------------|----------------|
-| **[Grok](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/blob/main/docs/audit-reports-2026-03-11/2026-03-11-GROK-AUDIT.md)** | 9.9/10 | *"Currently the safest, most reliable and best-maintained open-source Intel chipset INF updater available in 2026."* |
-| **[Gemini](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/blob/main/docs/audit-reports-2026-03-11/2026-03-11-GEMINI-AUDIT.md)** | 10/10 | *"No longer just a utility — a benchmark for how system automation scripts should be built, maintained, and secured."* |
+| **[ChatGPT](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/blob/main/docs/audit-reports-2026-03-11/2026-03-11-CHATGPT-AUDIT.md)** | 9.7/10 | *"The project now qualifies as a production-grade open-source system utility, rather than a typical hobby project."* |
+| **[Claude](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/blob/main/docs/audit-reports-2026-03-11/2026-03-11-CLAUDE-AUDIT.md)** | 9.1/10 | *"For its intended use case — automating Intel chipset INF updates across single systems and managed fleets alike — this is the reference implementation."* |
 | **[Copilot](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/blob/main/docs/audit-reports-2026-03-11/2026-03-11-COPILOT-AUDIT.md)** | 9.5/10 | *"One of the most complete and technically impressive PowerShell-based hardware automation tools available publicly."* |
 | **[DeepSeek](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/blob/main/docs/audit-reports-2026-03-11/2026-03-11-DEEPSEEK-AUDIT.md)** | 9.4/10 | *"A shining example of what focused, user-centered development can achieve."* |
-| **[Claude](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/blob/main/docs/audit-reports-2026-03-11/2026-03-11-CLAUDE-AUDIT.md)** | 9.1/10 | *"For its intended use case — automating Intel chipset INF updates across single systems and managed fleets alike — this is the reference implementation."* |
-| **[ChatGPT](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/blob/main/docs/audit-reports-2026-02-01/2026-02-01-CHATGPT-AUDIT.md)** | 9.6/10 | *"It does not behave like a hobby script, but like a carefully scoped system utility."* *(Feb 2026 — March update pending)* |
+| **[Gemini](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/blob/main/docs/audit-reports-2026-03-11/2026-03-11-GEMINI-AUDIT.md)** | 10/10 | *"No longer just a utility — a benchmark for how system automation scripts should be built, maintained, and secured."* |
+| **[Grok](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/blob/main/docs/audit-reports-2026-03-11/2026-03-11-GROK-AUDIT.md)** | 9.9/10 | *"Currently the safest, most reliable and best-maintained open-source Intel chipset INF updater available in 2026."* |
 
 *For full score history across all audit cycles, methodology, and detailed reports, see [SECURITY-AUDITS.md](SECURITY-AUDITS.md).*
 
@@ -348,48 +330,50 @@ This project has undergone comprehensive analysis by multiple independent AI sec
 ### 8.1 Method 1: One-Click Execution
 ```batch
 # Download and run executable file as Administrator:
-ChipsetUpdater-2026.03.0011-Win10-Win11.exe (or later version)
+ChipsetUpdater-2026.03.0012-Win10-Win11.exe (or later version)
 ```
 <a id="method-2-powershell-direct"></a>
 ### 8.2 Method 2: PowerShell Direct
 ```powershell
 # Run PowerShell as Administrator, then:
-.\Universal-Intel-Chipset-Updater.ps1
+.\universal-intel-chipset-device-updater.ps1
 ```
 <a id="method-3-hardware-id-scanner-only"></a>
 ### 8.3 Method 3: Hardware ID Scanner Only
 ```batch
-# For diagnostic purposes – both files must be in the same directory:
-Get-Intel-HWIDs.bat        # launches the scanner (requires Get-Intel-HWIDs.ps1)
+# For diagnostic purposes:
+.\Intel-Platform-Scanner.ps1
 ```
-Or run directly via PowerShell as Administrator:
+
+<a id="method-4-powershell-gallery"></a>
+### 8.4 Method 4: PowerShell Gallery
 ```powershell
-.\Get-Intel-HWIDs.ps1
+# Install from PowerShell Gallery (Run PowerShell as Administrator):
+Install-Script universal-intel-chipset-device-updater
+universal-intel-chipset-device-updater.ps1
 ```
 
 <a id="command-line-options"></a>
-### 8.4 Command-Line Options (New in v2026.03.0010)
-
-Starting with version **2026.03.0010**, the PowerShell script (`universal-intel-chipset-updater.ps1`) supports the following command-line parameters for advanced automation and control:
+### 8.5 Command-Line Options
 
 | Option | Description |
 |--------|-------------|
-| `-help`, `-?` | Display this help message and exit. |
+| `-help`, `-?` | Display help and exit. |
 | `-version`, `-v` | Display the tool version and exit. |
-| `-auto`, `-a` | Automatically answer all prompts with Yes – no user interaction required. |
+| `-auto`, `-a` | Automatically answer all prompts with Yes — no user interaction required. |
 | `-quiet`, `-q` | Run in completely silent mode (no console window). Implies `-auto` and hides the PowerShell window. |
-| `-debug`, `-d` | Enable debug output (sets `$DebugMode = $true`). |
-| `-skipverify`, `-s` | Skip the script self‑hash verification (sets `$SkipSelfHashVerification = $true`). **Use only for testing!** |
+| `-debug`, `-d` | Enable debug output. |
+| `-skipverify`, `-s` | Skip the script self-hash verification. **Use only for testing!** |
 
 **Notes:**
-- These options work when the script is executed directly via PowerShell (Method 2) or via the SFX package.
+- These options work when the script is executed directly via PowerShell or via the SFX package.
 - For fully unattended deployments (e.g., Intune, SCCM), combine `-quiet` with administrator privileges.
 
 **Examples:**
 ```powershell
-.\universal-intel-chipset-updater.ps1 -auto
-.\universal-intel-chipset-updater.ps1 -quiet
-.\universal-intel-chipset-updater.ps1 -debug -skipverify
+.\universal-intel-chipset-device-updater.ps1 -auto
+.\universal-intel-chipset-device-updater.ps1 -quiet
+.\universal-intel-chipset-device-updater.ps1 -debug -skipverify
 ```
 
 [↑ Back to top](#top)
@@ -492,13 +476,14 @@ Starting with version **2026.03.0010**, the PowerShell script (`universal-intel-
 **Key Files and Directories:**
 
 `src/` - Main scripts directory
-- [universal-intel-chipset-updater.ps1](src/universal-intel-chipset-updater.ps1) - Main PowerShell script
+- [universal-intel-chipset-device-updater.ps1](src/universal-intel-chipset-device-updater.ps1) - Main PowerShell script
 - [universal-intel-chipset-updater.bat](src/universal-intel-chipset-updater.bat) - Batch launcher *(deprecated since v2026.03.0011 — kept for reference only)*
-- [get-intel-hwids.bat](src/get-intel-hwids.bat) - Hardware ID scanner batch script
-- [get-intel-hwids.ps1](src/get-intel-hwids.ps1) - Hardware ID scanner PowerShell script
+- [Intel-Platform-Scanner.ps1](src/Intel-Platform-Scanner.ps1) - Hardware ID scanner
 
 `data/` - Data files
-- [intel-chipset-infs-latest.md](data/intel-chipset-infs-latest.md) - Latest INF database
+- [intel-chipset-infs-beta.md](data/intel-chipset-infs-beta.md) - Beta INF database
+- [intel-chipset-infs-dev.md](data/intel-chipset-infs-dev.md) - Development INF database
+- [intel-chipset-infs-latest.md](data/intel-chipset-infs-latest.md) - Latest stable INF database
 - [intel-chipset-infs-download.txt](data/intel-chipset-infs-download.txt) - Download links
 - [intel-chipset-infs-message.txt](data/intel-chipset-infs-message.txt) - Dynamic support message displayed at the end of the script (loaded from GitHub at runtime)
 
@@ -574,11 +559,11 @@ Each version (v202x.xx.xxxx) includes:
 <a id="primary-files"></a>
 ### 14.1 Primary Files
 - `ChipsetUpdater-202x.xx.xxxx-Win10-Win11.exe` - Main executable (digitally signed)
-- `universal-intel-chipset-updater.ps1` - PowerShell script
+- `universal-intel-chipset-device-updater.ps1` - PowerShell script
 <a id="verification-files"></a>
 ### 14.2 Verification Files  
-- `ChipsetUpdater-2026.03.0011-Win10-Win11.sha256` - EXE hash
-- `universal-intel-chipset-updater-202x.xx.xxxx-ps1.sha256` - PS1 script hash
+- `ChipsetUpdater-202x.xx.xxxx-Win10-Win11.sha256` - EXE hash
+- `universal-intel-chipset-device-updater-202x.xx.xxxx-ps1.sha256` - PS1 script hash
 - `FirstEver.tech.cer` - Digital certificate
 <a id="documentation"></a>
 ### 14.3 Documentation
@@ -678,7 +663,6 @@ The FirstEver.tech certificate is self-signed. A commercial Code Signing certifi
 ### 17.3 Memory (RAM) Usage
 | **Component** | **Estimated Usage** | **Notes** |
 |--------------|---------------------|-----------|
-| BAT launcher | < 5 MB | cmd.exe overhead |
 | PowerShell runtime | 40–80 MB | Script execution, parsing and hashing |
 | INF parsing & HWID scan | 20–40 MB | Temporary in-memory data structures |
 | Installer extraction (EXE/MSI) | 30–100 MB | Short peak during unpacking |
