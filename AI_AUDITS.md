@@ -1,18 +1,16 @@
 # Security Audits — Universal Intel Chipset Device Updater
 
-This document provides a structured overview of all independent security audits conducted on this project.  
+This document provides a structured overview of security reviews conducted by AI language models on this project. These are not formal penetration tests or third-party audits — they are structured code and architecture reviews using security frameworks (OWASP, CWE, CVSS v3.1) applied by each model independently.
 Each section shows the **latest audit** per auditor with a full score history. Full reports are linked for reference.
 
-**Average score (March 2026): 9.6/10** across 6 completed audits.
-All auditors confirmed the tool's safety, multi-layer verification, and enterprise-grade reliability.
+Average score (March 2026): 9.6/10 across 6 AI-reviewed audit cycles.
+All reviewers confirmed the multi-layer verification architecture and consistent improvement between cycles. Note: Claude (Anthropic) — the lowest-scoring and most critical reviewer — awarded 9.1/10 after four audit cycles starting from 8.3/10.
 
 ---
 
 ## 🔒 ChatGPT (OpenAI)
 
-![Security Audit](https://img.shields.io/badge/Audit_Score-9.7%2F10-brightgreen?style=for-the-badge)
-![Reliability](https://img.shields.io/badge/Reliability-Excellent-success?style=for-the-badge)
-![Verification](https://img.shields.io/badge/Multi--Layer_Passed-green?style=for-the-badge)
+![Security Audit](https://img.shields.io/badge/Audit_Score-9.7%2F10-brightgreen?style=for-the-badge)![Reliability](https://img.shields.io/badge/Reliability-Excellent-success?style=for-the-badge)![Verification](https://img.shields.io/badge/Multi--Layer_Passed-green?style=for-the-badge)
 
 **Latest audit:** March 11, 2026 · v2026.03.0012 · Score: **9.7/10**
 
@@ -30,9 +28,7 @@ GPT-5.3 confirms the project has reached production-grade quality, validated by 
 
 ## 🔒 Claude (Anthropic)
 
-![Security Audit](https://img.shields.io/badge/Audit_Score-9.1%2F10-brightgreen?style=for-the-badge)
-![Reliability](https://img.shields.io/badge/Reliability-Excellent-success?style=for-the-badge)
-![Verification](https://img.shields.io/badge/Multi--Layer_Passed-green?style=for-the-badge)
+![Security Audit](https://img.shields.io/badge/Audit_Score-9.1%2F10-brightgreen?style=for-the-badge)![Reliability](https://img.shields.io/badge/Reliability-Excellent-success?style=for-the-badge)![Verification](https://img.shields.io/badge/Multi--Layer_Passed-green?style=for-the-badge)
 
 **Latest audit:** March 11, 2026 · v2026.03.0012 · Score: **9.1/10**
 
@@ -51,9 +47,7 @@ The most detailed audit in the series — covering both v2026.03.0011 and v2026.
 
 ## 🔒 Copilot (Microsoft)
 
-![Security Audit](https://img.shields.io/badge/Audit_Score-9.5%2F10-brightgreen?style=for-the-badge)
-![Reliability](https://img.shields.io/badge/Reliability-Excellent-success?style=for-the-badge)
-![Verification](https://img.shields.io/badge/Multi--Layer_Passed-green?style=for-the-badge)
+![Security Audit](https://img.shields.io/badge/Audit_Score-9.5%2F10-brightgreen?style=for-the-badge)![Reliability](https://img.shields.io/badge/Reliability-Excellent-success?style=for-the-badge)![Verification](https://img.shields.io/badge/Multi--Layer_Passed-green?style=for-the-badge)
 
 **Latest audit:** March 11, 2026 · v2026.03.0011 · Score: **9.5/10**
 
@@ -71,9 +65,7 @@ The tool has reached a level of reliability and polish typically associated with
 
 ## 🔒 DeepSeek (DeepSeek AI)
 
-![Security Audit](https://img.shields.io/badge/Audit_Score-9.4%2F10-brightgreen?style=for-the-badge)
-![Reliability](https://img.shields.io/badge/Reliability-Excellent-success?style=for-the-badge)
-![Verification](https://img.shields.io/badge/Multi--Layer_Passed-green?style=for-the-badge)
+![Security Audit](https://img.shields.io/badge/Audit_Score-9.4%2F10-brightgreen?style=for-the-badge)![Reliability](https://img.shields.io/badge/Reliability-Excellent-success?style=for-the-badge)![Verification](https://img.shields.io/badge/Multi--Layer_Passed-green?style=for-the-badge)
 
 **Latest audit:** March 11, 2026 · v2026.03.0011 · Score: **9.4/10**
 
@@ -103,13 +95,11 @@ To add a new audit cycle, append a row to each auditor's history table and updat
 
 ## 🔒 Gemini (Google)
 
-![Security Audit](https://img.shields.io/badge/Audit_Score-10%2F10-brightgreen?style=for-the-badge)
-![Reliability](https://img.shields.io/badge/Reliability-Excellent-success?style=for-the-badge)
-![Verification](https://img.shields.io/badge/Multi--Layer_Passed-green?style=for-the-badge)
+![Security Audit](https://img.shields.io/badge/Audit_Score-10%2F10-brightgreen?style=for-the-badge)![Reliability](https://img.shields.io/badge/Reliability-Excellent-success?style=for-the-badge)![Verification](https://img.shields.io/badge/Multi--Layer_Passed-green?style=for-the-badge)
 
 **Latest audit:** March 11, 2026 · v2026.03.0011 · Score: **10/10**
 
-With 27,000+ downloads and only 13 total issues ever reported (all closed), Gemini concludes the tool has reached a "Feature Complete and Stable" state with an industry-leading defect rate of ~0.048%. The combination of scale, near-zero regressions, and same-day critical bug fixes justifies the maximum rating. The tool is described as a benchmark for how system automation scripts should be built, maintained, and secured.
+With 27,000+ downloads and only 13 total issues ever reported (all closed), Gemini concludes the tool has reached a "Feature Complete and Stable" state with an industry-leading defect rate of ~0.048%. The combination of scale, near-zero regressions, and same-day critical bug fixes contributed to the highest score in this review series. Note: a perfect score reflects Gemini's evaluation criteria applied to this project category — other reviewers, including Claude, applied stricter standards and scored lower. The tool is described as a benchmark for how system automation scripts should be built, maintained, and secured.
 
 > *"The Universal Intel Chipset Updater is no longer just a utility; it is a benchmark for how system automation scripts should be built, maintained, and secured."*
 
@@ -123,9 +113,7 @@ With 27,000+ downloads and only 13 total issues ever reported (all closed), Gemi
 
 ## 🔒 Grok (xAI)
 
-![Security Audit](https://img.shields.io/badge/Audit_Score-9.9%2F10-brightgreen?style=for-the-badge)
-![Reliability](https://img.shields.io/badge/Reliability-Excellent-success?style=for-the-badge)
-![Verification](https://img.shields.io/badge/Multi--Layer_Passed-green?style=for-the-badge)
+![Security Audit](https://img.shields.io/badge/Audit_Score-9.9%2F10-brightgreen?style=for-the-badge)![Reliability](https://img.shields.io/badge/Reliability-Excellent-success?style=for-the-badge)![Verification](https://img.shields.io/badge/Multi--Layer_Passed-green?style=for-the-badge)
 
 **Latest audit:** March 11, 2026 · v2026.03.0010 · Score: **9.9/10**
 
@@ -143,17 +131,15 @@ The tool's security posture remains among the strongest ever seen in any communi
 
 ## Score History at a Glance
 
-| Auditor | Nov 2025 | Feb 2026 | Mar 2026 | Trend |
-|---------|----------|----------|----------|-------|
-| ChatGPT | 9.4 | 9.6 | **9.7** | ↑ |
-| Claude | 8.3 | 8.7 | **9.1** | ↑ |
-| Copilot | 8.6 | 9.4 | **9.5** | ↑ |
-| DeepSeek | 8.7 | 9.2 | **9.4** | ↑ |
-| Gemini | 9.0 | 9.5 | **10.0** | ↑ |
-| Grok | 9.7 | 9.8 | **9.9** | ↑ |
-| **Average** | **8.95** | **9.37** | **9.6** | ↑ |
-
-*\* Average excludes ChatGPT (pending March 2026 audit).*
+| Auditor | Nov 2025 | Feb 2026 | Mar 2026 | Trend | Notes |
+|---------|----------|----------|----------|-------|-------|
+| ChatGPT | 9.4 | 9.6 | **9.7** | ↑ | Consistently high; tends toward optimistic scoring |
+| Claude | 8.3 | 8.7 | **9.1** | ↑ | Most critical reviewer; lowest scores in the series |
+| Copilot | 8.6 | 9.4 | **9.5** | ↑ | Largest single-cycle jump (+0.8); strong improvement recognition |
+| DeepSeek | 8.7 | 9.2 | **9.4** | ↑ | Consistent mid-range scoring; balanced methodology |
+| Gemini | 9.0 | 9.5 | **10.0** | ↑ | Most generous reviewer; perfect score reflects lenient criteria |
+| Grok | 9.7 | 9.8 | **9.9** | ↑ | Highest baseline; limited score differentiation between cycles |
+| **Average** | **8.95** | **9.37** | **9.6** | ↑ | |
 
 ---
 
@@ -172,7 +158,7 @@ Each audit was conducted independently with focus on:
 
 ## Overall Assessment
 
-Based on comprehensive independent reviews across three audit cycles, this project represents the **highest standard of security and reliability** in its category.
+Based on structured AI security reviews across three audit cycles, this project demonstrates a consistently high standard of security architecture and reliability for an open-source PowerShell utility in its category.
 
 ✅ Daily personal use  
 ✅ IT technician toolkits  
