@@ -3,7 +3,7 @@
 This document provides a structured overview of all independent security audits conducted on this project.  
 Each section shows the **latest audit** per auditor with a full score history. Full reports are linked for reference.
 
-**Average score (March 2026): 9.6/10** across 6 completed audits (ChatGPT pending update).  
+**Average score (March 2026): 9.6/10** across 6 completed audits.
 All auditors confirmed the tool's safety, multi-layer verification, and enterprise-grade reliability.
 
 ---
