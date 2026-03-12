@@ -1,22 +1,9 @@
 <a id="top"></a>
 # 🚀 **Universal Intel Chipset Device Updater**
 
-[![Version](https://img.shields.io/badge/Version-2026.03.0012-red?style=for-the-badge)](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/releases)
-[![License](https://img.shields.io/badge/License-MIT-0056b3?style=for-the-badge)](LICENSE)
-[![Windows](https://img.shields.io/badge/Windows-10%2F11-blue?style=for-the-badge)](https://www.microsoft.com/windows)
-[![PowerShell](https://img.shields.io/badge/PowerShell-5.0+-blueviolet?style=for-the-badge)](https://learn.microsoft.com/en-us/powershell/scripting/install/install-powershell-on-windows?view=powershell-7.5)
-[![DotNET](https://img.shields.io/badge/.NET-4.7.2+-blueviolet?style=for-the-badge)](https://dotnet.microsoft.com/en-us/download/dotnet-framework)
+[![Version](https://img.shields.io/badge/Version-2026.03.0012-red?style=flat-square)](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/releases)[![Windows](https://img.shields.io/badge/Windows-10%2F11-blue?style=flat-square&color=blueviolet)](https://www.microsoft.com/windows)[![PowerShell](https://img.shields.io/badge/PowerShell-5.0+-blueviolet?style=flat-square)](https://learn.microsoft.com/en-us/powershell/scripting/install/install-powershell-on-windows?view=powershell-7.5)[![DotNET](https://img.shields.io/badge/.NET-4.7.2+-blueviolet?style=flat-square)](https://dotnet.microsoft.com/en-us/download/dotnet-framework)![Downloads](https://img.shields.io/github/downloads/FirstEverTech/Universal-Intel-Chipset-Updater/total?style=flat-square&color=gold&label=Downloads)![GitHub Stars](https://img.shields.io/github/stars/FirstEverTech/Universal-Intel-Chipset-Updater?style=flat-square&color=gold&label=Stars)
 
-![Downloads](https://img.shields.io/github/downloads/FirstEverTech/Universal-Intel-Chipset-Updater/total?style=for-the-badge)
-![GitHub stars](https://img.shields.io/github/stars/FirstEverTech/Universal-Intel-Chipset-Updater?style=for-the-badge)
-[![PSGallery](https://img.shields.io/badge/PS_Gallery-Available-0078d4?style=for-the-badge&logo=powershell)](https://www.powershellgallery.com/packages/universal-intel-chipset-device-updater)
-![PowerShell Gallery Version](https://img.shields.io/powershellgallery/v/universal-intel-chipset-device-updater?style=for-the-badge)
-
-[![Security Audit](https://img.shields.io/badge/Audit_Score-9.6%2F10-0a8f08?style=for-the-badge)](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/blob/main/SECURITY-AUDITS.md)
-[![Reliability](https://img.shields.io/badge/Reliability-Excellent-0a8f08?style=for-the-badge)](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/blob/main/SECURITY-AUDITS.md)
-[![VirusTotal](https://img.shields.io/badge/VirusTotal-0%2F95-008631?style=for-the-badge)](https://www.virustotal.com/gui/url/f903129a9443fd09d5d2448b0647c85274a111bc8844ceb5e70eed0e5a0a5604?nocache=1)
-[![Issues](https://img.shields.io/github/issues/FirstEverTech/Universal-Intel-Chipset-Updater?style=for-the-badge)](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/issues)
-
+[![License](https://img.shields.io/badge/License-MIT-0056b3?style=flat-square)](LICENSE)[![PS Gallery Version](https://img.shields.io/powershellgallery/v/universal-intel-chipset-device-updater?style=flat-square&label=PowerShell+Gallery)](https://www.powershellgallery.com/packages/universal-intel-chipset-device-updater)[![AI_Audits](https://img.shields.io/badge/AI_Audits_Score-9.6%2F10-0a8f08?style=flat-square)](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/blob/main/AI-AUDITS.md)[![VirusTotal](https://img.shields.io/badge/VirusTotal-0%2F95-008631?style=flat-square)](https://www.virustotal.com/gui/url/f903129a9443fd09d5d2448b0647c85274a111bc8844ceb5e70eed0e5a0a5604?nocache=1)[![Issues](https://img.shields.io/github/issues/FirstEverTech/Universal-Intel-Chipset-Updater?style=flat-square&label=Issues)](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/issues)
 
 ## 🔧 Automate Your Intel Chipset Updates
 **Universal Intel Chipset Device Updater** is an advanced, security-focused tool that automatically detects your Intel hardware and installs the latest official chipset **INF files** with enterprise-grade safety measures.
@@ -212,7 +199,7 @@ This project has undergone comprehensive analysis by multiple independent AI sec
 | **[Gemini](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/blob/main/docs/audit-reports-2026-03-11/2026-03-11-GEMINI-AUDIT.md)** | 10/10 | *"No longer just a utility — a benchmark for how system automation scripts should be built, maintained, and secured."* |
 | **[Grok](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/blob/main/docs/audit-reports-2026-03-11/2026-03-11-GROK-AUDIT.md)** | 9.9/10 | *"Currently the safest, most reliable and best-maintained open-source Intel chipset INF updater available in 2026."* |
 
-*For full score history across all audit cycles, methodology, and detailed reports, see [SECURITY-AUDITS.md](SECURITY-AUDITS.md).*
+*For full score history across all audit cycles, methodology, and detailed audits, see [AI_AUDITS.md](AI_AUDITS.md).*
 
 > **Note:** Latest audits conducted March 2026 (v2026.03.0011/0012). Core security architecture unchanged since audit. ChatGPT March 2026 update planned (paid tier required for full codebase analysis).
 
@@ -549,6 +536,7 @@ universal-intel-chipset-device-updater.ps1
 - [config.yml](ISSUE_TEMPLATE/config.yml) - Issue templates configuration file
 
 `/` - Root directory files
+- [AI_AUDITS.md](AI_AUDITS.md) - Comprehensive AI security audits summary
 - [CHANGELOG.md](CHANGELOG.md) - Project changelog
 - [CONTRIBUTING.md](CONTRIBUTING.md) - Contribution guidelines
 - [KNOWN_ISSUES.md](KNOWN_ISSUES.md) - Known issues and workarounds
@@ -556,8 +544,6 @@ universal-intel-chipset-device-updater.ps1
 - [PULL_REQUEST_TEMPLATE.md](PULL_REQUEST_TEMPLATE.md) - Pull request template
 - [README.md](README.md) - Main project documentation
 - [SECURITY.md](SECURITY.md) - Security policy
-- [SECURITY-AUDITS.md](SECURITY-AUDITS.md) - Comprehensive security audits summary
-
 
 [↑ Back to top](#top)
 
@@ -577,7 +563,7 @@ Each version (v202x.xx.xxxx) includes:
 <a id="documentation"></a>
 ### 14.3 Documentation
 - `CHANGELOG.md` - Version history
-- `SECURITY-AUDITS.md` - Security reports
+- `AI_AUDITS.md` - AI Security audits
 
 
 [↑ Back to top](#top)
@@ -719,7 +705,7 @@ For current limitations and workarounds, please see: [KNOWN_ISSUES.md](KNOWN_ISS
 - 🐛 [Report Issues](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/issues)
 - 💬 [Community Discussions](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/discussions)
 - 🔧 [Troubleshooting Guide](KNOWN_ISSUES.md)
-- 🔒 [Security Information](SECURITY-AUDITS.md)[↑ Back to top](#top)
+- 🔒 [AI Security Audits](AI_AUDITS.md)
 
 
 [↑ Back to top](#top)
@@ -761,7 +747,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 🔗 **23. Important Links**
 
 - [Releases](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/releases) - Download latest version
-- [Security Audits](SECURITY-AUDITS.md) - Full audit history  
+- [AI Security Audits](AI_AUDITS.md) - Full audit history  
 - [Issue Tracker](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/issues) - Report problems
 
 
