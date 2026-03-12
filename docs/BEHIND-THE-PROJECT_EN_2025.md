@@ -144,9 +144,9 @@ Here’s what changed.
 
 ---
 
-## 🔍 6. Independent Security Audit (Score: 9.4 / 10)
+## 🔍 6. Security Review
 
-The release was evaluated through an automated AI-based security audit:
+The release was reviewed independently by multiple AI systems, each applying structured security analysis criteria:
 
 ### Major Positives
 
