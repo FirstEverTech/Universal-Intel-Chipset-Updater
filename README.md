@@ -191,18 +191,21 @@ For detailed documentation and guides, see:
 
 This project has undergone comprehensive analysis by multiple AI agents across three audit cycles. The tool achieved an **average audit score of 9.6/10** across all completed assessments in March 2026.
 
-| Auditor | Latest Score | Key Assessment |
-|---------|-------------|----------------|
-| **[ChatGPT](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/blob/main/docs/audit-reports-2026-03-11/2026-03-11-CHATGPT-AUDIT.md)** | 9.7/10 | *"The project now qualifies as a production-grade open-source system utility, rather than a typical hobby project."* |
-| **[Claude](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/blob/main/docs/audit-reports-2026-03-11/2026-03-11-CLAUDE-AUDIT.md)** | 9.1/10 | *"For its intended use case — automating Intel chipset INF updates across single systems and managed fleets alike — this is the reference implementation."* |
-| **[Copilot](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/blob/main/docs/audit-reports-2026-03-11/2026-03-11-COPILOT-AUDIT.md)** | 9.5/10 | *"One of the most complete and technically impressive PowerShell-based hardware automation tools available publicly."* |
-| **[DeepSeek](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/blob/main/docs/audit-reports-2026-03-11/2026-03-11-DEEPSEEK-AUDIT.md)** | 9.4/10 | *"A shining example of what focused, user-centered development can achieve."* |
-| **[Gemini](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/blob/main/docs/audit-reports-2026-03-11/2026-03-11-GEMINI-AUDIT.md)** | 10/10 | *"No longer just a utility — a benchmark for how system automation scripts should be built, maintained, and secured."* |
-| **[Grok](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/blob/main/docs/audit-reports-2026-03-11/2026-03-11-GROK-AUDIT.md)** | 9.9/10 | *"Currently the safest, most reliable and best-maintained open-source Intel chipset INF updater available in 2026."* |
+## Score History at a Glance
+
+| Auditor | Nov 2025 | Feb 2026 | Mar 2026 | Trend | Notes |
+|---------|----------|----------|----------|-------|-------|
+| ChatGPT | 9.4 | 9.6 | **9.7** | ↑ | Consistently high; tends toward optimistic scoring |
+| Claude | 8.3 | 8.7 | **9.1** | ↑ | Most critical reviewer; lowest scores in the series |
+| Copilot | 8.6 | 9.4 | **9.5** | ↑ | Largest single-cycle jump (+0.8); strong improvement recognition |
+| DeepSeek | 8.7 | 9.2 | **9.4** | ↑ | Consistent mid-range scoring; balanced methodology |
+| Gemini | 9.0 | 9.5 | **10.0** | ↑ | Most generous reviewer; perfect score reflects lenient criteria |
+| Grok | 9.7 | 9.8 | **9.9** | ↑ | Highest baseline; limited score differentiation between cycles |
+| **Average** | **8.95** | **9.37** | **9.6** | ↑ | |
 
 *For full score history across all audit cycles, methodology, and detailed audits, see [AI_AUDITS.md](AI_AUDITS.md).*
 
-> **Note:** Latest audits conducted March 2026 (v2026.03.0011/0012). Core security architecture unchanged since audit. ChatGPT March 2026 update planned (paid tier required for full codebase analysis).
+> **Note:** Latest audits conducted March 2026 (v2026.03.0011/0012). Core security architecture unchanged since audit.
 
 
 [↑ Back to top](#top)
