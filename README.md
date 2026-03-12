@@ -156,8 +156,6 @@ For detailed documentation and guides, see:
 ### 📋 **Project Files**
 - `universal-intel-chipset-device-updater.ps1` — Main updater script
 - `ChipsetUpdater-2026.03.0012-Win10-Win11.exe` — Self-extracting package (includes updated script)
-- `Intel-Platform-Scanner.ps1` — Scanner script (unchanged)
-- `Generate-HardwareAccurateMD.ps1` — Database generator (unchanged)
 
 ---
 
