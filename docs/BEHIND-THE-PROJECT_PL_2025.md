@@ -113,9 +113,9 @@ W nowej wersji postawiono ogromny nacisk na bezpieczeństwo.
 
 ---
 
-## 🛡️ 5. v10.1-2025.11.5 — Przełomowe wydanie pod względem bezpieczeństwa
+## 🛡️ 5. Przełomowe wydanie pod względem bezpieczeństwa
 
-Najnowsza aktualizacja jest największą ewolucją narzędzia do tej pory.  
+Najnowsza aktualizacja (v10.1-2025.11.5) jest największą ewolucją narzędzia do tej pory.  
 Oto, co się zmieniło.
 
 ### 🔒 Główne Ulepszenia Bezpieczeństwa
@@ -143,9 +143,9 @@ Oto, co się zmieniło.
 
 ---
 
-## 🔍 6. Niezależny Audyt Bezpieczeństwa (Wynik: 9.4 / 10)
+## 🔍 6. Przegląd bezpieczeństwa
 
-Wydanie zostało ocenione poprzez zautomatyzowany audyt bezpieczeństwa oparty na AI:
+Wydanie (v10.1-2025.11.5) zostało sprawdzone niezależnie przez wiele systemów sztucznej inteligencji, z których każdy stosował ustrukturyzowane kryteria analizy bezpieczeństwa:
 
 ### Główne Plusy
 
