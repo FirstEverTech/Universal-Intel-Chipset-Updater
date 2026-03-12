@@ -2,11 +2,10 @@
 # 🚀 **Universal Intel Chipset Device Updater**
 
 [![Version](https://img.shields.io/badge/Version-2026.03.0012-red?style=for-the-badge)](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/releases)
+[![License](https://img.shields.io/badge/License-MIT-0056b3?style=for-the-badge)](LICENSE)
 [![Windows](https://img.shields.io/badge/Windows-10%2F11-blue?style=for-the-badge)](https://www.microsoft.com/windows)
 [![PowerShell](https://img.shields.io/badge/PowerShell-5.0+-blueviolet?style=for-the-badge)](https://learn.microsoft.com/en-us/powershell/scripting/install/install-powershell-on-windows?view=powershell-7.5)
-[![PSGallery](https://img.shields.io/badge/PowerShell_Gallery-Available-0078d4?style=for-the-badge&logo=powershell)](https://www.powershellgallery.com/packages/universal-intel-chipset-device-updater)
 
-[![License](https://img.shields.io/badge/License-MIT-0056b3?style=for-the-badge)](LICENSE)
 [![Security Audit](https://img.shields.io/badge/Audit_Score-9.6%2F10-0a8f08?style=for-the-badge)](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/blob/main/SECURITY-AUDITS.md)
 [![Reliability](https://img.shields.io/badge/Reliability-Excellent-0a8f08?style=for-the-badge)](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/blob/main/SECURITY-AUDITS.md)
 [![Issues](https://img.shields.io/github/issues/FirstEverTech/Universal-Intel-Chipset-Updater?style=for-the-badge)](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/issues)
@@ -14,6 +13,9 @@
 
 ![Downloads](https://img.shields.io/github/downloads/FirstEverTech/Universal-Intel-Chipset-Updater/total?style=for-the-badge)
 ![GitHub stars](https://img.shields.io/github/stars/FirstEverTech/Universal-Intel-Chipset-Updater?style=for-the-badge)
+[![PSGallery](https://img.shields.io/badge/PowerShell_Gallery-Available-0078d4?style=for-the-badge&logo=powershell)](https://www.powershellgallery.com/packages/universal-intel-chipset-device-updater)
+![PowerShell Gallery Platform Support](https://img.shields.io/powershellgallery/p/universal-intel-chipset-device-updater?style=for-the-badge)
+
 
 ## 🔧 Automate Your Intel Chipset Updates
 **Universal Intel Chipset Device Updater** is an advanced, security-focused tool that automatically detects your Intel hardware and installs the latest official chipset **INF files** with enterprise-grade safety measures.
