@@ -146,7 +146,7 @@ Here’s what changed.
 
 ## 🔍 6. Security Review
 
-The release was reviewed independently by multiple AI systems, each applying structured security analysis criteria:
+The release (v10.1-2025.11.5) was reviewed independently by multiple AI systems, each applying structured security analysis criteria:
 
 ### Major Positives
 
