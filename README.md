@@ -775,7 +775,7 @@ This project is maintained in my free time. Your support helps cover development
 [![GitHub Sponsors](https://img.shields.io/badge/GitHub-Sponsor-EA4AAA?style=for-the-badge&logo=githubsponsors)](https://github.com/sponsors/FirstEverTech)
 
 **Your support means everything!** If this project helped you, please consider:
-- If this project helped you, please give it a ⭐ star on GitHub
+- If this project helped you, please give it a ⭐ "Star" on GitHub
 - Sharing with friends and colleagues
 - Reporting issues or suggesting features
 - Supporting development financially
