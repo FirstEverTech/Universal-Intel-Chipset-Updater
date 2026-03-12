@@ -151,7 +151,7 @@ The tool's security posture remains among the strongest ever seen in any communi
 | DeepSeek | 8.7 | 9.2 | **9.4** | ↑ |
 | Gemini | 9.0 | 9.5 | **10.0** | ↑ |
 | Grok | 9.7 | 9.8 | **9.9** | ↑ |
-| **Average** | **8.95** | **9.37** | **9.60** | ↑ |
+| **Average** | **8.95** | **9.37** | **9.6** | ↑ |
 
 *\* Average excludes ChatGPT (pending March 2026 audit).*
 
