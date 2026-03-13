@@ -19,7 +19,8 @@ For detailed documentation and guides, see:
 → **[Deploying Universal Intel Chipset Device Updater via MDM](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/blob/main/docs/MDM-DEPLOYMENT-GUIDE_EN_2026.md)**  
 → **[How to verify the latest INF files yourself](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/blob/main/docs/HOW-TO-VERIFY-INF_EN_2026.md)**  
 
-⭐ If this project helped you, please click the "Star" button at the top of this page on GitHub.
+⭐ If this project helped you, please click the "Star" button at the top of this page on GitHub.  
+👉 [Share your feedback!](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/discussions/16)
 
 ---
 
