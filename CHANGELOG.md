@@ -6,7 +6,7 @@ The format is loosely based on [Keep a Changelog](https://keepachangelog.com/en/
 
 ---
 
-## [v2026.03.0012] - 11-03-2026
+## [v2026.03.0012] - 2026-03-11
 
 ### Improvements
 - Improved internal version handling and update detection logic
@@ -20,7 +20,7 @@ The format is loosely based on [Keep a Changelog](https://keepachangelog.com/en/
 
 ---
 
-## [v2026.03.0011] - 11-03-2026
+## [v2026.03.0011] - 2026-03-11
 
 ### Improvements
 - Improved platform detection reliability
@@ -33,7 +33,7 @@ The format is loosely based on [Keep a Changelog](https://keepachangelog.com/en/
 
 ---
 
-## [v2026.03.0010] - 10-03-2026
+## [v2026.03.0010] - 2026-03-10
 
 ### Improvements
 - Improved INF database processing reliability
@@ -46,7 +46,7 @@ The format is loosely based on [Keep a Changelog](https://keepachangelog.com/en/
 
 ---
 
-## [v2026.02.0009] - 17-02-2026
+## [v2026.02.0009] - 2026-02-17
 
 ### Highlights
 - **Database Scanner Fix – 300 Series (Cannon Lake PCH)**
@@ -68,7 +68,7 @@ The format is loosely based on [Keep a Changelog](https://keepachangelog.com/en/
 
 ---
 
-## [v2026.02.0008] - 10-02-2026
+## [v2026.02.0008] - 2026-02-10
 
 ### Improvements
 - Improved chipset detection reliability
@@ -80,7 +80,7 @@ The format is loosely based on [Keep a Changelog](https://keepachangelog.com/en/
 
 ---
 
-## [v10.1-2026.02.2] - 05-02-2026
+## [v10.1-2026.02.2] - 2026-02-05
 
 ### Improvements
 - Improved chipset detection stability
@@ -92,7 +92,7 @@ The format is loosely based on [Keep a Changelog](https://keepachangelog.com/en/
 
 ---
 
-## [v10.1-2026.02.1] - 01-02-2026
+## [v10.1-2026.02.1] - 2026-02-01
 
 ### Improvements
 - Improved hardware detection reliability
@@ -104,7 +104,7 @@ The format is loosely based on [Keep a Changelog](https://keepachangelog.com/en/
 
 ---
 
-## [v10.1-2025.11.8] - 27-11-2025
+## [v10.1-2025.11.8] - 2025-11-27
 
 ### New Features
 - Enhanced platform detection including support for **Windows 11 24H2 inbox drivers**
@@ -127,7 +127,7 @@ The format is loosely based on [Keep a Changelog](https://keepachangelog.com/en/
 
 ---
 
-## [v10.1-2025.11.7] - 25-11-2025
+## [v10.1-2025.11.7] - 2025-11-25
 
 ### Improvements
 - Improved chipset detection workflow
@@ -136,7 +136,7 @@ The format is loosely based on [Keep a Changelog](https://keepachangelog.com/en/
 
 ---
 
-## [v10.1-2025.11.6] - 24-11-2025
+## [v10.1-2025.11.6] - 2025-11-24
 
 ### Improvements
 - Stability improvements to chipset detection workflow
@@ -148,7 +148,7 @@ The format is loosely based on [Keep a Changelog](https://keepachangelog.com/en/
 
 ---
 
-## [v10.1-2025.11.5] - 21-11-2025
+## [v10.1-2025.11.5] - 2025-11-21
 
 ### Improvements
 - Improved INF package download reliability
@@ -161,7 +161,7 @@ The format is loosely based on [Keep a Changelog](https://keepachangelog.com/en/
 
 ---
 
-## [v10.1-2025.11.0] - 14-11-2025
+## [v10.1-2025.11.0] - 2025-11-14
 
 ### Initial Public Release
 - First public version of **Universal Intel Chipset Device Updater**
