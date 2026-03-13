@@ -14,8 +14,8 @@ The format is loosely based on [Keep a Changelog](https://keepachangelog.com/en/
 - General stability improvements
 
 ### Technical
-- Internal script cleanup and code consistency improvements
-- Minor optimizations in update workflow
+- Internal script cleanup
+- Minor workflow optimizations
 
 
 ---
@@ -24,11 +24,11 @@ The format is loosely based on [Keep a Changelog](https://keepachangelog.com/en/
 
 ### Improvements
 - Improved platform detection reliability
-- Refined execution status and progress messages
+- Refined progress and status messages
 
 ### Technical
-- Code refactoring for improved maintainability
-- Minor performance improvements in hardware detection routines
+- Code refactoring for maintainability
+- Minor performance improvements in detection routines
 
 
 ---
@@ -49,21 +49,57 @@ The format is loosely based on [Keep a Changelog](https://keepachangelog.com/en/
 ## [v2026.02.0009] - 2026-02-17
 
 ### Highlights
-- **Database Scanner Fix – 300 Series (Cannon Lake PCH)**  
-  Fixed missing 300 Series Cannon Lake-H / Cannon Lake-LP chipsets in generated INF database.
+- **Database Scanner Fix – 300 Series (Cannon Lake PCH)**
+- Fixed missing Cannon Lake-H / Cannon Lake-LP chipsets in generated INF database
 
 ### Improvements
-- Improved console output alignment and readability
+- Improved console output alignment
 - Refined chipset platform status messages
 
-### Technical Updates
+### Technical
 - Intel Platform Scanner improvements
-- Added missing platforms to **Xeon E5 v1 – Jaketown**
+- Added missing platforms for **Xeon E5 v1 – Jaketown**
 - Corrected key casing in internal platform definitions
 
 ### Notes
-- No changes to the Intel INF packages themselves
-- Update focuses on database generation and chipset detection logic
+- No changes to Intel INF packages
+- Update focuses on database generation and detection logic
+
+
+---
+
+## [v2026.02.0008] - 2026-02
+
+### Improvements
+- Improved chipset detection reliability
+- Minor refinements in update workflow
+
+### Technical
+- Script cleanup and internal optimizations
+
+
+---
+
+## [v10.1-2026.02.2] - 2026-02
+
+### Improvements
+- Improved chipset detection stability
+- Minor logging improvements
+
+### Technical
+- Internal script optimizations
+
+
+---
+
+## [v10.1-2026.02.1] - 2026-02
+
+### Improvements
+- Improved hardware detection reliability
+- Minor stability improvements
+
+### Technical
+- Detection logic refinements
 
 
 ---
@@ -72,17 +108,30 @@ The format is loosely based on [Keep a Changelog](https://keepachangelog.com/en/
 
 ### New Features
 - Enhanced platform detection including support for **Windows 11 24H2 inbox drivers**
-- Automatic detection for platforms where Intel chipset drivers are handled by Windows
+- Automatic detection for platforms using Windows inbox chipset drivers
 
 ### Improvements
-- Clear informational messages when inbox chipset drivers are detected
-- Smart exclusion of platforms with `Package = None` in the INF database
-- Improved driver date handling based on `.cat` signature timestamps
+- Clear informational messages for inbox drivers
+- Smart exclusion of platforms with `Package = None`
+- Improved driver date handling using `.cat` signature timestamps
 
-### Technical Updates
-- Improved detection logic for inbox-only platforms
-- Enhanced debug logging for chipset platform identification
-- Output formatting improvements
+### Technical
+- Updated parsing logic for platform detection
+- Enhanced debug logging
+- Improved console output structure
+
+### Bug Fixes
+- Fixed potential false positives for unsupported platforms
+- Improved handling of platforms without separate chipset packages
+
+
+---
+
+## [v10.1-2025.11.7] - 2025-11
+
+### Improvements
+- Improved chipset detection workflow
+- Minor stability improvements
 
 
 ---
@@ -94,7 +143,7 @@ The format is loosely based on [Keep a Changelog](https://keepachangelog.com/en/
 - Improved INF package verification logic
 
 ### Technical
-- Minor code refactoring and reliability improvements
+- Minor code refactoring
 
 
 ---
@@ -106,18 +155,45 @@ The format is loosely based on [Keep a Changelog](https://keepachangelog.com/en/
 - Enhanced update detection logic
 
 ### Technical
-- Minor script optimizations
+- Script optimizations
 - Improved logging consistency
 
 
 ---
 
-## Release Links
+## [v10.1-2025.11.0] - 2025-11
+
+### Initial Public Release
+- First public version of **Universal Intel Chipset Device Updater**
+- Automatic Intel chipset hardware detection
+- Secure download and installation of latest Intel chipset INF packages
+- Multi-layer security verification
+- Automatic system restore point creation
+- SHA256 hash verification
+- Intel digital signature validation
+
+### Features
+- Support for Intel consumer and server platforms
+- Portable architecture (no installation required)
+- Automatic update detection
+- Detailed logging and debug mode
+
+
+---
+
+# Release Links
 
 [v2026.03.0012]: https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/releases/tag/v2026.03.0012  
 [v2026.03.0011]: https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/releases/tag/v2026.03.0011  
 [v2026.03.0010]: https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/releases/tag/v2026.03.0010  
 [v2026.02.0009]: https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/releases/tag/v2026.02.0009  
+[v2026.02.0008]: https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/releases/tag/v2026.02.0008  
+
+[v10.1-2026.02.2]: https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/releases/tag/v10.1-2026.02.2  
+[v10.1-2026.02.1]: https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/releases/tag/v10.1-2026.02.1  
+
 [v10.1-2025.11.8]: https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/releases/tag/v10.1-2025.11.8  
+[v10.1-2025.11.7]: https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/releases/tag/v10.1-2025.11.7  
 [v10.1-2025.11.6]: https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/releases/tag/v10.1-2025.11.6  
-[v10.1-2025.11.5]: https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/releases/tag/v10.1-2025.11.5
+[v10.1-2025.11.5]: https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/releases/tag/v10.1-2025.11.5  
+[v10.1-2025.11.0]: https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/releases/tag/v10.1-2025.11.0
