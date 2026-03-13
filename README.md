@@ -24,7 +24,7 @@ For detailed documentation and guides, see:
 ---
 
 - Official threads on the following forums: **[TechPowerUp](https://www.techpowerup.com/forums/threads/tool-universal-intel-chipset-device-updater.346086/)**, **[Win-Raid](https://winraid.level1techs.com/t/tool-universal-intel-chipset-device-updater)**, **[Station-Drivers](https://www.station-drivers.com/index.php/en/forum/intel-chipsets-drivers/887-universal-intel-chipset-drivers-updater)**, **[ElevenForum](https://www.elevenforum.com/t/universal-intel-chipset-device-updater.41790)** and **[WinClub](https://winclub.pl/topic/49717-universal-intel-chipset-device-updater)**.
-- For transparency and additional verification, the project has recently been listed on: **[MajorGeeks](https://www.majorgeeks.com/files/details/universal_intel_chipset_device_updater.html)** and **[Softpedia](https://www.softpedia.com/get/System/Universal-Intel-Chipset-Device-Updater.shtml)**.
+- For transparency and additional verification, the project is listed on: **[MajorGeeks](https://www.majorgeeks.com/files/details/universal_intel_chipset_device_updater.html)**, **[Softpedia](https://www.softpedia.com/get/System/Universal-Intel-Chipset-Device-Updater.shtml)** and **[Instalki](https://www.instalki.pl/download/programy/sterowniki/plyty-glowne/intel/universal-intel-chipset-device-updater/)**.
 
 ---
 
