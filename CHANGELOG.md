@@ -6,7 +6,7 @@ The format is loosely based on [Keep a Changelog](https://keepachangelog.com/en/
 
 ---
 
-## [v2026.03.0012] - 2026-03-11
+## [v2026.03.0012] - 2026-03-12
 
 ### Improvements
 - Improved internal version handling and update detection logic
