@@ -5,8 +5,8 @@ mode con: cols=75 lines=58
 
 set "SCRIPT_DIR=%~dp0"
 
-if not exist "!SCRIPT_DIR!universal-intel-chipset-updater.ps1" (
-    echo Error: universal-intel-chipset-updater.ps1 not found in current directory!
+if not exist "!SCRIPT_DIR!universal-intel-chipset-device-updater.ps1" (
+    echo Error: universal-intel-chipset-device-updater.ps1 not found in current directory!
     echo.
     echo Please ensure the PowerShell script is in the same folder as this BAT file.
     pause
@@ -25,6 +25,6 @@ if %errorLevel% neq 0 (
 
 cd /d "!SCRIPT_DIR!"
 
-powershell -ExecutionPolicy Bypass -File "universal-intel-chipset-updater.ps1"
+powershell -ExecutionPolicy Bypass -File "universal-intel-chipset-device-updater.ps1"
 if %errorlevel% EQU 100 exit /b 0
 exit /b 0
