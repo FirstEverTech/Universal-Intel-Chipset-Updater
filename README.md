@@ -335,10 +335,20 @@ ChipsetUpdater-2026.03.0012-Win10-Win11.exe (or later version)
 
 <a id="method-4-powershell-gallery"></a>
 ### 8.4 Method 4: PowerShell Gallery
+
+Install from PowerShell Gallery (Run PowerShell as Administrator):
 ```powershell
-# Install from PowerShell Gallery (Run PowerShell as Administrator):
 Install-Script universal-intel-chipset-device-updater
-universal-intel-chipset-device-updater.ps1
+```
+
+Manual update from PowerShell Gallery for v2026.03.0012 or older (Run PowerShell as Administrator):
+```powershell
+Update-Script -Name universal-intel-chipset-device-updater
+```
+
+Run from PowerShell Gallery (Run PowerShell as Administrator):
+```powershell
+universal-intel-chipset-device-updater
 ```
 
 <a id="command-line-options"></a>
