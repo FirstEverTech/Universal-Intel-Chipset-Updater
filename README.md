@@ -481,8 +481,6 @@ universal-intel-chipset-device-updater
 - [uninstall-intel-chipset.ps1](src/uninstall-intel-chipset.ps1) - Intel Chipset Device Software Uninstaller PowerShell script
 - [universal-intel-chipset-device-updater.ps1](src/universal-intel-chipset-device-updater.ps1) - Main PowerShell script
 - [universal-intel-chipset-device-updater.ver](src/universal-intel-chipset-device-updater.ver) - Main Version file
-- [universal-intel-chipset-updater.bat](src/universal-intel-chipset-updater.bat) - Batch launcher *(deprecated since v2026.03.0011 — kept for reference only)*
-- [universal-intel-chipset-updater.ps1](src/universal-intel-chipset-updater.ps1) - Old PowerShell script *(deprecated since v2026.03.0011 — kept for reference only)*
 - [universal-intel-chipset-updater.ver](src/universal-intel-chipset-updater.ver) - Old Version file *(deprecated since v2026.03.0011 — kept for reference only)*
 
 `data/` - Data files
