@@ -1,9 +1,9 @@
 <a id="top"></a>
 # 🚀 **Universal Intel Chipset Device Updater**
 
-[![Version](https://img.shields.io/badge/Version-2026.03.0012-red?style=flat-square)](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/releases)[![Windows](https://img.shields.io/badge/Windows-10%2F11-blue?style=flat-square&color=blueviolet)](https://www.microsoft.com/windows)[![PowerShell](https://img.shields.io/badge/PowerShell-5.0+-blueviolet?style=flat-square)](https://learn.microsoft.com/en-us/powershell/scripting/install/install-powershell-on-windows?view=powershell-7.5)[![DotNET](https://img.shields.io/badge/.NET-4.7.2+-blueviolet?style=flat-square)](https://dotnet.microsoft.com/en-us/download/dotnet-framework)![Downloads](https://img.shields.io/github/downloads/FirstEverTech/Universal-Intel-Chipset-Updater/total?style=flat-square&color=gold&label=Downloads)![GitHub Stars](https://img.shields.io/github/stars/FirstEverTech/Universal-Intel-Chipset-Updater?style=flat-square&color=gold&label=Stars)
+[![Version](https://img.shields.io/badge/Version-2026.03.0013-red?style=flat-square)](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/releases)[![Windows](https://img.shields.io/badge/Windows-10%2F11-blue?style=flat-square&color=blueviolet)](https://www.microsoft.com/windows)[![PowerShell](https://img.shields.io/badge/PowerShell-5.0+-blueviolet?style=flat-square)](https://learn.microsoft.com/en-us/powershell/scripting/install/install-powershell-on-windows?view=powershell-7.5)[![DotNET](https://img.shields.io/badge/.NET-4.7.2+-blueviolet?style=flat-square)](https://dotnet.microsoft.com/en-us/download/dotnet-framework)![Downloads](https://img.shields.io/github/downloads/FirstEverTech/Universal-Intel-Chipset-Updater/total?style=flat-square&color=gold&label=Downloads)![GitHub Stars](https://img.shields.io/github/stars/FirstEverTech/Universal-Intel-Chipset-Updater?style=flat-square&color=gold&label=Stars)
 
-[![License](https://img.shields.io/badge/License-MIT-0056b3?style=flat-square)](LICENSE)[![PS Gallery Version](https://img.shields.io/powershellgallery/v/universal-intel-chipset-device-updater?style=flat-square&label=PowerShell+Gallery)](https://www.powershellgallery.com/packages/universal-intel-chipset-device-updater)[![AI_Audits](https://img.shields.io/badge/AI_Audits_Score-9.6%2F10-0a8f08?style=flat-square)](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/blob/main/AI_AUDITS.md)[![VirusTotal](https://img.shields.io/badge/VirusTotal-0%2F95-008631?style=flat-square)](https://www.virustotal.com/gui/url/421a453a27bd55d45e450fd1bbb81f34715bc9209cd3d4e4e65ba89df9bb7b99?nocache=1)[![Issues](https://img.shields.io/github/issues/FirstEverTech/Universal-Intel-Chipset-Updater?style=flat-square&label=Issues)](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/issues)
+[![License](https://img.shields.io/badge/License-MIT-0056b3?style=flat-square)](LICENSE)[![PS Gallery Version](https://img.shields.io/powershellgallery/v/universal-intel-chipset-device-updater?style=flat-square&label=PowerShell+Gallery)](https://www.powershellgallery.com/packages/universal-intel-chipset-device-updater)[![AI_Audits](https://img.shields.io/badge/AI_Audits_Score-9.6%2F10-0a8f08?style=flat-square)](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/blob/main/AI_AUDITS.md)[![VirusTotal](https://img.shields.io/badge/VirusTotal-1%2F95-008631?style=flat-square)](https://www.virustotal.com/gui/url/5f60c2ef62608a91bce2fbb0e089a2440045192b17dcda51fbfec7d79e2d59e6?nocache=1)[![Issues](https://img.shields.io/github/issues/FirstEverTech/Universal-Intel-Chipset-Updater?style=flat-square&label=Issues)](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/issues)
 
 ## 🔧 Automate Your Intel Chipset Updates
 **Universal Intel Chipset Device Updater** is an advanced, security-focused tool that automatically detects your Intel hardware and installs the latest official chipset **INF files** with enterprise-grade safety measures.
@@ -125,9 +125,22 @@ For detailed documentation and guides, see:
 <a id="latest-version"></a>
 ### 2.1 Latest Version
 
-**Universal Intel Chipset Device Updater v2026.03.0012** → [Release Notes](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/releases/tag/v2026.03.0012)
+**v2026.03.0013** → [Release Notes](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/releases/tag/v2026.03.0013)
 
-## 📦 Latest Release: v2026.03.0012
+### 🆕 **Highlights**
+- **Multi-Database Support** — `-beta` flag for early testing of new Intel hardware platforms; default database unchanged
+- **PSGallery Auto-Update** — new version detected → `Update-Script` runs automatically
+- **Improved Console Exit** — clean `Thank you` message after credits instead of leaving the console dirty
+- **Auto Mode** — removed unnecessary 5-second wait at exit
+
+---
+
+[↑ Back to top](#top)
+
+<a id="previous-releases"></a>
+### 2.2 Previous Releases
+
+**v2026.03.0012** → [Release Notes](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/releases/tag/v2026.03.0012)
 
 ### 🆕 **Highlights**
 
@@ -150,29 +163,10 @@ For detailed documentation and guides, see:
 
 [↑ Back to top](#top)
 
-<a id="previous-releases"></a>
-### 2.2 Previous Releases
-
-**v2026.03.0011** → [Release Notes](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/releases/tag/v2026.03.0011)
-
-### 🆕 **Highlights**
-
-- **Dynamic Support Message**:
-  - The credits screen now loads its support message dynamically from GitHub (`data/intel-chipset-infs-message.txt`)
-  - Message can be updated independently — no new script release required
-  - Supports inline color formatting via simple tags (e.g. `[Magenta]`, `[White,DarkBlue]`)
-  - Falls back to a built-in static version if GitHub is unreachable
-- **Batch Launcher Retired**:
-  - `universal-intel-chipset-updater.bat` has been removed from the release
-  - The tool is now distributed exclusively as a direct PS1 (for administrators) or SFX EXE (for end users)
-
----
-
-[↑ Back to top](#top)
-
 <a id="older-releases"></a>
 ### 2.3 Older Releases
 
+- v2026.03.0011  → [Release Notes](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/releases/tag/v2026.03.0011)
 - v2026.03.0010  → [Release Notes](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/releases/tag/v2026.03.0010)
 - v2026.02.0009  → [Release Notes](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/releases/tag/v2026.02.0009)
 - v2026.02.0008  → [Release Notes](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/releases/tag/v2026.02.0008)
