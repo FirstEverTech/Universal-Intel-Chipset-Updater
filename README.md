@@ -537,6 +537,7 @@ universal-intel-chipset-device-updater
 - [2-detection.png](assets/2-detection.png)
 - [3-backup.png](assets/3-backup.png)
 - [4-install.png](assets/4-install.png)
+- [FirstEverTech.png](assets/FirstEverTech.png)
 
 `ISSUE_TEMPLATE/` - Issue templates
 - [bug_report.md](ISSUE_TEMPLATE/bug_report.md) - Bug report template
