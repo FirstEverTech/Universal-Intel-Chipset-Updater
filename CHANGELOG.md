@@ -6,6 +6,23 @@ The format is loosely based on [Keep a Changelog](https://keepachangelog.com/en/
 
 ---
 
+## [v2026.03.0013] - 2026-03-13
+
+### Improvements
+- Added multi-database support with `-beta` and `-developer` flags for early testing of new Intel hardware platforms
+- Implemented automatic script update via PowerShell Gallery when new version is detected
+- Improved console exit behavior: screen clears after credits, showing clean thank you message before returning to prompt
+- Removed unnecessary 5-second wait at the end of `-auto` / `-quiet` runs for faster execution
+
+### Technical
+- Added warning banner when running in non-default database modes
+- Updated update detection logic to leverage native PowerShell Gallery commands
+- Console output refinements for better user experience in different launch modes
+- Internal cleanup of auto-mode exit routine
+
+
+---
+
 ## [v2026.03.0012] - 2026-03-12
 
 ### Improvements
