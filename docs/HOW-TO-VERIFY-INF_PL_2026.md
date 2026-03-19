@@ -32,7 +32,8 @@ Wybierz jedną z poniższych metod:
 - Zobaczysz coś w stylu: `PCI\VEN_8086&DEV_1D41&CC_0601`  
   Część po **`DEV_`** (tutaj **`1D41`**) to identyfikator urządzenia.
 
-<img width="441" height="290" alt="image" src="https://github.com/user-attachments/assets/bb9d2ac3-27c0-4af8-b469-0d40f853386d" />
+<img width="400" height="300" alt="image" src="https://github.com/user-attachments/assets/621b250b-41ea-431d-85ab-81446a191837" />
+
 
 ---
 
