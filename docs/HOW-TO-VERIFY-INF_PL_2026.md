@@ -22,7 +22,7 @@ Wybierz jedną z poniższych metod:
 - **Często nazwa sama zawiera identyfikator sprzętu** – na przykład: `Intel(R) C600/X79 series chipset LPC Controller – 1D41`  
   Tutaj HWID to **`1D41`**.
 
-<img width="817" height="341" alt="image" src="https://github.com/user-attachments/assets/58c94b5e-d6e8-4a01-a161-21f3c3b78e7c" />
+<img width="781" height="350" alt="image" src="https://github.com/user-attachments/assets/66dba885-3eee-4169-8d44-87c22777da8e" />
 
 ---
 
