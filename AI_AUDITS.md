@@ -1,10 +1,23 @@
-# Security Audits — Universal Intel Chipset Device Updater
+# 🤖 AI Security & Code Quality Audits
+## Universal Intel Chipset Device Updater
 
 This document provides a structured overview of security reviews conducted by AI language models on this project. These are not formal penetration tests or third-party audits — they are structured code and architecture reviews using security frameworks (OWASP, CWE, CVSS v3.1) applied by each model independently.
 Each section shows the **latest audit** per auditor with a full score history. Full reports are linked for reference.
 
 Average score (March 2026): 9.6/10 across 6 AI-reviewed audit cycles.
 All reviewers confirmed the multi-layer verification architecture and consistent improvement between cycles. Note: Claude (Anthropic) — the lowest-scoring and most critical reviewer — awarded 9.1/10 after four audit cycles starting from 8.3/10.
+
+---
+
+## How to Read This Document
+
+Each auditor section contains:
+- **Badges** — current score, reliability rating, verification status
+- **Latest audit summary** — key findings in 2–3 sentences
+- **Score history table** — all audit dates and scores with links to full reports
+- **Link to the latest full report**
+
+To add a new audit cycle, append a row to each auditor's history table and update the summary and badges.
 
 ---
 
@@ -78,18 +91,6 @@ DeepSeek confirms that the path handling improvements (`$env:SystemRoot`, `$env:
 | Nov 21, 2025 | v10.1-2025.11.5 | 8.7/10 | [2025-11-21-DEEPSEEK-AUDIT.md](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/blob/main/docs/audit-reports-2025-11-21/2025-11-21-DEEPSEEK-AUDIT.md) |
 | Feb 1, 2026 | v10.1-2026.02.1 | 9.2/10 | [2026-02-01-DEEPSEEK-AUDIT.md](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/blob/main/docs/audit-reports-2026-02-01/2026-02-01-DEEPSEEK-AUDIT.md) |
 | Mar 11, 2026 | v2026.03.0011 | **9.4/10** | [2026-03-11-DEEPSEEK-AUDIT.md](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/blob/main/docs/audit-reports-2026-03-11/2026-03-11-DEEPSEEK-AUDIT.md) |
-
----
-
-## How to Read This Document
-
-Each auditor section contains:
-- **Badges** — current score, reliability rating, verification status
-- **Latest audit summary** — key findings in 2–3 sentences
-- **Score history table** — all audit dates and scores with links to full reports
-- **Link to the latest full report**
-
-To add a new audit cycle, append a row to each auditor's history table and update the summary and badges.
 
 ---
 
