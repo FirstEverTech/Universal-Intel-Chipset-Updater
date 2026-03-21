@@ -1,4 +1,4 @@
-# 🤖 AI Security & Code Quality Audits
+# AI Security & Code Quality Audits
 ## Universal Intel Chipset Device Updater
 
 This document provides a structured overview of security reviews conducted by AI language models on this project. These are not formal penetration tests or third-party audits — they are structured code and architecture reviews using security frameworks (OWASP, CWE, CVSS v3.1) applied by each model independently.
