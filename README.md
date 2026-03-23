@@ -537,12 +537,12 @@ universal-intel-chipset-device-updater
 
 `assets/` - Screenshots
 
-- [1-security.png](assets/1-security.png)
-- [2-detection.png](assets/2-detection.png)
-- [3-backup.png](assets/3-backup.png)
-- [4-install.png](assets/4-install.png)
-- [FirstEverTech-animation.gif](assets/FirstEverTech-animation.gif)
-- [FirstEverTech-logo.png](assets/FirstEverTech-logo.png)
+- [1-security.png](assets/1-security.png) - Security screen (1 of 4)
+- [2-detection.png](assets/2-detection.png) - Detection screen (2 of 4)
+- [3-backup.png](assets/3-backup.png) - Backup screen (3 of 4)
+- [4-install.png](assets/4-install.png) - Installation screen (4 of 4)
+- [FirstEverTech-animation.gif](assets/FirstEverTech-animation.gif) - FirstEverTech animation
+- [FirstEverTech-logo.png](assets/FirstEverTech-logo.png) - FirstEverTech logo
 
 `ISSUE_TEMPLATE/` - Issue templates
 - [bug_report.md](ISSUE_TEMPLATE/bug_report.md) - Bug report template
