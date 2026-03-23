@@ -132,15 +132,15 @@ The tool's security posture remains among the strongest ever seen in any communi
 
 ## Score History at a Glance
 
-| Auditor | Nov 2025 | Feb 2026 | Mar 2026 | Trend | Notes |
-|---------|----------|----------|----------|-------|-------|
-| ChatGPT | 9.4 | 9.6 | **9.7** | ↑ | Consistently high; tends toward optimistic scoring |
-| Claude | 8.3 | 8.7 | **9.1** | ↑ | Most critical reviewer; lowest scores in the series |
-| Copilot | 8.6 | 9.4 | **9.5** | ↑ | Largest single-cycle jump (+0.8); strong improvement recognition |
-| DeepSeek | 8.7 | 9.2 | **9.4** | ↑ | Consistent mid-range scoring; balanced methodology |
-| Gemini | 9.0 | 9.5 | **10.0** | ↑ | Most generous reviewer; perfect score reflects lenient criteria |
-| Grok | 9.7 | 9.8 | **9.9** | ↑ | Highest baseline; limited score differentiation between cycles |
-| **Average** | **8.95** | **9.37** | **9.6** | ↑ | |
+| Auditor | 2025-11-21 | 2026-02-01 | 2026-03-11 | Trend | Notes |
+|---------|------------|------------|------------|-------|-------|
+| ChatGPT | 9.4 | 9.6 | **9.7** | ↑ | Added self‑hash verification, restore points, and dual sources. Later refined with inbox driver handling and better detection, pushing score to 9.7. |
+| Claude | 8.3 | 8.7 | **9.1** | ↑ | Initially docked for missing self‑hash and hardcoded paths. By March 2026, those were fixed, path handling switched to environment variables, and PSGallery publication completed. Reliability record (34K downloads, 1 confirmed bug) further justified the increase. |
+| Copilot | 8.6 | 9.4 | **9.5** | ↑ | The largest jump (+0.8) came from adding multi‑layer verification, parallel scanner, and SFX signing. The March update consolidated with `-quiet` mode, MDM documentation, and 27K+ downloads with zero open issues. |
+| DeepSeek | 8.7 | 9.2 | **9.4** | ↑ | Steady improvements in security, UX (dynamic support message, post‑install pause), and the fix for the INF scanner bug. Code quality refinements (bool flags, `Clear-Host`) pushed the score to 9.4. |
+| Gemini | 9.0 | 9.5 | **10.0** | ↑ | Already high, Gemini awarded a perfect 10 in March, citing the tool’s “gold standard” maturity, 27K downloads, 13 resolved issues (most user‑environment), and the maintainer’s same‑day bug fixes. |
+| Grok | 9.7 | 9.8 | **9.9** | ↑ | Grok’s baseline was already near‑perfect. The March update (improved inbox detection, expanded HWID coverage, dedicated uninstaller for error 1603) and zero open issues brought it to 9.9. |
+| **Average** | **8.95** | **9.37** | **9.6** | ↑ | The average rose by 0.65 overall, driven by consistent security enhancements, code hygiene, and an exceptional real‑world reliability record (34K downloads, 1 confirmed bug). |
 
 ---
 
