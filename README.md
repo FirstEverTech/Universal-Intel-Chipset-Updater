@@ -26,6 +26,8 @@ For detailed documentation and guides, see:
 ⭐ If this project helped you, please click the "Star" button at the top of this page on GitHub.  
 👉 [Share your feedback!](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/discussions/16)
 
+[![Stargazers over time](https://starchart.cc/FirstEverTech/Universal-Intel-Chipset-Updater.svg?variant=adaptive)](https://starchart.cc/FirstEverTech/Universal-Intel-Chipset-Updater)
+
 ---
 
 - Official threads on the following forums: **[TechPowerUp](https://www.techpowerup.com/forums/threads/tool-universal-intel-chipset-device-updater.346086/)**, **[Win-Raid](https://winraid.level1techs.com/t/tool-universal-intel-chipset-device-updater)**, **[Station-Drivers](https://www.station-drivers.com/index.php/en/forum/intel-chipsets-drivers/887-universal-intel-chipset-drivers-updater)**, **[ElevenForum](https://www.elevenforum.com/t/universal-intel-chipset-device-updater.41790)** and **[WinClub](https://winclub.pl/topic/49717-universal-intel-chipset-device-updater)**.
