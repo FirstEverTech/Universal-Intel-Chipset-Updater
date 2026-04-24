@@ -4,9 +4,9 @@ The Intel Chipset Device Software installs the Windows INF files. An INF is a te
 
 This dataset organizes the historical naming of platforms, with a focus on technical rather than marketing aspects. It is based on:
 
-- Detects 5435 INF files
+- Detects 5537 INF files
 - Pulls 2996 unique HWIDs
-- Creates 104293 entries
+- Creates 106152 entries
 
 ## Naming Legend - Microarchitecture / Segment
 
@@ -91,21 +91,21 @@ This dataset organizes the historical naming of platforms, with a focus on techn
 
 | INF | Package | Version | Date | HWIDs |
 |--------|---------|---------|------|--------|
-| PantherLakeSystem.inf, PantherLakeSystemNorthpeak.inf | 10.1.20473.8812 | 10.1.56.28 | 21/01/2026* | E300, E301, E302, E303, E304, E305, E306, E307, E308, E309, E30A, E30B, E30C, E30D, E30E, E30F, E310, E311, E312, E313, E314, E315, E316, E317, E318, E319, E31A, E31B, E31C, E31D, E31E, E31F, E322, E323, E348, E362, E363, E371, E37F, E400, E401, E402, E403, E404, E405, E406, E407, E408, E409, E40A, E40B, E40C, E40D, E40E, E40F, E410, E411, E412, E413, E414, E415, E416, E417, E418, E419, E41A, E41B, E41C, E41D, E41E, E41F, E422, E423, E448, E44A, E462, E463, E471 |
+| PantherLakeSystem.inf, PantherLakeSystemNorthpeak.inf | 10.1.20490.8818 | 10.1.56.28 | 06/02/2026* | E300, E301, E302, E303, E304, E305, E306, E307, E308, E309, E30A, E30B, E30C, E30D, E30E, E30F, E310, E311, E312, E313, E314, E315, E316, E317, E318, E319, E31A, E31B, E31C, E31D, E31E, E31F, E322, E323, E348, E362, E363, E371, E37F, E400, E401, E402, E403, E404, E405, E406, E407, E408, E409, E40A, E40B, E40C, E40D, E40E, E40F, E410, E411, E412, E413, E414, E415, E416, E417, E418, E419, E41A, E41B, E41C, E41D, E41E, E41F, E422, E423, E448, E44A, E462, E463, E471 |
 
 #### MeteorLake SoC
 **Generation:** Core Ultra 100 - Meteor Lake - Tile-based Mobile SoC - Mobile
 
 | INF | Package | Version | Date | HWIDs |
 |--------|---------|---------|------|--------|
-| MeteorLakeSystem.inf, MeteorLakeSystemNorthpeak.inf | 10.1.20473.8812 | 10.1.47.12 | 21/01/2026* | 7E22, 7E23, 7E24, 7E71, 7E7F |
+| MeteorLakeSystem.inf, MeteorLakeSystemNorthpeak.inf | 10.1.20490.8818 | 10.1.47.12 | 06/02/2026* | 7E22, 7E23, 7E24, 7E71, 7E7F |
 
 #### MeteorLake PCH-N
 **Generation:** Core Ultra 100 - Meteor Lake - Mobile PCH (Low Power) - Mobile PCH
 
 | INF | Package | Version | Date | HWIDs |
 |--------|---------|---------|------|--------|
-| MeteorLakeSystem.inf, MeteorLakeSystemNorthpeak.inf | 10.1.20473.8812 | 10.1.47.12 | 21/01/2026* | AE22, AE23, AE24 |
+| MeteorLakeSystem.inf, MeteorLakeSystemNorthpeak.inf | 10.1.20490.8818 | 10.1.47.12 | 06/02/2026* | AE22, AE23, AE24 |
 
 #### MeteorLake PCH-H
 **Generation:** Core Ultra 100 - Meteor Lake - Mobile PCH (High Performance) - Mobile PCH
@@ -119,21 +119,21 @@ This dataset organizes the historical naming of platforms, with a focus on techn
 
 | INF | Package | Version | Date | HWIDs |
 |--------|---------|---------|------|--------|
-| MeteorLakePCH-SSystem.inf | 10.1.20473.8812 | 10.1.51.10 | 21/01/2026* | 7F00, 7F01, 7F02, 7F03, 7F04, 7F05, 7F06, 7F07, 7F08, 7F09, 7F0A, 7F0B, 7F0C, 7F0D, 7F0E, 7F0F, 7F10, 7F11, 7F12, 7F13, 7F14, 7F15, 7F16, 7F17, 7F18, 7F19, 7F1A, 7F1B, 7F1C, 7F1D, 7F1E, 7F1F, 7F20, 7F21, 7F23, 7F24, 7F2F, 7F58, 7F59, 7F69 |
+| MeteorLakePCH-SSystem.inf | 10.1.20490.8818 | 10.1.51.10 | 06/02/2026* | 7F00, 7F01, 7F02, 7F03, 7F04, 7F05, 7F06, 7F07, 7F08, 7F09, 7F0A, 7F0B, 7F0C, 7F0D, 7F0E, 7F0F, 7F10, 7F11, 7F12, 7F13, 7F14, 7F15, 7F16, 7F17, 7F18, 7F19, 7F1A, 7F1B, 7F1C, 7F1D, 7F1E, 7F1F, 7F20, 7F21, 7F23, 7F24, 7F2F, 7F58, 7F59, 7F69 |
 
 #### RocketLake
 **Generation:** 11th Gen Core - Rocket Lake - Desktop - Desktop
 
 | INF | Package | Version | Date | HWIDs |
 |--------|---------|---------|------|--------|
-| RocketLakeSystem.inf | 10.1.20473.8812 | 10.1.41.5 | 21/01/2026* | 4C01, 4C03, 4C05, 4C07, 4C09, 4C11, 4C19, 4C23, 4C33, 4C43, 4C53, 4C63 |
+| RocketLakeSystem.inf | 10.1.20490.8818 | 10.1.41.5 | 06/02/2026* | 4C01, 4C03, 4C05, 4C07, 4C09, 4C11, 4C19, 4C23, 4C33, 4C43, 4C53, 4C63 |
 
 #### TigerLake DmaSec
 **Generation:** 11th Gen Core - Tiger Lake - DMA Security Extension (IOMMU / BitLocker) - Mobile
 
 | INF | Package | Version | Date | HWIDs |
 |--------|---------|---------|------|--------|
-| TigerlakeDmaSecExtension.inf | 10.1.20473.8812 | 10.1.43.5 | 21/01/2026* | 9A01, 9A0F, 9A23, 9A25, 9A27, 9A29, 9A2B, 9A2D, 9A2F, 9A31, 9A37, 9A3B, 9A3D, 9A3F |
+| TigerlakeDmaSecExtension.inf | 10.1.20490.8818 | 10.1.43.5 | 06/02/2026* | 9A01, 9A0F, 9A23, 9A25, 9A27, 9A29, 9A2B, 9A2D, 9A2F, 9A31, 9A37, 9A3B, 9A3D, 9A3F |
 
 #### KabyLake-H
 **Generation:** 7th Gen Core - Kaby Lake - High Performance Mobile - Mobile
@@ -182,49 +182,49 @@ This dataset organizes the historical naming of platforms, with a focus on techn
 
 | INF | Package | Version | Date | HWIDs |
 |--------|---------|---------|------|--------|
-| RaptorLakeSystem.inf | 10.1.20473.8812 | 10.1.49.12 | 21/01/2026* | A70D, A72D, A74D |
+| RaptorLakeSystem.inf | 10.1.20490.8818 | 10.1.49.12 | 06/02/2026* | A70D, A72D, A74D |
 
 #### IceLake
 **Generation:** 10th Gen Core - Ice Lake - Mobile SoC - Desktop/Mobile
 
 | INF | Package | Version | Date | HWIDs |
 |--------|---------|---------|------|--------|
-| IceLakeSystemThermal.inf, IceLakeUSBFunctionController.inf | 10.1.20473.8812 | 10.1.20.5 | 21/01/2026* | 8A03, 8A15 |
+| IceLakeSystemThermal.inf, IceLakeUSBFunctionController.inf | 10.1.20490.8818 | 10.1.20.5 | 06/02/2026* | 8A03, 8A15 |
 
 #### KabyLake
 **Generation:** 7th Gen Core - Kaby Lake - Desktop/Mobile - Desktop/Mobile
 
 | INF | Package | Version | Date | HWIDs |
 |--------|---------|---------|------|--------|
-| KabylakeSystem.inf, KabylakeSystemGMM.inf | 10.1.20473.8812 | 10.1.10.5 | 21/01/2026* | 5900, 5901, 5904, 5905, 5909, 590C, 590D, 590F, 5910, 5911, 5914, 5918, 591F |
+| KabylakeSystem.inf, KabylakeSystemGMM.inf | 10.1.20490.8818 | 10.1.10.5 | 06/02/2026* | 5900, 5901, 5904, 5905, 5909, 590C, 590D, 590F, 5910, 5911, 5914, 5918, 591F |
 
 #### TigerLakePCH-H_Extension-Dmasec
 **Generation:** Unknown - Desktop/Mobile
 
 | INF | Package | Version | Date | HWIDs |
 |--------|---------|---------|------|--------|
-| TigerLakePCH-HDmaSecExtension.inf | 10.1.20473.8812 | 10.1.34.13 | 21/01/2026* | 4380, 4381, 4382, 4383, 4384, 4385, 4386, 4387, 4388, 4389, 438A, 438B, 438C, 438D, 438E, 438F, 4390, 4391, 4392, 4393, 4394, 4395, 4396, 4397, 4398, 4399, 439A, 439B, 439C, 439D, 439E, 439F, 43B0, 43B1, 43B2, 43B3, 43B4, 43B5, 43B6, 43B7, 43B8, 43B9, 43BA, 43BB, 43BC, 43BD, 43BE, 43BF, 43C0, 43C1, 43C2, 43C3, 43C4, 43C5, 43C6, 43C7 |
+| TigerLakePCH-HDmaSecExtension.inf | 10.1.20490.8818 | 10.1.34.13 | 06/02/2026* | 4380, 4381, 4382, 4383, 4384, 4385, 4386, 4387, 4388, 4389, 438A, 438B, 438C, 438D, 438E, 438F, 4390, 4391, 4392, 4393, 4394, 4395, 4396, 4397, 4398, 4399, 439A, 439B, 439C, 439D, 439E, 439F, 43B0, 43B1, 43B2, 43B3, 43B4, 43B5, 43B6, 43B7, 43B8, 43B9, 43BA, 43BB, 43BC, 43BD, 43BE, 43BF, 43C0, 43C1, 43C2, 43C3, 43C4, 43C5, 43C6, 43C7 |
 
 #### TigerLakePCH-LP_Extension-Dmasec
 **Generation:** Unknown - Desktop/Mobile
 
 | INF | Package | Version | Date | HWIDs |
 |--------|---------|---------|------|--------|
-| TigerlakePCH-LPDmaSecExtension.inf | 10.1.20473.8812 | 10.1.24.7 | 21/01/2026* | A080, A081, A082, A083, A084, A085, A086, A087, A088, A089, A08A, A08B, A08C, A08D, A08E, A08F, A090, A091, A092, A093, A094, A095, A096, A097, A098, A099, A09A, A09B, A09C, A09D, A09E, A09F, A0B0, A0B1, A0B2, A0B3, A0B4, A0B5, A0B6, A0B7, A0B8, A0B9, A0BA, A0BB, A0BC, A0BD, A0BE, A0BF |
+| TigerlakePCH-LPDmaSecExtension.inf | 10.1.20490.8818 | 10.1.24.7 | 06/02/2026* | A080, A081, A082, A083, A084, A085, A086, A087, A088, A089, A08A, A08B, A08C, A08D, A08E, A08F, A090, A091, A092, A093, A094, A095, A096, A097, A098, A099, A09A, A09B, A09C, A09D, A09E, A09F, A0B0, A0B1, A0B2, A0B3, A0B4, A0B5, A0B6, A0B7, A0B8, A0B9, A0BA, A0BB, A0BC, A0BD, A0BE, A0BF |
 
 #### Skylake
 **Generation:** 6th Gen Core - Skylake - Desktop / Mobile - Desktop/Mobile
 
 | INF | Package | Version | Date | HWIDs |
 |--------|---------|---------|------|--------|
-| SkylakeSystem.inf, SkylakeSystemGMM.inf, SkylakeSystemThermal.inf | 10.1.20473.8812 | 10.1.7.4 | 21/01/2026* | 1900, 1901, 1903, 1905, 1909, 190F, 1910, 1911, 191F |
+| SkylakeSystem.inf, SkylakeSystemGMM.inf, SkylakeSystemThermal.inf | 10.1.20490.8818 | 10.1.7.4 | 06/02/2026* | 1900, 1901, 1903, 1905, 1909, 190F, 1910, 1911, 191F |
 
 #### TigerLake
 **Generation:** 11th Gen Core - Tiger Lake - Mobile SoC / High Performance Mobile - Desktop/Mobile
 
 | INF | Package | Version | Date | HWIDs |
 |--------|---------|---------|------|--------|
-| TigerlakeSystem.inf | 10.1.20473.8812 | 10.1.43.5 | 21/01/2026* | 9A01, 9A02, 9A03, 9A04, 9A05, 9A07, 9A09, 9A0D, 9A0F, 9A11, 9A12, 9A14, 9A23, 9A25, 9A27, 9A29, 9A2B, 9A2D, 9A2F, 9A31, 9A33, 9A35, 9A37, 9A3B, 9A3D, 9A3F |
+| TigerlakeSystem.inf | 10.1.20490.8818 | 10.1.43.5 | 06/02/2026* | 9A01, 9A02, 9A03, 9A04, 9A05, 9A07, 9A09, 9A0D, 9A0F, 9A11, 9A12, 9A14, 9A23, 9A25, 9A27, 9A29, 9A2B, 9A2D, 9A2F, 9A31, 9A33, 9A35, 9A37, 9A3B, 9A3D, 9A3F |
 
 #### Crystalwell
 **Generation:** 4th Gen Core (eDRAM) - Crystal Well - High-End Mobile/Desktop - Desktop/Mobile
@@ -238,56 +238,56 @@ This dataset organizes the historical naming of platforms, with a focus on techn
 
 | INF | Package | Version | Date | HWIDs |
 |--------|---------|---------|------|--------|
-| AlderLakePCH-NDmaSecExtension.inf | 10.1.20473.8812 | 10.1.50.8 | 21/01/2026* | 5480, 5481, 5482, 5483, 5484, 5485, 5486, 5487, 5488, 5489, 548A, 548B, 548C, 548D, 548E, 548F, 5490, 5491, 5492, 5493, 5494, 5495, 5496, 5497, 5498, 5499, 549A, 549B, 549C, 549D, 549E, 549F, 54B0, 54B1, 54B2, 54B3, 54B4, 54B5, 54B6, 54B7, 54B8, 54B9, 54BA, 54BB, 54BC, 54BD, 54BE, 54BF |
+| AlderLakePCH-NDmaSecExtension.inf | 10.1.20490.8818 | 10.1.50.8 | 06/02/2026* | 5480, 5481, 5482, 5483, 5484, 5485, 5486, 5487, 5488, 5489, 548A, 548B, 548C, 548D, 548E, 548F, 5490, 5491, 5492, 5493, 5494, 5495, 5496, 5497, 5498, 5499, 549A, 549B, 549C, 549D, 549E, 549F, 54B0, 54B1, 54B2, 54B3, 54B4, 54B5, 54B6, 54B7, 54B8, 54B9, 54BA, 54BB, 54BC, 54BD, 54BE, 54BF |
 
 #### AlderLakepch-P_Extension-Dmasec
 **Generation:** Unknown - Desktop/Mobile
 
 | INF | Package | Version | Date | HWIDs |
 |--------|---------|---------|------|--------|
-| AlderLakePCH-PDmaSecExtension.inf | 10.1.20473.8812 | 10.1.36.7 | 21/01/2026* | 5180, 5181, 5182, 5183, 5184, 5185, 5186, 5187, 5188, 5189, 518A, 518B, 518C, 518D, 518E, 518F, 5190, 5191, 5192, 5193, 5194, 5195, 5196, 5197, 5198, 5199, 519A, 519B, 519C, 519D, 519E, 519F, 51B0, 51B1, 51B2, 51B3, 51B4, 51B5, 51B6, 51B7, 51B8, 51B9, 51BA, 51BB, 51BC, 51BD, 51BE, 51BF |
+| AlderLakePCH-PDmaSecExtension.inf | 10.1.20490.8818 | 10.1.36.7 | 06/02/2026* | 5180, 5181, 5182, 5183, 5184, 5185, 5186, 5187, 5188, 5189, 518A, 518B, 518C, 518D, 518E, 518F, 5190, 5191, 5192, 5193, 5194, 5195, 5196, 5197, 5198, 5199, 519A, 519B, 519C, 519D, 519E, 519F, 51B0, 51B1, 51B2, 51B3, 51B4, 51B5, 51B6, 51B7, 51B8, 51B9, 51BA, 51BB, 51BC, 51BD, 51BE, 51BF |
 
 #### AlderLake
 **Generation:** 12th Gen Core - Alder Lake - Desktop / Performance Mobile / Efficient Mobile - Desktop/Mobile
 
 | INF | Package | Version | Date | HWIDs |
 |--------|---------|---------|------|--------|
-| AlderLakeSystem.inf, AlderLakeSystemNorthpeak.inf | 10.1.20473.8812 | 10.1.45.10 | 21/01/2026* | 4601, 4602, 4603, 4609, 460A, 460D, 4610, 4614, 4617, 4618, 4619, 461A, 461B, 461C, 461F, 4621, 4622, 4623, 4629, 462D, 462F, 4630, 4633, 4637, 463B, 463D, 463F, 4640, 4641, 4643, 4644, 4648, 4649, 464C, 464D, 4650, 4653, 4660, 4663, 4664, 4668, 466B, 466C, 466E, 466F, 4670, 467D |
+| AlderLakeSystem.inf, AlderLakeSystemNorthpeak.inf | 10.1.20490.8818 | 10.1.45.10 | 06/02/2026* | 4601, 4602, 4603, 4609, 460A, 460D, 4610, 4614, 4617, 4618, 4619, 461A, 461B, 461C, 461F, 4621, 4622, 4623, 4629, 462D, 462F, 4630, 4633, 4637, 463B, 463D, 463F, 4640, 4641, 4643, 4644, 4648, 4649, 464C, 464D, 4650, 4653, 4660, 4663, 4664, 4668, 466B, 466C, 466E, 466F, 4670, 467D |
 
 #### AlderLake_Extension-Dmasec
 **Generation:** Unknown - Desktop/Mobile
 
 | INF | Package | Version | Date | HWIDs |
 |--------|---------|---------|------|--------|
-| AlderLakeDmaSecExtension.inf | 10.1.20473.8812 | 10.1.45.10 | 21/01/2026* | 460D, 461F, 462D, 462F, 463D, 463F, 464D, 466E |
+| AlderLakeDmaSecExtension.inf | 10.1.20490.8818 | 10.1.45.10 | 06/02/2026* | 460D, 461F, 462D, 462F, 463D, 463F, 464D, 466E |
 
 #### CometLake
 **Generation:** 10th Gen Core - Comet Lake - Desktop / Mobile - Desktop/Mobile
 
 | INF | Package | Version | Date | HWIDs |
 |--------|---------|---------|------|--------|
-| CometLakeSystem.inf | 10.1.20473.8812 | 10.1.30.4 | 21/01/2026* | 9B33, 9B43, 9B44, 9B51, 9B53, 9B54, 9B61, 9B63, 9B64, 9B71 |
+| CometLakeSystem.inf | 10.1.20490.8818 | 10.1.30.4 | 06/02/2026* | 9B33, 9B43, 9B44, 9B51, 9B53, 9B54, 9B61, 9B63, 9B64, 9B71 |
 
 #### CometLakePCH-LP_Extension-Dmasec
 **Generation:** Unknown - Desktop/Mobile
 
 | INF | Package | Version | Date | HWIDs |
 |--------|---------|---------|------|--------|
-| CometLakePCH-LPDmaSecExtension.inf | 10.1.20473.8812 | 10.1.27.4 | 21/01/2026* | 0280, 0281, 0282, 0283, 0284, 0285, 0286, 0287, 0288, 0289, 028A, 028B, 028C, 028D, 028E, 028F, 0290, 0291, 0292, 0293, 0294, 0295, 0296, 0297, 0298, 0299, 029A, 029B, 029C, 029D, 029E, 029F, 02B0, 02B1, 02B2, 02B3, 02B4, 02B5, 02B6, 02B7, 02B8, 02B9, 02BA, 02BB, 02BC, 02BD, 02BE, 02BF |
+| CometLakePCH-LPDmaSecExtension.inf | 10.1.20490.8818 | 10.1.27.4 | 06/02/2026* | 0280, 0281, 0282, 0283, 0284, 0285, 0286, 0287, 0288, 0289, 028A, 028B, 028C, 028D, 028E, 028F, 0290, 0291, 0292, 0293, 0294, 0295, 0296, 0297, 0298, 0299, 029A, 029B, 029C, 029D, 029E, 029F, 02B0, 02B1, 02B2, 02B3, 02B4, 02B5, 02B6, 02B7, 02B8, 02B9, 02BA, 02BB, 02BC, 02BD, 02BE, 02BF |
 
 #### ArrowLake
 **Generation:** 14th Gen Core - Arrow Lake - Desktop / High Performance Mobile - Desktop/Mobile
 
 | INF | Package | Version | Date | HWIDs |
 |--------|---------|---------|------|--------|
-| ArrowLakeSystem.inf | 10.1.20473.8812 | 10.1.57.6 | 21/01/2026* | 7700, 7701, 7702, 7703, 7704, 7705, 7706, 7707, 7708, 7709, 770A, 770B, 770C, 770D, 770E, 770F, 7711, 7712, 7713, 7714, 7715, 7716, 7717, 7718, 7719, 771A, 771B, 771C, 771D, 771E, 771F, 7722, 7723, 7771 |
+| ArrowLakeSystem.inf | 10.1.20490.8818 | 10.1.57.6 | 06/02/2026* | 7700, 7701, 7702, 7703, 7704, 7705, 7706, 7707, 7708, 7709, 770A, 770B, 770C, 770D, 770E, 770F, 7711, 7712, 7713, 7714, 7715, 7716, 7717, 7718, 7719, 771A, 771B, 771C, 771D, 771E, 771F, 7722, 7723, 7771 |
 
 #### CoffeeLake
 **Generation:** 8th/9th Gen Core - Coffee Lake - Desktop / Mobile - Desktop/Mobile
 
 | INF | Package | Version | Date | HWIDs |
 |--------|---------|---------|------|--------|
-| CoffeelakeSystem.inf | 10.1.20473.8812 | 10.1.14.8 | 21/01/2026* | 3E0F, 3E10, 3E18, 3E1F, 3E20, 3E30, 3E31, 3E32, 3E33, 3E34, 3E35, 3E81, 3E85, 3E89, 3EC2, 3EC4, 3EC6, 3ECA, 3ECC, 3ED0 |
+| CoffeelakeSystem.inf | 10.1.20490.8818 | 10.1.14.8 | 06/02/2026* | 3E0F, 3E10, 3E18, 3E1F, 3E20, 3E30, 3E31, 3E32, 3E33, 3E34, 3E35, 3E81, 3E85, 3E89, 3EC2, 3EC4, 3EC6, 3ECA, 3ECC, 3ED0 |
 
 
 ### WORKSTATION / HEDT
@@ -314,14 +314,14 @@ This dataset organizes the historical naming of platforms, with a focus on techn
 
 | INF | Package | Version | Date | HWIDs |
 |--------|---------|---------|------|--------|
-| GraniteRapidsSystem.inf | 10.1.20473.8812 | 10.1.52.14 | 21/01/2026* | 2714, 3256, 5794, 5796, 57C2 |
+| GraniteRapidsSystem.inf | 10.1.20490.8818 | 10.1.52.14 | 06/02/2026* | 2714, 3256, 5794, 5796, 57C2 |
 
 #### SapphireRapids
 **Generation:** Xeon Scalable 4th Gen - Sapphire Rapids - Server
 
 | INF | Package | Version | Date | HWIDs |
 |--------|---------|---------|------|--------|
-| SapphireRapidsSystem.inf | 10.1.20473.8812 | 10.1.39.10 | 21/01/2026* | 0998, 0B23, 0B25, 0CFE, 2710, 3240, 3241, 3242, 3245, 3246, 3247, 324A, 324C, 324D, 3250, 3251, 3252, 3255, 3258, 3259, 325A, 325B, 325C, 325D, 325E, 325F |
+| SapphireRapidsSystem.inf | 10.1.20490.8818 | 10.1.39.10 | 06/02/2026* | 0998, 0B23, 0B25, 0CFE, 2710, 3240, 3241, 3242, 3245, 3246, 3247, 324A, 324C, 324D, 3250, 3251, 3252, 3255, 3258, 3259, 325A, 325B, 325C, 325D, 325E, 325F |
 
 #### Skylake-E
 **Generation:** Xeon Scalable 1st Gen - Skylake-EP/EX - Server/Workstation - Server/Workstation
@@ -370,7 +370,7 @@ This dataset organizes the historical naming of platforms, with a focus on techn
 
 | INF | Package | Version | Date | HWIDs |
 |--------|---------|---------|------|--------|
-| Server_CommonSystem.inf, Server_CommonSystemNorthpeak.inf | 10.1.20473.8812 | 10.1.42.12 | 21/01/2026* | 0000, 09A2, 09A3, 09A4, 09A5, 09A6, 09A7, 2880, 344F, 3456, 3457, 347A, 347B, 347C, 347D, 347E |
+| Server_CommonSystem.inf, Server_CommonSystemNorthpeak.inf | 10.1.20490.8818 | 10.1.42.12 | 06/02/2026* | 0000, 09A2, 09A3, 09A4, 09A5, 09A6, 09A7, 2880, 344F, 3456, 3457, 347A, 347B, 347C, 347D, 347E |
 
 #### IceLakeX
 **Generation:** Xeon W-3300 - Ice Lake-X - Workstation - Desktop/Mobile
@@ -387,35 +387,35 @@ This dataset organizes the historical naming of platforms, with a focus on techn
 
 | INF | Package | Version | Date | HWIDs |
 |--------|---------|---------|------|--------|
-| LunarLakeSystem.inf | 10.1.20473.8812 | 10.1.48.18 | 21/01/2026* | A822, A823, A848, A862, A863, A871 |
+| LunarLakeSystem.inf | 10.1.20490.8818 | 10.1.48.18 | 06/02/2026* | A822, A823, A848, A862, A863, A871 |
 
 #### JasperLake
 **Generation:** Atom - Jasper Lake - Embedded/IoT
 
 | INF | Package | Version | Date | HWIDs |
 |--------|---------|---------|------|--------|
-| JasperLake+System.inf, JasperLake+SystemNorthpeak.inf | 10.1.20473.8812 | 10.1.29.4 | 21/01/2026* | 4E00, 4E03, 4E10, 4E12, 4E14, 4E19, 4E20, 4E22, 4E24, 4E26, 4E28, 4E29, 4E30, 4E40, 4E41, 4E50, 4E51, 4E60, 4E70, 4E71 |
+| JasperLake+System.inf, JasperLake+SystemNorthpeak.inf | 10.1.20490.8818 | 10.1.29.4 | 06/02/2026* | 4E00, 4E03, 4E10, 4E12, 4E14, 4E19, 4E20, 4E22, 4E24, 4E26, 4E28, 4E29, 4E30, 4E40, 4E41, 4E50, 4E51, 4E60, 4E70, 4E71 |
 
 #### ElkhartLake
 **Generation:** Atom - Elkhart Lake - Embedded/IoT
 
 | INF | Package | Version | Date | HWIDs |
 |--------|---------|---------|------|--------|
-| ElkhartLakeSystem.inf, ElkhartLakeSystemGMM.inf, ElkhartLakeSystemLPSS.inf | 10.1.20473.8812 | 10.1.25.6 | 21/01/2026* | 4511, 4B00, 4B01, 4B20, 4B21, 4B23, 4B24, 4B28, 4B29, 4B2A, 4B2B, 4B38, 4B39, 4B3A, 4B3B, 4B3C, 4B3D, 4B3E, 4B4A, 4B4B, 4B4C, 4B4D, 4B68, 4B69, 4B78, 4B79, 4B7A, 4B7B, 4B7F, 4B8F, 4B91 |
+| ElkhartLakeSystem.inf, ElkhartLakeSystemGMM.inf, ElkhartLakeSystemLPSS.inf | 10.1.20490.8818 | 10.1.25.6 | 06/02/2026* | 4511, 4B00, 4B01, 4B20, 4B21, 4B23, 4B24, 4B28, 4B29, 4B2A, 4B2B, 4B38, 4B39, 4B3A, 4B3B, 4B3C, 4B3D, 4B3E, 4B4A, 4B4B, 4B4C, 4B4D, 4B68, 4B69, 4B78, 4B79, 4B7A, 4B7B, 4B7F, 4B8F, 4B91 |
 
 #### GeminiLake
 **Generation:** Atom - Gemini Lake - Embedded/IoT
 
 | INF | Package | Version | Date | HWIDs |
 |--------|---------|---------|------|--------|
-| GeminilakeSystem.inf, GeminilakeSystemGMM.inf, GeminilakeSystemLPSS.inf, GeminilakeSystemNorthpeak.inf | 10.1.20473.8812 | 10.1.13.4 | 21/01/2026* | 318E, 3190, 3192, 31AC, 31AE, 31B0, 31B2, 31B4, 31B6, 31B8, 31BA, 31BC, 31BE, 31C0, 31C2, 31C4, 31C6, 31D4, 31D6, 31D7, 31D8, 31D9, 31DA, 31DB, 31E8, 31EE, 31F0 |
+| GeminilakeSystem.inf, GeminilakeSystemGMM.inf, GeminilakeSystemLPSS.inf, GeminilakeSystemNorthpeak.inf | 10.1.20490.8818 | 10.1.13.4 | 06/02/2026* | 318E, 3190, 3192, 31AC, 31AE, 31B0, 31B2, 31B4, 31B6, 31B8, 31BA, 31BC, 31BE, 31C0, 31C2, 31C4, 31C6, 31D4, 31D6, 31D7, 31D8, 31D9, 31DA, 31DB, 31E8, 31EE, 31F0 |
 
 #### ApolloLake
 **Generation:** Atom - Apollo Lake - Embedded/IoT
 
 | INF | Package | Version | Date | HWIDs |
 |--------|---------|---------|------|--------|
-| ApolloLakeSDHost.inf, ApolloLakeSystem.inf | 10.1.20473.8812 | 10.1.17.4 | 21/01/2026* | 5ACA, 5ACC, 5AD0, 5AD4, 5AD6, 5AD7, 5AD8, 5AD9, 5ADA, 5ADB, 5AE8, 5AF0 |
+| ApolloLakeSDHost.inf, ApolloLakeSystem.inf | 10.1.20490.8818 | 10.1.17.4 | 06/02/2026* | 5ACA, 5ACC, 5AD0, 5AD4, 5AD6, 5AD7, 5AD8, 5AD9, 5ADA, 5ADB, 5AE8, 5AF0 |
 
 #### Baytrail-I
 **Generation:** Atom - Bay Trail - Embedded/IoT
@@ -488,84 +488,84 @@ This dataset organizes the historical naming of platforms, with a focus on techn
 
 | INF | Package | Version | Date | HWIDs |
 |--------|---------|---------|------|--------|
-| RaptorLakePCH-SSystem.inf, RaptorLakePCH-SSystemLPSS.inf | 10.1.20473.8812 | 10.1.46.5 | 21/01/2026* | 7A00, 7A01, 7A02, 7A03, 7A04, 7A05, 7A06, 7A07, 7A08, 7A09, 7A0A, 7A0B, 7A0C, 7A0D, 7A0E, 7A0F, 7A10, 7A11, 7A12, 7A13, 7A14, 7A15, 7A16, 7A17, 7A18, 7A19, 7A1A, 7A1B, 7A1C, 7A1D, 7A1E, 7A1F, 7A20, 7A21, 7A23, 7A24, 7A26, 7A27, 7A2F, 7A30, 7A31, 7A32, 7A33, 7A34, 7A35, 7A36, 7A37, 7A38, 7A39, 7A3A, 7A3B, 7A3C, 7A3D, 7A3E, 7A3F, 7A40, 7A41, 7A42, 7A43, 7A44, 7A45, 7A46, 7A47, 7A48, 7A49, 7A4A, 7A4B |
+| RaptorLakePCH-SSystem.inf, RaptorLakePCH-SSystemLPSS.inf | 10.1.20490.8818 | 10.1.46.5 | 06/02/2026* | 7A00, 7A01, 7A02, 7A03, 7A04, 7A05, 7A06, 7A07, 7A08, 7A09, 7A0A, 7A0B, 7A0C, 7A0D, 7A0E, 7A0F, 7A10, 7A11, 7A12, 7A13, 7A14, 7A15, 7A16, 7A17, 7A18, 7A19, 7A1A, 7A1B, 7A1C, 7A1D, 7A1E, 7A1F, 7A20, 7A21, 7A23, 7A24, 7A26, 7A27, 7A2F, 7A30, 7A31, 7A32, 7A33, 7A34, 7A35, 7A36, 7A37, 7A38, 7A39, 7A3A, 7A3B, 7A3C, 7A3D, 7A3E, 7A3F, 7A40, 7A41, 7A42, 7A43, 7A44, 7A45, 7A46, 7A47, 7A48, 7A49, 7A4A, 7A4B |
 
 #### AlderLakePCH-S
 **Generation:** 600 Series - Alder Lake PCH-S - Desktop PCH
 
 | INF | Package | Version | Date | HWIDs |
 |--------|---------|---------|------|--------|
-| AlderLakePCH-SSystem.inf, AlderLakePCH-SSystemLPSS.inf, AlderLakePCH-SSystemNorthpeak.inf | 10.1.20473.8812 | 10.1.37.7 | 21/01/2026* | 7A80, 7A81, 7A82, 7A83, 7A84, 7A85, 7A86, 7A87, 7A88, 7A8A, 7A8B, 7A8C, 7A8D, 7A8E, 7A8F, 7A90, 7A91, 7A92, 7A93, 7A94, 7A95, 7A96, 7A97, 7A98, 7A99, 7A9A, 7A9B, 7A9C, 7A9D, 7A9E, 7A9F, 7AA0, 7AA1, 7AA3, 7AA4, 7AA6, 7AA7, 7AA8, 7AA9, 7AAA, 7AAB, 7AAF, 7AB0, 7AB1, 7AB2, 7AB3, 7AB4, 7AB5, 7AB6, 7AB7, 7AB8, 7AB9, 7ABA, 7ABB, 7ABC, 7ABD, 7ABE, 7ABF, 7AC0, 7AC1, 7AC2, 7AC3, 7AC4, 7AC5, 7AC6, 7AC7, 7AC8, 7AC9, 7ACA, 7ACB, 7ACC, 7ACD, 7ACE, 7ACF, 7ADA, 7ADB, 7ADC, 7ADD, 7ADE, 7ADF, 7AEE, 7AEF, 7AF9, 7AFA, 7AFB, 7AFC, 7AFD, 7AFE |
+| AlderLakePCH-SSystem.inf, AlderLakePCH-SSystemLPSS.inf, AlderLakePCH-SSystemNorthpeak.inf | 10.1.20490.8818 | 10.1.37.7 | 06/02/2026* | 7A80, 7A81, 7A82, 7A83, 7A84, 7A85, 7A86, 7A87, 7A88, 7A89, 7A8A, 7A8B, 7A8C, 7A8D, 7A8E, 7A8F, 7A90, 7A91, 7A92, 7A93, 7A94, 7A95, 7A96, 7A97, 7A98, 7A99, 7A9A, 7A9B, 7A9C, 7A9D, 7A9E, 7A9F, 7AA0, 7AA1, 7AA3, 7AA4, 7AA6, 7AA7, 7AA8, 7AA9, 7AAA, 7AAB, 7AAF, 7AB0, 7AB1, 7AB2, 7AB3, 7AB4, 7AB5, 7AB6, 7AB7, 7AB8, 7AB9, 7ABA, 7ABB, 7ABC, 7ABD, 7ABE, 7ABF, 7AC0, 7AC1, 7AC2, 7AC3, 7AC4, 7AC5, 7AC6, 7AC7, 7AC8, 7AC9, 7ACA, 7ACB, 7ACC, 7ACD, 7ACE, 7ACF, 7ADA, 7ADB, 7ADC, 7ADD, 7ADE, 7ADF, 7AEE, 7AEF, 7AF9, 7AFA, 7AFB, 7AFC, 7AFD, 7AFE |
 
 #### AlderLakePCH-P
 **Generation:** 600 Series - Alder Lake PCH-P (Mobile Performance) - Mobile PCH
 
 | INF | Package | Version | Date | HWIDs |
 |--------|---------|---------|------|--------|
-| AlderLakePCH-PSystem.inf, AlderLakePCH-PSystemLPSS.inf, AlderLakePCH-PSystemNorthpeak.inf | 10.1.20473.8812 | 10.1.36.7 | 21/01/2026* | 5180, 5181, 5182, 5183, 5184, 5185, 5186, 5187, 5188, 5189, 518A, 518B, 518C, 518D, 518E, 518F, 5190, 5191, 5192, 5193, 5194, 5195, 5196, 5197, 5198, 5199, 519A, 519B, 519C, 519D, 519E, 519F, 51A0, 51A1, 51A3, 51A4, 51A6, 51AF, 51B0, 51B1, 51B2, 51B3, 51B4, 51B5, 51B6, 51B7, 51B8, 51B9, 51BA, 51BB, 51BC, 51BD, 51BE, 51BF, 51EF, 51FB |
+| AlderLakePCH-PSystem.inf, AlderLakePCH-PSystemLPSS.inf, AlderLakePCH-PSystemNorthpeak.inf | 10.1.20490.8818 | 10.1.36.7 | 06/02/2026* | 5180, 5181, 5182, 5183, 5184, 5185, 5186, 5187, 5188, 5189, 518A, 518B, 518C, 518D, 518E, 518F, 5190, 5191, 5192, 5193, 5194, 5195, 5196, 5197, 5198, 5199, 519A, 519B, 519C, 519D, 519E, 519F, 51A0, 51A1, 51A3, 51A4, 51A6, 51AF, 51B0, 51B1, 51B2, 51B3, 51B4, 51B5, 51B6, 51B7, 51B8, 51B9, 51BA, 51BB, 51BC, 51BD, 51BE, 51BF, 51EF, 51FB |
 
 #### AlderLakePCH-N
 **Generation:** 600 Series - Alder Lake PCH-N (Mobile Low Power) - Mobile PCH
 
 | INF | Package | Version | Date | HWIDs |
 |--------|---------|---------|------|--------|
-| AlderLakePCH-NSystem.inf, AlderLakePCH-NSystemISH.inf, AlderLakePCH-NSystemNorthpeak.inf | 10.1.20473.8812 | 10.1.50.8 | 21/01/2026* | 5480, 5481, 5482, 5483, 5484, 5485, 5486, 5487, 5488, 5489, 548A, 548B, 548C, 548D, 548E, 548F, 5490, 5491, 5492, 5493, 5494, 5495, 5496, 5497, 5498, 5499, 549A, 549B, 549C, 549D, 549E, 549F, 54A0, 54A1, 54A3, 54A4, 54A6, 54AF, 54B0, 54B1, 54B2, 54B3, 54B4, 54B5, 54B6, 54B7, 54B8, 54B9, 54BA, 54BB, 54BC, 54BD, 54BE, 54BF, 54EF |
+| AlderLakePCH-NSystem.inf, AlderLakePCH-NSystemISH.inf, AlderLakePCH-NSystemNorthpeak.inf | 10.1.20490.8818 | 10.1.50.8 | 06/02/2026* | 5480, 5481, 5482, 5483, 5484, 5485, 5486, 5487, 5488, 5489, 548A, 548B, 548C, 548D, 548E, 548F, 5490, 5491, 5492, 5493, 5494, 5495, 5496, 5497, 5498, 5499, 549A, 549B, 549C, 549D, 549E, 549F, 54A0, 54A1, 54A3, 54A4, 54A6, 54AF, 54B0, 54B1, 54B2, 54B3, 54B4, 54B5, 54B6, 54B7, 54B8, 54B9, 54BA, 54BB, 54BC, 54BD, 54BE, 54BF, 54EF |
 
 #### TigerLakePCH-H
 **Generation:** 500 Series - Tiger Lake PCH-H (Mobile High Performance) - Mobile PCH
 
 | INF | Package | Version | Date | HWIDs |
 |--------|---------|---------|------|--------|
-| TigerLakePCH-HSystem.inf, TigerLakePCH-HSystemISH.inf, TigerLakePCH-HSystemLPSS.inf, TigerLakePCH-HSystemNorthpeak.inf, TigerLakePCH-HSystemThermal.inf | 10.1.20473.8812 | 10.1.34.13 | 21/01/2026* | 4380, 4381, 4382, 4383, 4384, 4385, 4386, 4387, 4388, 4389, 438A, 438B, 438C, 438D, 438E, 438F, 4390, 4391, 4392, 4393, 4394, 4395, 4396, 4397, 4398, 4399, 439A, 439B, 439C, 439D, 439E, 439F, 43A0, 43A1, 43A2, 43A3, 43A4, 43A6, 43AF, 43B0, 43B1, 43B2, 43B3, 43B4, 43B5, 43B6, 43B7, 43B8, 43B9, 43BA, 43BB, 43BC, 43BD, 43BE, 43BF, 43C0, 43C1, 43C2, 43C3, 43C4, 43C5, 43C6, 43C7, 43DB, 43DC, 43DD, 43E6, 43E7, 43EF, 43F9, 43FC, 43FE |
+| TigerLakePCH-HSystem.inf, TigerLakePCH-HSystemISH.inf, TigerLakePCH-HSystemLPSS.inf, TigerLakePCH-HSystemNorthpeak.inf, TigerLakePCH-HSystemThermal.inf | 10.1.20490.8818 | 10.1.34.13 | 06/02/2026* | 4380, 4381, 4382, 4383, 4384, 4385, 4386, 4387, 4388, 4389, 438A, 438B, 438C, 438D, 438E, 438F, 4390, 4391, 4392, 4393, 4394, 4395, 4396, 4397, 4398, 4399, 439A, 439B, 439C, 439D, 439E, 439F, 43A0, 43A1, 43A2, 43A3, 43A4, 43A6, 43AF, 43B0, 43B1, 43B2, 43B3, 43B4, 43B5, 43B6, 43B7, 43B8, 43B9, 43BA, 43BB, 43BC, 43BD, 43BE, 43BF, 43C0, 43C1, 43C2, 43C3, 43C4, 43C5, 43C6, 43C7, 43DB, 43DC, 43DD, 43E6, 43E7, 43EF, 43F9, 43FC, 43FE |
 
 #### TigerLakePCH-LP
 **Generation:** 500 Series - Tiger Lake PCH-U (Mobile) - Mobile PCH
 
 | INF | Package | Version | Date | HWIDs |
 |--------|---------|---------|------|--------|
-| TigerlakePCH-LPSystem.inf, TigerlakePCH-LPSystemLPSS.inf, TigerlakePCH-LPUSBFunctionController.inf | 10.1.20473.8812 | 10.1.24.7 | 21/01/2026* | A080, A081, A082, A083, A084, A085, A086, A087, A088, A089, A08A, A08B, A08C, A08D, A08E, A08F, A090, A091, A092, A093, A094, A095, A096, A097, A098, A099, A09A, A09B, A09C, A09D, A09E, A09F, A0A0, A0A1, A0A3, A0A4, A0A6, A0A8, A0A9, A0AC, A0AF, A0B0, A0B1, A0B2, A0B3, A0B4, A0B5, A0B6, A0B7, A0B8, A0B9, A0BA, A0BB, A0BC, A0BD, A0BE, A0BF, A0C7, A0DA, A0DB, A0DC, A0DD, A0EC, A0EE, A0FD |
+| TigerlakePCH-LPSystem.inf, TigerlakePCH-LPSystemLPSS.inf, TigerlakePCH-LPUSBFunctionController.inf | 10.1.20490.8818 | 10.1.24.7 | 06/02/2026* | A080, A081, A082, A083, A084, A085, A086, A087, A088, A089, A08A, A08B, A08C, A08D, A08E, A08F, A090, A091, A092, A093, A094, A095, A096, A097, A098, A099, A09A, A09B, A09C, A09D, A09E, A09F, A0A0, A0A1, A0A3, A0A4, A0A6, A0A8, A0A9, A0AC, A0AF, A0B0, A0B1, A0B2, A0B3, A0B4, A0B5, A0B6, A0B7, A0B8, A0B9, A0BA, A0BB, A0BC, A0BD, A0BE, A0BF, A0C7, A0DA, A0DB, A0DC, A0DD, A0EC, A0EE, A0FD |
 
 #### CometLakePCH-H
 **Generation:** 400 Series - Comet Lake PCH-H (Mobile High Performance) - Mobile PCH
 
 | INF | Package | Version | Date | HWIDs |
 |--------|---------|---------|------|--------|
-| CometLakePCH-HSystem.inf, CometLakePCH-HSystemLPSS.inf, CometLakePCH-HSystemThermal.inf | 10.1.20473.8812 | 10.1.31.2 | 21/01/2026* | 0680, 0681, 0682, 0683, 0684, 0685, 0686, 0687, 0688, 0689, 068A, 068B, 068C, 068D, 068E, 068F, 0690, 0691, 0692, 0693, 0694, 0695, 0696, 0697, 0698, 0699, 069A, 069B, 069C, 069D, 069E, 069F, 06A0, 06A1, 06A3, 06A4, 06A6, 06A8, 06A9, 06AA, 06AB, 06AC, 06AD, 06AE, 06AF, 06B0, 06B1, 06B2, 06B3, 06B4, 06B5, 06B6, 06B7, 06B8, 06B9, 06BA, 06BB, 06BC, 06BD, 06BE, 06BF, 06C0, 06C1, 06C2, 06C3, 06C7, 06E8, 06E9, 06EA, 06EB, 06EF, 06F9, 06FB |
+| CometLakePCH-HSystem.inf, CometLakePCH-HSystemLPSS.inf, CometLakePCH-HSystemThermal.inf | 10.1.20490.8818 | 10.1.31.2 | 06/02/2026* | 0680, 0681, 0682, 0683, 0684, 0685, 0686, 0687, 0688, 0689, 068A, 068B, 068C, 068D, 068E, 068F, 0690, 0691, 0692, 0693, 0694, 0695, 0696, 0697, 0698, 0699, 069A, 069B, 069C, 069D, 069E, 069F, 06A0, 06A1, 06A3, 06A4, 06A6, 06A8, 06A9, 06AA, 06AB, 06AC, 06AD, 06AE, 06AF, 06B0, 06B1, 06B2, 06B3, 06B4, 06B5, 06B6, 06B7, 06B8, 06B9, 06BA, 06BB, 06BC, 06BD, 06BE, 06BF, 06C0, 06C1, 06C2, 06C3, 06C7, 06E8, 06E9, 06EA, 06EB, 06EF, 06F9, 06FB |
 
 #### CometLakePCH-LP
 **Generation:** 400 Series - Comet Lake PCH-U (Mobile) - Mobile PCH
 
 | INF | Package | Version | Date | HWIDs |
 |--------|---------|---------|------|--------|
-| CometLakePCH-LPSystem.inf, CometLakePCH-LPSystemNorthpeak.inf, CometLakePCH-LPSystemThermal.inf | 10.1.20473.8812 | 10.1.27.4 | 21/01/2026* | 0280, 0281, 0282, 0283, 0284, 0285, 0286, 0287, 0288, 0289, 028A, 028B, 028C, 028D, 028E, 028F, 0290, 0291, 0292, 0293, 0294, 0295, 0296, 0297, 0298, 0299, 029A, 029B, 029C, 029D, 029E, 029F, 02A0, 02A1, 02A3, 02A4, 02A6, 02A8, 02A9, 02AA, 02AB, 02B0, 02B1, 02B2, 02B3, 02B4, 02B5, 02B6, 02B7, 02B8, 02B9, 02BA, 02BB, 02BC, 02BD, 02BE, 02BF, 02C5, 02C6, 02C7, 02E8, 02E9, 02EA, 02EB, 02EF, 02F9, 02FB |
+| CometLakePCH-LPSystem.inf, CometLakePCH-LPSystemNorthpeak.inf, CometLakePCH-LPSystemThermal.inf | 10.1.20490.8818 | 10.1.27.4 | 06/02/2026* | 0280, 0281, 0282, 0283, 0284, 0285, 0286, 0287, 0288, 0289, 028A, 028B, 028C, 028D, 028E, 028F, 0290, 0291, 0292, 0293, 0294, 0295, 0296, 0297, 0298, 0299, 029A, 029B, 029C, 029D, 029E, 029F, 02A0, 02A1, 02A3, 02A4, 02A6, 02A8, 02A9, 02AA, 02AB, 02B0, 02B1, 02B2, 02B3, 02B4, 02B5, 02B6, 02B7, 02B8, 02B9, 02BA, 02BB, 02BC, 02BD, 02BE, 02BF, 02C5, 02C6, 02C7, 02E8, 02E9, 02EA, 02EB, 02EF, 02F9, 02FB |
 
 #### CometLakePCH-V
 **Generation:** 400 Series - Comet Lake PCH-V (Workstation) - Workstation PCH
 
 | INF | Package | Version | Date | HWIDs |
 |--------|---------|---------|------|--------|
-| CometLakePCH-VSystem.inf, CometLakePCH-VSystemLPSS.inf, CometLakePCH-VSystemNorthpeak.inf, CometLakePCH-VSystemThermal.inf | 10.1.20473.8812 | 10.1.33.5 | 21/01/2026* | A390, A391, A392, A393, A394, A395, A396, A397, A398, A399, A39A, A39B, A39C, A39D, A39E, A39F, A3A0, A3A1, A3A3, A3A4, A3A6, A3A7, A3A8, A3A9, A3AA, A3B1, A3B3, A3C0, A3C1, A3C2, A3C3, A3C4, A3C5, A3C6, A3C7, A3C8, A3C9, A3CA, A3CB, A3CC, A3CD, A3CE, A3CF, A3D0, A3D1, A3D2, A3D3, A3D4, A3D5, A3D6, A3D7, A3D8, A3D9, A3DA, A3DB, A3DC, A3DD, A3DE, A3DF, A3E0, A3E1, A3E2, A3E3, A3E6, A3E7, A3E8, A3E9, A3EA, A3EB, A3EC, A3ED, A3EE, A3F0 |
+| CometLakePCH-VSystem.inf, CometLakePCH-VSystemLPSS.inf, CometLakePCH-VSystemNorthpeak.inf, CometLakePCH-VSystemThermal.inf | 10.1.20490.8818 | 10.1.33.5 | 06/02/2026* | A390, A391, A392, A393, A394, A395, A396, A397, A398, A399, A39A, A39B, A39C, A39D, A39E, A39F, A3A0, A3A1, A3A3, A3A4, A3A6, A3A7, A3A8, A3A9, A3AA, A3B1, A3B3, A3C0, A3C1, A3C2, A3C3, A3C4, A3C5, A3C6, A3C7, A3C8, A3C9, A3CA, A3CB, A3CC, A3CD, A3CE, A3CF, A3D0, A3D1, A3D2, A3D3, A3D4, A3D5, A3D6, A3D7, A3D8, A3D9, A3DA, A3DB, A3DC, A3DD, A3DE, A3DF, A3E0, A3E1, A3E2, A3E3, A3E6, A3E7, A3E8, A3E9, A3EA, A3EB, A3EC, A3ED, A3EE, A3F0 |
 
 #### KabyLakePCH-H
 **Generation:** 200 Series - Kaby Lake PCH-H (Mobile High Performance) - Mobile PCH
 
 | INF | Package | Version | Date | HWIDs |
 |--------|---------|---------|------|--------|
-| KabyLakePCH-HSystem.inf, KabyLakePCH-HSystemcAVS.inf, KabyLakePCH-HSystemLPSS.inf, KabyLakePCH-HSystemNorthpeak.inf, KabyLakePCH-HSystemThermal.inf | 10.1.20473.8812 | 10.1.11.5 | 21/01/2026* | A290, A291, A292, A293, A294, A295, A296, A297, A298, A299, A29A, A29B, A29C, A29D, A29E, A29F, A2A0, A2A1, A2A3, A2A4, A2A6, A2A7, A2A8, A2A9, A2AA, A2B1, A2B3, A2C0, A2C1, A2C2, A2C3, A2C4, A2C5, A2C6, A2C7, A2C8, A2C9, A2CA, A2CB, A2CC, A2CD, A2CE, A2CF, A2D0, A2D1, A2D2, A2D3, A2D4, A2D5, A2D6, A2D7, A2D8, A2D9, A2DA, A2DB, A2DC, A2DD, A2DE, A2DF, A2E0, A2E1, A2E2, A2E3, A2E6, A2E7, A2E8, A2E9, A2EA, A2EB, A2EC, A2ED, A2EE |
+| KabyLakePCH-HSystem.inf, KabyLakePCH-HSystemcAVS.inf, KabyLakePCH-HSystemLPSS.inf, KabyLakePCH-HSystemNorthpeak.inf, KabyLakePCH-HSystemThermal.inf | 10.1.20490.8818 | 10.1.11.5 | 06/02/2026* | A290, A291, A292, A293, A294, A295, A296, A297, A298, A299, A29A, A29B, A29C, A29D, A29E, A29F, A2A0, A2A1, A2A3, A2A4, A2A6, A2A7, A2A8, A2A9, A2AA, A2B1, A2B3, A2C0, A2C1, A2C2, A2C3, A2C4, A2C5, A2C6, A2C7, A2C8, A2C9, A2CA, A2CB, A2CC, A2CD, A2CE, A2CF, A2D0, A2D1, A2D2, A2D3, A2D4, A2D5, A2D6, A2D7, A2D8, A2D9, A2DA, A2DB, A2DC, A2DD, A2DE, A2DF, A2E0, A2E1, A2E2, A2E3, A2E6, A2E7, A2E8, A2E9, A2EA, A2EB, A2EC, A2ED, A2EE |
 
 #### SunrisePoint-H
 **Generation:** 100 Series - Sunrise Point-H (Desktop/Mobile PCH) - PCH
 
 | INF | Package | Version | Date | HWIDs |
 |--------|---------|---------|------|--------|
-| SunrisePoint-HSystem.inf, SunrisePoint-HSystemISH.inf, SunrisePoint-HSystemLPSS.inf, SunrisePoint-HSystemThermal.inf | 10.1.20473.8812 | 10.1.6.3 | 21/01/2026* | A110, A111, A112, A113, A114, A115, A116, A117, A118, A119, A11A, A11B, A11C, A11D, A11E, A11F, A120, A121, A123, A124, A126, A127, A128, A129, A12A, A130, A131, A140, A141, A142, A143, A144, A145, A146, A147, A148, A149, A14A, A14B, A14C, A14D, A14E, A14F, A150, A151, A152, A153, A154, A155, A156, A157, A158, A159, A15A, A15B, A15C, A15D, A15E, A15F, A160, A161, A162, A163, A166, A167, A168, A169, A16A |
+| SunrisePoint-HSystem.inf, SunrisePoint-HSystemISH.inf, SunrisePoint-HSystemLPSS.inf, SunrisePoint-HSystemThermal.inf | 10.1.20490.8818 | 10.1.6.3 | 06/02/2026* | A110, A111, A112, A113, A114, A115, A116, A117, A118, A119, A11A, A11B, A11C, A11D, A11E, A11F, A120, A121, A123, A124, A126, A127, A128, A129, A12A, A130, A131, A140, A141, A142, A143, A144, A145, A146, A147, A148, A149, A14A, A14B, A14C, A14D, A14E, A14F, A150, A151, A152, A153, A154, A155, A156, A157, A158, A159, A15A, A15B, A15C, A15D, A15E, A15F, A160, A161, A162, A163, A166, A167, A168, A169, A16A |
 
 #### SunrisePoint-LP
 **Generation:** 100 Series - Sunrise Point-LP (Mobile PCH) - Mobile PCH
 
 | INF | Package | Version | Date | HWIDs |
 |--------|---------|---------|------|--------|
-| SunrisePoint-LPSDHost.inf, sunrisepoint-lpSystem.inf, SunrisePoint-LPSystemISH.inf, SunrisePoint-LPSystemLPSS.inf, SunrisePoint-LPSystemNorthpeak.inf, SunrisePoint-LPSystemThermal.inf | 10.1.20473.8812 | 10.1.5.3 | 21/01/2026* | 9D10, 9D11, 9D12, 9D13, 9D14, 9D15, 9D16, 9D17, 9D18, 9D19, 9D1A, 9D1B, 9D21, 9D23, 9D24, 9D26, 9D27, 9D28, 9D29, 9D2A, 9D2B, 9D2D, 9D31, 9D41, 9D43, 9D46, 9D48, 9D4B, 9D4E, 9D50, 9D51, 9D53, 9D56, 9D58, 9D60, 9D61, 9D62, 9D63, 9D64, 9D65, 9D66 |
+| SunrisePoint-LPSDHost.inf, sunrisepoint-lpSystem.inf, SunrisePoint-LPSystemISH.inf, SunrisePoint-LPSystemLPSS.inf, SunrisePoint-LPSystemNorthpeak.inf, SunrisePoint-LPSystemThermal.inf | 10.1.20490.8818 | 10.1.5.3 | 06/02/2026* | 9D10, 9D11, 9D12, 9D13, 9D14, 9D15, 9D16, 9D17, 9D18, 9D19, 9D1A, 9D1B, 9D21, 9D23, 9D24, 9D26, 9D27, 9D28, 9D29, 9D2A, 9D2B, 9D2D, 9D31, 9D41, 9D43, 9D46, 9D48, 9D4B, 9D4E, 9D50, 9D51, 9D53, 9D56, 9D58, 9D60, 9D61, 9D62, 9D63, 9D64, 9D65, 9D66 |
 
 #### Wellsburg PCH
 **Generation:** C610/X99 - Wellsburg (Workstation Chipset) - Chipset
@@ -593,7 +593,7 @@ This dataset organizes the historical naming of platforms, with a focus on techn
 
 | INF | Package | Version | Date | HWIDs |
 |--------|---------|---------|------|--------|
-| EmmitsburgSystem.inf, EmmitsburgSystemLPSS.inf | 10.1.20473.8812 | 10.1.40.6 | 21/01/2026* | 1B80, 1BAD, 1BB0, 1BB1, 1BB2, 1BB3, 1BB4, 1BB5, 1BB8, 1BB9, 1BBA, 1BBB, 1BBC, 1BBD, 1BBE, 1BBF, 1BC6, 1BC7, 1BC9, 1BCA, 1BCC, 1BCE, 1BE6, 1BFF |
+| EmmitsburgSystem.inf, EmmitsburgSystemLPSS.inf | 10.1.20490.8818 | 10.1.40.6 | 06/02/2026* | 1B80, 1BAD, 1BB0, 1BB1, 1BB2, 1BB3, 1BB4, 1BB5, 1BB8, 1BB9, 1BBA, 1BBB, 1BBC, 1BBD, 1BBE, 1BBF, 1BC6, 1BC7, 1BC9, 1BCA, 1BCC, 1BCE, 1BE6, 1BFF |
 
 #### LynxPoint-HRefresh
 **Generation:** 8 Series Refresh - Lynx Point-H Refresh (Desktop/Mobile PCH) - Desktop/Mobile
@@ -614,28 +614,28 @@ This dataset organizes the historical naming of platforms, with a focus on techn
 
 | INF | Package | Version | Date | HWIDs |
 |--------|---------|---------|------|--------|
-| IceLakePCH-NSystem.inf, IceLakePCH-NSystemLPSS.inf | 10.1.20473.8812 | 10.1.22.4 | 21/01/2026* | 3880, 3881, 3882, 3883, 3884, 3885, 3886, 3887, 3888, 3889, 388A, 388B, 388C, 388D, 388E, 388F, 3890, 3891, 3892, 3893, 3894, 3895, 3896, 3897, 3898, 3899, 389A, 389B, 389C, 389D, 389E, 389F, 38A0, 38A1, 38A3, 38A4, 38A6, 38A8, 38A9, 38AA, 38AB, 38B8, 38B9, 38BA, 38BB, 38BC, 38BD, 38BE, 38BF, 38C5, 38C6, 38C7, 38E8, 38E9, 38EA, 38EB, 38FB |
+| IceLakePCH-NSystem.inf, IceLakePCH-NSystemLPSS.inf | 10.1.20490.8818 | 10.1.22.4 | 06/02/2026* | 3880, 3881, 3882, 3883, 3884, 3885, 3886, 3887, 3888, 3889, 388A, 388B, 388C, 388D, 388E, 388F, 3890, 3891, 3892, 3893, 3894, 3895, 3896, 3897, 3898, 3899, 389A, 389B, 389C, 389D, 389E, 389F, 38A0, 38A1, 38A3, 38A4, 38A6, 38A8, 38A9, 38AA, 38AB, 38B8, 38B9, 38BA, 38BB, 38BC, 38BD, 38BE, 38BF, 38C5, 38C6, 38C7, 38E8, 38E9, 38EA, 38EB, 38FB |
 
 #### JasperLakePCH-N
 **Generation:** Atom - Jasper Lake PCH-N (Mobile/Embedded PCH) - Desktop/Mobile
 
 | INF | Package | Version | Date | HWIDs |
 |--------|---------|---------|------|--------|
-| JasperLakePCH-NSystem.inf, JasperLakePCH-NSystemLPSS.inf, JasperLakePCH-NSystemNorthpeak.inf | 10.1.20473.8812 | 10.1.32.3 | 21/01/2026* | 4D80, 4D81, 4D82, 4D83, 4D84, 4D85, 4D86, 4D87, 4D88, 4D89, 4D8A, 4D8B, 4D8C, 4D8D, 4D8E, 4D8F, 4D90, 4D91, 4D92, 4D93, 4D94, 4D95, 4D96, 4D97, 4D98, 4D99, 4D9A, 4D9B, 4D9C, 4D9D, 4D9E, 4D9F, 4DA0, 4DA1, 4DA3, 4DA4, 4DA6, 4DA8, 4DA9, 4DAA, 4DAB, 4DAF, 4DB8, 4DB9, 4DBA, 4DBB, 4DBC, 4DBD, 4DBE, 4DBF, 4DC5, 4DC6, 4DE8, 4DE9, 4DEA, 4DEB, 4DEF, 4DFB |
+| JasperLakePCH-NSystem.inf, JasperLakePCH-NSystemLPSS.inf, JasperLakePCH-NSystemNorthpeak.inf | 10.1.20490.8818 | 10.1.32.3 | 06/02/2026* | 4D80, 4D81, 4D82, 4D83, 4D84, 4D85, 4D86, 4D87, 4D88, 4D89, 4D8A, 4D8B, 4D8C, 4D8D, 4D8E, 4D8F, 4D90, 4D91, 4D92, 4D93, 4D94, 4D95, 4D96, 4D97, 4D98, 4D99, 4D9A, 4D9B, 4D9C, 4D9D, 4D9E, 4D9F, 4DA0, 4DA1, 4DA3, 4DA4, 4DA6, 4DA8, 4DA9, 4DAA, 4DAB, 4DAF, 4DB8, 4DB9, 4DBA, 4DBB, 4DBC, 4DBD, 4DBE, 4DBF, 4DC5, 4DC6, 4DE8, 4DE9, 4DEA, 4DEB, 4DEF, 4DFB |
 
 #### CannonLake-LP
 **Generation:** 10th Gen Core - Cannon Lake-LP - Mobile Low Power SoC - Desktop/Mobile
 
 | INF | Package | Version | Date | HWIDs |
 |--------|---------|---------|------|--------|
-| CannonLake-LPSDHost.inf, CannonLake-LPSystem.inf, CannonLake-LPSystemLPSS.inf, CannonLake-LPSystemNorthpeak.inf, CannonLake-LPSystemThermal.inf | 10.1.20473.8812 | 10.1.15.7 | 21/01/2026* | 9D80, 9D81, 9D82, 9D83, 9D84, 9D85, 9D86, 9D87, 9D88, 9D89, 9D8A, 9D8B, 9D8C, 9D8D, 9D8E, 9D8F, 9D90, 9D91, 9D92, 9D93, 9D94, 9D95, 9D96, 9D97, 9D98, 9D99, 9D9A, 9D9B, 9D9C, 9D9D, 9D9E, 9D9F, 9DA0, 9DA1, 9DA3, 9DA4, 9DA6, 9DA8, 9DA9, 9DAA, 9DAB, 9DB0, 9DB1, 9DB2, 9DB3, 9DB4, 9DB5, 9DB6, 9DB7, 9DB8, 9DB9, 9DBA, 9DBB, 9DBC, 9DBD, 9DBE, 9DBF, 9DC4, 9DC5, 9DC6, 9DC7, 9DE8, 9DE9, 9DEA, 9DEB, 9DF5, 9DF9, 9DFB |
+| CannonLake-LPSDHost.inf, CannonLake-LPSystem.inf, CannonLake-LPSystemLPSS.inf, CannonLake-LPSystemNorthpeak.inf, CannonLake-LPSystemThermal.inf | 10.1.20490.8818 | 10.1.15.7 | 06/02/2026* | 9D80, 9D81, 9D82, 9D83, 9D84, 9D85, 9D86, 9D87, 9D88, 9D89, 9D8A, 9D8B, 9D8C, 9D8D, 9D8E, 9D8F, 9D90, 9D91, 9D92, 9D93, 9D94, 9D95, 9D96, 9D97, 9D98, 9D99, 9D9A, 9D9B, 9D9C, 9D9D, 9D9E, 9D9F, 9DA0, 9DA1, 9DA3, 9DA4, 9DA6, 9DA8, 9DA9, 9DAA, 9DAB, 9DB0, 9DB1, 9DB2, 9DB3, 9DB4, 9DB5, 9DB6, 9DB7, 9DB8, 9DB9, 9DBA, 9DBB, 9DBC, 9DBD, 9DBE, 9DBF, 9DC4, 9DC5, 9DC6, 9DC7, 9DE8, 9DE9, 9DEA, 9DEB, 9DF5, 9DF9, 9DFB |
 
 #### CannonLake-H
 **Generation:** 10th Gen Core - Cannon Lake-H - Mobile High Performance (limited) - Desktop/Mobile
 
 | INF | Package | Version | Date | HWIDs |
 |--------|---------|---------|------|--------|
-| CannonLake-HSDHost.inf, CannonLake-HSystem.inf, CannonLake-HSystemLPSS.inf, CannonLake-HSystemNorthpeak.inf, CannonLake-HSystemThermal.inf | 10.1.20473.8812 | 10.1.16.8 | 21/01/2026* | A300, A301, A302, A303, A304, A305, A306, A307, A308, A309, A30A, A30B, A30C, A30D, A30E, A30F, A310, A311, A312, A313, A314, A315, A316, A317, A318, A319, A31A, A31B, A31C, A31D, A31E, A31F, A320, A321, A323, A324, A326, A328, A329, A32A, A32B, A32C, A32D, A32E, A32F, A330, A331, A332, A333, A334, A335, A336, A337, A338, A339, A33A, A33B, A33C, A33D, A33E, A33F, A340, A341, A342, A343, A347, A368, A369, A36A, A36B, A375, A379, A37B |
+| CannonLake-HSDHost.inf, CannonLake-HSystem.inf, CannonLake-HSystemLPSS.inf, CannonLake-HSystemNorthpeak.inf, CannonLake-HSystemThermal.inf | 10.1.20490.8818 | 10.1.16.8 | 06/02/2026* | A300, A301, A302, A303, A304, A305, A306, A307, A308, A309, A30A, A30B, A30C, A30D, A30E, A30F, A310, A311, A312, A313, A314, A315, A316, A317, A318, A319, A31A, A31B, A31C, A31D, A31E, A31F, A320, A321, A323, A324, A326, A328, A329, A32A, A32B, A32C, A32D, A32E, A32F, A330, A331, A332, A333, A334, A335, A336, A337, A338, A339, A33A, A33B, A33C, A33D, A33E, A33F, A340, A341, A342, A343, A347, A368, A369, A36A, A36B, A375, A379, A37B |
 
 #### WildcatPointLP
 **Generation:** 9 Series - Wildcat Point-LP (Mobile PCH) - Desktop/Mobile
@@ -649,7 +649,7 @@ This dataset organizes the historical naming of platforms, with a focus on techn
 
 | INF | Package | Version | Date | HWIDs |
 |--------|---------|---------|------|--------|
-| IceLakePCH-LPSystem.inf, IceLakePCH-LPSystemLPSS.inf, IceLakePCH-LPSystemNorthpeak.inf | 10.1.20473.8812 | 10.1.12.3 | 21/01/2026* | 3480, 3481, 3482, 3483, 3484, 3485, 3486, 3487, 3488, 3489, 348A, 348B, 348C, 348D, 348E, 348F, 3490, 3491, 3492, 3493, 3494, 3495, 3496, 3497, 3498, 3499, 349A, 349B, 349C, 349D, 349E, 349F, 34A0, 34A1, 34A3, 34A4, 34A6, 34A8, 34A9, 34AA, 34AB, 34B0, 34B1, 34B2, 34B3, 34B4, 34B5, 34B6, 34B7, 34B8, 34B9, 34BA, 34BB, 34BC, 34BD, 34BE, 34BF, 34C5, 34C6, 34C7, 34E8, 34E9, 34EA, 34EB, 34FB |
+| IceLakePCH-LPSystem.inf, IceLakePCH-LPSystemLPSS.inf, IceLakePCH-LPSystemNorthpeak.inf | 10.1.20490.8818 | 10.1.12.3 | 06/02/2026* | 3480, 3481, 3482, 3483, 3484, 3485, 3486, 3487, 3488, 3489, 348A, 348B, 348C, 348D, 348E, 348F, 3490, 3491, 3492, 3493, 3494, 3495, 3496, 3497, 3498, 3499, 349A, 349B, 349C, 349D, 349E, 349F, 34A0, 34A1, 34A3, 34A4, 34A6, 34A8, 34A9, 34AA, 34AB, 34B0, 34B1, 34B2, 34B3, 34B4, 34B5, 34B6, 34B7, 34B8, 34B9, 34BA, 34BB, 34BC, 34BD, 34BE, 34BF, 34C5, 34C6, 34C7, 34E8, 34E9, 34EA, 34EB, 34FB |
 
 
 ### OTHER / LEGACY
@@ -669,4 +669,4 @@ This dataset organizes the historical naming of platforms, with a focus on techn
 - Dates without asterisk are taken directly from the INF file's DriverVer field.
 - Dates marked with * indicate that the original INF file uses the symbolic date 07/18/1968 (Intel's founding date), which is intentionally used to lower the driver ranking in Windows. In such cases, the displayed date was approximated using the digital signature timestamp from the corresponding .cat file.
 
-**Source:** [Universal Intel Chipset Device Updater](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater) / **Project by:** [Marcin Grygiel](https://www.linkedin.com/in/marcin-grygiel/) / **Last Update:** 31-03-2026
+**Source:** [Universal Intel Chipset Device Updater](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater) / **Project by:** [Marcin Grygiel](https://www.linkedin.com/in/marcin-grygiel/) / **Last Update:** 21-04-2026
