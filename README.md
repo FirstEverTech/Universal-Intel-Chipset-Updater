@@ -24,7 +24,7 @@ For detailed documentation and guides, see:
 → **[How to verify the latest INF files yourself](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/blob/main/docs/HOW-TO-VERIFY-INF_EN_2026.md)**  
 
 ⭐ If this project helped you, please click the "Star" button at the top of this page on GitHub.  
-👉 [Share your feedback!](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/discussions/16)
+👉 [Share your feedback!](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/discussions/17)
 
 [![Stargazers over time](https://starchart.cc/FirstEverTech/Universal-Intel-Chipset-Updater.svg?variant=adaptive)](https://starchart.cc/FirstEverTech/Universal-Intel-Chipset-Updater)
 
