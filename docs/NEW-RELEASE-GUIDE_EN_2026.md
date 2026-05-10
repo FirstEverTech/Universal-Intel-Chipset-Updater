@@ -1,6 +1,6 @@
 <p align="left">
   <a href="https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/blob/main/docs/NEW-RELEASE-GUIDE_EN_2026.md">🇬🇧 English</a> |
-  <a href="https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/blob/main/docs/HOW-TO-VERIFY-INF_PL_2026.md">🇵🇱 Polski</a> |
+  <a href="https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/blob/main/docs/NEW-RELEASE-GUIDE_PL_2026.md">🇵🇱 Polski</a> |
   <a href="https://translate.google.com/translate?sl=en&tl=de&u=https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/blob/main/docs/NEW-RELEASE-GUIDE_EN_2026.md">🇩🇪 Deutsch</a> |
   <a href="https://translate.google.com/translate?sl=en&tl=fr&u=https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/blob/main/docs/NEW-RELEASE-GUIDE_EN_2026.md">🇫🇷 Français</a> |
   <a href="https://translate.google.com/translate?sl=en&tl=es&u=https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/blob/main/docs/NEW-RELEASE-GUIDE_EN_2026.md">🇪🇸 Español</a> |
