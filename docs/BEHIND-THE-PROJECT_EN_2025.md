@@ -1,6 +1,6 @@
 <p align="left">
-  <a href="README.md">🇬🇧 English</a> |
-  <a href="https://translate.google.com/translate?sl=en&tl=pl&u=https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/blob/main/docs/BEHIND-THE-PROJECT_EN_2025.md">🇵🇱 Polski</a> |
+  <a href="https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/blob/main/docs/BEHIND-THE-PROJECT_EN_2025.md">🇬🇧 English</a> |
+  <a href="https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/blob/main/docs/BEHIND-THE-PROJECT_PL_2025.md">🇵🇱 Polski</a> |
   <a href="https://translate.google.com/translate?sl=en&tl=de&u=https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/blob/main/docs/BEHIND-THE-PROJECT_EN_2025.md">🇩🇪 Deutsch</a> |
   <a href="https://translate.google.com/translate?sl=en&tl=fr&u=https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/blob/main/docs/BEHIND-THE-PROJECT_EN_2025.md">🇫🇷 Français</a> |
   <a href="https://translate.google.com/translate?sl=en&tl=es&u=https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/blob/main/docs/BEHIND-THE-PROJECT_EN_2025.md">🇪🇸 Español</a> |
