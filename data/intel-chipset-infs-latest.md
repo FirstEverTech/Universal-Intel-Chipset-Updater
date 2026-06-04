@@ -99,7 +99,7 @@ This dataset organizes the historical naming of platforms, with a focus on techn
 
 | INF | Package | Version | Date | HWIDs |
 |--------|---------|---------|------|--------|
-| WildcatLakeSystem.inf | 10.1.20490.8822 | 10.1.59.12 | 13/03/2026* | 4D22, 4D23, 4D48, 4D71 |
+| WildcatLakeSystem.inf | 10.1.20524.8822 | 10.1.59.12 | 13/03/2026* | 4D22, 4D23, 4D48, 4D71 |
 
 #### ArrowLake
 **Generation:** 15th Gen Core/Core Ultra 200 - Arrow Lake - Desktop / High Perf. Mobile
@@ -685,4 +685,4 @@ This dataset organizes the historical naming of platforms, with a focus on techn
 - Dates without asterisk are taken directly from the INF file's DriverVer field.
 - Dates marked with * indicate that the original INF file uses the symbolic date 07/18/1968 (Intel's founding date), which is intentionally used to lower the driver ranking in Windows. In such cases, the displayed date was approximated using the digital signature timestamp from the corresponding .cat file.
 
-**Source:** [Universal Intel Chipset Device Updater](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater) / **Project by:** [Marcin Grygiel](https://www.linkedin.com/in/marcin-grygiel/) / **Last Update:** 03-06-2026
+**Source:** [Universal Intel Chipset Device Updater](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater) / **Project by:** [Marcin Grygiel](https://www.linkedin.com/in/marcin-grygiel/) / **Last Update:** 04-06-2026
