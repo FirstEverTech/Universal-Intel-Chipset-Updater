@@ -38,7 +38,7 @@ Intel's official Chipset Device Software has evolved over 25 years into a comple
 
 ---
 
-[![INF Latest](https://img.shields.io/badge/INF_Latest-v10.1.20524.8822-blue?style=flat-square)](https://www.intel.com/content/www/us/en/search.html#q=inf)[![INF Database](https://img.shields.io/badge/INF_Database-04.06.2026-blue?style=flat-square)](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/blob/main/data/intel-chipset-infs-latest.md)![INF Total](https://img.shields.io/badge/INF_Total-5538-blue?style=flat-square)![HWID Total](https://img.shields.io/badge/HWID_Total-3000-blue?style=flat-square)
+[![INF Latest](https://img.shields.io/badge/INF_Latest-v10.1.20524.8822-blue?style=flat-square)](https://www.intel.com/content/www/us/en/search.html#q=inf)[![INF Database](https://img.shields.io/badge/INF_Database-04.06.2026-blue?style=flat-square)](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/blob/main/data/intel-chipset-infs-latest.md)[![INF Total](https://img.shields.io/badge/INF_Total-5538-blue?style=flat-square)](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/blob/main/data/intel-chipset-infs-latest.md)[![HWID Total](https://img.shields.io/badge/HWID_Total-3000-blue?style=flat-square)](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/blob/main/data/intel-chipset-infs-latest.md)
 
 For detailed documentation and guides, see:  
 → **[The Whole Truth About Intel Chipset Device Software](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/blob/main/docs/THE-WHOLE-TRUTH-ABOUT_EN_2026.md)**  
