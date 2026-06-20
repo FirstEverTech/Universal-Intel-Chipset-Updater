@@ -28,10 +28,10 @@ def fetch_stars(repo):
         page += 1
     return sorted(dates)
 
-# ---------- KOLORY (dostosowane) ----------
+# ---------- COLORS ----------
 BLUE     = "#58a6ff"
 LINE     = "#1f6feb"
-GRID_MAJ = "#283d58"   # nowy kolor siatki
+GRID_MAJ = "#283d58"
 
 def x_axis_config(start: datetime, end: datetime):
     """Returns (locator, formatter, xlabel) based on span."""
@@ -78,37 +78,40 @@ def generate(dates, repo, out):
 
     date_nums = mdates.date2num(dates)
 
-    # line + fill
+    # Line + fill
     ax.plot(dates, counts, color=LINE, linewidth=2.5, zorder=3)
     ax.fill_between(dates, counts, color=LINE, alpha=0.15, zorder=2)
 
-    # 31 evenly spaced dots across full span
+    # 31 evenly spaced dots across the full span
     x31 = np.linspace(mdates.date2num(x_start), mdates.date2num(x_end), 31)
     y31 = np.interp(x31, date_nums, counts)
     ax.scatter(mdates.num2date(x31), y31, color=BLUE, s=30, zorder=4, linewidths=0)
 
-    # ---------- MARGINESY (zapobieganie przycinaniu kropek) ----------
-    # Lewy i prawy margines 2%, górny 5%, dolny zapas -0.5
-    ax.margins(x=0.02, y=0.05)
-    ax.set_ylim(bottom=-0.5)   # dodatkowy zapas na dole
-
-    # Oś X – zakres z marginesami (bez zbędnej przerwy z prawej)
+    # ---------- MARGINS TO PREVENT DOTS FROM BEING CUT OFF ----------
+    # Horizontal margins: 2% on each side
     x_pad = (x_end - x_start) * 0.02
     ax.set_xlim(x_start - x_pad, x_end + x_pad)
 
-    # Y: 8 linii, 0 na dole, ładny maksymalny zakres
+    # Y axis: 8 lines, 0 at bottom, nice max at top, plus half a step above
     NUM_Y_LINES = 8
-    nice_max = max(math.ceil(max(counts) / (NUM_Y_LINES - 1)) * (NUM_Y_LINES - 1), NUM_Y_LINES - 1)
-    ax.set_ylim(0, nice_max)
+    y_max = max(counts)
+    step = math.ceil(y_max / (NUM_Y_LINES - 1)) if y_max > 0 else 1
+    nice_max = step * (NUM_Y_LINES - 1)
+    if nice_max < NUM_Y_LINES - 1:
+        nice_max = NUM_Y_LINES - 1
 
-    # ---------- SIATKA (kropkowana, nowy kolor) ----------
+    # Add half a step above the top line to create a small gap
+    ax.set_ylim(0, nice_max + step * 0.5)
+    ax.set_yticks(np.linspace(0, nice_max, NUM_Y_LINES))
+
+    # ---------- GRID (dotted, new color) ----------
     ax.set_axisbelow(True)
     loc, fmt, x_lbl = x_axis_config(x_start, x_end)
     ax.xaxis.set_major_locator(loc)
     ax.xaxis.set_major_formatter(fmt)
     ax.grid(True, which="major", color=GRID_MAJ, linewidth=0.7, linestyle=':')
 
-    # tick styling
+    # Tick styling
     ax.tick_params(axis="both", which="both", colors=BLUE, labelsize=7)
     fig.autofmt_xdate(rotation=0, ha="center")
     for lbl in ax.get_xticklabels() + ax.get_yticklabels():
