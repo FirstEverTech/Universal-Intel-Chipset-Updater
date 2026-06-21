@@ -1,6 +1,6 @@
-[Magenta]
-[Magenta] SUPPORT DEVELOPMENT
-[Magenta] ===================
+[Cyan]
+[Cyan] SUPPORT DEVELOPMENT
+[Cyan] ===================
 
  Universal Intel Chipset Device Updater provides automated hardware
  detection and Intel INF deployment for thousands of Intel platforms,
@@ -12,18 +12,18 @@
  If this tool saved you time, improved device identification, or helped
  keep older hardware operational, please consider supporting development.
 
-[Magenta]
-[Magenta] SUPPORTERS
-[Magenta] ==========
+[Cyan]
+[Cyan] SUPPORTERS
+[Cyan] ==========
 
  If you are a company or IT organization using this tool in production
  environments, you can support development and optionally have your
  company listed in this section as a supporter.
 
  This can include:
- - Company name mention
- - Small logo (if applicable in future builds)
- - Optional acknowledgment in releases / credits screen
+ - Company name mention in in-app credits section
+ - Optional listing in GitHub README (Sponsors section)
+ - Optional acknowledgment in GitHub release notes
 
 [Green] - Become a Patron:[Yellow] tinyurl.com/fet-patron[Gray] - press [Black,Gray][T][Gray,Black] key
 [Green] - PayPal Donation:[Yellow] tinyurl.com/fet-paypal[Gray] - press [Black,Gray][P][Gray,Black] key
@@ -39,9 +39,9 @@
 [Green] - Open-source and free to use
 [Green] - Continuously maintained INF database
 
-[Magenta]
-[Magenta] CAREER OPPORTUNITY
-[Magenta] ==================
+[Cyan]
+[Cyan] CAREER OPPORTUNITY
+[Cyan] ==================
 
  I specialize in Windows deployment, driver automation, hardware
  compatibility, Microsoft technologies, infrastructure analysis,
