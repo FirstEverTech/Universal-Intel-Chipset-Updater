@@ -1,3 +1,22 @@
+<p align="left">
+  <a href="https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/blob/main/docs/INF-SELECTION-SETUPAPI-RANKING-MODEL_EN_2026.md">🇬🇧 English</a> |
+  <a href="https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/blob/main/docs/MDM-DEPLOYMENT-GUIDE_PL_2026.md">🇵🇱 Polski</a> |
+  <a href="https://translate.google.com/translate?sl=en&tl=de&u=https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/blob/main/docs/INF-SELECTION-SETUPAPI-RANKING-MODEL_EN_2026.md">🇩🇪 Deutsch</a> |
+  <a href="https://translate.google.com/translate?sl=en&tl=fr&u=https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/blob/main/docs/INF-SELECTION-SETUPAPI-RANKING-MODEL_EN_2026.md">🇫🇷 Français</a> |
+  <a href="https://translate.google.com/translate?sl=en&tl=es&u=https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/blob/main/docs/INF-SELECTION-SETUPAPI-RANKING-MODEL_EN_2026.md">🇪🇸 Español</a> |
+  <a href="https://translate.google.com/translate?sl=en&tl=pt&u=https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/blob/main/docs/INF-SELECTION-SETUPAPI-RANKING-MODEL_EN_2026.md">🇧🇷 Português</a> |
+  <a href="https://translate.google.com/translate?sl=en&tl=nl&u=https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/blob/main/docs/INF-SELECTION-SETUPAPI-RANKING-MODEL_EN_2026.md">🇳🇱 Nederlands</a>
+  <br>
+  <a href="https://translate.google.com/translate?sl=en&tl=zh-CN&u=https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/blob/main/docs/INF-SELECTION-SETUPAPI-RANKING-MODEL_EN_2026.md">🇨🇳 中文</a> |
+  <a href="https://translate.google.com/translate?sl=en&tl=ja&u=https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/blob/main/docs/INF-SELECTION-SETUPAPI-RANKING-MODEL_EN_2026.md">🇯🇵 日本語</a> |
+  <a href="https://translate.google.com/translate?sl=en&tl=ko&u=https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/blob/main/docs/INF-SELECTION-SETUPAPI-RANKING-MODEL_EN_2026.md">🇰🇷 한국어</a> |
+  <a href="https://translate.google.com/translate?sl=en&tl=it&u=https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/blob/main/docs/INF-SELECTION-SETUPAPI-RANKING-MODEL_EN_2026.md">🇮🇹 Italiano</a> |
+  <a href="https://translate.google.com/translate?sl=en&tl=tr&u=https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/blob/main/docs/INF-SELECTION-SETUPAPI-RANKING-MODEL_EN_2026.md">🇹🇷 Türkçe</a> |
+  <a href="https://translate.google.com/translate?sl=en&tl=ar&u=https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/blob/main/docs/INF-SELECTION-SETUPAPI-RANKING-MODEL_EN_2026.md">🇸🇦 العربية</a> |
+  <a href="https://translate.google.com/translate?sl=en&tl=hi&u=https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/blob/main/docs/INF-SELECTION-SETUPAPI-RANKING-MODEL_EN_2026.md">🇮🇳 हिन्दी</a> |
+  <a href="https://translate.google.com/translate?sl=en&tl=ru&u=https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/blob/main/docs/INF-SELECTION-SETUPAPI-RANKING-MODEL_EN_2026.md">🇷🇺 Русский</a>
+</p>
+
 ## INF Selection and SetupAPI Driver Ranking Model
 
 ### Terminology
