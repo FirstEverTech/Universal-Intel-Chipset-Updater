@@ -47,9 +47,8 @@
  compatibility, Microsoft technologies, infrastructure analysis,
  and custom IT tooling.
 
- If your organization faces challenges with automation, deployment,
- device management, or unsupported hardware environments,
- let's discuss how I can help.
+ If your organization faces automation, deployment, device management,
+ or unsupported hardware environments, let's discuss how I can help.
 
 [Green] - Business Contact:[Yellow] firstever.tech/contact[Gray] - press [Black,Gray][F][Gray,Black] key
 [Green] - LinkedIn Profile:[Yellow] tinyurl.com/fet-linked[Gray] - press [Black,Gray][L][Gray,Black] key
