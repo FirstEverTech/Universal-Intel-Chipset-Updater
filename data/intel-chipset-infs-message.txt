@@ -1,34 +1,34 @@
-+---------------------------------------------------------------------------+
-|                                                                             |
-|  [Cyan]--- THIS PROJECT ---[Cyan]                                           |
-|                                                                             |
-|  Free & open-source. Developed solely by me.                               |
++-------------------------------------------------------------------------+
+|                                                                           |
+|  [Cyan]--- THIS PROJECT ---[Cyan]                                         |
+|                                                                           |
+|  Free & open-source. Developed solely by me.                             |
 |  Database: [Green]100,000+ entries[Green] - not even [Yellow]Intel[Yellow] has this. |
-|                                                                             |
-|  [Black,White]--- BECOME A PATRON ---[Black,White]                         |
-|  [Black,White]- Support & get your name featured here.                    |
-|  [Black,White]- Even free followers are welcome!                         |
+|                                                                           |
+|  [Black,White]--- BECOME A PATRON ---[Black,White]                       |
+|  [Black,White]- Support & get your name featured here.                  |
+|  [Black,White]- Even free followers are welcome!                       |
 |  [Black,White]- [Blue,White]patreon.com/FirstEverTech[Black,White] - press [R] |
-|                                                                             |
-|  [Cyan]--- SUPPORTERS ---[Cyan]                                            |
-|                                                                             |
+|                                                                           |
+|  [Cyan]--- SUPPORTERS ---[Cyan]                                          |
+|                                                                           |
 |  [Green]Adrian S.[Gray] |[Gray] [Green]Barbara K.[Gray] |[Gray] [Green]Charles M.[Gray] |[Gray] [Green]Dorota W.[Green] |
 |  [Green]Edward P.[Gray] |[Gray] [Green]Fiona J.[Gray]   |[Gray] [Green]Grzegorz B.[Gray] |[Gray] [Green]Hanna L.[Green] |
 |  [Green]Ireneusz R.[Gray]|[Gray] [Green]Janusz C.[Gray]  |[Gray] [Green]Katarzyna G.[Gray]|[Gray] [Green]Lukasz T.[Green] |
 |  [Green]Magdalena N.[Gray]|[Gray] [Green]Norbert S.[Gray] |[Gray] [Green]Olga Z.[Gray]    |[Gray] [Green]Pawel D.[Green] |
 |  [Green]Radoslaw M.[Gray]|[Gray] [Green]Sandra F.[Gray]  |[Gray] [Green]Tomasz H.[Gray]  |[Gray] [Green]Urszula A.[Green] |
-|                                                                             |
-|  [Cyan]--- SPONSOR THIS PROJECT ---[Cyan]                                  |
-|                                                                             |
-|  [Green]-[Green] Want to place your ad here? Join as Corporate Sponsor.   |
-|  [Yellow]-[Yellow] Your company - www.example.com - "Your slogan"         |
-|                                                                             |
-|  [Cyan]--- OTHER SUPPORT ---[Cyan]                                         |
-|                                                                             |
+|                                                                           |
+|  [Cyan]--- SPONSOR THIS PROJECT ---[Cyan]                                |
+|                                                                           |
+|  [Green]-[Green] Want to place your ad here? Join as Corporate Sponsor. |
+|  [Yellow]-[Yellow] Your company - www.example.com - "Your slogan"       |
+|                                                                           |
+|  [Cyan]--- OTHER SUPPORT ---[Cyan]                                       |
+|                                                                           |
 |  [Green]-[Green] PayPal: [Yellow]tinyurl.com/fet-paypal[Yellow] [Gray]- press [P][Gray] |
 |  [Green]-[Green] Coffee: [Yellow]tinyurl.com/fet-coffee[Yellow] [Gray]- press [C][Gray] |
 |  [Green]-[Green] GitHub: [Yellow]tinyurl.com/fet-github[Yellow] [Gray]- press [G][Gray] |
-|                                                                             |
+|                                                                           |
 |  If this helped you: [Green]Star[Green] it on GitHub & [Green]share[Green] with colleagues. |
-|                                                                             |
-+---------------------------------------------------------------------------+
+|                                                                           |
++-------------------------------------------------------------------------+
