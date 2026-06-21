@@ -1,22 +1,22 @@
-[Magenta]
-[Magenta] Thank you for using Universal Intel Chipset Device Updater!
-[Magenta] ============================================================
+[Cyan]
+[Cyan] --- THIS PROJECT ---
+[Cyan]
 
- This project is completely free and open-source. It is developed and
- maintained solely by me, with a database of over[Green] 100,000+ entries[Gray]
- - a resource that even[Yellow] Intel[Gray] does not provide.
+[White] This tool is completely free and open-source. It is developed and
+[White] maintained solely by me, with a database of over[Green] 100,000+ entries[White]
+[White] - a resource that even[Yellow] Intel[White] does not provide.
 
-[Magenta]
-[Magenta] --- BECOME A PATRON ---
-[Magenta]
+[Cyan]
+[Cyan] --- BECOME A PATRON ---
+[Cyan]
 
 [Green] - Support this project regularly and get your name featured on this screen.
 [Green] - Even free followers are welcome!
 [Yellow] - https://patreon.com/FirstEverTech[Gray] - press [Black,Gray][R][Gray,Black] key
 
-[Magenta]
-[Magenta] --- THIS PROJECT IS SUPPORTED BY ---
-[Magenta]
+[Cyan]
+[Cyan] --- THIS PROJECT IS SUPPORTED BY ---
+[Cyan]
 
 [Green] Adrian S.[Gray] | [Green] Barbara K.[Gray] | [Green] Charles M.[Gray] | [Green] Dorota W.
 [Green] Edward P.[Gray] | [Green] Fiona J.[Gray]   | [Green] Grzegorz B.[Gray] | [Green] Hanna L.
@@ -24,22 +24,22 @@
 [Green] Magdalena N.[Gray]| [Green] Norbert S.[Gray] | [Green] Olga Z.[Gray]    | [Green] Pawel D.
 [Green] Radoslaw M.[Gray]| [Green] Sandra F.[Gray]  | [Green] Tomasz H.[Gray]  | [Green] Urszula A.
 
-[Magenta]
-[Magenta] --- SPONSOR THIS PROJECT ---
-[Magenta]
+[Cyan]
+[Cyan] --- SPONSOR THIS PROJECT ---
+[Cyan]
 
 [Green] - Want to place your ad here? Join as a Corporate Sponsor on Patreon!
 [Yellow] - Company Name - www.company.com - "Your trusted IT partner"
 
-[Magenta]
-[Magenta] --- OTHER SUPPORT OPTIONS ---
-[Magenta]
+[Cyan]
+[Cyan] --- OTHER SUPPORT OPTIONS ---
+[Cyan]
 
 [Green] - PayPal Donation:[Yellow] tinyurl.com/fet-paypal[Gray] - press [Black,Gray][P][Gray,Black] key
 [Green] - Buy Me a Coffee:[Yellow] tinyurl.com/fet-coffee[Gray] - press [Black,Gray][C][Gray,Black] key
 [Green] - GitHub Sponsors:[Yellow] tinyurl.com/fet-github[Gray] - press [Black,Gray][G][Gray,Black] key
 
- If this project helped you, please consider:
+[Green] If this project helped you, please consider:
 [Green] - Giving it a STAR on GitHub
 [Green] - Sharing with friends and colleagues
 
