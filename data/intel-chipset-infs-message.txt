@@ -1,0 +1,35 @@
+[Gray]
++-------------------------------------------------------------------------+
+[Gray]|                                                                         |
+[Gray]|  [Cyan]--- THIS PROJECT ---[Gray]                                                     |
+[Gray]|                                                                         |
+[Gray]|  Free & open-source. Developed solely by me.                            |
+[Gray]|  Database: 100,000+ entries - not even Intel has this.                  |
+[Gray]|                                                                         |
+[Gray]|  [Black,White]--- BECOME A PATRON ---[Gray,Black]                                                |
+[Gray]|  [Black,White]- Support & get your name featured here.[Gray,Black]                               |
+[Gray]|  [Black,White]- Even free followers are welcome![Gray,Black]                                     |
+[Gray]|  [Black,White]- [Blue,White]patreon.com/FirstEver[Black,White] - press [R][Gray,Black]                                       |
+[Gray]|                                                                         |
+[Gray]|  [Cyan]--- SUPPORTERS ---[Gray]                                                     |
+[Gray]|                                                                         |
+[Gray]|  Adrian S.     | Barbara K.    | Charles M.    | Dorota W.              |
+[Gray]|  Edward P.     | Fiona J.      | Grzegorz B.   | Hanna L.               |
+[Gray]|  Ireneusz R.   | Janusz C.     | Katarzyna G.  | Lukasz T.              |
+[Gray]|  Magdalena N.  | Norbert S.    | Olga Z.       | Pawel D.               |
+[Gray]|  Radoslaw M.   | Sandra F.     | Tomasz H.     | Urszula A.             |
+[Gray]|                                                                         |
+[Gray]|  [Cyan]--- SPONSOR THIS PROJECT ---[Gray]                                           |
+[Gray]|                                                                         |
+[Gray]|  - Want to place your ad here? Join as Corporate Sponsor.               |
+[Gray]|  [Yellow]- Your company - www.example.com - "Your slogan"[Gray]                       |
+[Gray]|                                                                         |
+[Gray]|  [Cyan]--- OTHER SUPPORT ---[Gray]                                                  |
+[Gray]|                                                                         |
+[Gray]|  [Green]- PayPal: [Yellow]tinyurl.com/fet-paypal[Green] - press [P][Gray]                              |
+[Gray]|  [Green]- Coffee: [Yellow]tinyurl.com/fet-coffee[Green] - press [C][Gray]                              |
+[Gray]|  [Green]- GitHub: [Yellow]tinyurl.com/fet-github[Green] - press [G][Gray]                              |
+[Gray]|                                                                         |
+[Gray]|  If this helped you: Star it on GitHub & share with colleagues.         |
+[Gray]|                                                                         |
+[Gray]+-------------------------------------------------------------------------+
