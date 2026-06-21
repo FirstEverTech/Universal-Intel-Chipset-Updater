@@ -1,34 +1,34 @@
 +-------------------------------------------------------------------------+
 |                                                                         |
-|  --- THIS PROJECT ---                                                   |
+|  [Cyan]--- THIS PROJECT ---[Cyan]                                                   |
 |                                                                         |
-|  Free & open-source. Developed solely by me.                           |
-|  Database: 100,000+ entries - not even Intel has this.                 |
+|  Free & open-source. Developed solely by me.                            |
+|  Database: [Green]100,000+ entries[Green] - not even [Yellow]Intel[Yellow] has this.                  |
 |                                                                         |
-|  --- BECOME A PATRON ---                                               |
-|  - Support & get your name featured here.                              |
-|  - Even free followers are welcome!                                    |
-|  - patreon.com/FirstEverTech - press [R]                              |
+|  [Black,White]--- BECOME A PATRON ---[Black,White]                                                |
+|  [Black,White]- Support & get your name featured here.[Black,White]                               |
+|  [Black,White]- Even free followers are welcome![Black,White]                                     |
+|  [Black,White]- [Blue,White]patreon.com/FirstEverTech[Black,White] - press [R][Black,White]                                   |
 |                                                                         |
-|  --- SUPPORTERS ---                                                    |
+|  [Cyan]--- SUPPORTERS ---[Cyan]                                                     |
 |                                                                         |
-|  Adrian S. | Barbara K. | Charles M. | Dorota W.                      |
-|  Edward P. | Fiona J.   | Grzegorz B. | Hanna L.                      |
-|  Ireneusz R.| Janusz C.  | Katarzyna G.| Lukasz T.                    |
-|  Magdalena N.| Norbert S. | Olga Z.    | Pawel D.                     |
-|  Radoslaw M.| Sandra F.  | Tomasz H.  | Urszula A.                    |
+|  Adrian S.     | Barbara K.    | Charles M.    | Dorota W.              |
+|  Edward P.     | Fiona J.      | Grzegorz B.   | Hanna L.               |
+|  Ireneusz R.   | Janusz C.     | Katarzyna G.  | Lukasz T.              |
+|  Magdalena N.  | Norbert S.    | Olga Z.       | Pawel D.               |
+|  Radoslaw M.   | Sandra F.     | Tomasz H.     | Urszula A.             |
 |                                                                         |
-|  --- SPONSOR THIS PROJECT ---                                          |
+|  [Cyan]--- SPONSOR THIS PROJECT ---[Cyan]                                           |
 |                                                                         |
-|  - Want to place your ad here? Join as Corporate Sponsor.              |
-|  - Your company - www.example.com - "Your slogan"                      |
+|  - Want to place your ad here? Join as Corporate Sponsor.               |
+|  [Yellow]- Your company - www.example.com - "Your slogan"[Yellow]                       |
 |                                                                         |
-|  --- OTHER SUPPORT ---                                                 |
+|  [Cyan]--- OTHER SUPPORT ---[Cyan]                                                  |
 |                                                                         |
-|  - PayPal: tinyurl.com/fet-paypal - press [P]                         |
-|  - Coffee: tinyurl.com/fet-coffee - press [C]                         |
-|  - GitHub: tinyurl.com/fet-github - press [G]                         |
+|  [Green]- PayPal: [Yellow]tinyurl.com/fet-paypal[Green] - press [P]                              |
+|  [Green]- Coffee: [Yellow]tinyurl.com/fet-coffee[Green] - press [C]                              |
+|  [Green]- GitHub: [Yellow]tinyurl.com/fet-github[Green] - press [G]                              |
 |                                                                         |
-|  If this helped you: Star it on GitHub & share with colleagues.        |
+|  If this helped you: Star it on GitHub & share with colleagues.         |
 |                                                                         |
 +-------------------------------------------------------------------------+
