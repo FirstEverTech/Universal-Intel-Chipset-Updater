@@ -62,7 +62,7 @@ For detailed documentation and guides, see:
 ## 💼 Career Opportunity
 
 > [!TIP]
-> **I specialize in Windows deployment, driver automation, hardware compatibility, Microsoft technologies, infrastructure analysis, and custom IT tooling. If your organization faces automation, deployment, device management, or wireless driver management challenges, let's discuss how I can help.**
+> **I specialize in Windows deployment, driver automation, hardware compatibility, Microsoft technologies, infrastructure analysis, and custom IT tooling. If your organization faces automation, deployment, device management, or driver management challenges, let's discuss how I can help.**
 >
 > 🔗 **Business Contact:** [firstever.tech/contact](https://www.firstever.tech/contact)
 > 🔗 **LinkedIn Profile:** [linkedin.com/in/marcin-grygiel](https://linkedin.com/in/marcin-grygiel)
