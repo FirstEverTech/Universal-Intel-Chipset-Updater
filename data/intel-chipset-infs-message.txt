@@ -13,11 +13,11 @@
 |                                                                             |
 |  [Cyan]--- SUPPORTERS ---[Cyan]                                            |
 |                                                                             |
-|  [Green]Adrian S.[Gray] |[Gray] [Green]Barbara K.[Gray] |[Gray] [Green]Charles M.[Gray] |[Gray] [Green]Dorota W.[Green] |
-|  [Green]Edward P.[Gray]  |[Gray] [Green]Fiona J.[Gray]   |[Gray] [Green]Grzegorz B.[Gray] |[Gray] [Green]Hanna L.[Green]   |
-|  [Green]Ireneusz R.[Gray] |[Gray] [Green]Janusz C.[Gray]  |[Gray] [Green]Katarzyna G.[Gray]|[Gray] [Green]Lukasz T.[Green]  |
-|  [Green]Magdalena N.[Gray]|[Gray] [Green]Norbert S.[Gray] |[Gray] [Green]Olga Z.[Gray]    |[Gray] [Green]Pawel D.[Green]    |
-|  [Green]Radoslaw M.[Gray]|[Gray] [Green]Sandra F.[Gray]  |[Gray] [Green]Tomasz H.[Gray]  |[Gray] [Green]Urszula A.[Green]  |
+|  [Green]Adrian S.[Gray]   |[Gray] [Green]Barbara K.[Gray]  |[Gray] [Green]Charles M.[Gray]  |[Gray] [Green]Dorota W.[Green] |
+|  [Green]Edward P.[Gray]   |[Gray] [Green]Fiona J.[Gray]    |[Gray] [Green]Grzegorz B.[Gray] |[Gray] [Green]Hanna L.[Green] |
+|  [Green]Ireneusz R.[Gray] |[Gray] [Green]Janusz C.[Gray]   |[Gray] [Green]Katarzyna G.[Gray]|[Gray] [Green]Lukasz T.[Green] |
+|  [Green]Magdalena N.[Gray]|[Gray] [Green]Norbert S.[Gray]  |[Gray] [Green]Olga Z.[Gray]     |[Gray] [Green]Pawel D.[Green] |
+|  [Green]Radoslaw M.[Gray] |[Gray] [Green]Sandra F.[Gray]   |[Gray] [Green]Tomasz H.[Gray]   |[Gray] [Green]Urszula A.[Green] |
 |                                                                             |
 |  [Cyan]--- SPONSOR THIS PROJECT ---[Cyan]                                  |
 |                                                                             |
