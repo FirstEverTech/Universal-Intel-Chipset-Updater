@@ -66,6 +66,7 @@ If this tool saved you time, improved device identification, or helped keep olde
 ## ❤️ Supporters
 
 <!-- SUPPORTERS_START -->
+- jadeanemail, westor7, J. A. Dean, Bartechr, tsantaliki
 <!-- SUPPORTERS_END -->
 
 ## ⭐ Stars
