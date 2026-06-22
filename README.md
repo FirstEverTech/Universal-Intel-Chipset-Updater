@@ -47,10 +47,7 @@ For detailed documentation and guides, see:
 → **[Deploying Universal Intel Chipset Device Updater via MDM](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/blob/main/docs/MDM-DEPLOYMENT-GUIDE_EN_2026.md)**  
 → **[How to verify the latest INF files yourself](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/blob/main/docs/HOW-TO-VERIFY-INF_EN_2026.md)**  
 
-⭐ If this project helped you, please click the "Star" button at the top of this page on GitHub.  
 👉 [Share your feedback!](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/discussions)
-
-![Star History](assets/star-history.svg)
 
 ---
 
@@ -59,11 +56,9 @@ For detailed documentation and guides, see:
 **Universal Intel Chipset Device Updater** is free and open-source — maintained by a single developer.  
 The hardware ID database requires constant updates, compatibility testing across hardware generations is ongoing, and new features are always in development.
 
-If this tool saved you time, improved device identification, or helped keep older hardware running — consider supporting development.
-
 [![Patreon](https://img.shields.io/badge/Patreon-Patron-F96854?style=for-the-badge&logo=patreon)](https://www.patreon.com/FirstEverTech)[![GitHub Sponsors](https://img.shields.io/badge/GitHub-Sponsor-EA4AAA?style=for-the-badge&logo=githubsponsors)](https://github.com/sponsors/FirstEverTech)[![PayPal](https://img.shields.io/badge/PayPal-Donate-00457C?style=for-the-badge&logo=paypal)](https://www.paypal.com/donate/?hosted_button_id=48VGDSCNJAPTJ)[![Buy Me a Coffee](https://img.shields.io/badge/Coffee-Donate-FFDD00?style=for-the-badge&logo=buymeacoffee)](https://buymeacoffee.com/firstevertech)[![Ko-fi](https://img.shields.io/badge/Ko--fi-Donate-FF5E5B?style=for-the-badge&logo=kofi)](https://ko-fi.com/firstever)
 
-🎯 **[Follow on Patreon for free](https://www.patreon.com/FirstEverTech)** — stay updated on new releases and development progress.  
+If this tool saved you time, improved device identification, or helped keep older hardware running — consider supporting development. 🎯 **[Follow on Patreon for free](https://www.patreon.com/FirstEverTech)** — stay updated on new releases and development progress.  
 
 ## 🏢 Sponsors
 *No sponsors yet — [be the first and add your company ad!](https://www.patreon.com/FirstEverTech)*
@@ -71,12 +66,14 @@ If this tool saved you time, improved device identification, or helped keep olde
 ## ❤️ Supporters
 *No supporters yet — [be the first!](https://www.patreon.com/FirstEverTech)*
 
----
+## ⭐ Stars
+If this project helped you, please click the "Star" button at the top of this page on GitHub.  
 
+![Star History](assets/star-history.svg)
+
+## 🌐 Community & Distribution
 - Official threads on the following forums: **[TechPowerUp](https://www.techpowerup.com/forums/threads/tool-universal-intel-chipset-device-updater.346086/)**, **[Win-Raid](https://winraid.level1techs.com/t/tool-universal-intel-chipset-device-updater)**, **[Station-Drivers](https://www.station-drivers.com/index.php/en/forum/intel-chipsets-drivers/887-universal-intel-chipset-drivers-updater)**, **[ElevenForum](https://www.elevenforum.com/t/universal-intel-chipset-device-updater.41790)** and **[WinClub](https://winclub.pl/topic/49717-universal-intel-chipset-device-updater)**.
 - For transparency and additional verification, the project is listed on: **[MajorGeeks](https://www.majorgeeks.com/files/details/universal_intel_chipset_device_updater.html)**, **[Softpedia](https://www.softpedia.com/get/System/Universal-Intel-Chipset-Device-Updater.shtml)** and **[Instalki](https://www.instalki.pl/download/programy/sterowniki/plyty-glowne/intel/universal-intel-chipset-device-updater/)**.
-
----
 
 ## 💼 Career Opportunity
 
@@ -162,8 +159,6 @@ If this tool saved you time, improved device identification, or helped keep olde
 22. [**Acknowledgments**](#acknowledgments)  
 23. [**Important Links**](#important-links)  
 24. [**Author & Contact**](#author-and-contact)  
-25. [**Support This Project**](#support-this-project)  
-
 
 [↑ Back to top](#top)
 
