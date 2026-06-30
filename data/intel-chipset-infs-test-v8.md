@@ -142,7 +142,7 @@ This dataset organizes the historical naming of platforms, with a focus on techn
 | INF | Package | Version | Date | HWIDs |
 |--------|---------|---------|------|--------|
 | RaptorLakeSystem.inf | 10.1.20490.8818 | 10.1.49.12 | 06/02/2026* | A70D, A72D, A74D |
-| RaptorLakeSystem.inf | 10.1.20314.8688(S) (EOL - install this older package separately) | 10.1.49.10 | 14/08/2025* | A77D |
+| RaptorLakeSystem.inf | 10.1.20314.8688(S) (EOL - requires two installers) | 10.1.49.10 | 14/08/2025* | A77D |
 
 #### AlderLake
 **Generation:** 12th Gen Core - Alder Lake - Desktop / Perf. Mobile / Eff. Mobile
@@ -150,7 +150,7 @@ This dataset organizes the historical naming of platforms, with a focus on techn
 | INF | Package | Version | Date | HWIDs |
 |--------|---------|---------|------|--------|
 | AlderLakeSystem.inf, AlderLakeSystemNorthpeak.inf | 10.1.20490.8818 | 10.1.45.10 | 06/02/2026* | 4601, 4602, 4603, 4609, 460A, 460D, 4610, 4614, 4617, 4618, 4619, 461A, 461B, 461C, 461F, 4621, 4622, 4623, 4629, 462D, 462F, 4630, 4633, 4637, 463B, 463D, 463F, 4640, 4641, 4643, 4644, 4648, 4649, 464C, 464D, 4650, 4653, 4660, 4663, 4664, 4668, 466B, 466C, 466E, 466F, 4670, 467D |
-| AlderLakeSystem.inf | 10.1.18836.8283 (EOL - install this older package separately) | 10.1.45.3 | 28/07/2021* | 464F |
+| AlderLakeSystem.inf | 10.1.18836.8283 (EOL - requires two installers) | 10.1.45.3 | 28/07/2021* | 464F |
 
 #### RocketLake
 **Generation:** 11th Gen Core - Rocket Lake - Desktop
@@ -200,7 +200,7 @@ This dataset organizes the historical naming of platforms, with a focus on techn
 | INF | Package | Version | Date | HWIDs |
 |--------|---------|---------|------|--------|
 | CoffeelakeSystem.inf | 10.1.20490.8818 | 10.1.14.8 | 06/02/2026* | 3E0F, 3E10, 3E18, 3E1F, 3E20, 3E30, 3E31, 3E32, 3E33, 3E34, 3E35, 3E81, 3E85, 3E89, 3EC2, 3EC4, 3EC6, 3ECA, 3ECC, 3ED0 |
-| CoffeelakeSystem.inf | 10.1.17541.8066 (EOL - install this older package separately) | 10.1.14.3 | 20/12/2017* | 3E91 |
+| CoffeelakeSystem.inf | 10.1.17541.8066 (EOL - requires two installers) | 10.1.14.3 | 20/12/2017* | 3E91 |
 
 #### KabyLake-H
 **Generation:** 7th Gen Core - Kaby Lake - High Performance Mobile
@@ -413,7 +413,7 @@ This dataset organizes the historical naming of platforms, with a focus on techn
 | INF | Package | Version | Date | HWIDs |
 |--------|---------|---------|------|--------|
 | DenvertonPorts.inf, DenvertonSystem.inf | 10.1.20314.8688(S) | 10.1.19.2 | 14/08/2025* | 1980, 1981, 1982, 1983, 1984, 1985, 1986, 1987, 1988, 1989, 198A, 198B, 198C, 198D, 198E, 198F, 1990, 1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999, 199A, 199B, 199C, 199D, 199E, 199F, 19A2, 19A4, 19A5, 19A6, 19A7, 19A8, 19A9, 19AA, 19AB, 19AC, 19D1, 19D2, 19D8, 19DB, 19DC, 19DE, 19DF, 19E0, 19E1, 19E2 |
-| DenvertonSystem.inf | 10.1.2.80 (EOL - install this older package separately) | 10.1.2.80 | 19/08/2016* | 19D3, 19D4, 19D6 |
+| DenvertonSystem.inf | 10.1.2.80 (EOL - requires two installers) | 10.1.2.80 | 19/08/2016* | 19D3, 19D4, 19D6 |
 
 #### Avoton
 **Generation:** Atom Server - Avoton
@@ -445,7 +445,7 @@ This dataset organizes the historical naming of platforms, with a focus on techn
 | INF | Package | Version | Date | HWIDs |
 |--------|---------|---------|------|--------|
 | RaptorLakePCH-SSystem.inf | 10.1.20490.8818 | 10.1.46.5 | 06/02/2026* | 7A00, 7A01, 7A02, 7A03, 7A04, 7A05, 7A06, 7A07, 7A08, 7A09, 7A0A, 7A0B, 7A0C, 7A0D, 7A0E, 7A0F, 7A10, 7A11, 7A12, 7A13, 7A14, 7A15, 7A16, 7A17, 7A18, 7A19, 7A1A, 7A1B, 7A1C, 7A1D, 7A1E, 7A1F, 7A20, 7A21, 7A23, 7A24, 7A26, 7A27, 7A2F, 7A30, 7A31, 7A32, 7A33, 7A34, 7A35, 7A36, 7A37, 7A38, 7A39, 7A3A, 7A3B, 7A3C, 7A3D, 7A3E, 7A3F, 7A40, 7A41, 7A42, 7A43, 7A44, 7A45, 7A46, 7A47, 7A48, 7A49, 7A4A, 7A4B |
-| RaptorLakePCH-SSystemLPSS.inf | 10.1.19627.8423 (EOL - install this older package separately) | 10.1.46.3 | 26/07/2022* | 7A28, 7A29, 7A2A, 7A2B, 7A4C, 7A4D, 7A4E, 7A4F, 7A5A, 7A5B, 7A5C, 7A5D, 7A5E, 7A5F, 7A6E, 7A6F, 7A79, 7A7A, 7A7B, 7A7C, 7A7D, 7A7E |
+| RaptorLakePCH-SSystemLPSS.inf | 10.1.19627.8423 (EOL - requires two installers) | 10.1.46.3 | 26/07/2022* | 7A28, 7A29, 7A2A, 7A2B, 7A4C, 7A4D, 7A4E, 7A4F, 7A5A, 7A5B, 7A5C, 7A5D, 7A5E, 7A5F, 7A6E, 7A6F, 7A79, 7A7A, 7A7B, 7A7C, 7A7D, 7A7E |
 
 #### Emmitsburg
 **Generation:** C621A/C627A - Emmitsburg (Server Chipset)
@@ -453,7 +453,7 @@ This dataset organizes the historical naming of platforms, with a focus on techn
 | INF | Package | Version | Date | HWIDs |
 |--------|---------|---------|------|--------|
 | EmmitsburgSystem.inf, EmmitsburgSystemLPSS.inf | 10.1.20490.8818 | 10.1.40.6 | 06/02/2026* | 1B80, 1BAD, 1BB0, 1BB1, 1BB2, 1BB3, 1BB4, 1BB5, 1BB8, 1BB9, 1BBA, 1BBB, 1BBC, 1BBD, 1BBE, 1BBF, 1BC6, 1BC7, 1BC9, 1BCA, 1BCC, 1BCE, 1BE6, 1BFF |
-| EmmitsburgSystem.inf | 10.1.19271.8345 (EOL - install this older package separately) | 10.1.40.4 | 14/09/2022* | 1BE0, 1BE1, 1BE2, 1BE3, 1BE4, 1BE5 |
+| EmmitsburgSystem.inf | 10.1.19271.8345 (EOL - requires two installers) | 10.1.40.4 | 14/09/2022* | 1BE0, 1BE1, 1BE2, 1BE3, 1BE4, 1BE5 |
 
 #### Lewisburg
 **Generation:** C620 - Lewisburg (Server Chipset)
@@ -461,7 +461,7 @@ This dataset organizes the historical naming of platforms, with a focus on techn
 | INF | Package | Version | Date | HWIDs |
 |--------|---------|---------|------|--------|
 | LewisburgSystem.inf | 10.1.20314.8688(S) | 10.1.9.6 | 14/08/2025* | 37C0, 37C8, A190, A191, A192, A193, A194, A195, A196, A197, A198, A199, A19A, A19B, A19C, A19D, A19E, A19F, A1A1, A1A3, A1A4, A1A6, A1B1, A1BA, A1BB, A1BC, A1BD, A1BE, A1C0, A1C1, A1C2, A1C3, A1C4, A1C5, A1C6, A1C7, A1E7, A1E8, A1E9, A1EA, A1EC, A1ED, A1F8, A1F9, A1FC, A210, A211, A212, A213, A214, A215, A216, A217, A218, A219, A21A, A21B, A21C, A21D, A21E, A21F, A221, A223, A224, A226, A231, A23A, A23B, A23C, A23D, A23E, A240, A241, A242, A243, A244, A245, A246, A247, A267, A268, A269, A26A, A26C, A26D, A278, A279, A27C |
-| LewisburgSystem.inf, LewisburgUSB.inf | 10.1.2.77 (EOL - install this older package separately) | 10.1.2.77 | 03/08/2016* | A1F0, A1F1, A22F |
+| LewisburgSystem.inf, LewisburgUSB.inf | 10.1.2.77 (EOL - requires two installers) | 10.1.2.77 | 03/08/2016* | A1F0, A1F1, A22F |
 
 #### AlderLakePCH-S
 **Generation:** 600 Series - Alder Lake PCH-S
@@ -483,7 +483,7 @@ This dataset organizes the historical naming of platforms, with a focus on techn
 | INF | Package | Version | Date | HWIDs |
 |--------|---------|---------|------|--------|
 | AlderLakePCH-NSystem.inf, AlderLakePCH-NSystemNorthpeak.inf | 10.1.20490.8818 | 10.1.50.8 | 06/02/2026* | 5480, 5481, 5482, 5483, 5484, 5485, 5486, 5487, 5488, 5489, 548A, 548B, 548C, 548D, 548E, 548F, 5490, 5491, 5492, 5493, 5494, 5495, 5496, 5497, 5498, 5499, 549A, 549B, 549C, 549D, 549E, 549F, 54A0, 54A1, 54A3, 54A4, 54A6, 54AF, 54B0, 54B1, 54B2, 54B3, 54B4, 54B5, 54B6, 54B7, 54B8, 54B9, 54BA, 54BB, 54BC, 54BD, 54BE, 54BF, 54EF |
-| AlderLakePCH-NSystemISH.inf | 10.1.19199.8340 (EOL - install this older package separately) | 10.1.50.7 | 18/07/2022* | 54FC |
+| AlderLakePCH-NSystemISH.inf | 10.1.19199.8340 (EOL - requires two installers) | 10.1.50.7 | 18/07/2022* | 54FC |
 
 #### AlderLake_Extension-Dmasec
 **Generation:** 600 Series - Alder Lake - DMA Security Ext. (IOMMU / BitLocker)
@@ -512,7 +512,7 @@ This dataset organizes the historical naming of platforms, with a focus on techn
 | INF | Package | Version | Date | HWIDs |
 |--------|---------|---------|------|--------|
 | TigerLakePCH-HSystem.inf, TigerLakePCH-HSystemISH.inf, TigerLakePCH-HSystemLPSS.inf, TigerLakePCH-HSystemNorthpeak.inf, TigerLakePCH-HSystemThermal.inf | 10.1.20490.8818 | 10.1.34.13 | 06/02/2026* | 4380, 4381, 4382, 4383, 4384, 4385, 4386, 4387, 4388, 4389, 438A, 438B, 438C, 438D, 438E, 438F, 4390, 4391, 4392, 4393, 4394, 4395, 4396, 4397, 4398, 4399, 439A, 439B, 439C, 439D, 439E, 439F, 43A0, 43A1, 43A2, 43A3, 43A4, 43A6, 43AF, 43B0, 43B1, 43B2, 43B3, 43B4, 43B5, 43B6, 43B7, 43B8, 43B9, 43BA, 43BB, 43BC, 43BD, 43BE, 43BF, 43C0, 43C1, 43C2, 43C3, 43C4, 43C5, 43C6, 43C7, 43DB, 43DC, 43DD, 43E6, 43E7, 43EF, 43F9, 43FC, 43FE |
-| TigerLakePCH-HSystemLPSS.inf | 10.1.18698.8258 (EOL - install this older package separately) | 10.1.34.8 | 06/01/2021* | 43A7, 43A8, 43A9, 43AA, 43AB, 43AD, 43AE, 43D8, 43D9, 43DA, 43E8, 43E9, 43EA, 43EB, 43FB, 43FD |
+| TigerLakePCH-HSystemLPSS.inf | 10.1.18698.8258 (EOL - requires two installers) | 10.1.34.8 | 06/01/2021* | 43A7, 43A8, 43A9, 43AA, 43AB, 43AD, 43AE, 43D8, 43D9, 43DA, 43E8, 43E9, 43EA, 43EB, 43FB, 43FD |
 
 #### TigerLakePCH-LP
 **Generation:** 500 Series - Tiger Lake PCH-U (Mobile)
@@ -520,7 +520,7 @@ This dataset organizes the historical naming of platforms, with a focus on techn
 | INF | Package | Version | Date | HWIDs |
 |--------|---------|---------|------|--------|
 | TigerlakePCH-LPSystem.inf, TigerlakePCH-LPSystemLPSS.inf, TigerlakePCH-LPUSBFunctionController.inf | 10.1.20490.8818 | 10.1.24.7 | 06/02/2026* | A080, A081, A082, A083, A084, A085, A086, A087, A088, A089, A08A, A08B, A08C, A08D, A08E, A08F, A090, A091, A092, A093, A094, A095, A096, A097, A098, A099, A09A, A09B, A09C, A09D, A09E, A09F, A0A0, A0A1, A0A3, A0A4, A0A6, A0A8, A0A9, A0AC, A0AF, A0B0, A0B1, A0B2, A0B3, A0B4, A0B5, A0B6, A0B7, A0B8, A0B9, A0BA, A0BB, A0BC, A0BD, A0BE, A0BF, A0C7, A0DA, A0DB, A0DC, A0DD, A0EC, A0EE, A0FD |
-| TigerlakePCH-LPSystemLPSS.inf | 10.1.18698.8258 (EOL - install this older package separately) | 10.1.24.5 | 17/07/2020* | A0AA, A0AB, A0C5, A0C6, A0D8, A0D9, A0DE, A0DF, A0E8, A0E9, A0EA, A0EB, A0FB, A0FE |
+| TigerlakePCH-LPSystemLPSS.inf | 10.1.18698.8258 (EOL - requires two installers) | 10.1.24.5 | 17/07/2020* | A0AA, A0AB, A0C5, A0C6, A0D8, A0D9, A0DE, A0DF, A0E8, A0E9, A0EA, A0EB, A0FB, A0FE |
 
 #### JasperLakePCH-N
 **Generation:** Atom - Jasper Lake PCH-N (Mobile/Embedded PCH)
@@ -598,7 +598,7 @@ This dataset organizes the historical naming of platforms, with a focus on techn
 | INF | Package | Version | Date | HWIDs |
 |--------|---------|---------|------|--------|
 | CannonLake-LPSDHost.inf, CannonLake-LPSystem.inf, CannonLake-LPSystemLPSS.inf, CannonLake-LPSystemNorthpeak.inf, CannonLake-LPSystemThermal.inf | 10.1.20490.8818 | 10.1.15.7 | 06/02/2026* | 9D80, 9D81, 9D82, 9D83, 9D84, 9D85, 9D86, 9D87, 9D88, 9D89, 9D8A, 9D8B, 9D8C, 9D8D, 9D8E, 9D8F, 9D90, 9D91, 9D92, 9D93, 9D94, 9D95, 9D96, 9D97, 9D98, 9D99, 9D9A, 9D9B, 9D9C, 9D9D, 9D9E, 9D9F, 9DA0, 9DA1, 9DA3, 9DA4, 9DA6, 9DA8, 9DA9, 9DAA, 9DAB, 9DB0, 9DB1, 9DB2, 9DB3, 9DB4, 9DB5, 9DB6, 9DB7, 9DB8, 9DB9, 9DBA, 9DBB, 9DBC, 9DBD, 9DBE, 9DBF, 9DC4, 9DC5, 9DC6, 9DC7, 9DE8, 9DE9, 9DEA, 9DEB, 9DF5, 9DF9, 9DFB |
-| CannonLake-LPSystemLPSS.inf | 10.1.17765.8094 (EOL - install this older package separately) | 10.1.15.4 | 21/08/2018* | 9DFC |
+| CannonLake-LPSystemLPSS.inf | 10.1.17765.8094 (EOL - requires two installers) | 10.1.15.4 | 21/08/2018* | 9DFC |
 
 #### KabyLakePCH-H
 **Generation:** 200 Series - Kaby Lake PCH-H (Mobile High Performance)
@@ -606,7 +606,7 @@ This dataset organizes the historical naming of platforms, with a focus on techn
 | INF | Package | Version | Date | HWIDs |
 |--------|---------|---------|------|--------|
 | KabyLakePCH-HSystem.inf, KabyLakePCH-HSystemLPSS.inf, KabyLakePCH-HSystemNorthpeak.inf, KabyLakePCH-HSystemThermal.inf | 10.1.20490.8818 | 10.1.11.5 | 06/02/2026* | A290, A291, A292, A293, A294, A295, A296, A297, A298, A299, A29A, A29B, A29C, A29D, A29E, A29F, A2A0, A2A1, A2A3, A2A4, A2A6, A2A7, A2A8, A2A9, A2AA, A2B1, A2B3, A2C0, A2C1, A2C2, A2C3, A2C4, A2C5, A2C6, A2C7, A2C8, A2C9, A2CA, A2CB, A2CC, A2CD, A2CE, A2CF, A2D0, A2D1, A2D2, A2D3, A2D4, A2D5, A2D6, A2D7, A2D8, A2D9, A2DA, A2DB, A2DC, A2DD, A2DE, A2DF, A2E0, A2E1, A2E2, A2E3, A2E6, A2E7, A2E8, A2E9, A2EA, A2EB, A2EC, A2ED, A2EE |
-| KabyLakePCH-HSystem.inf, KabyLakePCH-HSystemcAVS.inf | 10.1.1.37 (EOL - install this older package separately) | 10.1.1.36 | 01/10/2016* | A2BA, A2BB, A2BC, A2BD, A2BE, A2F0 |
+| KabyLakePCH-HSystem.inf, KabyLakePCH-HSystemcAVS.inf | 10.1.1.37 (EOL - requires two installers) | 10.1.1.36 | 01/10/2016* | A2BA, A2BB, A2BC, A2BD, A2BE, A2F0 |
 
 #### SunrisePoint-H
 **Generation:** 100 Series - Sunrise Point-H (Desktop/Mobile PCH)
@@ -614,7 +614,7 @@ This dataset organizes the historical naming of platforms, with a focus on techn
 | INF | Package | Version | Date | HWIDs |
 |--------|---------|---------|------|--------|
 | SunrisePoint-HSystem.inf, SunrisePoint-HSystemLPSS.inf, SunrisePoint-HSystemThermal.inf | 10.1.20490.8818 | 10.1.6.3 | 06/02/2026* | A110, A111, A112, A113, A114, A115, A116, A117, A118, A119, A11A, A11B, A11C, A11D, A11E, A11F, A120, A121, A123, A124, A126, A127, A128, A129, A12A, A130, A131, A140, A141, A142, A143, A144, A145, A146, A147, A148, A149, A14A, A14B, A14C, A14D, A14E, A14F, A150, A151, A152, A153, A154, A155, A156, A157, A158, A159, A15A, A15B, A15C, A15D, A15E, A15F, A160, A161, A162, A163, A166, A167, A168, A169, A16A |
-| SunrisePoint-HSystemISH.inf | 10.1.2.74 (EOL - install this older package separately) | 10.1.2.74 | 01/07/2016* | A135 |
+| SunrisePoint-HSystemISH.inf | 10.1.2.74 (EOL - requires two installers) | 10.1.2.74 | 01/07/2016* | A135 |
 
 #### SunrisePoint-LP
 **Generation:** 100 Series - Sunrise Point-LP (Mobile PCH)
@@ -622,8 +622,8 @@ This dataset organizes the historical naming of platforms, with a focus on techn
 | INF | Package | Version | Date | HWIDs |
 |--------|---------|---------|------|--------|
 | SunrisePoint-LPSDHost.inf, SunrisePoint-LPSystem.inf, SunrisePoint-LPSystemLPSS.inf, SunrisePoint-LPSystemNorthpeak.inf, SunrisePoint-LPSystemThermal.inf | 10.1.20490.8818 | 10.1.5.3 | 06/02/2026* | 9D10, 9D11, 9D12, 9D13, 9D14, 9D15, 9D16, 9D17, 9D18, 9D19, 9D1A, 9D1B, 9D21, 9D23, 9D24, 9D26, 9D27, 9D28, 9D29, 9D2A, 9D2B, 9D2D, 9D31, 9D41, 9D43, 9D46, 9D48, 9D4B, 9D4E, 9D50, 9D51, 9D53, 9D56, 9D58, 9D60, 9D61, 9D62, 9D63, 9D64, 9D65, 9D66 |
-| SunrisePoint-LPSystem.inf, SunrisePoint-LPSystemISH.inf | 10.1.1.37 (EOL - install this older package separately) | 10.1.1.36 | 01/10/2016* | 9D30, 9D35 |
-| sunrisepoint-lpSystem.inf | 10.1.1.12 (EOL - install this older package separately) | 10.1.1.12 | 21/09/2015* | 9D40, 9D42, 9D44, 9D45, 9D47, 9D49, 9D4A, 9D4C, 9D4D, 9D4F, 9D52, 9D54, 9D55, 9D57, 9D59, 9D5A, 9D5B, 9D5C, 9D5D, 9D5E, 9D5F |
+| SunrisePoint-LPSystem.inf, SunrisePoint-LPSystemISH.inf | 10.1.1.37 (EOL - requires two installers) | 10.1.1.36 | 01/10/2016* | 9D30, 9D35 |
+| sunrisepoint-lpSystem.inf | 10.1.1.12 (EOL - requires two installers) | 10.1.1.12 | 21/09/2015* | 9D40, 9D42, 9D44, 9D45, 9D47, 9D49, 9D4A, 9D4C, 9D4D, 9D4F, 9D52, 9D54, 9D55, 9D57, 9D59, 9D5A, 9D5B, 9D5C, 9D5D, 9D5E, 9D5F |
 
 #### WildcatPointLP
 **Generation:** 9 Series - Wildcat Point-LP (Mobile PCH)
@@ -690,7 +690,7 @@ This dataset organizes the historical naming of platforms, with a focus on techn
 | INF | Package | Version | Date | HWIDs |
 |--------|---------|---------|------|--------|
 | Chipset_SMBus.inf, Chipset_System.inf, Chipset_Thermal.inf | 10.0.27.0 | 10.0.27 | 22/04/2015* | 0C59, 0C5A, 0C5B, 0C5C, 0C5D, 0C5E, 1D68, 2330, 2332, 24D3, 25A4, 266A, 269B, 27DA, 283E, 284F, 2930, 2932, 3A30, 3A32, 3A60, 3A62, 3B30, 9DEE, 9DF7, A2AB, A2F7, A2F9, A36E, A377 |
-| Chipset_USB.inf | 10.0.26.0 (EOL - install this older package separately) | 10.0.24 | 02/01/2015* | 8C31, 8CB1 |
+| Chipset_USB.inf | 10.0.26.0 (EOL - requires two installers) | 10.0.24 | 02/01/2015* | 8C31, 8CB1 |
 
 ---
 
