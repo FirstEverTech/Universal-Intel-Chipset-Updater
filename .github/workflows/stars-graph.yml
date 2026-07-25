@@ -20,12 +20,17 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.STARS_PAT }}
           REPO: ${{ github.repository }}
         run: python .github/scripts/stars-graph.py
-      - name: Sync with remote before commit
+      - name: Sync, commit and push
         run: |
-          git stash --include-untracked
-          git pull --rebase origin main
-          git stash pop || true
-      - uses: stefanzweifel/git-auto-commit-action@v5
-        with:
-          commit_message: "chore: update star history chart"
-          file_pattern: assets/stars-graph.svg
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          cp assets/stars-graph.svg /tmp/stars-graph.svg
+          git merge --abort 2>/dev/null || true
+          git rebase --abort 2>/dev/null || true
+          git reset --hard HEAD
+          git fetch origin main
+          git reset --hard origin/main
+          cp /tmp/stars-graph.svg assets/stars-graph.svg
+          git add assets/stars-graph.svg
+          git diff --cached --quiet || git commit -m "chore: update star history chart"
+          git push origin HEAD:main
