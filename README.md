@@ -20,8 +20,8 @@
 <a id="top"></a>
 # 🚀 **Universal Intel Chipset Device Updater**
 
-[![Version](https://img.shields.io/badge/Version-2026.07.0016-red?style=flat-square)](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/releases)[![Windows](https://img.shields.io/badge/Windows-10%2F11-blue?style=flat-square&color=blueviolet)](https://www.microsoft.com/windows)[![PowerShell](https://img.shields.io/badge/PowerShell-5.0+-blueviolet?style=flat-square)](https://learn.microsoft.com/en-us/powershell/scripting/install/install-powershell-on-windows?view=powershell-7.5)[![DotNET](https://img.shields.io/badge/.NET-4.7.2+-blueviolet?style=flat-square)](https://dotnet.microsoft.com/en-us/download/dotnet-framework)[![Downloads](https://img.shields.io/github/downloads/FirstEverTech/Universal-Intel-Chipset-Updater/total?style=flat-square&color=gold&label=Downloads)](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/releases)[![GitHub Stars](https://img.shields.io/github/stars/FirstEverTech/Universal-Intel-Chipset-Updater?style=flat-square&color=gold&label=Stars)](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater)  
-[![License](https://img.shields.io/badge/License-MIT-0056b3?style=flat-square)](LICENSE)[![PS Gallery Version](https://img.shields.io/powershellgallery/v/universal-intel-chipset-device-updater?style=flat-square&label=PowerShell+Gallery)](https://www.powershellgallery.com/packages/universal-intel-chipset-device-updater)[![AI_Audits](https://img.shields.io/badge/AI_Audits_Score-9.6%2F10-0a8f08?style=flat-square)](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/blob/main/AI_AUDITS.md)[![VirusTotal](https://img.shields.io/badge/VirusTotal-0%2F92-008631?style=flat-square)](https://www.virustotal.com/gui/url/e4b0e024a5a7dcccacae5de04c410d5b9c5f8b766cbee6975f9ea19fd8d44057?nocache=1)[![Issues](https://img.shields.io/github/issues/FirstEverTech/Universal-Intel-Chipset-Updater?style=flat-square&label=Issues)](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/issues)
+[![Version](https://img.shields.io/badge/Version-2026.08.0017-red?style=flat-square)](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/releases)[![Windows](https://img.shields.io/badge/Windows-10%2F11-blue?style=flat-square&color=blueviolet)](https://www.microsoft.com/windows)[![PowerShell](https://img.shields.io/badge/PowerShell-5.0+-blueviolet?style=flat-square)](https://learn.microsoft.com/en-us/powershell/scripting/install/install-powershell-on-windows?view=powershell-7.5)[![DotNET](https://img.shields.io/badge/.NET-4.7.2+-blueviolet?style=flat-square)](https://dotnet.microsoft.com/en-us/download/dotnet-framework)[![Downloads](https://img.shields.io/github/downloads/FirstEverTech/Universal-Intel-Chipset-Updater/total?style=flat-square&color=gold&label=Downloads)](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/releases)[![GitHub Stars](https://img.shields.io/github/stars/FirstEverTech/Universal-Intel-Chipset-Updater?style=flat-square&color=gold&label=Stars)](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater)  
+[![License](https://img.shields.io/badge/License-MIT-0056b3?style=flat-square)](LICENSE)[![PS Gallery Version](https://img.shields.io/powershellgallery/v/universal-intel-chipset-device-updater?style=flat-square&label=PowerShell+Gallery)](https://www.powershellgallery.com/packages/universal-intel-chipset-device-updater)[![AI_Audits](https://img.shields.io/badge/AI_Audits_Score-9.6%2F10-0a8f08?style=flat-square)](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/blob/main/AI_AUDITS.md)[![VirusTotal](https://img.shields.io/badge/VirusTotal-0%2F92-008631?style=flat-square)](https://www.virustotal.com/gui/url/19630872bbecbcdea1bd2780f2b9dbbcb287bc68115630a8c65a7ce80f4f96ca?nocache=1)[![Issues](https://img.shields.io/github/issues/FirstEverTech/Universal-Intel-Chipset-Updater?style=flat-square&label=Issues)](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/issues)
 
 <a href="https://github.com/FirstEverTech">
   <img width="600" alt="" title="Universal Intel Chipset Device Updater"
@@ -180,33 +180,12 @@ If this project helped you, please click the "Star" button at the top of this pa
 <a id="latest-version"></a>
 ### 2.1 Latest Version
 
-**v2026.07.0015** → [Release Notes](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/releases/tag/v2026.07.0015)
+**v2026.08.0017** → [Release Notes](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/releases/tag/v2026.08.0017)
 
-### 🆕 **Highlights**
-- **EOL Device Support** — Enhanced database parser now correctly detects End-of-Life (EOL) platforms from the new `#### Platform EOL` section headers. EOL packages are installed first (oldest versions), followed by the latest packages, preventing newer INF files from being overwritten by older ones. Legacy HWIDs that were removed from the latest packages are now properly handled.
-
-- **Multi-Signature Verification** — Updated digital signature validation to recognize all Intel certificate variants used over the years:
-  - `Intel Corporation` (latest)
-  - `Intel(R) Software and Firmware Products` (newer)
-  - `Intel Corporation - Software and Firmware Products` (oldest)
-  
-  This ensures backward compatibility with older installer packages while maintaining strict security standards.
-
-- **Configurable Credits Screen** — The credits screen is now fully dynamic and loaded from external `intel-chipset-infs-credits.txt` and `intel-chipset-infs-ads.txt` files. This allows easy customization of support links, career opportunities, and promotional content without modifying the core script. The screen supports interactive key shortcuts (1-5, A-E, L) that open configured URLs or exit the application.
-
-- **Improved Database Parsing** — Fixed EOL detection logic to work with the new database format where EOL indicators are in section headers (`#### RaptorLake EOL`) rather than in the Package column. Platform names are now normalized (e.g., `RaptorLake` instead of `RaptorLake EOL`) for cleaner display.
-
-### 🔧 **Technical Improvements**
-- **EOL Detection**: Dual-mode parsing supports both old format (`(EOL)` in Package column) and new format (`#### Platform EOL` headers)
-- **Signature Validation**: Enhanced with 3 Intel certificate patterns + expiration check + algorithm validation (SHA256/SHA1)
-- **Credits Screen**: External configuration via `intel-chipset-infs-credits.txt` and `intel-chipset-infs-ads.txt`
-- **Parser Robustness**: Fixed table separator detection (`---` now works alongside `:---`)
-- **Backward Compatibility**: All changes maintain compatibility with existing database formats
-
-### 📦 **Database Updates**
-- Added EOL sections for 16 platforms (RaptorLake, AlderLake, CoffeeLake, TigerLakePCH-H, etc.)
-- EOL packages contain legacy HWIDs that were removed from the latest Intel Chipset Device Software packages
-- Installation order: EOL (oldest) → Main (latest) ensures all detected HWIDs receive the correct driver
+### 🩹 **Bugfix**
+- **Fixed: FriendlyName keyword filter silently dropped legitimate Intel devices** — `Get-IntelChipsetHWIDs` pre-filtered candidate devices by matching their FriendlyName against a fixed keyword list (`Chipset|LPC|PCI Express Root Port|PCI-to-PCI bridge|Motherboard Resources`) before checking them against the HWID database. Any live, functioning Intel System-class device whose FriendlyName didn't contain one of those words — e.g. `Gaussian Mixture Model`, `Host Bridge/DRAM Registers`, `PCIe Controller (x16)` — was silently excluded from detection and reporting, even though it was fully present and matched with `Status: OK`. The filter has been removed; devices are now matched purely by HWID against the full database. On a triple-platform X79 test system, this raised detected device count from 12 to 59. See [Issue #26](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/issues/26).
+- **Improved performance** — `Get-CurrentINFVersion` no longer re-enumerates every PnP device on the system per detected Intel device; it now reuses the device object already obtained during initial detection.
+- **Display improvements** — HWID lists now wrap at 12 per line for readability on platforms with many detected devices; platform name lines are now yellow; download/parsing status messages merged into a single, more accurate line.
 
 ---
 
@@ -215,38 +194,11 @@ If this project helped you, please click the "Star" button at the top of this pa
 <a id="previous-releases"></a>
 ### 2.2 Previous Releases
 
-**v2026.07.0015** → [Release Notes](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/releases/tag/v2026.07.0015)
+**v2026.07.0016** → [Release Notes](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/releases/tag/v2026.07.0016)
 
-### 🆕 **Highlights**
-- **EOL Device Support** — Enhanced database parser now correctly detects End-of-Life (EOL) platforms from the new `#### Platform EOL` section headers. EOL packages are installed first (oldest versions), followed by the latest packages, preventing newer INF files from being overwritten by older ones. Legacy HWIDs that were removed from the latest packages are now properly handled.
+### 🩹 **Hotfix**
 
-- **Multi-Signature Verification** — Updated digital signature validation to recognize all Intel certificate variants used over the years:
-  - `Intel Corporation` (latest)
-  - `Intel(R) Software and Firmware Products` (newer)
-  - `Intel Corporation - Software and Firmware Products` (oldest)
-  
-  This ensures backward compatibility with older installer packages while maintaining strict security standards.
-
-- **Configurable Credits Screen** — The credits screen is now fully dynamic and loaded from external `intel-chipset-infs-credits.txt` and `intel-chipset-infs-ads.txt` files. This allows easy customization of support links, career opportunities, and promotional content without modifying the core script. The screen supports interactive key shortcuts (1-5, A-E, L) that open configured URLs or exit the application.
-
-- **Improved Database Parsing** — Fixed EOL detection logic to work with the new database format where EOL indicators are in section headers (`#### RaptorLake EOL`) rather than in the Package column. Platform names are now normalized (e.g., `RaptorLake` instead of `RaptorLake EOL`) for cleaner display.
-
-### 🔧 **Technical Improvements**
-- **EOL Detection**: Dual-mode parsing supports both old format (`(EOL)` in Package column) and new format (`#### Platform EOL` headers)
-- **Signature Validation**: Enhanced with 3 Intel certificate patterns + expiration check + algorithm validation (SHA256/SHA1)
-- **Credits Screen**: External configuration via `intel-chipset-infs-credits.txt` and `intel-chipset-infs-ads.txt`
-- **Parser Robustness**: Fixed table separator detection (`---` now works alongside `:---`)
-- **Backward Compatibility**: All changes maintain compatibility with existing database formats
-
-### 📦 **Database Updates**
-- Added EOL sections for 16 platforms (RaptorLake, AlderLake, CoffeeLake, TigerLakePCH-H, etc.)
-- EOL packages contain legacy HWIDs that were removed from the latest Intel Chipset Device Software packages
-- Installation order: EOL (oldest) → Main (latest) ensures all detected HWIDs receive the correct driver
-
-### 🆕 **Highlights**
-- **Scanner 7.1 Database Improvements** — Better sorting of PCH families, fixed ArrowLake generation, added missing generic platforms, cleaned up legend (platforms without dedicated INF marked with `*`), and added explanatory notes (Wildcat Lake, 16th Gen, missing INF platforms)
-- **Updater UI Overhaul** — Grouped HWID display (instead of one line per device), compact platform information (3 lines instead of 5), removed redundant `Generation:` label to prevent line wrapping, added parsing time hint, and simplified the header banner
-- **Better Handling of Windows Inbox Drivers** — Inbox platforms are now clearly marked with a compact summary, not mixed with regular updates
+* **Fixed: Legitimate expired-certificate installers rejected** — v2026.07.0015 introduced a certificate expiration check (`NotAfter -lt Get-Date`) in `Verify-FileSignature` that rejected older Intel installers whose signing certificate has since expired, even when the Authenticode signature itself remains valid via RFC3161 timestamping. `Get-AuthenticodeSignature`'s own `Status` field already correctly accounts for timestamped signatures, making the extra check both redundant and harmful — it broke installation of older, still-authentic chipset installers that worked fine in v2026.05.0014. The manual expiration check has been removed; signature authenticity is validated via signer identity, timestamp-aware status, and algorithm checks only.
 
 ---
 
@@ -255,6 +207,7 @@ If this project helped you, please click the "Star" button at the top of this pa
 <a id="older-releases"></a>
 ### 2.3 Older Releases
 
+- v2026.07.0015  → [Release Notes](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/releases/tag/v2026.07.0015)
 - v2026.03.0014  → [Release Notes](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/releases/tag/v2026.03.0014)
 - v2026.03.0013  → [Release Notes](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/releases/tag/v2026.03.0013)
 - v2026.03.0012  → [Release Notes](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/releases/tag/v2026.03.0012)
