@@ -1,5 +1,5 @@
 <#PSScriptInfo
-.VERSION 2026.07.0016
+.VERSION 2026.08.0017
 .GUID c5044de3-67b5-4e70-b6fc-75e7847c799e
 .NAME universal-intel-chipset-device-updater
 .AUTHOR Marcin Grygiel
@@ -13,6 +13,7 @@
 .REQUIREDSCRIPTS
 .EXTERNALSCRIPTDEPENDENCIES
 .RELEASENOTES
+v2026.08.0017 - Replaced FriendlyName keyword-based device pre-filtering in Get-IntelChipsetHWIDs with direct HWID matching against the full INF database. Fixes silent detection gaps for devices whose FriendlyName did not contain a recognized keyword (e.g. Gaussian Mixture Model, Host Bridge/DRAM Registers, PCIe Controller (x16), Thermal, Northpeak, LPSS, DmaSec Extension variants). No change to UI or output format.
 v2026.05.0014 - Improved display formatting: removed "Generation:" label, added parsing info hint, cleaned up extra blank lines.
 #>
 
@@ -202,7 +203,7 @@ if ($QuietMode) {
 # =============================================
 # SCRIPT VERSION
 # =============================================
-$ScriptVersion = "2026.07.0016"
+$ScriptVersion = "2026.08.0017"
 # =============================================
 
 # Detect if running from SFX package
@@ -1458,9 +1459,18 @@ function Download-Extract-File {
 # =============================================
 
 function Get-IntelChipsetHWIDs {
+    # NOTE (v2026.08.0017): Detection no longer pre-filters candidate devices by
+    # matching keywords ("Chipset", "LPC", "PCI Express Root Port", etc.) against
+    # $device.FriendlyName. That approach silently dropped legitimate Intel System
+    # devices whose FriendlyName didn't happen to contain one of those words (e.g.
+    # "Gaussian Mixture Model", "Host Bridge/DRAM Registers", "PCIe Controller (x16)").
+    #
+    # Every VEN_8086 System-class device with Status -eq 'OK' is now collected
+    # unconditionally by HWID. The authoritative filter is applied downstream,
+    # where each detected HWID is looked up directly against the full INF/HWID
+    # database ($chipsetData.ContainsKey($hwId)) - so nothing is excluded here
+    # based on a guessed keyword list.
     $intelChipsets = @()
-    $chipsetCount = 0
-    $nonChipsetCount = 0
 
     try {
         $pciDevices = Get-PnpDevice -Class 'System' -ErrorAction SilentlyContinue |
@@ -1472,46 +1482,18 @@ function Get-IntelChipsetHWIDs {
                     $deviceId = $matches[1]
                     $description = $device.FriendlyName
 
-                    if ($description -match 'Chipset|LPC|PCI Express Root Port|PCI-to-PCI bridge|Motherboard Resources') {
-                        $intelChipsets += [PSCustomObject]@{
-                            HWID        = $deviceId
-                            Description = $description
-                            HardwareID  = $hwid
-                            InstanceId  = $device.InstanceId
-                            IsChipset   = $true
-                        }
-                        $chipsetCount++
-                    } else {
-                        $nonChipsetCount++
+                    $intelChipsets += [PSCustomObject]@{
+                        HWID            = $deviceId
+                        Description     = $description
+                        HardwareID      = $hwid
+                        InstanceId      = $device.InstanceId
+                        PnpDeviceObject = $device
                     }
                 }
             }
         }
 
-        if ($intelChipsets.Count -eq 0) {
-            foreach ($device in $pciDevices) {
-                foreach ($hwid in $device.HardwareID) {
-                    if ($hwid -match 'PCI\\VEN_8086&DEV_([A-F0-9]{4})') {
-                        $deviceId = $matches[1]
-                        $description = $device.FriendlyName
-
-                        $intelChipsets += [PSCustomObject]@{
-                            HWID        = $deviceId
-                            Description = $description
-                            HardwareID  = $hwid
-                            InstanceId  = $device.InstanceId
-                            IsChipset   = $false
-                        }
-                        $chipsetCount++
-
-                        if ($intelChipsets.Count -ge 5) { break }
-                    }
-                }
-                if ($intelChipsets.Count -ge 5) { break }
-            }
-        }
-
-        Write-DebugMessage "Scanning completed: found $chipsetCount potential chipset devices and $nonChipsetCount non-chipset devices"
+        Write-DebugMessage "Scanning completed: found $($intelChipsets.Count) candidate Intel System-class device HWID(s) (VEN_8086, Status=OK) prior to database matching"
         return $intelChipsets | Sort-Object HWID -Unique
     } catch {
         Write-Log "Hardware detection failed: $($_.Exception.Message)" -Type "ERROR"
@@ -1520,21 +1502,50 @@ function Get-IntelChipsetHWIDs {
 }
 
 function Get-CurrentINFVersion {
-    param([string]$DeviceInstanceId)
+    param(
+        [Parameter(ParameterSetName = 'ByObject')]
+        $Device,
+        [Parameter(ParameterSetName = 'ByInstanceId')]
+        [string]$DeviceInstanceId
+    )
 
     try {
-        $device = Get-PnpDevice | Where-Object { $_.InstanceId -eq $DeviceInstanceId }
-        if ($device) {
-            $versionProperty = $device | Get-PnpDeviceProperty -KeyName "DEVPKEY_Device_DriverVersion" -ErrorAction SilentlyContinue
+        # Preferred path (v2026.08.0017): caller already holds the PnpDevice object
+        # from the initial enumeration, so we query properties directly on it
+        # instead of re-running Get-PnpDevice against the whole system just to
+        # find one InstanceId again. This is the main cost driver when many
+        # devices are detected - avoiding it turns an O(n^2) scan into O(n).
+        if ($Device) {
+            $versionProperty = $Device | Get-PnpDeviceProperty -KeyName "DEVPKEY_Device_DriverVersion" -ErrorAction SilentlyContinue
             if ($versionProperty -and $versionProperty.Data) {
                 Write-DebugMessage "Got version from DEVPKEY_Device_DriverVersion: $($versionProperty.Data)"
                 return $versionProperty.Data
             }
 
-            $infVersionProperty = $device | Get-PnpDeviceProperty -KeyName "DEVPKEY_Device_INFVersion" -ErrorAction SilentlyContinue
+            $infVersionProperty = $Device | Get-PnpDeviceProperty -KeyName "DEVPKEY_Device_INFVersion" -ErrorAction SilentlyContinue
             if ($infVersionProperty -and $infVersionProperty.Data) {
                 Write-DebugMessage "Got version from DEVPKEY_Device_INFVersion: $($infVersionProperty.Data)"
                 return $infVersionProperty.Data
+            }
+
+            $DeviceInstanceId = $Device.InstanceId
+        } elseif ($DeviceInstanceId) {
+            # Fallback path kept for backward compatibility (e.g. -DebugMode callers
+            # that only have an InstanceId string). Slower - re-enumerates all PnP
+            # devices on the system to find this one.
+            $lookedUpDevice = Get-PnpDevice | Where-Object { $_.InstanceId -eq $DeviceInstanceId }
+            if ($lookedUpDevice) {
+                $versionProperty = $lookedUpDevice | Get-PnpDeviceProperty -KeyName "DEVPKEY_Device_DriverVersion" -ErrorAction SilentlyContinue
+                if ($versionProperty -and $versionProperty.Data) {
+                    Write-DebugMessage "Got version from DEVPKEY_Device_DriverVersion: $($versionProperty.Data)"
+                    return $versionProperty.Data
+                }
+
+                $infVersionProperty = $lookedUpDevice | Get-PnpDeviceProperty -KeyName "DEVPKEY_Device_INFVersion" -ErrorAction SilentlyContinue
+                if ($infVersionProperty -and $infVersionProperty.Data) {
+                    Write-DebugMessage "Got version from DEVPKEY_Device_INFVersion: $($infVersionProperty.Data)"
+                    return $infVersionProperty.Data
+                }
             }
         }
 
@@ -2099,7 +2110,7 @@ try {
     $detectedIntelChipsets = Get-IntelChipsetHWIDs
 
     if ($detectedIntelChipsets.Count -eq 0) {
-        Write-Host " No Intel chipset devices found." -ForegroundColor Yellow
+        Write-Host " No Intel devices found." -ForegroundColor Yellow
         Write-Host " If you have an Intel platform, make sure you have at least" -ForegroundColor Yellow
         Write-Host " SandyBridge or newer platform." -ForegroundColor Yellow
         Cleanup
@@ -2113,20 +2124,21 @@ try {
         exit
     }
 
-    Write-Host " Found $($detectedIntelChipsets.Count) Intel chipset device(s)" -ForegroundColor Green
+    Write-Host " Found $($detectedIntelChipsets.Count) Intel device(s)" -ForegroundColor Green
 
     if ($DebugMode) {
         Write-Host "`n === DEBUG INFORMATION ===" -ForegroundColor Cyan
         Write-Host " Checking versions for detected devices:" -ForegroundColor Gray
         foreach ($device in $detectedIntelChipsets) {
-            $currentVersion = Get-CurrentINFVersion -DeviceInstanceId $device.InstanceId
+            $currentVersion = Get-CurrentINFVersion -Device $device.PnpDeviceObject
             Write-Host " Device: $($device.Description)" -ForegroundColor Gray
             Write-Host "   HWID: $($device.HWID) | Version: $currentVersion" -ForegroundColor Gray
         }
         Write-Host " === END DEBUG ===`n" -ForegroundColor Cyan
     }
 
-    Write-Host " Downloading latest INF information..." -ForegroundColor Yellow
+    Write-Host " INF database download & hardware matching in progress... " -ForegroundColor Yellow -NoNewline
+    Write-Host "(up to 1 minute)" -ForegroundColor Gray
     $chipsetInfo = Get-LatestINFInfo -Url $chipsetINFsUrl
     $downloadListInfo = Get-LatestINFInfo -Url $downloadListUrl
 
@@ -2140,9 +2152,6 @@ try {
         Show-FinalCredits
         exit
     }
-
-    Write-Host " Parsing INF information - it may take up to 30 seconds!" -ForegroundColor Green
-    Write-Host ""
 
     $chipsetData = Parse-ChipsetINFsFromMarkdown -MarkdownContent $chipsetInfo
     $downloadData = Parse-DownloadList -DownloadListContent $downloadListInfo
@@ -2178,7 +2187,7 @@ try {
                 }
                 continue
             }
-            $currentVersion = Get-CurrentINFVersion -DeviceInstanceId $device.InstanceId
+            $currentVersion = Get-CurrentINFVersion -Device $device.PnpDeviceObject
             $matchingChipsets += @{
                 Device         = $device
                 ChipsetInfo    = $chipsetInfo
@@ -2202,15 +2211,24 @@ try {
         # Removed extra Write-Host ""
     }
 
-    # Display grouped compatible platforms (compact)
+    # Display grouped compatible platforms, HWIDs wrapped at 12 per line for readability
     if ($matchingChipsets.Count -gt 0) {
-        Write-Host " Found compatible platform(s):" -ForegroundColor Green
+        Write-Host "`n Found compatible device(s)" -ForegroundColor Green
         $groupedMatches = $matchingChipsets | Group-Object { $_.ChipsetInfo.Platform }
         foreach ($group in $groupedMatches) {
-            $hwids = ($group.Group | ForEach-Object { $_.Device.HWID }) -join ', '
-            Write-Host " - $($group.Name) (HWID: $hwids)" -ForegroundColor White
+            $hwidList = $group.Group | ForEach-Object { $_.Device.HWID }
+            Write-Host " - $($group.Name) devices (HWID):" -ForegroundColor Yellow
+
+            $chunkSize = 12
+            for ($i = 0; $i -lt $hwidList.Count; $i += $chunkSize) {
+                $chunkEnd = [Math]::Min($i + $chunkSize - 1, $hwidList.Count - 1)
+                $chunk = $hwidList[$i..$chunkEnd]
+                $isLastChunk = ($i + $chunkSize) -ge $hwidList.Count
+                $trailingComma = if ($isLastChunk) { "" } else { "," }
+                Write-Host "   $($chunk -join ', ')$trailingComma" -ForegroundColor White
+            }
+            Write-Host ""
         }
-        # Removed extra Write-Host ""
     }
 
     # Build unique platform+package entries.
@@ -2257,7 +2275,7 @@ try {
     Start-Sleep -Seconds 2
     Write-DebugMessage "Now displaying platform information..."
 
-    Write-Host "`n =============== Platform Information ===============" -ForegroundColor Cyan
+    Write-Host " =============== Platform Information ===============" -ForegroundColor Cyan
     Write-Host ""
 
     $hasAnyAsterisk = $false
@@ -2273,12 +2291,12 @@ try {
         $platformName    = $chipsetInfo.Platform
         $eolLabel        = if ($platformData.IsEOL) { " [EOL]" } else { "" }
 
-        # Platform name (white)
-        Write-Host " Platform: $platformName$eolLabel" -ForegroundColor White
-
-        # Generation line (gray) - without "Generation:" label
+        # Platform name (white) with generation after slash (cyan)
+        Write-Host " Platform: $platformName$eolLabel" -ForegroundColor White -NoNewline
         if ($chipsetInfo.Generation) {
-            Write-Host "  $($chipsetInfo.Generation)" -ForegroundColor Gray
+            Write-Host " / $($chipsetInfo.Generation)" -ForegroundColor Cyan
+        } else {
+            Write-Host ""
         }
 
         # Installer version line (gray)
