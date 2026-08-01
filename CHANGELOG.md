@@ -6,6 +6,28 @@ The format is loosely based on [Keep a Changelog](https://keepachangelog.com/en/
 
 ---
 
+## [v2026.08.0017] - 2026-08-01
+
+### 🩹 Bugfix
+- **Fixed: FriendlyName keyword filter silently dropped legitimate Intel devices** — `Get-IntelChipsetHWIDs` pre-filtered candidate devices by matching `$device.FriendlyName` against a fixed keyword list (`Chipset|LPC|PCI Express Root Port|PCI-to-PCI bridge|Motherboard Resources`) before they were even checked against the HWID database. Any Intel System-class device whose FriendlyName didn't contain one of those words was silently excluded from detection — regardless of whether it was a real, live, `Status -eq 'OK'` device. Reported via a Station-Drivers user whose system had three live Skylake-family System Agent devices (`1901` – PCIe Controller (x16), `1911` – Gaussian Mixture Model, `191F` – Host Bridge/DRAM Registers) that were never detected or reported, while a third-party scanner (Driver Genius Free Edition) flagged all three as outdated. Live PnP enumeration confirmed all three devices were present with `Status: OK` — the updater's own filter was excluding them, not a database or matching gap. See [Issue #26](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/issues/26).
+
+### 🔧 Technical Improvements
+- **Detection**: `Get-IntelChipsetHWIDs` no longer pre-filters candidate devices by FriendlyName keyword matching. Every `VEN_8086` System-class device with `Status -eq 'OK'` is now collected unconditionally; the authoritative filter is the existing downstream lookup against the full INF/HWID database (`$chipsetData.ContainsKey($hwId)`). This removes an entire class of false negatives — the same keyword-filter gap also affected other device categories that don't use the recognized keywords in their FriendlyName across multiple platforms/generations (e.g. `*SystemGMM.inf`, `*SystemThermal.inf`, `*SystemNorthpeak.inf`, `*SystemLPSS.inf`, `*DmaSecExtension.inf` families), not only the originally reported Skylake devices.
+- Removed the now-obsolete `IsChipset` field and the "fallback to first 5 non-chipset devices" branch in `Get-IntelChipsetHWIDs`, both made unnecessary by the fix above.
+- **Performance**: `Get-CurrentINFVersion` previously re-enumerated *every* PnP device on the system (`Get-PnpDevice | Where-Object {InstanceId -eq ...}`) once per detected Intel device to resolve its installed driver version — an O(n²) cost that scales with the number of detected devices. It now accepts the PnpDevice object already held from the initial enumeration via a new `-Device` parameter, looking up properties directly without a full system re-scan. The previous `-DeviceInstanceId` parameter is retained as a fallback for callers that only have an instance ID string.
+- **Display**: `Found compatible platform(s):` list now wraps HWIDs at 12 per line (3-space indent) instead of a single unwrapped line — on systems with a large number of detected devices per platform (e.g. 47 HWIDs under one IvyTown platform), the old single-line format made console output unreadable. Platform name lines now use yellow instead of white for better scannability.
+- Merged the separate `Downloading latest INF information...` and `Parsing INF information - it may take up to 30 seconds!` messages into a single, more accurate status line, since the time estimate always covered the whole download+parse+match block rather than parsing alone.
+- Renamed `Found N Intel chipset device(s)` → `Found N Intel device(s)` and `No Intel chipset devices found.` → `No Intel devices found.`, since this count is now taken before database matching and is no longer pre-filtered down to devices that merely *look* like chipset devices by name.
+
+### 📊 Real-World Validation
+- On a triple-platform Intel X79 (IvyTown / Patsburg PCH / IvyTown CPU Root) test system, detected device count rose from 12 to 59 after this fix — confirming the FriendlyName filter gap was systemic across platforms and generations, not specific to the originally reported Skylake case.
+
+### Notes
+- **Impact scope:** on systems where all detected platforms map to the same Intel installer package, this bug did not prevent installation — `SetupChipset.exe -OVERALL` performs its own independent hardware matching regardless of what the updater detected or reported, so previously-affected devices were likely still serviced correctly by the installer even though the updater's own report incorrectly showed them as absent. The bug's practical impact was primarily incorrect/incomplete reporting; on systems where a missed platform would have required a *different* installer package than the one otherwise selected, actual installation could have been affected.
+- No database format changes in this release.
+
+---
+
 ## [v2026.07.0016] - 2026-07-12
 
 ### 🩹 Hotfix
@@ -270,6 +292,7 @@ The format is loosely based on [Keep a Changelog](https://keepachangelog.com/en/
 
 # Release Links
 
+[v2026.08.0017]: https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/releases/tag/v2026.08.0017
 [v2026.07.0016]: https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/releases/tag/v2026.07.0016
 [v2026.07.0015]: https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/releases/tag/v2026.07.0015
 [v2026.05.0014]: https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/releases/tag/v2026.05.0014
