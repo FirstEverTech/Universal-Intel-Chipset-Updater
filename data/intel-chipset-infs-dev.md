@@ -279,14 +279,6 @@ This dataset organizes the historical naming of platforms, with a focus on techn
 |--------|---------|---------|------|--------|
 | HaswellESystem.inf | 10.1.18981.6008 | 10.1.3.2 | 15/06/2021* | 2F00, 2F01, 2F02, 2F03, 2F04, 2F05, 2F06, 2F07, 2F08, 2F09, 2F0A, 2F0B, 2F10, 2F11, 2F12, 2F13, 2F14, 2F15, 2F16, 2F17, 2F18, 2F19, 2F1A, 2F1B, 2F1C, 2F1D, 2F1E, 2F1F, 2F20, 2F21, 2F22, 2F23, 2F24, 2F25, 2F26, 2F27, 2F28, 2F29, 2F2A, 2F2C, 2F2E, 2F2F, 2F30, 2F32, 2F33, 2F34, 2F36, 2F37, 2F38, 2F39, 2F3A, 2F3E, 2F3F, 2F40, 2F41, 2F43, 2F45, 2F46, 2F47, 2F60, 2F68, 2F6A, 2F6B, 2F6C, 2F6D, 2F6E, 2F6F, 2F70, 2F71, 2F76, 2F78, 2F79, 2F7D, 2F7E, 2F80, 2F81, 2F83, 2F85, 2F86, 2F87, 2F88, 2F8A, 2F90, 2F93, 2F95, 2F96, 2F98, 2F99, 2F9A, 2FA0, 2FA8, 2FAA, 2FAB, 2FAC, 2FAD, 2FAE, 2FAF, 2FB0, 2FB1, 2FB2, 2FB3, 2FB4, 2FB5, 2FB6, 2FB7, 2FB8, 2FB9, 2FBA, 2FBB, 2FBC, 2FBD, 2FBE, 2FBF, 2FC0, 2FC1, 2FC2, 2FC3, 2FC4, 2FC5, 2FD0, 2FD1, 2FD2, 2FD3, 2FD4, 2FD5, 2FD6, 2FD7, 2FE0, 2FE1, 2FE2, 2FE3, 2FE4, 2FE5, 2FE6, 2FE7, 2FE8, 2FE9, 2FEA, 2FEB, 2FEC, 2FED, 2FEE, 2FEF, 2FF0, 2FF1, 2FF2, 2FF3, 2FF4, 2FF5, 2FF6, 2FF7, 2FF8, 2FF9, 2FFA, 2FFB, 2FFC, 2FFD, 2FFE |
 
-#### IvyTown CPU Root
-**Generation:** X79 - Ivy Bridge-E (Enthusiast)
-
-| INF | Package | Version | Date | HWIDs |
-|--------|---------|---------|------|--------|
-| PatsburgSystem.inf, PatsburgUSB.inf | 10.1.20551.8850 | 10.1.59.12 | 08/04/2026* | 1D3E, 1D3F, 1D40, 1D41 |
-
-
 ### XEON / SERVER
 
 #### GraniteRapids
@@ -322,7 +314,7 @@ This dataset organizes the historical naming of platforms, with a focus on techn
 
 | INF | Package | Version | Date | HWIDs |
 |--------|---------|---------|------|--------|
-| IvyTownSystem.inf | 10.1.18981.6008 | 10.1.3.2 | 15/06/2021* | 0E00, 0E01, 0E02, 0E03, 0E04, 0E05, 0E06, 0E07, 0E08, 0E09, 0E0A, 0E0B, 0E10, 0E13, 0E17, 0E18, 0E1C, 0E1D, 0E1E, 0E1F, 0E20, 0E21, 0E22, 0E23, 0E24, 0E25, 0E26, 0E27, 0E28, 0E29, 0E2A, 0E2C, 0E2E, 0E2F, 0E30, 0E32, 0E33, 0E34, 0E36, 0E37, 0E38, 0E3A, 0E3E, 0E3F, 0E40, 0E41, 0E43, 0E44, 0E45, 0E47, 0E60, 0E68, 0E6A, 0E6B, 0E6C, 0E6D, 0E71, 0E74, 0E75, 0E77, 0E79, 0E7D, 0E7F, 0E80, 0E81, 0E83, 0E84, 0E85, 0E87, 0E90, 0E93, 0E94, 0E95, 0EA0, 0EA8, 0EAA, 0EAB, 0EAC, 0EAD, 0EAE, 0EAF, 0EB0, 0EB1, 0EB2, 0EB3, 0EB4, 0EB5, 0EB6, 0EB7, 0EBC, 0EBE, 0EBF, 0EC0, 0EC1, 0EC2, 0EC3, 0EC4, 0EC8, 0EC9, 0ECA, 0ED8, 0ED9, 0EDC, 0EDD, 0EDE, 0EDF, 0EE0, 0EE1, 0EE2, 0EE3, 0EE4, 0EE5, 0EE6, 0EE7, 0EE8, 0EE9, 0EEA, 0EEB, 0EEC, 0EED, 0EEE, 0EF0, 0EF1, 0EF2, 0EF3, 0EF4, 0EF5, 0EF6, 0EF7, 0EF8, 0EF9, 0EFA, 0EFB, 0EFC, 0EFD |
+| IvyTownSystem.inf | 10.1.20551.8850 | 10.1.51.10 | 08/04/2026* | 0E00, 0E01, 0E02, 0E03, 0E04, 0E05, 0E06, 0E07, 0E08, 0E09, 0E0A, 0E0B, 0E10, 0E13, 0E17, 0E18, 0E1C, 0E1D, 0E1E, 0E1F, 0E20, 0E21, 0E22, 0E23, 0E24, 0E25, 0E26, 0E27, 0E28, 0E29, 0E2A, 0E2C, 0E2E, 0E2F, 0E30, 0E32, 0E33, 0E34, 0E36, 0E37, 0E38, 0E3A, 0E3E, 0E3F, 0E40, 0E41, 0E43, 0E44, 0E45, 0E47, 0E60, 0E68, 0E6A, 0E6B, 0E6C, 0E6D, 0E71, 0E74, 0E75, 0E77, 0E79, 0E7D, 0E7F, 0E80, 0E81, 0E83, 0E84, 0E85, 0E87, 0E90, 0E93, 0E94, 0E95, 0EA0, 0EA8, 0EAA, 0EAB, 0EAC, 0EAD, 0EAE, 0EAF, 0EB0, 0EB1, 0EB2, 0EB3, 0EB4, 0EB5, 0EB6, 0EB7, 0EBC, 0EBE, 0EBF, 0EC0, 0EC1, 0EC2, 0EC3, 0EC4, 0EC8, 0EC9, 0ECA, 0ED8, 0ED9, 0EDC, 0EDD, 0EDE, 0EDF, 0EE0, 0EE1, 0EE2, 0EE3, 0EE4, 0EE5, 0EE6, 0EE7, 0EE8, 0EE9, 0EEA, 0EEB, 0EEC, 0EED, 0EEE, 0EF0, 0EF1, 0EF2, 0EF3, 0EF4, 0EF5, 0EF6, 0EF7, 0EF8, 0EF9, 0EFA, 0EFB, 0EFC, 0EFD |
 
 #### Jaketown
 **Generation:** Xeon E5 v1 - Jaketown
@@ -657,7 +649,7 @@ This dataset organizes the historical naming of platforms, with a focus on techn
 
 | INF | Package | Version | Date | HWIDs |
 |--------|---------|---------|------|--------|
-| PatsburgSystem.inf, PatsburgUSB.inf | 10.1.18981.6008 | 10.1.3.2 | 15/06/2021* | 1D10, 1D11, 1D12, 1D13, 1D14, 1D15, 1D16, 1D17, 1D18, 1D19, 1D1A, 1D1B, 1D1C, 1D1D, 1D1E, 1D1F, 1D22, 1D24, 1D25, 1D26, 1D2D, 1D70, 1D71, 1D72, 1D73, 1D74, 1D76, 1D77 |
+| PatsburgSystem.inf, PatsburgUSB.inf | 10.1.20551.8850 | 10.1.51.10 | 08/04/2026* | 1D10, 1D11, 1D12, 1D13, 1D14, 1D15, 1D16, 1D17, 1D18, 1D19, 1D1A, 1D1B, 1D1C, 1D1D, 1D1E, 1D1F, 1D22, 1D24, 1D25, 1D26, 1D2D, 1D70, 1D71, 1D72, 1D73, 1D74, 1D76, 1D77 |
 
 #### CougarPoint
 **Generation:** 6 Series - Cougar Point (Desktop/Mobile PCH)
@@ -780,6 +772,13 @@ This dataset organizes the historical naming of platforms, with a focus on techn
 | INF | Package | Version | Date | HWIDs |
 |--------|---------|---------|------|--------|
 | Chipset_USB.inf | 10.0.26.0 | 10.0.24 | 02/01/2015* | 8C31, 8CB1 |
+
+#### IvyTown CPU Root EOL
+**Generation:** X79 - Ivy Bridge-E (Enthusiast)
+
+| INF | Package | Version | Date | HWIDs |
+|--------|---------|---------|------|--------|
+| PatsburgSystem.inf, PatsburgUSB.inf | 10.1.18981.6008 | 10.1.3.2 | 15/06/2021* | 1D3E, 1D3F, 1D40, 1D41 |
 
 ---
 
