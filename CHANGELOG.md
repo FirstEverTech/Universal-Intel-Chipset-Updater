@@ -6,6 +6,35 @@ The format is loosely based on [Keep a Changelog](https://keepachangelog.com/en/
 
 ---
 
+## [v2026.08.0018] - 2026-08-10
+
+### 🛡️ Safety Improvement
+- **Added: warning and safeguards for Intel SST/cAVS audio INF conflicts** — Some chipset packages (particularly EOL/mobile PCH packages) include `*SystemcAVS.inf` files for Intel Smart Sound Technology (SST) device identification. On systems where the motherboard/laptop vendor uses a non-Intel audio codec (Realtek, Creative Sound Blaster, etc.), Windows Plug and Play can reassign the audio controller from the generic "High Definition Audio Controller" to an Intel SST device after these INFs are applied, preventing the correct audio driver from attaching and disabling sound output. Reported independently on two systems — a Gigabyte Skylake desktop (Realtek audio disabled, required System Restore) and an EVGA X299 Dark (Creative Sound Blaster Recon3Di broken by the `KabyLakePCH-H` EOL package, HWID `A2F0`). See [Issue #31](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/issues/31).
+- The chipset INF package itself does **not** install audio drivers — it only provides device identification — but the resulting PnP re-enumeration is enough to break third-party audio driver binding on affected systems.
+
+### 🔧 Technical Improvements
+- **Detection**: before installation, the updater now scans the INF file list of every matched platform for `cAVS`. If found, the platform(s) are flagged and the installation flow branches into the new warning/safeguard logic below.
+- **Interactive mode**: if a cAVS-containing package is detected, the updater displays an explicit warning (affected platform name(s), explanation of the risk, link to Issue #31) immediately after the user confirms they want to update, but *before* the System Restore point is created or any file is touched. Declining (`N`) cancels the run with no changes made to the system. If the user proceeds but the automatic System Restore point subsequently fails to be created or verified, a second, stronger warning is shown and requires an explicit confirmation before installation continues.
+- **Unattended mode (`-auto` / `-quiet`)**: since there is no user available to acknowledge the risk, detecting a cAVS package now **aborts the run before any system changes** — no restore point is created and no INF files are installed. The process exits with code `3` (distinct from the generic error code `1` used elsewhere in the script) so scheduled tasks / deployment tooling can identify this specific "held back for a manual decision" outcome separately from a failed run.
+- **Post-install reminder**: if a cAVS package was installed (interactive mode, user opted to proceed), the final summary now includes a reminder to check Device Manager → Sound, video and game controllers after reboot, and to use System Restore if the audio device is missing, disabled, or shows an error code.
+
+### 🆕 New Feature: EOL Package Handling
+- **Added: explicit choice for installing legacy (EOL) INF packages** — Some detected HWIDs are only covered by an older, End-of-Life (EOL) chipset INF package because the "latest" package for that platform no longer lists them (Intel moved or dropped the HWID — in some cases into a completely separate installer, such as the Intel Serial IO Drivers package). Previously, any matched EOL package was installed automatically alongside the main package with no way to opt out. The updater now detects this and, in interactive mode, asks the user to choose: (1) install everything, including the EOL package(s), then the rest, or (2) skip the EOL package(s) and install all other INF files. In unattended mode (`-auto` / `-quiet`), EOL packages are now skipped by default, since there is no user available to make an informed choice. Reported via [Station-Drivers forum feedback](https://www.station-drivers.com/index.php/en/forum/intel-chipsets-drivers/887-universal-intel-chipset-drivers-updater?start=80#6718).
+- **Added: automatic block for EOL packages that would downgrade an already-installed newer driver** — If the currently installed INF version for a device covered by an EOL package is already *newer* than the EOL package itself (status `Inbox / newer detected`), this almost always means a separate, newer Intel package — most commonly Intel Serial IO Drivers — already owns that HWID. Installing the EOL package in that case would downgrade the driver. Such EOL packages are now excluded from installation unconditionally, in both interactive and unattended mode, with no prompt — the updater reports which platform(s) were affected and the version comparison that triggered the block.
+
+### 🔧 Technical Improvements (EOL handling)
+- **Detection**: platform+package status (`Latest version` / `Update available` / `Inbox / newer detected`) is now persisted per matched platform entry, so the new EOL-handling step can act on it instead of it being discarded right after the on-screen status line is printed.
+- **Choice / skip logic**: EOL entries whose status is `Update available` go through the new 1/2 prompt (interactive) or are skipped by default (`-auto` / `-quiet`); EOL entries whose status is `Inbox / newer detected` are removed from the install set unconditionally, before the prompt is even shown.
+- If, after skipping or blocking, no packages remain to install, the updater now exits cleanly with an explanatory message instead of proceeding to create a restore point for nothing.
+
+### Notes
+- No changes to non-cAVS platforms or packages — cAVS detection, warning, and abort logic only trigger when a matched package's INF list contains a `cAVS` file.
+- No database format changes in this release for either the cAVS safeguard or the EOL package handling — both are install-flow logic based on data already parsed from the existing database.
+- EOL package handling applies only to platforms that had at least one EOL-package match; platforms with only a main-package match are unaffected.
+- Root cause of the cAVS conflict is still under investigation upstream (Intel packaging classification of the affected EOL/mobile PCH packages); this release adds a safety net in the updater, it does not fix the underlying INF conflict. Follow-up (excluding/relabeling the affected EOL packages, or targeted skip logic based on detected audio codec) is tracked in Issue #31.
+
+---
+
 ## [v2026.08.0017] - 2026-08-01
 
 ### 🩹 Bugfix
@@ -292,6 +321,7 @@ The format is loosely based on [Keep a Changelog](https://keepachangelog.com/en/
 
 # Release Links
 
+[v2026.08.0018]: https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/releases/tag/v2026.08.0018
 [v2026.08.0017]: https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/releases/tag/v2026.08.0017
 [v2026.07.0016]: https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/releases/tag/v2026.07.0016
 [v2026.07.0015]: https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/releases/tag/v2026.07.0015
