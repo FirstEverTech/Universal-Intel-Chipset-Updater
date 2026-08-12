@@ -1,5 +1,5 @@
-<#PSScriptInfo
-.VERSION 2026.08.0017
+﻿<#PSScriptInfo
+.VERSION 2026.08.0018
 .GUID c5044de3-67b5-4e70-b6fc-75e7847c799e
 .NAME universal-intel-chipset-device-updater
 .AUTHOR Marcin Grygiel
@@ -13,6 +13,7 @@
 .REQUIREDSCRIPTS
 .EXTERNALSCRIPTDEPENDENCIES
 .RELEASENOTES
+v2026.08.0018 - Added detection of Intel Smart Sound Technology (cAVS) audio INF files within matched chipset packages (tracking issue #31: audio device conflicts after chipset INF update on systems with Realtek/Creative audio). Interactive mode: if a cAVS-containing package is detected, the updater displays an explicit warning before any changes are made and requires user confirmation to proceed; if the automatic System Restore point cannot be created/verified and a cAVS package is present, the user is warned again and must explicitly confirm before installation continues. Unattended mode (-auto / -quiet): cAVS detection now aborts installation before any system changes (no restore point created, no INF installed) and exits with code 3, since there is no user available to accept the audio compatibility risk. Final summary now reminds the user to check audio device state and use System Restore if audio stops working. No change to non-cAVS platforms/packages.
 v2026.08.0017 - Replaced FriendlyName keyword-based device pre-filtering in Get-IntelChipsetHWIDs with direct HWID matching against the full INF database. Fixes silent detection gaps for devices whose FriendlyName did not contain a recognized keyword (e.g. Gaussian Mixture Model, Host Bridge/DRAM Registers, PCIe Controller (x16), Thermal, Northpeak, LPSS, DmaSec Extension variants). No change to UI or output format.
 v2026.05.0014 - Improved display formatting: removed "Generation:" label, added parsing info hint, cleaned up extra blank lines.
 #>
@@ -42,9 +43,11 @@ v2026.05.0014 - Improved display formatting: removed "Generation:" label, added 
 Options:
   -help, -?          Display this help and exit.
   -version, -v       Display the tool version and exit.
-  -auto, -a          All prompts are answered with Yes, no user interaction required.
+  -auto, -a          Run unattended with no user interaction. Safety-critical cAVS/SST
+                       audio packages are blocked instead of being installed automatically.
   -quiet, -q         Run in completely silent mode (no console window).
-                       Implies -auto and hides the PowerShell window.
+                       Implies -auto and hides the PowerShell window; cAVS/SST packages
+                       are blocked automatically.
   -beta              Use beta database for new hardware testing.
   -debug, -d         Enable debug output.
   -skipverify, -s    Skip script self-hash verification. Use only for testing.
@@ -55,12 +58,14 @@ Options:
     Display the tool version and exit.
 
 .PARAMETER auto
-    Run in automatic mode - all prompts are answered with Yes.
+    Run in automatic mode with no user interaction. cAVS/SST audio packages are blocked
+    because the audio compatibility warning requires explicit user acknowledgement.
     No user interaction is required. Suitable for scripted deployments.
 
 .PARAMETER quiet
     Run in completely silent mode with no console window.
-    Implies -auto and relaunches the script with -WindowStyle Hidden.
+    Implies -auto and relaunches the script with -WindowStyle Hidden. cAVS/SST audio
+    packages are blocked because no user is available to acknowledge the warning.
     Suitable for MDM solutions: Microsoft Intune, SCCM, VMware Workspace ONE, PDQ Deploy.
 
 .PARAMETER beta
@@ -83,7 +88,8 @@ Options:
 
 .EXAMPLE
     .\universal-intel-chipset-device-updater.ps1 -auto
-    Runs the updater without any user prompts. All confirmations are answered Yes automatically.
+    Runs the updater without any user prompts. cAVS/SST audio packages are blocked
+    automatically because the required audio compatibility warning cannot be acknowledged.
 
 .EXAMPLE
     .\universal-intel-chipset-device-updater.ps1 -quiet
@@ -203,7 +209,7 @@ if ($QuietMode) {
 # =============================================
 # SCRIPT VERSION
 # =============================================
-$ScriptVersion = "2026.08.0017"
+$ScriptVersion = "2026.08.0018"
 # =============================================
 
 # Detect if running from SFX package
@@ -2216,7 +2222,7 @@ try {
         Write-Host "`n Found compatible device(s)" -ForegroundColor Green
         $groupedMatches = $matchingChipsets | Group-Object { $_.ChipsetInfo.Platform }
         foreach ($group in $groupedMatches) {
-            $hwidList = $group.Group | ForEach-Object { $_.Device.HWID }
+            [string[]]$hwidList = @($group.Group | ForEach-Object { [string]$_.Device.HWID })
             Write-Host " - $($group.Name) devices (HWID):" -ForegroundColor Yellow
 
             $chunkSize = 12
@@ -2345,6 +2351,13 @@ try {
             $statusColor = "Green"
         }
 
+        # Persisted so the EOL-handling step below can tell, per platform+package
+        # entry, whether the currently installed INF is already newer than what
+        # this entry would install (e.g. a separate Intel Serial IO Drivers
+        # package already covers this HWID with a newer version).
+        $platformData.NewerVersionDetected = $newerVersionDetected
+        $platformData.CurrentVersionsText  = $currentVersionsText
+
         Write-Host "  Detected INF: $currentVersionsText -> Latest INF: $($chipsetInfo.Version) -> $statusText" -ForegroundColor $statusColor
         Write-Host ""
 
@@ -2421,6 +2434,174 @@ try {
     $response = Show-Screen3
 
     if ($chipsetUpdateAvailable -and ($response -eq "Y" -or $response -eq "y")) {
+
+        # =============================================
+        # EOL (End-of-Life) PACKAGE HANDLING
+        # =============================================
+        # Some detected HWIDs only exist in an older, EOL chipset INF package while
+        # the "latest" package for that platform no longer lists them (Intel moved
+        # or dropped the HWID, sometimes into an entirely different installer such
+        # as the Serial IO driver). Give the user an explicit choice instead of
+        # silently installing EOL packages.
+        #
+        # Exception: if the EOL entry's own status is "Inbox / newer detected"
+        # (NewerVersionDetected), the currently installed INF for that HWID is
+        # already newer than the EOL package itself - almost always because a
+        # separate, newer Intel package (e.g. Intel Serial IO Drivers) already
+        # owns that HWID. Installing the EOL package would downgrade the driver,
+        # so these are blocked unconditionally, in both interactive and unattended
+        # mode, without asking.
+        $eolEntryKeys   = @($uniquePlatforms.Keys | Where-Object { $uniquePlatforms[$_].IsEOL })
+        $eolBlockedKeys = @($eolEntryKeys | Where-Object { $uniquePlatforms[$_].NewerVersionDetected })
+        $eolChoiceKeys  = @($eolEntryKeys | Where-Object { -not $uniquePlatforms[$_].NewerVersionDetected })
+
+        if ($eolBlockedKeys.Count -gt 0) {
+            Write-Host ""
+            Write-Host " =============== EOL PACKAGE(S) BLOCKED ===============" -ForegroundColor Red
+            Write-Host " A newer INF version is already installed for the platform(s) below," -ForegroundColor Red
+            Write-Host " most likely provided by a separate Intel package (e.g. Intel Serial IO" -ForegroundColor Red
+            Write-Host " Drivers) rather than by this chipset package. Installing the EOL" -ForegroundColor Red
+            Write-Host " package would downgrade the driver, so it will NOT be installed:" -ForegroundColor Red
+            foreach ($key in $eolBlockedKeys) {
+                $blockedData = $uniquePlatforms[$key]
+                Write-Host " - $($blockedData.ChipsetInfo.Platform) [EOL] (Detected: $($blockedData.CurrentVersionsText) > EOL INF: $($blockedData.ChipsetInfo.Version))" -ForegroundColor Red
+                Write-Log "EOL package blocked for $($blockedData.ChipsetInfo.Platform): detected INF $($blockedData.CurrentVersionsText) is newer than EOL package $($blockedData.ChipsetInfo.Version)." -Type "WARN"
+                $uniquePlatforms.Remove($key)
+            }
+        }
+
+        if ($eolChoiceKeys.Count -gt 0) {
+            $eolPlatformNames = @($eolChoiceKeys | ForEach-Object { $uniquePlatforms[$_].ChipsetInfo.Platform }) | Sort-Object -Unique
+            Write-DebugMessage "EOL package(s) detected for platform(s): $($eolPlatformNames -join ', ')"
+
+            Write-Host ""
+            Write-Host " =============== EOL PACKAGE(S) DETECTED ===============" -ForegroundColor Yellow
+            Write-Host " The following platform(s) require an End-of-Life (EOL) INF package" -ForegroundColor Yellow
+            Write-Host " to cover legacy HWIDs no longer listed in the latest Intel package:" -ForegroundColor Yellow
+            foreach ($p in $eolPlatformNames) {
+                Write-Host " - $p" -ForegroundColor Yellow
+            }
+            Write-Host ""
+
+            if ($AutoMode) {
+                # Unattended mode: skip EOL packages by default. There is no user
+                # available to make an informed choice, so err on the side of not
+                # installing older/legacy INF packages unattended.
+                Write-Host " Auto/quiet mode: EOL package(s) skipped by default." -ForegroundColor Cyan
+                Write-Log "EOL package(s) detected for platform(s): $($eolPlatformNames -join ', '). AutoMode: EOL package(s) skipped by default." -Type "INFO"
+                foreach ($key in $eolChoiceKeys) {
+                    $uniquePlatforms.Remove($key)
+                }
+            } else {
+                Write-Host " 1. Install everything, including EOL package(s), then the rest" -ForegroundColor White
+                Write-Host " 2. Skip EOL package(s) and install all other INF files" -ForegroundColor White
+                Write-Host ""
+                $eolChoice = Read-Host " Select an option (1/2)"
+
+                if ($eolChoice -eq "2") {
+                    foreach ($key in $eolChoiceKeys) {
+                        $uniquePlatforms.Remove($key)
+                    }
+                    Write-Host " EOL package(s) skipped." -ForegroundColor Cyan
+                    Write-Log "User chose to skip EOL package(s) for platform(s): $($eolPlatformNames -join ', ')." -Type "INFO"
+                } else {
+                    Write-Host " EOL package(s) will be installed." -ForegroundColor Cyan
+                    Write-Log "User chose to install EOL package(s) for platform(s): $($eolPlatformNames -join ', ')." -Type "INFO"
+                }
+            }
+            Write-Host ""
+        }
+
+        if ($eolBlockedKeys.Count -gt 0 -or $eolChoiceKeys.Count -gt 0) {
+            if ($uniquePlatforms.Count -eq 0) {
+                Write-Host " No packages remain to install after EOL package(s) were skipped or blocked." -ForegroundColor Yellow
+                Write-Log "All detected packages were EOL-only and were skipped or blocked; nothing to install." -Type "INFO"
+                Cleanup
+                if (-not $AutoMode) {
+                    Write-Host "`n Press any key..."
+                    $null = $Host.UI.RawUI.ReadKey('NoEcho,IncludeKeyDown')
+                }
+                Show-FinalCredits
+                exit 0
+            }
+        }
+
+        # =============================================
+        # cAVS / Intel Smart Sound Technology (SST) AUDIO CONFLICT CHECK
+        # =============================================
+        # Tracking issue: https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/issues/31
+        # Some chipset packages include *SystemcAVS.inf files (Intel SST audio device
+        # identification). On systems where the OEM uses a non-Intel audio codec
+        # (Realtek, Creative Sound Blaster, etc.), applying these INFs can cause Windows
+        # to re-enumerate the audio controller as an Intel SST device instead of the
+        # generic "High Definition Audio Controller", which can prevent the correct
+        # audio driver from attaching and disable sound output. This check runs after
+        # the user has already agreed to update, but before the restore point is
+        # created and before any files are installed, so a cancellation here leaves
+        # the system completely unchanged.
+        $cavsDetected = $false
+        $cavsPlatformNames = @()
+        foreach ($entryKey in $uniquePlatforms.Keys) {
+            $infNames = $uniquePlatforms[$entryKey].ChipsetInfo.INF
+            if ($infNames -match 'cAVS') {
+                $cavsDetected = $true
+                $cavsPlatformNames += $uniquePlatforms[$entryKey].ChipsetInfo.Platform
+            }
+        }
+        $cavsPlatformNames = $cavsPlatformNames | Sort-Object -Unique
+
+        if ($cavsDetected) {
+            Write-DebugMessage "cAVS/SST audio INF detected for platform(s): $($cavsPlatformNames -join ', ')"
+            Write-Host ""
+            Write-Host " =============== AUDIO COMPATIBILITY WARNING ===============" -ForegroundColor Red
+            Write-Host " The following platform(s) require an INF package that includes" -ForegroundColor Yellow
+            Write-Host " Intel Smart Sound Technology (SST / cAVS) audio device files:" -ForegroundColor Yellow
+            foreach ($p in $cavsPlatformNames) {
+                Write-Host "  - $p" -ForegroundColor Yellow
+            }
+            Write-Host ""
+            Write-Host " If your motherboard or laptop vendor uses additional non-Intel" -ForegroundColor Yellow
+            Write-Host " audio hardware (e.g. Realtek, Creative Sound Blaster), installing" -ForegroundColor Yellow
+            Write-Host " this package may cause Windows to reassign the audio controller" -ForegroundColor Yellow
+            Write-Host " to an Intel SST device, and your current audio driver may stop" -ForegroundColor Yellow
+            Write-Host " working (device disabled, yellow warning icon, or error code)." -ForegroundColor Yellow
+            Write-Host ""
+            Write-Host " Known reports:" -ForegroundColor DarkYellow
+            Write-Host " https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/issues/31" -ForegroundColor DarkYellow
+            Write-Host ""
+            Write-Host " Before continuing, make sure a Windows System Restore point is" -ForegroundColor Yellow
+            Write-Host " created and verified, so you can revert if audio stops working." -ForegroundColor Yellow
+            Write-Host " This updater will attempt to create one automatically in the next" -ForegroundColor Yellow
+            Write-Host " step. If that attempt fails, you will be warned again before any" -ForegroundColor Yellow
+            Write-Host " files are installed." -ForegroundColor Yellow
+            Write-Host ""
+
+            if ($AutoMode) {
+                # Unattended mode must NEVER continue with a cAVS package. There is no
+                # user available to acknowledge the audio compatibility warning, so
+                # fail closed before creating a restore point or installing any INF.
+                Write-Host " Auto/quiet mode: cAVS/SST package detected." -ForegroundColor Red
+                Write-Host " Installation cannot continue unattended because no user is available to acknowledge the audio compatibility risk." -ForegroundColor Red
+                Write-Host " No INF files will be installed." -ForegroundColor Yellow
+                Write-Log "cAVS/SST audio INF detected for platform(s): $($cavsPlatformNames -join ', '). AutoMode: installation aborted before any system changes." -Type "WARN"
+                Cleanup
+                Show-FinalCredits
+                exit 3
+            } else {
+                $cavsResponse = Read-Host " Do you want to continue despite this risk? (Y/N)"
+                if ($cavsResponse -ne "Y" -and $cavsResponse -ne "y") {
+                    Write-Host "`n Installation cancelled. No changes were made." -ForegroundColor Yellow
+                    Write-Log "User cancelled installation after cAVS/SST audio warning for platform(s): $($cavsPlatformNames -join ', ')." -Type "INFO"
+                    Cleanup
+                    Write-Host "`n Press any key..."
+                    $null = $Host.UI.RawUI.ReadKey('NoEcho,IncludeKeyDown')
+                    Show-FinalCredits
+                    exit
+                }
+                Write-Log "User acknowledged cAVS/SST audio warning and chose to continue for platform(s): $($cavsPlatformNames -join ', ')." -Type "INFO"
+            }
+        }
+
         Write-Host "`n Starting INF files update process..." -ForegroundColor Green
 
         Write-Host " Creating system restore point..." -ForegroundColor Yellow
@@ -2487,6 +2668,40 @@ try {
 
             Write-Host "`n Preparing for installation..." -ForegroundColor Gray
             Start-Sleep -Seconds 5
+        }
+
+        if ($cavsDetected -and -not $restorePointCreated) {
+            Write-Host ""
+            Write-Host " =============== ADDITIONAL WARNING ===============" -ForegroundColor Red
+            Write-Host " A system restore point could NOT be created, and this update" -ForegroundColor Red
+            Write-Host " includes an SST/cAVS audio INF package that has been reported" -ForegroundColor Red
+            Write-Host " to disable non-Intel audio devices (Realtek, Creative)." -ForegroundColor Red
+            Write-Host " Without a restore point, reverting an audio failure caused by" -ForegroundColor Red
+            Write-Host " this update will require manual driver troubleshooting." -ForegroundColor Red
+            Write-Host ""
+
+            if ($AutoMode) {
+                # This branch should be unreachable for cAVS because unattended mode
+                # is aborted above before restore-point creation. Keep it fail-closed
+                # in case the control flow is changed in the future.
+                Write-Host " Auto/quiet mode: cAVS installation blocked because no restore point is available." -ForegroundColor Red
+                Write-Log "cAVS/SST package present with no restore point available. AutoMode: installation aborted." -Type "ERROR"
+                Cleanup
+                Show-FinalCredits
+                exit 3
+            } else {
+                $cavsNoRestorePointResponse = Read-Host " Do you still want to continue? (Y/N)"
+                if ($cavsNoRestorePointResponse -ne "Y" -and $cavsNoRestorePointResponse -ne "y") {
+                    Write-Host "`n Installation cancelled. No changes were made." -ForegroundColor Yellow
+                    Write-Log "User cancelled installation: cAVS/SST package present, no restore point, user declined to proceed." -Type "INFO"
+                    Cleanup
+                    Write-Host "`n Press any key..."
+                    $null = $Host.UI.RawUI.ReadKey('NoEcho,IncludeKeyDown')
+                    Show-FinalCredits
+                    exit
+                }
+                Write-Log "User confirmed to continue without restore point despite cAVS/SST package." -Type "INFO"
+            }
         }
 
         Show-Screen4
@@ -2631,6 +2846,16 @@ try {
         if ($successCount -gt 0) {
             Write-Host "`n IMPORTANT NOTICE:" -ForegroundColor Yellow
             Write-Host " Computer restart is required to complete INF installation!" -ForegroundColor Yellow
+
+            if ($cavsDetected) {
+                Write-Host ""
+                Write-Host " AUDIO CHECK REMINDER:" -ForegroundColor Yellow
+                Write-Host " An SST/cAVS audio INF package was installed for: $($cavsPlatformNames -join ', ')" -ForegroundColor Yellow
+                Write-Host " After restarting, check Device Manager > Sound, video and game" -ForegroundColor Yellow
+                Write-Host " controllers. If your audio device is missing, shows a yellow" -ForegroundColor Yellow
+                Write-Host " warning icon, or reports an error code, use System Restore to" -ForegroundColor Yellow
+                Write-Host " revert to the restore point created before this update." -ForegroundColor Yellow
+            }
 
             Write-Host "`n Summary: Installed $successCount unique package(s) for all detected platforms." -ForegroundColor Green
             Write-DebugMessage "Installation summary: $successCount successful packages."
