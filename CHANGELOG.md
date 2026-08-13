@@ -6,7 +6,7 @@ The format is loosely based on [Keep a Changelog](https://keepachangelog.com/en/
 
 ---
 
-## [v2026.08.0018] - 2026-08-10
+## [v2026.08.0018] - 2026-08-13
 
 ### 🛡️ Safety Improvement
 - **Added: warning and safeguards for Intel SST/cAVS audio INF conflicts** — Some chipset packages (particularly EOL/mobile PCH packages) include `*SystemcAVS.inf` files for Intel Smart Sound Technology (SST) device identification. On systems where the motherboard/laptop vendor uses a non-Intel audio codec (Realtek, Creative Sound Blaster, etc.), Windows Plug and Play can reassign the audio controller from the generic "High Definition Audio Controller" to an Intel SST device after these INFs are applied, preventing the correct audio driver from attaching and disabling sound output. Reported independently on two systems — a Gigabyte Skylake desktop (Realtek audio disabled, required System Restore) and an EVGA X299 Dark (Creative Sound Blaster Recon3Di broken by the `KabyLakePCH-H` EOL package, HWID `A2F0`). See [Issue #31](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/issues/31).
