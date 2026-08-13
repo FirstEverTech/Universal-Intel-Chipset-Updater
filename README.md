@@ -180,6 +180,21 @@ If this project helped you, please click the "Star" button at the top of this pa
 <a id="latest-version"></a>
 ### 2.1 Latest Version
 
+**v2026.08.0018** → [Release Notes](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/releases/tag/v2026.08.0018)
+
+### 🛡️ **Safety Improvement**
+- **Added: warning and safeguards for Intel SST/cAVS audio INF conflicts** — Some chipset packages (particularly EOL/mobile PCH packages) include `*SystemcAVS.inf` files for Intel Smart Sound Technology (SST) device identification. On systems with a non-Intel audio codec (Realtek, Creative, etc.), applying these INFs can cause Windows to reassign the audio controller to an Intel SST device, breaking the third-party audio driver. Reported on a Gigabyte Skylake desktop (Realtek disabled) and an EVGA X299 Dark (Creative Sound Blaster Recon3Di broken by the `KabyLakePCH-H` EOL package). See [Issue #31](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/issues/31). Interactive mode now warns and requires confirmation before any changes are made (and again if the System Restore point can't be created); unattended mode (`-auto` / `-quiet`) now **aborts before any changes** on cAVS detection and exits with code `3`, since no one is available to accept the risk.
+
+### 🆕 **New Feature**
+- **Added: explicit choice for installing legacy (EOL) INF packages** — Some detected HWIDs are only covered by an older, EOL chipset INF package because the latest package no longer lists them (Intel sometimes moves the HWID into a separate installer, e.g. Intel Serial IO Drivers). Interactive mode now asks whether to (1) install everything, EOL included, or (2) skip EOL and install the rest; unattended mode (`-auto` / `-quiet`) skips EOL packages by default. If the installed INF for a device is already newer than the matching EOL package — meaning a separate, newer Intel package already covers that HWID — that EOL package is now blocked outright in both modes, since installing it would downgrade the driver. Reported via [Station-Drivers forum feedback](https://www.station-drivers.com/index.php/en/forum/intel-chipsets-drivers/887-universal-intel-chipset-drivers-updater?start=80#6718).
+
+---
+
+[↑ Back to top](#top)
+
+<a id="previous-releases"></a>
+### 2.2 Previous Releases
+
 **v2026.08.0017** → [Release Notes](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/releases/tag/v2026.08.0017)
 
 ### 🩹 **Bugfix**
@@ -191,22 +206,10 @@ If this project helped you, please click the "Star" button at the top of this pa
 
 [↑ Back to top](#top)
 
-<a id="previous-releases"></a>
-### 2.2 Previous Releases
-
-**v2026.07.0016** → [Release Notes](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/releases/tag/v2026.07.0016)
-
-### 🩹 **Hotfix**
-
-* **Fixed: Legitimate expired-certificate installers rejected** — v2026.07.0015 introduced a certificate expiration check (`NotAfter -lt Get-Date`) in `Verify-FileSignature` that rejected older Intel installers whose signing certificate has since expired, even when the Authenticode signature itself remains valid via RFC3161 timestamping. `Get-AuthenticodeSignature`'s own `Status` field already correctly accounts for timestamped signatures, making the extra check both redundant and harmful — it broke installation of older, still-authentic chipset installers that worked fine in v2026.05.0014. The manual expiration check has been removed; signature authenticity is validated via signer identity, timestamp-aware status, and algorithm checks only.
-
----
-
-[↑ Back to top](#top)
-
 <a id="older-releases"></a>
 ### 2.3 Older Releases
 
+- v2026.07.0016  → [Release Notes](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/releases/tag/v2026.07.0016)
 - v2026.07.0015  → [Release Notes](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/releases/tag/v2026.07.0015)
 - v2026.03.0014  → [Release Notes](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/releases/tag/v2026.03.0014)
 - v2026.03.0013  → [Release Notes](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/releases/tag/v2026.03.0013)
