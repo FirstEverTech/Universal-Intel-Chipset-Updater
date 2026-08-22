@@ -289,7 +289,7 @@ $ScriptDirectory = $PSScriptRoot
 $LogFile = Join-Path $ScriptDirectory "INF_Extractor.log"
 
 $TempRoot   = Join-Path $env:TEMP "INF_Extractor"
-$NanaZipDir = Join-Path $TempRoot "NanoZip"
+$NanaZipDir = Join-Path $TempRoot "NanaZip"
 $FinalRoot  = Join-Path $ScriptDirectory "INF_Extractor"
 
 $NanaZipExe = Join-Path $NanaZipDir "NanaZip.Universal.Console.exe"
@@ -771,7 +771,7 @@ function Invoke-NanaZipExtraction {
 
     # Clean temp (keep NanaZip)
     if (Test-Path $TempRoot) {
-        Get-ChildItem -Path $TempRoot -Exclude "NanoZip" | Remove-Item -Recurse -Force -ErrorAction SilentlyContinue
+        Get-ChildItem -Path $TempRoot -Exclude "NanaZip" | Remove-Item -Recurse -Force -ErrorAction SilentlyContinue
     }
 
     $stage1 = Join-Path $TempRoot "Stage_1"
@@ -866,7 +866,7 @@ function Invoke-NanaZipExtraction {
 
     # --- Cleanup temp (keep NanaZip) ---
     Write-Log "Cleaning up temp (keeping NanaZip)" "INFO"
-    Get-ChildItem -Path $TempRoot -Exclude "NanoZip" | Remove-Item -Recurse -Force -ErrorAction SilentlyContinue
+    Get-ChildItem -Path $TempRoot -Exclude "NanaZip" | Remove-Item -Recurse -Force -ErrorAction SilentlyContinue
 
     Write-Host " NanaZip extraction completed." -ForegroundColor Green
     
