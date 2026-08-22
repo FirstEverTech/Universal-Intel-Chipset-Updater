@@ -285,13 +285,12 @@ function Show-FinalCredits {
 # =============================================
 # LOGGING
 # =============================================
-$LogFile = "C:\ProgramData\INF_Extractor.log"
-$ScriptDirectory = Split-Path -Parent $MyInvocation.MyCommand.Definition
-if (-not $ScriptDirectory) { $ScriptDirectory = Get-Location }
+$ScriptDirectory = $PSScriptRoot
+$LogFile = Join-Path $ScriptDirectory "INF_Extractor.log"
 
-$TempRoot = "C:\Windows\Temp\INF_Extractor"
+$TempRoot   = Join-Path $env:TEMP "INF_Extractor"
 $NanaZipDir = Join-Path $TempRoot "NanoZip"
-$FinalRoot = "C:\INF_Extractor"
+$FinalRoot  = Join-Path $ScriptDirectory "INF_Extractor"
 
 $NanaZipExe = Join-Path $NanaZipDir "NanaZip.Universal.Console.exe"
 $RequiredNanaZipFiles = @("K7Base.dll", "NanaZip.Codecs.dll", "NanaZip.Core.dll", "NanaZip.Universal.Console.exe")
