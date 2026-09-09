@@ -20,7 +20,7 @@
 <a id="top"></a>
 # 🚀 **Universal Intel Chipset Device Updater**
 
-[![Version](https://img.shields.io/badge/Version-2026.08.0018-red?style=flat-square)](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/releases)[![Windows](https://img.shields.io/badge/Windows-10%2F11-blue?style=flat-square&color=blueviolet)](https://www.microsoft.com/windows)[![PowerShell](https://img.shields.io/badge/PowerShell-5.0+-blueviolet?style=flat-square)](https://learn.microsoft.com/en-us/powershell/scripting/install/install-powershell-on-windows?view=powershell-7.5)[![DotNET](https://img.shields.io/badge/.NET-4.7.2+-blueviolet?style=flat-square)](https://dotnet.microsoft.com/en-us/download/dotnet-framework)[![Downloads](https://img.shields.io/github/downloads/FirstEverTech/Universal-Intel-Chipset-Updater/total?style=flat-square&color=gold&label=Downloads)](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/releases)[![GitHub Stars](https://img.shields.io/github/stars/FirstEverTech/Universal-Intel-Chipset-Updater?style=flat-square&color=gold&label=Stars)](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater)  
+[![Version](https://img.shields.io/badge/Version-2026.09.0019-red?style=flat-square)](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/releases)[![Windows](https://img.shields.io/badge/Windows-10%2F11-blue?style=flat-square&color=blueviolet)](https://www.microsoft.com/windows)[![PowerShell](https://img.shields.io/badge/PowerShell-5.0+-blueviolet?style=flat-square)](https://learn.microsoft.com/en-us/powershell/scripting/install/install-powershell-on-windows?view=powershell-7.5)[![DotNET](https://img.shields.io/badge/.NET-4.7.2+-blueviolet?style=flat-square)](https://dotnet.microsoft.com/en-us/download/dotnet-framework)[![Downloads](https://img.shields.io/github/downloads/FirstEverTech/Universal-Intel-Chipset-Updater/total?style=flat-square&color=gold&label=Downloads)](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/releases)[![GitHub Stars](https://img.shields.io/github/stars/FirstEverTech/Universal-Intel-Chipset-Updater?style=flat-square&color=gold&label=Stars)](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater)  
 [![License](https://img.shields.io/badge/License-MIT-0056b3?style=flat-square)](LICENSE)[![PS Gallery Version](https://img.shields.io/powershellgallery/v/universal-intel-chipset-device-updater?style=flat-square&label=PowerShell+Gallery)](https://www.powershellgallery.com/packages/universal-intel-chipset-device-updater)[![AI_Audits](https://img.shields.io/badge/AI_Audits_Score-9.6%2F10-0a8f08?style=flat-square)](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/blob/main/AI_AUDITS.md)[![VirusTotal](https://img.shields.io/badge/VirusTotal-0%2F92-008631?style=flat-square)](https://www.virustotal.com/gui/url/36d470017777f6dd4cd6e9674c1dceac91afb29761538e1f9ff63d22fa67ed95?nocache=1)[![Issues](https://img.shields.io/github/issues/FirstEverTech/Universal-Intel-Chipset-Updater?style=flat-square&label=Issues)](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/issues)
 
 <a href="https://github.com/FirstEverTech">
@@ -180,6 +180,18 @@ If this project helped you, please click the "Star" button at the top of this pa
 <a id="latest-version"></a>
 ### 2.1 Latest Version
 
+**v2026.09.0019** → [Release Notes](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/releases/tag/v2026.09.0019)
+
+### 🩹 **Bugfix**
+- **Fixed: false "Update available" status caused by a version belonging to a different Intel package sharing the same HWID** — On `MeteorLake PCH-S`, HWID `7F23` can be serviced on some OEM systems by a separate, unrelated driver — **Intel(R) Innovation Platform Framework SMBUS Device** (`2.3.20304.x` / `2.3.20306.x`), pushed via Windows Update — instead of the Intel Chipset Device Software INF. This unrelated version was being compared alongside the real chipset version, incorrectly flagging the platform as needing an update even when the chipset INF itself was already current. Confirmed via Microsoft Update Catalog after an initial hypothesis (Intel's own generic DTT/IPF download) was ruled out by direct `.inf` inspection. See [Issue #34](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/issues/34) (same pattern as [Issue #11](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/issues/11)). Every chipset INF version in the database uses major version `10`; the updater now excludes any detected version with a lower major number from the update-status calculation, shows it separately as an unrecognized version with a plain-language safety note, and reserves the full technical explanation for `-debug`. This is a general heuristic, so it also covers future, not-yet-discovered cases of the same pattern.
+
+---
+
+[↑ Back to top](#top)
+
+<a id="previous-releases"></a>
+### 2.2 Previous Releases
+
 **v2026.08.0018** → [Release Notes](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/releases/tag/v2026.08.0018)
 
 ### 🛡️ **Safety Improvement**
@@ -192,23 +204,10 @@ If this project helped you, please click the "Star" button at the top of this pa
 
 [↑ Back to top](#top)
 
-<a id="previous-releases"></a>
-### 2.2 Previous Releases
-
-**v2026.08.0017** → [Release Notes](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/releases/tag/v2026.08.0017)
-
-### 🩹 **Bugfix**
-- **Fixed: FriendlyName keyword filter silently dropped legitimate Intel devices** — `Get-IntelChipsetHWIDs` pre-filtered candidate devices by matching their FriendlyName against a fixed keyword list (`Chipset|LPC|PCI Express Root Port|PCI-to-PCI bridge|Motherboard Resources`) before checking them against the HWID database. Any live, functioning Intel System-class device whose FriendlyName didn't contain one of those words — e.g. `Gaussian Mixture Model`, `Host Bridge/DRAM Registers`, `PCIe Controller (x16)` — was silently excluded from detection and reporting, even though it was fully present and matched with `Status: OK`. The filter has been removed; devices are now matched purely by HWID against the full database. On a triple-platform X79 test system, this raised detected device count from 12 to 59. See [Issue #26](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/issues/26).
-- **Improved performance** — `Get-CurrentINFVersion` no longer re-enumerates every PnP device on the system per detected Intel device; it now reuses the device object already obtained during initial detection.
-- **Display improvements** — HWID lists now wrap at 12 per line for readability on platforms with many detected devices; platform name lines are now yellow; download/parsing status messages merged into a single, more accurate line.
-
----
-
-[↑ Back to top](#top)
-
 <a id="older-releases"></a>
 ### 2.3 Older Releases
 
+- v2026.08.0017  → [Release Notes](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/releases/tag/v2026.08.0017)
 - v2026.07.0016  → [Release Notes](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/releases/tag/v2026.07.0016)
 - v2026.07.0015  → [Release Notes](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/releases/tag/v2026.07.0015)
 - v2026.03.0014  → [Release Notes](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/releases/tag/v2026.03.0014)
