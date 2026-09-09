@@ -6,7 +6,7 @@ The format is loosely based on [Keep a Changelog](https://keepachangelog.com/en/
 
 \---
 
-## \[v2026.09.0019] - 2026-09-09
+## [v2026.09.0019](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/releases/tag/v2026.09.0019) - 2026-09-09
 
 ### 🩹 Bugfix
 
