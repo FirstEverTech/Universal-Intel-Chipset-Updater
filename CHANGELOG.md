@@ -6,6 +6,16 @@ The format is loosely based on [Keep a Changelog](https://keepachangelog.com/en/
 
 ---
 
+## [v2026.09.0019] - 2026-09-06
+
+### 🩹 Bugfix
+- **Fixed: false "Update available" status caused by a version belonging to a different Intel package sharing the same HWID** — On `MeteorLake PCH-S`, HWID `7F23` (one of four HWIDs sharing this platform's chipset INF: `7F04`, `7F23`, `7F24`, `7F2F`) is serviced on some OEM systems by a separate, unrelated driver — **Intel(R) Innovation Platform Framework SMBUS Device** (versions `2.3.20304.x` / `2.3.20306.x`), distributed via Windows Update (confirmed via Microsoft Update Catalog, OEM: Compal Electronics) — not by the Intel Chipset Device Software INF. Because the updater compared *all* detected versions for the platform together, this unrelated `2.3.x` version caused the platform to be flagged `Update available` even when the actual chipset INF (`10.1.51.10`) was already current. Reported in [Issue #34](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/issues/34) (same underlying pattern as [Issue #11](https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/issues/11)).
+- **Investigation:** an initial hypothesis that the extra version came from Intel's own, generically-downloadable Dynamic Tuning Technology (DTT) / Innovation Platform Framework (IPF) package was directly disproven by inspecting that package's four `.inf` files (`kpe_apo_ext.inf`, `kpe_apo_win.inf`, `dtt_ext.inf`, `dtt_sw.inf`) — none declare HWID `7F23` or any other `7F0x` device. The actual source was identified via Microsoft Update Catalog: an **OEM-distributed** IPF driver package, pushed through Windows Update independently of Intel's generic download, targeting `7F23` specifically as an SMBUS device needed for platform telemetry.
+- **Fix:** every Intel Chipset Device Software INF version in the database — including every EOL entry, back to the oldest (2015) — uses major version `10` (`10.0.x` / `10.1.x`). The updater now compares each detected version's major component against the platform's latest known chipset major version; any detected version with a lower major number is recognized as belonging to different, unrelated Intel software rather than being treated as this platform needing an update, and is excluded from the `Update available` / `Latest version` calculation. It is still shown to the user, on its own `Detected INF (unrecognized): <version>` line, with a plain-language note that installing the chipset package is safe (Windows Update will restore the correct driver on its own if it's ever temporarily affected by driver ranking). The full technical explanation (specific HWID, source package, Windows PnP ranking behavior) is available via `-debug`.
+- This is a general, database-derived heuristic, not a hardcoded exception for `7F23` — it will also catch future, still-undiscovered cases of Intel moving a HWID out of the chipset package into a separate installer.
+
+---
+
 ## [v2026.08.0018] - 2026-08-13
 
 ### 🛡️ Safety Improvement
