@@ -1,5 +1,5 @@
 ﻿<#PSScriptInfo
-.VERSION 2026.08.0018
+.VERSION 2026.09.0019
 .GUID c5044de3-67b5-4e70-b6fc-75e7847c799e
 .NAME universal-intel-chipset-device-updater
 .AUTHOR Marcin Grygiel
@@ -13,7 +13,8 @@
 .REQUIREDSCRIPTS
 .EXTERNALSCRIPTDEPENDENCIES
 .RELEASENOTES
-v2026.08.0018 - Added detection of Intel Smart Sound Technology (cAVS) audio INF files within matched chipset packages (tracking issue #31: audio device conflicts after chipset INF update on systems with Realtek/Creative audio). Interactive mode: if a cAVS-containing package is detected, the updater displays an explicit warning before any changes are made and requires user confirmation to proceed; if the automatic System Restore point cannot be created/verified and a cAVS package is present, the user is warned again and must explicitly confirm before installation continues. Unattended mode (-auto / -quiet): cAVS detection now aborts installation before any system changes (no restore point created, no INF installed) and exits with code 3, since there is no user available to accept the audio compatibility risk. Final summary now reminds the user to check audio device state and use System Restore if audio stops working. No change to non-cAVS platforms/packages.
+v2026.09.0019 - Fixed false "Update available" status caused by a detected driver version belonging to a different Intel package entirely (e.g. Intel Dynamic Tuning Technology / Innovation Platform Framework installing its own .inf for one specific HWID within a chipset platform's device group, such as MeteorLake PCH-S HWID 7F23 via "Intel(R) Innovation Platform Framework SMBUS Device", confirmed against Microsoft Update Catalog). Every Intel Chipset Device Software INF version in the database - including every EOL entry - uses major version 10 (10.0.x / 10.1.x); a detected version with a lower major number for the same platform is now recognized as belonging to different, unrelated Intel software rather than being treated as this platform needing an update. Such versions are excluded from the update-status calculation and shown on a separate "Detected INF (unrecognized)" line with a plain-language note that installing the chipset package is safe (Windows will restore the correct driver on its own if anything is temporarily affected); full technical detail is available via -debug. Fixes GitHub Issue #34 (and the same underlying pattern as Issue #11).
+v2026.08.0018 - Added detection of Intel Smart Sound Technology (cAVS) audio INF files within matched chipset packages (tracking issue #31: audio device conflicts after chipset INF update on systems with Realtek/Creative audio). Interactive mode: if a cAVS-containing package is detected, the updater displays an explicit warning before any changes are made and requires user confirmation to proceed; if the automatic System Restore point cannot be created/verified and a cAVS package is present, the user is warned again and must explicitly confirm before installation continues. Unattended mode (-auto / -quiet): cAVS detection now aborts installation before any system changes (no restore point created, no INF installed) and exits with code 3, since there is no user available to accept the audio compatibility risk. Final summary now reminds the user to check audio device state and use System Restore if audio stops working. No change to non-cAVS platforms/packages. Also added: explicit choice for installing legacy (EOL) INF packages, with automatic block when an EOL package would downgrade an already newer, separately-installed driver.
 v2026.08.0017 - Replaced FriendlyName keyword-based device pre-filtering in Get-IntelChipsetHWIDs with direct HWID matching against the full INF database. Fixes silent detection gaps for devices whose FriendlyName did not contain a recognized keyword (e.g. Gaussian Mixture Model, Host Bridge/DRAM Registers, PCIe Controller (x16), Thermal, Northpeak, LPSS, DmaSec Extension variants). No change to UI or output format.
 v2026.05.0014 - Improved display formatting: removed "Generation:" label, added parsing info hint, cleaned up extra blank lines.
 #>
@@ -209,7 +210,7 @@ if ($QuietMode) {
 # =============================================
 # SCRIPT VERSION
 # =============================================
-$ScriptVersion = "2026.08.0018"
+$ScriptVersion = "2026.09.0019"
 # =============================================
 
 # Detect if running from SFX package
@@ -2312,10 +2313,35 @@ try {
         # Status line
         $needsUpdate = $false
         $newerVersionDetected = $false
-        $currentVersionsText = if ($currentVersions.Count -gt 0) { $currentVersions -join ', ' } else { "Unable to determine" }
 
-        if ($currentVersions.Count -gt 0) {
-            foreach ($currentVersion in $currentVersions) {
+        # Separate genuine Intel Chipset INF versions from "foreign" versions
+        # that belong to a different Intel package entirely (e.g. Intel Dynamic
+        # Tuning Technology / Innovation Platform Framework taking over one
+        # specific HWID within this platform's device group via its own .inf).
+        # Historically every Chipset Device Software INF version - including
+        # every EOL entry in the database - uses major version 10 (10.0.x /
+        # 10.1.x); a detected version with a lower major number for the same
+        # platform is not a legitimate older/newer chipset release, it is a
+        # different piece of software that happens to share a HWID.
+        $realVersions    = @()
+        $foreignVersions = @()
+        $latestVerForSplit = $null
+        try { $latestVerForSplit = [version]$chipsetInfo.Version } catch { $latestVerForSplit = $null }
+
+        foreach ($v in $currentVersions) {
+            $parsedForSplit = $null
+            try { $parsedForSplit = [version]$v } catch { $parsedForSplit = $null }
+            if ($parsedForSplit -and $latestVerForSplit -and $parsedForSplit.Major -lt $latestVerForSplit.Major) {
+                $foreignVersions += $v
+            } else {
+                $realVersions += $v
+            }
+        }
+
+        $currentVersionsText = if ($realVersions.Count -gt 0) { $realVersions -join ', ' } else { "Unable to determine" }
+
+        if ($realVersions.Count -gt 0) {
+            foreach ($currentVersion in $realVersions) {
                 try {
                     $currentVer = [version]$currentVersion
                     $latestVer = [version]$chipsetInfo.Version
@@ -2359,6 +2385,18 @@ try {
         $platformData.CurrentVersionsText  = $currentVersionsText
 
         Write-Host "  Detected INF: $currentVersionsText -> Latest INF: $($chipsetInfo.Version) -> $statusText" -ForegroundColor $statusColor
+
+        if ($foreignVersions.Count -gt 0) {
+            $foreignVersionsText = $foreignVersions -join ', '
+            Write-Host "  Detected INF (unrecognized): $foreignVersionsText" -ForegroundColor Cyan
+            Write-Host "    Note: an extra driver version was found for one of this device group's" -ForegroundColor Cyan
+            Write-Host "    components - it belongs to different Intel software already installed on" -ForegroundColor Cyan
+            Write-Host "    your PC. Installing this update is safe: even if it temporarily switches" -ForegroundColor Cyan
+            Write-Host "    that component back, Windows will automatically reinstall the newer one" -ForegroundColor Cyan
+            Write-Host "    on its own shortly after." -ForegroundColor Cyan
+            Write-DebugMessage "Platform '$platformName': detected version(s) $foreignVersionsText do not match the Intel Chipset INF major-version scheme (latest known chipset major = $($latestVerForSplit.Major)). This most likely originates from a separate Intel package (e.g. Intel Dynamic Tuning Technology / Innovation Platform Framework) that has taken over one specific HWID within this platform's device group via its own .inf - confirmed for HWID 7F23 under MeteorLake PCH-S (Intel(R) Innovation Platform Framework SMBUS Device, versions 2.3.20304.x/2.3.20306.x, per Microsoft Update Catalog). Installing the chipset package may, but is not guaranteed to, cause Windows PnP driver ranking to temporarily replace that separate package's driver on the shared device; even if this happens, Windows Update typically reinstalls the correct driver on its own shortly after. Excluded from update-status calculation above."
+        }
+
         Write-Host ""
 
         if ($chipsetInfo.HasAsterisk) {
