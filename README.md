@@ -7,7 +7,7 @@
   <a href="https://translate.google.com/translate?sl=en&tl=pt&u=https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater">🇧🇷 Português</a> |
   <a href="https://translate.google.com/translate?sl=en&tl=nl&u=https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater">🇳🇱 Nederlands</a>
   <br>
-  <a href="https://translate.google.com/translate?sl=en&tl=zh-CN&u=https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater">🇨🇳 中文</a> |
+  <a href="README_CN.md">🇨🇳 简体中文</a> |
   <a href="https://translate.google.com/translate?sl=en&tl=ja&u=https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater">🇯🇵 日本語</a> |
   <a href="https://translate.google.com/translate?sl=en&tl=ko&u=https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater">🇰🇷 한국어</a> |
   <a href="https://translate.google.com/translate?sl=en&tl=it&u=https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater">🇮🇹 Italiano</a> |
